@@ -1,0 +1,38 @@
+{
+  "name": "danmaq",
+  "description": "using Gatsby",
+  "version": "0.1.0",
+  "author": {
+    "name": "Shuhei Nomura (danmaq)",
+    "email": "info@danmaq.com",
+    "url": "https://danmaq.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "blog", "gatsby"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/danmaq/danmaq.gatsby.git"
+  },
+  "bugs": {
+    "url": "https://github.com/danmaq/danmaq.gatsby/issues"
+  },
+  "homepage": "https://github.com/danmaq/danmaq.gatsby",
+  "dependencies": {
+    "gatsby": "^1.9.153",
+    "gatsby-link": "^1.6.34",
+    "gatsby-plugin-react-helmet": "^2.0.3",
+    "react-helmet": "^5.2.0"
+  },
+  "devDependencies": {
+    "prettier": "^1.10.2"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+    "start": "gatsby develop",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
