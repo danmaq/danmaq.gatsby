@@ -9,7 +9,8 @@
   },
   "license": "MIT",
   "keywords": [
-    "blog", "gatsby"
+    "blog",
+    "gatsby"
   ],
   "repository": {
     "type": "git",
@@ -20,9 +21,11 @@
   },
   "homepage": "https://github.com/danmaq/danmaq.gatsby",
   "dependencies": {
+    "caniuse-db": "^1.0.30000791",
     "gatsby": "^1.9.153",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
+    "react": "^16.2.0",
     "react-helmet": "^5.2.0"
   },
   "devDependencies": {
