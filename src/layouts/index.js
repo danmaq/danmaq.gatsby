@@ -6,7 +6,7 @@ import Header from '../components/Header'
 import './index.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+    <div>
     <Helmet
       title="Gatsby Default Starter"
       meta={[
@@ -29,7 +29,7 @@ const TemplateWrapper = ({ children }) => (
 )
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
+    children: PropTypes.func,
 }
 
 export default TemplateWrapper

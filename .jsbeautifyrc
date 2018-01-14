@@ -1,0 +1,10 @@
+{
+    "js": {
+        "brace_style": "collapse,preserve-inline",
+        "e4x": true,
+        "jslint_happy": true,
+        "max_preserve_newlines": 2,
+        "space_after_anon_function": true,
+        "wrap_line_length": 120
+    }
+}
