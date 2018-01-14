@@ -25,10 +25,14 @@
         "gatsby": "^1.9.153",
         "gatsby-link": "^1.6.34",
         "gatsby-plugin-react-helmet": "^2.0.3",
+        "gatsby-plugin-react-next": "^1.0.7",
         "react": "^16.2.0",
+        "react-bootstrap": "^0.32.0",
+        "react-dom": "^16.2.0",
         "react-helmet": "^5.2.0"
     },
     "devDependencies": {
+        "gh-pages": "^1.1.0",
         "prettier": "^1.10.2"
     },
     "scripts": {
@@ -36,6 +40,12 @@
         "develop": "gatsby develop",
         "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
         "start": "gatsby develop",
+        "surge": "surge public/",
         "test": "echo \"Error: no test specified\" && exit 1"
-    }
+    },
+    "browserslist": [
+        "> 1%",
+        "Android >= 4.4.3",
+        "ie >= 11"
+    ]
 }
