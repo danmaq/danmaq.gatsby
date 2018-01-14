@@ -1,13 +1,11 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
+import { Button } from 'react-bootstrap';
 
-const IndexPage = () => (
-    <div>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <Link to="/page-2/">Go to page 2</Link>
-  </div>
-)
-
-export default IndexPage
+export default () =>
+<div>
+    <h1>Hello, world</h1>
+    <a className="btn btn-primary" href="https://github.com/danmaq/danmaq.gatsby/tree/dev" target="_blank">GitHub</a>
+    <p>Welcome to new React site.</p>
+    <Link className="btn btn-success" to="/page-2/">Go to page 2</Link>
+</div>;
