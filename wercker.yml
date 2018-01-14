@@ -1,0 +1,7 @@
+box: node
+
+build:
+  steps:
+  - script:
+      name: Installing Dependencies.
+      code: yarn install
