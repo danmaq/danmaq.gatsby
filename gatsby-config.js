@@ -1,6 +1,11 @@
+'use strict';
+
 module.exports = {
-    siteMetadata: {
-        title: 'Gatsby Default Starter',
-    },
-    plugins: ['gatsby-plugin-react-helmet', 'gatsby-plugin-react-next'],
+    pathPrefix: "/danmaq.gatsby",
+    plugins: [
+        'gatsby-plugin-react-helmet',
+        'gatsby-plugin-less',
+        'gatsby-plugin-react-next'
+    ],
+    siteMetadata: { title: 'danmaq' },
 };
