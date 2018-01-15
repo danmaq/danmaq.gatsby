@@ -1,33 +1,47 @@
-import React from 'react'
-import Link from 'gatsby-link'
+'use strict';
 
-const Header = () => (
-  <div
-    style={{
-      background: 'rebeccapurple',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Gatsby
-        </Link>
-      </h1>
-    </div>
-  </div>
-)
+import React from 'react';
+import Link from 'gatsby-link';
+import { Nav, Navbar, NavbarBrand, NavItem } from 'react-bootstrap';
+import FontAwesome from 'react-fontawesome';
 
-export default Header
+import logonInv from '../../assets/logo/logoInv.svg';
+
+/** Common header component. */
+export default () =>
+<div>
+    <Navbar collapseOnSelect fixedTop inverse staticTop>
+        <Navbar.Header>
+            <Link className="pull-left" to="/">
+                <img src={logonInv} width="282" height="100" alt="danmaq" />
+            </Link>
+            <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+            <Nav>
+                <NavItem eventKey={1} href="#works">Works</NavItem>
+                <NavItem eventKey={2} href="#about">About</NavItem>
+                <NavItem eventKey={3} href="#contact">Contact</NavItem>
+                <NavItem eventKey={4} href="#blog">Blog</NavItem>
+            </Nav>
+            <Nav pullRight>
+                <NavItem eventKey={5}
+                         href="https://github.com/danmaq"
+                         target="_blank">
+                    <FontAwesome name="github"
+                                 size="2x"
+                                 fixedWidth
+                                 inverse />
+                </NavItem>
+                <NavItem eventKey={6}
+                         href="https://twitter.com/danmaq"
+                         target="_blank">
+                    <FontAwesome name="twitter"
+                                 size="2x"
+                                 fixedWidth
+                                 inverse />
+                </NavItem>
+            </Nav>
+        </Navbar.Collapse>
+    </Navbar>
+</div>;

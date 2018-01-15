@@ -1,41 +1,55 @@
 {
-  "name": "danmaq",
-  "description": "using Gatsby",
-  "version": "0.1.0",
-  "author": {
-    "name": "Shuhei Nomura (danmaq)",
-    "email": "info@danmaq.com",
-    "url": "https://danmaq.com"
-  },
-  "license": "MIT",
-  "keywords": [
-    "blog",
-    "gatsby"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/danmaq/danmaq.gatsby.git"
-  },
-  "bugs": {
-    "url": "https://github.com/danmaq/danmaq.gatsby/issues"
-  },
-  "homepage": "https://github.com/danmaq/danmaq.gatsby",
-  "dependencies": {
-    "caniuse-db": "^1.0.30000791",
-    "gatsby": "^1.9.153",
-    "gatsby-link": "^1.6.34",
-    "gatsby-plugin-react-helmet": "^2.0.3",
-    "react": "^16.2.0",
-    "react-helmet": "^5.2.0"
-  },
-  "devDependencies": {
-    "prettier": "^1.10.2"
-  },
-  "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
-    "start": "gatsby develop",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  }
+    "name": "danmaq",
+    "description": "using Gatsby",
+    "version": "0.1.0",
+    "author": {
+        "name": "Shuhei Nomura (danmaq)",
+        "email": "info@danmaq.com",
+        "url": "https://danmaq.com"
+    },
+    "license": "MIT",
+    "keywords": [
+        "blog",
+        "gatsby"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/danmaq/danmaq.gatsby.git"
+    },
+    "bugs": {
+        "url": "https://github.com/danmaq/danmaq.gatsby/issues"
+    },
+    "homepage": "https://github.com/danmaq/danmaq.gatsby",
+    "dependencies": {
+        "caniuse-db": "^1.0.30000791",
+        "gatsby": "^1.9.153",
+        "gatsby-link": "^1.6.34",
+        "gatsby-plugin-less": "^1.0.8",
+        "gatsby-plugin-react-helmet": "^2.0.3",
+        "gatsby-plugin-react-next": "^1.0.7",
+        "prop-types": "^15.6.0",
+        "react": "^16.2.0",
+        "react-bootstrap": "^0.32.0",
+        "react-dom": "^16.2.0",
+        "react-fontawesome": "^1.6.1",
+        "react-helmet": "^5.2.0"
+    },
+    "devDependencies": {
+        "gatsby-cli": "^1.1.28",
+        "gh-pages": "^1.1.0",
+        "prettier": "^1.10.2"
+    },
+    "scripts": {
+        "build": "gatsby build",
+        "develop": "gatsby develop",
+        "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
+        "start": "gatsby develop",
+        "deploy": "gatsby build --prefix-paths && gh-pages -d public",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "browserslist": [
+        "> 1%",
+        "Android >= 4.4.3",
+        "ie >= 11"
+    ]
 }
