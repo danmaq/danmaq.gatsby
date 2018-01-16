@@ -5,7 +5,7 @@ import PropTypes from 'prop-types';
 import { Col, Image } from 'react-bootstrap';
 
 /** Image size. */
-const SIZE = 104;
+const SIZE = 96;
 
 /** Common achievement icon component for LP. */
 export default class extends React.Component {

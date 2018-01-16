@@ -22,7 +22,7 @@ export default () =>
                                  size="2x"
                                  fixedWidth
                                  inverse />
-                    アカウントをお持ちの方用
+                    アカウントをお持ちの方
                 </Button>
             </Col>
             <Col className="dmq-contact text-center" sm={6}>
@@ -34,7 +34,7 @@ export default () =>
                     <FontAwesome name="twitter"
                                  size="2x"
                                  fixedWidth />
-                    アカウントをお持ちでない方用
+                    アカウントのない方
                 </Button>
             </Col>
         </Row>
