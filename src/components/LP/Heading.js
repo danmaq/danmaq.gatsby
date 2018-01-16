@@ -18,14 +18,14 @@ export default class extends React.Component {
     _caption =
         () =>
         (({ caption, sub }) =>
-            sub ? <h3 className="text-center">{caption}</h3> :
-            <h2 className="font-weight-light text-center">{caption}</h2>
+            sub ? <h3 className="h2 text-center">{caption}</h3> :
+            <h2 className="h1 font-weight-light text-center">{caption}</h2>
         )(this.props);
 
     /** Property types. */
     static propTypes = {
         caption: PropTypes.string.isRequired,
-        detail: PropTypes.string.isRequired,
+        detail: PropTypes.node.isRequired,
         sub: PropTypes.bool,
     };
 };
