@@ -1,10 +1,32 @@
 @themeColor: #BBBFDC;
 @themeDark: #666099;
 
+html {
+    background-color: @themeColor;
+}
+
+body {
+    background-color: white;
+}
+
+p {
+    line-height: 160%;
+}
+
+.dmq-footer {
+    background-color: @themeColor;
+    border-top: 0.2rem solid @themeDark;
+    font-size: 80%;
+    padding-top: 1rem;
+}
+
+.font-weight-light {
+    font-weight: 100 !important;
+}
+
 #lp
 {
-    .jumbotron
-    {
+    .jumbotron {
         background: linear-gradient(135deg, @themeDark, @themeColor);
         background-size: cover;
         min-height: 35rem;
@@ -18,18 +40,44 @@
         }
     }
 
-    .dmq-subtitle
-    {
-        margin-top: 8rem;
+    .dmq-achievement {
+        margin-top: 2.5rem;
+    }
+
+    .dmq-blog .panel-heading {
+        background-size: cover; 
+        height: 32rem; 
+        -webkit-box-shadow: none; 
+        box-shadow: none; 
+        border: 0px; 
+        border-radius: 0;
+    }
+
+    .dmq-contact {
+        margin-bottom: 2rem;
+    }
+
+    .dmq-dept {
+        margin-bottom: 4rem;
+    }
+
+    .dmq-sns {
+        margin-bottom: 2rem;
+        .btn {
+            border-radius: 50%;
+            padding-left: 2rem;
+            padding-top: 4rem;
+            width: 16rem;
+            height: 16rem;
+        }
+    }
+
+    .dmq-subtitle {
+        margin-top: 10rem;
         margin-bottom: 5rem;
     }
 
-    .dmq-works article p
-    {
+    .dmq-works article p {
         color: #116;
     }
-}
-
-.font-weight-light {
-    font-weight: 100;
 }

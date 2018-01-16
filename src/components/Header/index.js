@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Link from 'gatsby-link';
-import { Nav, Navbar, NavbarBrand, NavItem } from 'react-bootstrap';
+import { Image, Nav, Navbar, NavbarBrand, NavItem } from 'react-bootstrap';
 import FontAwesome from 'react-fontawesome';
 
-import logonInv from '../../assets/logo/logoInv.svg';
+import logonInv from '~/src/assets/logo/logoInv.svg';
 
 /** Common header component. */
 export default () =>
@@ -13,7 +13,7 @@ export default () =>
     <Navbar collapseOnSelect fixedTop inverse staticTop>
         <Navbar.Header>
             <Link className="pull-left" to="/">
-                <img src={logonInv} width="282" height="100" alt="danmaq" />
+                <Image alt="danmaq" src={logonInv} width="282" height="100" />
             </Link>
             <Navbar.Toggle />
         </Navbar.Header>

@@ -4,7 +4,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
-import Header from '../components/Header';
+import Footer from '~/src/components/Footer';
+import Header from '~/src/components/Header';
 import './index.less';
 
 export default class extends React.Component {
@@ -15,6 +16,9 @@ export default class extends React.Component {
                 <Helmet defaultTitle="danmaq" titleTemplate="%s | danmaq">
                     <html lang="ja" />
                     <link rel="author"
+                          href="https://twitter.com/danmaq"
+                          hrefLang="ja" />
+                    <link rel="me"
                           href="https://twitter.com/danmaq"
                           hrefLang="ja" />
                     <link rel="stylesheet"
@@ -31,6 +35,7 @@ export default class extends React.Component {
                 </Helmet>
                 <Header />
                 {children()}
+                <Footer />
             </div>
         )(this.props);
 
