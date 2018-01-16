@@ -19,7 +19,7 @@ export default () =>
     <Heading caption="メルマガで最新情報を受け取りましょう"
              detail="“danmaq” 公式メルマガを受け取ると、最新の活動情報はもちろん、作品制作のノウハウや世界観、そしてちょっとした制作のための心意気などがあなたのものとなります。今すぐ下記にあなたのメールアドレスを入れて、送信ボタンを押してください。"
              sub />
-    <Form action="http://88auto.biz/danmaq/planmail.php" method="post">
+    <Form action="https://88auto.biz/danmaq/planmail.php" method="post">
         <Grid>
             <Row>
                 <Col sm={10}>
@@ -33,6 +33,7 @@ export default () =>
                 <Col sm={2}>
                     <FormControl id="pid" type="hidden" value="4" />
                     <Button id="sbm"
+                            value="登録"
                             type="submit"
                             bsSize="large"
                             bsStyle="primary"
