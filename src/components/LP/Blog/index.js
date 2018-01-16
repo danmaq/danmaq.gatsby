@@ -14,7 +14,7 @@ import ReactNative from '~/src/assets/LP/icon/react.svg';
 import Workshop from '~/src/assets/LP/photo/workshop.jpg';
 
 export default () =>
-<section id="about" className="container">
+<section id="blog" className="container">
     <Heading caption="Blog"
              detail="直近 4 件の新着ブログ記事を掲載します。" />
     <Grid>
