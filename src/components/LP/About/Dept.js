@@ -2,33 +2,48 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Col, Image } from 'react-bootstrap';
+import {
+    Card,
+    CardContent,
+    CardHeader,
+    CardImage,
+    Column,
+    Content,
+    Image,
+    Title,
+} from 'bloomer';
 
 /** Common about component for LP. */
 export default class extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        (({ children, detail, image, width, height }) =>
-            <Col className="dmq-dept" md={6}>
-                {this._caption()}
-                <p>{detail}</p>
-                <Image alt=""
-                       src={image}
-                       width={width}
-                       height={height}
-                       responsive
-                       rounded />
-                {children}
-            </Col>
+        (({ children, detail, image }) =>
+            <Column>
+                <Card className="dmq-dept">
+                    <CardHeader>
+                        {this._caption()}                            
+                    </CardHeader>
+                    <CardImage>
+                        <Image isRatio="4:3" src={image} />
+                    </CardImage>
+                    <CardContent>
+                        <Content>
+                            <p>{detail}</p>
+                            {children}
+                        </Content>
+                    </CardContent>
+                </Card>
+            </Column>
         )(this.props);
 
     /** Create caption elements. */
     _caption =
         () =>
         (({ caption, sub, subCaption }) =>
-            !sub ? <h3>{caption}<small>{subCaption}</small></h3> :
-            <h4 className="h3">{caption}<small>{subCaption}</small></h4>
+            <Title className="card-header-title" tag={sub ? 'h4' : 'h3'}>
+                {caption}<small>{subCaption}</small>
+            </Title>
         )(this.props);
 
     /** Property types. */
@@ -38,11 +53,6 @@ export default class extends React.Component {
         detail: PropTypes.string.isRequired,
         image: PropTypes.string.isRequired,
         subCaption: PropTypes.string.isRequired,
-        width: PropTypes.number,
-        height: PropTypes.number,
         sub: PropTypes.bool,
     };
-
-    /** Default Properties. */
-    static defaultProps = { width: 320, height: 240 };
 };

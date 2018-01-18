@@ -3,7 +3,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
-import { Col, Glyphicon, Panel } from 'react-bootstrap';
+import {
+    Button,
+    Card,
+    CardContent,
+    CardHeader,
+    CardImage,
+    Column,
+    Content,
+    Image,
+    Title,
+} from 'bloomer';
 
 import Mark from '~/src/assets/logo/mark.svg';
 
@@ -13,18 +23,31 @@ export default class extends React.Component {
     render =
         () =>
         (({ caption, detail, href, image }) =>
-            <Col md={6} xl={3}>
-                <Panel className="dmq-blog">
-                    <Panel.Heading style={{ backgroundImage: `url(${image})` }} />
-                    <Panel.Body>
-                        <h3>{caption}</h3>
-                        <p>{detail}</p>
-                        <Link className='btn btn-primary' to={href}>
-                            <Glyphicon glyph="menu-down" /> もっと見る
-                        </Link>
-                    </Panel.Body>
-                </Panel>
-            </Col>
+            <Column>
+                <Card>
+                    <CardImage>
+                        <Image isRatio="16:9" src={image} />
+                    </CardImage>
+                    <CardHeader>
+                        <Title className="card-header-title" tag="h3">
+                            {caption}
+                        </Title>
+                    </CardHeader>
+                    <CardContent>
+                        <Content>
+                            <p>{detail}</p>
+                            <p>
+                                <Link className='button is-link'
+                                      to={href}
+                                      role="link">
+                                    もっと見る
+                                </Link>
+                                &nbsp;2017/1/23 19:00
+                            </p>
+                        </Content>
+                    </CardContent>
+                </Card>
+            </Column>
         )(this.props);
 
     /** Property types. */

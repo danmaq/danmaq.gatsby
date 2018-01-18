@@ -1,12 +1,13 @@
 'use strict';
 
 import React from 'react';
+import { Section } from 'bloomer';
 
 import Depts from './Depts';
 import Member from './Member';
 
 export default () =>
-<section id="about" className="container">
+<Section id="about">
     <Depts />
     <Member />
-</section>;
+</Section>;

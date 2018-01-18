@@ -3,31 +3,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import 'bulma';
+import 'font-awesome/scss/font-awesome.scss';
 
 import Footer from '~/src/components/Footer';
 import Header from '~/src/components/Header';
-import './index.less';
+import './index.scss';
 
 export default class extends React.Component {
     render =
         () =>
         (({ children }) =>
-            <div>
+            <div id="dmq">
                 <Helmet defaultTitle="danmaq" titleTemplate="%s | danmaq">
-                    <html lang="ja" />
+                    <html className="has-navbar-fixed-top" lang="ja" />
                     <link rel="author"
                           href="https://twitter.com/danmaq"
                           hrefLang="ja" />
                     <link rel="me"
                           href="https://twitter.com/danmaq"
                           hrefLang="ja" />
-                    <link rel="stylesheet"
-                          href="https://maxcdn.bootstrapcdn.com/bootstrap/latest/css/bootstrap.min.css"
-                          crossorigin="anonymous" />
-                    <link rel="stylesheet"
-                          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
-                          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-                          crossorigin="anonymous" />
                     <meta name="description"
                           content="danmaq は、東方・ボカロおよびオリジナルを中心に、ゲームなど様々なコンテンツを提供する同人ブランドです。" />
                     <meta name="keywords"

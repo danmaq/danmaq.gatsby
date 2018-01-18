@@ -2,46 +2,68 @@
 
 import React from 'react';
 import Link from 'gatsby-link';
-import { Image, Nav, Navbar, NavbarBrand, NavItem } from 'react-bootstrap';
-import FontAwesome from 'react-fontawesome';
+import {
+    Navbar,
+    NavbarBrand,
+    NavbarBurger,
+    NavbarEnd,
+    NavbarItem,
+    NavbarMenu,
+    NavbarStart,
+} from 'bloomer';
 
-import logonInv from '~/src/assets/logo/logoInv.svg';
+import Icon from '~/src/components/Icon';
 
-/** Common header component. */
-export default () =>
-<div>
-    <Navbar collapseOnSelect fixedTop inverse staticTop>
-        <Navbar.Header>
-            <Link className="pull-left" to="/">
-                <Image alt="danmaq" src={logonInv} width="282" height="100" />
-            </Link>
-            <Navbar.Toggle />
-        </Navbar.Header>
-        <Navbar.Collapse>
-            <Nav>
-                <NavItem eventKey={1} href="#works">Works</NavItem>
-                <NavItem eventKey={2} href="#about">About</NavItem>
-                <NavItem eventKey={3} href="#contact">Contact</NavItem>
-                <NavItem eventKey={4} href="#blog">Blog</NavItem>
-            </Nav>
-            <Nav pullRight>
-                <NavItem eventKey={5}
-                         href="https://github.com/danmaq"
-                         target="_blank">
-                    <FontAwesome name="github"
-                                 size="2x"
-                                 fixedWidth
-                                 inverse />
-                </NavItem>
-                <NavItem eventKey={6}
-                         href="https://twitter.com/danmaq"
-                         target="_blank">
-                    <FontAwesome name="twitter"
-                                 size="2x"
-                                 fixedWidth
-                                 inverse />
-                </NavItem>
-            </Nav>
-        </Navbar.Collapse>
-    </Navbar>
-</div>;
+import LogoInv from '~/src/assets/logo/logoInv.svg';
+
+/**
+ * @typedef {object} Header.state
+ * @property {boolean} active
+ */
+
+/** Header component. */
+export default class extends React.Component {
+    /**
+     * Current state.
+     * @type {Header.state}
+     */
+    state = { active: false };
+
+    /** Create rendered view elements. */
+    render =
+        () =>
+        (({ active }) =>
+            <Navbar className="is-dark is-fixed-top"
+                    role="header"
+                    isTransparent>
+                <NavbarBrand>
+                    <NavbarItem>
+                        <img alt="danmaq"
+                             src={LogoInv}
+                             width="282"
+                             height="100" />
+                    </NavbarItem>
+                    <NavbarBurger isActive={active}
+                                  onClick={() => this.setState(p => ({...p, active: !active }))} />
+                </NavbarBrand>
+                <NavbarMenu isActive={active} role="navigation">
+                    <NavbarStart>
+                        <NavbarItem href="#works">Works</NavbarItem>
+                        <NavbarItem href="#about">About</NavbarItem>
+                        <NavbarItem href="#contact">Contact</NavbarItem>
+                        <NavbarItem href="#blog">Blog</NavbarItem>
+                    </NavbarStart>
+                    <NavbarEnd>
+                        <NavbarItem href="https://github.com/danmaq"
+                                    target="_blank">
+                            <Icon i="github" size={2} />
+                        </NavbarItem>
+                        <NavbarItem href="https://twitter.com/danmaq"
+                                    target="_blank">
+                            <Icon i="twitter" size={2} />
+                        </NavbarItem>
+                    </NavbarEnd>
+                </NavbarMenu>
+            </Navbar>
+        )(this.state);
+};

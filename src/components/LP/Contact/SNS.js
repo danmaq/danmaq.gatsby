@@ -1,10 +1,12 @@
 'use strict';
 
 import React from 'react';
-import { Button, Col, Grid, Image, Row } from 'react-bootstrap';
-import FontAwesome from 'react-fontawesome';
 
 import Heading from '../Heading';
+
+import { Button, Column, Columns, Image } from 'bloomer';
+
+import Icon from '~/src/components/Icon';
 
 import Niconico from '~/src/assets/LP/icon/2525.svg';
 import Pixiv from '~/src/assets/LP/icon/pixiv.svg';
@@ -12,8 +14,55 @@ import Pixiv from '~/src/assets/LP/icon/pixiv.svg';
 export default () =>
 <div>
     <Heading caption="SNS でも最新情報を受け取りましょう"
-        detail="主に Twitter や GitHub を中心に活動しています。最新の活動状況も Twitter で配信中です。"
-        sub />
+             detail="主に Twitter や GitHub を中心に活動しています。最新の活動状況も Twitter で配信中です。"
+             sub />
+    <Columns className="dmq-sns">
+        <Column>
+            <Columns isMobile>
+                <Column hasTextAlign="centered">
+                    <Button href="https://twitter.com/danmaq"
+                            target="_blank"
+                            isSize="large"
+                            isLink>
+                        <Icon i="twitter" size={3} />
+                    </Button>
+                </Column>
+                <Column hasTextAlign="centered">
+                    <Button href="https://github.com/danmaq"
+                            target="_blank"
+                            isSize="large"
+                            isLink>
+                        <Icon i="github" size={3} />
+                    </Button>
+                </Column>
+            </Columns>
+        </Column>
+        <Column>
+            <Columns isMobile>
+                <Column hasTextAlign="centered">
+                    <Button href="http://com.nicovideo.jp/community/co2711221"
+                            target="_blank"
+                            isSize="large"
+                            isLink>
+                        <Image isSize="96x96"
+                               src={Niconico} />
+                    </Button>
+                </Column>
+                <Column hasTextAlign="centered">
+                    <Button href="https://twitter.com/danmaq"
+                            target="_blank"
+                            isSize="large"
+                            isLink>
+                        <Image isSize="96x96"
+                               src={Pixiv} />
+                    </Button>
+                </Column>
+            </Columns>
+        </Column>
+    </Columns>
+</div>;
+
+/*
     <Grid>
         <Row>
             <Col className="dmq-sns" xs={6} md={3}>
@@ -26,7 +75,7 @@ export default () =>
                                  title="Twitter"
                                  fixedWidth
                                  inverse />
-                </Button>    
+                </Button>
             </Col>
             <Col className="dmq-sns" xs={6} md={3}>
                 <Button href="https://github.com/danmaq"
@@ -38,7 +87,7 @@ export default () =>
                                  title="GitHub"
                                  fixedWidth
                                  inverse />
-                </Button>    
+                </Button>
             </Col>
             <Col className="dmq-sns" xs={6} md={3}>
                 <Button href="http://com.nicovideo.jp/community/co2711221"
@@ -51,7 +100,7 @@ export default () =>
                            width={64}
                            height={64}
                            rounded />
-                </Button>    
+                </Button>
             </Col>
             <Col className="dmq-sns" xs={6} md={3}>
                 <Button href="https://pixiv.me/danmaq"
@@ -64,8 +113,9 @@ export default () =>
                            width={64}
                            height={64}
                            rounded />
-                </Button>    
+                </Button>
             </Col>
         </Row>
     </Grid>
-</div>;
+
+*/

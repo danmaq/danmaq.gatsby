@@ -1,11 +1,17 @@
 'use strict';
 
 import React from 'react';
-import { Glyphicon } from 'react-bootstrap';
+import { Container, Content, Footer } from 'bloomer';
 
 /** Common footer component. */
 export default () =>
-<footer className="dmq-footer container-fluid text-center">
-    <p>“danmaq” は DAYS PRODUCTION が運営する、同人ブランドです。</p>
-    <p>©1999-2018 danmaq / DAYS PRODUCTION</p>    
-</footer>;
+<Footer role="contentinfo">
+    <Container　hasTextAlign="centered" isFluid>
+        <Content>
+            <p>“danmaq” は DAYS PRODUCTION が運営する、同人ブランドです。</p>
+        </Content>
+        <Content isSize='small'>
+            <p>©1999-2018 danmaq / DAYS PRODUCTION</p>
+        </Content>
+    </Container>
+</Footer>;

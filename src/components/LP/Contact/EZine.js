@@ -1,16 +1,9 @@
 'use strict';
 
 import React from 'react';
-import {
-    Button,
-    Col,
-    FormControl,
-    Glyphicon,
-    Grid,
-    HelpBlock,
-    Row,
-} from 'react-bootstrap';
+import { Button, Content, Control, Field, Input } from 'bloomer';
 
+import Icon from '~/src/components/Icon';
 import Heading from '../Heading';
 
 export default () =>
@@ -20,33 +13,28 @@ export default () =>
              sub />
     <form action="https://88auto.biz/danmaq/planmail.php"
           method="post">
-        <Grid>
-            <Row>
-                <Col sm={10}>
-                    <FormControl name="email"
-                                 type="email"
-                                 placeholder="メールアドレス"
-                                 required="required"
-                                 pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
-                                 bsSize="large" />
-                </Col>
-                <Col sm={2}>
-                    <FormControl name="mcode" type="hidden" value="UTF-8" />
-                    <FormControl name="pid" type="hidden" value="4" />
-                    <FormControl name="spflg" type="hidden" value="1" />
-                    <Button name="sbm"
-                            value="登録"
-                            type="submit"
-                            bsSize="large"
-                            bsStyle="primary"
-                            block>
-                        <Glyphicon glyph="gift" /> 送信
-                    </Button>
-                </Col>
-            </Row>
-        </Grid>
-        <HelpBlock className="text-right">
-            Powered by <a href="http://autobiz.jp/" target="_blank">AutoBiz</a>.
-        </HelpBlock>
+        <Field hasAddons>
+            <Input type="hidden" name="mcode" value="UTF-8" />
+            <Input type="hidden" name="pid" value="4" />
+            <Input type="hidden" name="spflg" value="1" />
+            <Control className="is-expanded">
+                <Input type="email"
+                       name="email"
+                       placeholder="メールアドレスを入れてください"
+                       required="required"
+                       pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
+                       isSize="large" />
+            </Control>
+            <Control>
+                <Button isColor="primary" isSize="large">
+                    <Icon i="gift" />&nbsp;送信
+                </Button>
+            </Control>
+        </Field>
     </form>
+    <aside>
+        <Content hasTextAlign="right">
+                Powered by <a href="http://autobiz.jp/" target="_blank">AutoBiz <Icon i="external-link" /></a>.
+        </Content>
+    </aside>
 </div>;
