@@ -25,7 +25,7 @@ export default class extends React.Component {
                         {this._caption()}                            
                     </CardHeader>
                     <CardImage>
-                        <Image isRatio="4:3" src={image} />
+                        <Image isRatio="16:9" src={image} />
                     </CardImage>
                     <CardContent>
                         <Content>

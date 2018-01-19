@@ -6,10 +6,10 @@ import { Button, Container, Hero, HeroBody, Subtitle, Title } from 'bloomer';
 import Icon from '~/src/components/Icon';
 
 export default () =>
-<Hero isColor="dark" isBold isFullHeight>
+<Hero className="is-dmqdark" isBold isFullHeight>
     <HeroBody>
         <Container hasTextAlign="centered">
-            <Title isSize={1} lang="en">Creating, and Sharing.</Title>
+            <Title isSize={1} lang="en">Creating, <wbr />and Sharing.</Title>
             <Subtitle>“danmaq” はたった今も、明日の “楽しい” を考えています。</Subtitle>
             <Subtitle>
                 <Button className="is-rounded"

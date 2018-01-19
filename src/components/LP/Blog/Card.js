@@ -42,7 +42,10 @@ export default class extends React.Component {
                                       role="link">
                                     もっと見る
                                 </Link>
-                                &nbsp;2017/1/23 19:00
+                                &nbsp;
+                                <time dateTime="2017-01-23T19:00">
+                                    2017/1/23 19:00
+                                </time>    
                             </p>
                         </Content>
                     </CardContent>
