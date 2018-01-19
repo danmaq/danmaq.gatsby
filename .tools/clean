@@ -1,0 +1,5 @@
+#!/bin/sh
+
+cd $(cd $(dirname $0); pwd)/..
+rm -rf .cache node_modules public
+which yarn > /dev/null 2>&1 && yarn cache clean

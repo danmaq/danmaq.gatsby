@@ -1,0 +1,28 @@
+iframe {
+    height: auto;
+    max-width: 100%;
+}
+
+.content figure iframe {
+    display: inline-block;
+}
+
+.image {
+    iframe {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+    &.is-square,
+    &.is-1by1,
+    &.is-4by3,
+    &.is-3by2,
+    &.is-16by9,
+    &.is-2by1 {
+        iframe {
+            @include overlay;
+            height: 100%;
+            width: 100%;
+        }
+    }
+}

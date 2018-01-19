@@ -4,7 +4,12 @@
         "module": "commonjs",
         "allowSyntheticDefaultImports": true,
         "experimentalDecorators": true,
-        "baseUrl": "."
+        "baseUrl": ".",
+        "paths": {
+            "~/*": [
+                "*"
+            ]
+        }
     },
     "exclude": [
         "node_modules"

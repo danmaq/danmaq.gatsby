@@ -2,6 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Container, Hero, HeroBody, Title, Subtitle } from 'bloomer';
 
 /** Common heading component for LP. */
 export default class extends React.Component {
@@ -9,23 +10,27 @@ export default class extends React.Component {
     render =
         () =>
         (({ detail }) =>
-            <div className="dmq-subtitle">
-                {this._caption()}<p className="text-center">{detail}</p>
-            </div>
+            <Hero isSize="medium">
+                <HeroBody>
+                    <Container hasTextAlign='centered'>
+                        {this._caption()}
+                        <p className="text-center">{detail}</p>
+                    </Container>
+                </HeroBody>
+            </Hero>
         )(this.props);
 
     /** Create caption elements. */
     _caption =
         () =>
         (({ caption, sub }) =>
-            sub ? <h3 className="text-center">{caption}</h3> :
-            <h2 className="font-weight-light text-center">{caption}</h2>
+            <Title isSize={2} tag={sub ? 'h3' : 'h2'}>{caption}</Title>
         )(this.props);
 
     /** Property types. */
     static propTypes = {
         caption: PropTypes.string.isRequired,
-        detail: PropTypes.string.isRequired,
+        detail: PropTypes.node.isRequired,
         sub: PropTypes.bool,
     };
 };
