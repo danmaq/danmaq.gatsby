@@ -51,7 +51,7 @@ export default () =>
                     </Column>
                     <Column hasTextAlign="centered">
                         <Button className="is-pixiv"
-                                href="https://twitter.com/danmaq"
+                                href="https://pixiv.me/danmaq"
                                 target="_blank"
                                 isSize="large">
                             <Image isSize="96x96"
