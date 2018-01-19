@@ -3,7 +3,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import 'bulma';
 import 'font-awesome/scss/font-awesome.scss';
 
 import Footer from '~/src/components/Footer';
@@ -16,7 +15,7 @@ export default class extends React.Component {
         (({ children }) =>
             <div id="dmq">
                 <Helmet defaultTitle="danmaq" titleTemplate="%s | danmaq">
-                    <html className="has-navbar-fixed-top" lang="ja" />
+                    <html lang="ja" />
                     <link rel="author"
                           href="https://twitter.com/danmaq"
                           hrefLang="ja" />

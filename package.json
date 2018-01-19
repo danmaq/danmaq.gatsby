@@ -48,12 +48,10 @@
         "build": "gatsby build",
         "clean": ".tools/clean",
         "develop": "gatsby develop",
-        "deploy": "yon run _replace && yon run build --prefix-paths && yon run _restore && gh-pages -d public",
+        "deploy": "yon run build --prefix-paths && gh-pages -d public",
         "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
         "start": "yon run develop",
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "_replace": "replace \"import 'bulma';\" \"import 'bulma/css/bulma.css';\" ./src -r",
-        "_restore": "replace \"import 'bulma/css/bulma.css';\" \"import 'bulma';\" ./src -r"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "browserslist": [
         "> 2%",
