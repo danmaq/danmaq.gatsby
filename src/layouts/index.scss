@@ -13,6 +13,7 @@ $nico: lighten(#060102, 5%);
 $nico-inv: findColorInvert($nico);
 $pixiv: #0096DB;
 $pixiv-inv: findColorInvert($pixiv);
+$navbar-alpha: 0.85;
 // Preference Settings ====================================
 $body-background-color: $dmqlight;
 $body-line-height: 1.7;
@@ -35,7 +36,7 @@ Verdana,
 Meiryo,
 sans-serif;
 $footer-background-color: $dmqlight;
-$navbar-background-color: rgba(white, 0.8);
+$navbar-background-color: rgba(white, $navbar-alpha);
 @import "~bulma/sass/utilities/derived-variables";
 $addColors: ("dmqlight": ($dmqlight, $dmqlight-inv), "dmqdark": ($dmqdark, $dmqdark-inv), "github": ($github, $github-inv), "nico": ($nico, $nico-inv), "pixiv": ($pixiv, $pixiv-inv), "twitter":($twitter, $twitter-inv));
 $colors: map-merge($colors, $addColors);
@@ -44,6 +45,7 @@ $colors: map-merge($colors, $addColors);
 @import "iframe";
 body {
     background-color: $white-bis;
+    scroll-behavior: smooth;
 }
 
 .button.is-large {
@@ -60,7 +62,6 @@ body {
 
 #dmq {
     .footer {
-        -webkit-box-shadow: 0 -1px 3px $dmqdark, 0 0 0 1px $dmqdark;
         box-shadow: 0 -1px 3px $dmqdark, 0 0 0 1px $dmqdark;
     }
     .title {
@@ -71,6 +72,34 @@ body {
         box-shadow: none;
         .card-header {
             box-shadow: none;
+        }
+    }
+    .navbar {
+        background-color: rgba(whitesmoke, $navbar-alpha);
+        box-shadow: 0 2px 3px $dmqdark, 0 0 0 1px $dmqdark;
+        height: 3.25rem;
+        transition: background-color 0.5s, height 0.2s;
+        .navbar-brand .navbar-item {
+            background-color: rgba($dmqdark, $navbar-alpha);
+            transition: background-color 0.5s, padding 0.2s;
+            padding: 0.25rem 1rem 0.1rem;
+            img {
+                transition: max-height 0.2s, max-width 0.2s;
+                max-height: 2.4rem;
+                max-width: 7.5rem;
+            }
+        }
+        &.dmq-navbar-expand {
+            background-color: transparent;
+            height: 7rem;
+            box-shadow: none;
+            .navbar-brand .navbar-item {
+                background-color: transparent;
+                img {
+                    max-width: none;
+                    max-height: 6rem;
+                }
+            }
         }
     }
     .dmq-sns .button {

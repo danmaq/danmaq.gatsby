@@ -19,6 +19,7 @@ import LogoInv from '~/src/assets/logo/logoInv.svg';
 /**
  * @typedef {object} Header.state
  * @property {boolean} active
+ * @property {boolean} expand
  */
 
 /** Header component. */
@@ -27,21 +28,31 @@ export default class extends React.Component {
      * Current state.
      * @type {Header.state}
      */
-    state = { active: false };
+    state = { active: false, expand: true };
+
+    /** Invoked just after mounting this component. */
+    componentDidMount =
+        () => global.window.addEventListener('scroll', this._onScroll);
+
+    /** Invoked just before unmounting this component. */
+    componentWillUnmount =
+        () => global.window.removeEventListener('scroll', this._onScroll);
 
     /** Create rendered view elements. */
     render =
         () =>
         (({ active }) =>
-            <Navbar className="is-dark is-fixed-top"
+            <Navbar className={this._className()}
                     role="header"
                     isTransparent>
                 <NavbarBrand>
                     <NavbarItem>
-                        <img alt="danmaq"
-                             src={LogoInv}
-                             width="282"
-                             height="100" />
+                        <Link to="/#">
+                            <img alt="danmaq"
+                                src={LogoInv}
+                                width="282"
+                                height="100" />
+                        </Link>
                     </NavbarItem>
                     <NavbarBurger isActive={active}
                                   onClick={() => this.setState(p => ({...p, active: !active }))} />
@@ -66,4 +77,20 @@ export default class extends React.Component {
                 </NavbarMenu>
             </Navbar>
         )(this.state);
+
+    /** Create CSS class name of header. */
+    _className =
+        () =>
+        (({ expand }) =>
+            `is-fixed-top ${expand ? 'dmq-navbar-expand is-black' : 'is-light'}`)(
+            this.state);
+
+    /** Invoked when scrolling the screen. */
+    _onScroll =
+        () => {
+            const expand = global.window.scrollY <= 200;
+            if (this.state.expand != expand) {
+                this.setState(p => ({ ...p, expand }));
+            }
+        };
 };
