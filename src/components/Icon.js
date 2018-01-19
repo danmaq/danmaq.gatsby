@@ -18,6 +18,7 @@ const sizeTable = [
     { wrap: '', icon: 'fa-lg' },
     { wrap: 'is-medium', icon: 'fa-2x' },
     { wrap: 'is-large', icon: 'fa-3x' },
+    { wrap: 'is-large', icon: 'fa-4x' },
 ];
 
 /**
@@ -42,7 +43,7 @@ export default class extends React.Component {
     /** Property types. */
     static propTypes = {
         i: PropTypes.string.isRequired,
-        size: PropTypes.oneOf([0, 1, 2, 3]),
+        size: PropTypes.oneOf([0, 1, 2, 3, 4]),
     };
 
     /** Default properties. */
