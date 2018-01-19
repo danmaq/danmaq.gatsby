@@ -21,13 +21,13 @@ export default () =>
             <Control className="is-expanded">
                 <Input type="email"
                        name="email"
-                       placeholder="メールアドレスを入れてください"
+                       placeholder="メールアドレス"
                        required="required"
                        pattern="^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*"
-                       isSize="large" />
+                       isSize="medium" />
             </Control>
             <Control>
-                <Button isColor="primary" isSize="large">
+                <Button isColor="primary" isSize="medium">
                     <Icon i="gift" />&nbsp;送信
                 </Button>
             </Control>

@@ -11,7 +11,7 @@ export default class extends React.Component {
         () =>
         (({ caption, image }) =>
             <Column isSize="1/3">
-                <Image isSize="96x96"
+                <Image isRatio="square"
                        src={image}
                        title={caption} />
             </Column>

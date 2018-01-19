@@ -25,7 +25,7 @@ export default () =>
                                 href="https://twitter.com/danmaq"
                                 target="_blank"
                                 isSize="large">
-                            <Icon i="twitter" size={4} />
+                            <Icon i="twitter" size={3} />
                         </Button>
                     </Column>
                     <Column hasTextAlign="centered">
@@ -33,7 +33,7 @@ export default () =>
                                 href="https://github.com/danmaq"
                                 target="_blank"
                                 isSize="large">
-                            <Icon i="github" size={4} />
+                            <Icon i="github" size={3} />
                         </Button>
                     </Column>
                 </Columns>
@@ -45,7 +45,7 @@ export default () =>
                                 href="http://com.nicovideo.jp/community/co2711221"
                                 target="_blank"
                                 isSize="large">
-                            <Image isSize="96x96"
+                            <Image isSize="64x64"
                                    src={Niconico} />
                         </Button>
                     </Column>
@@ -54,7 +54,7 @@ export default () =>
                                 href="https://pixiv.me/danmaq"
                                 target="_blank"
                                 isSize="large">
-                            <Image isSize="96x96"
+                            <Image isSize="64x64"
                                    src={Pixiv} />
                         </Button>
                     </Column>
