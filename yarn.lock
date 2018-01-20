@@ -3174,9 +3174,9 @@ gatsby-react-router-scroll@^1.0.8:
     scroll-behavior "^0.9.1"
     warning "^3.0.0"
 
-gatsby@^1.9.153:
-  version "1.9.157"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.157.tgz#b9fee3bc27bffe606a325f4086c4370b04dbc26f"
+gatsby@^1.9.163:
+  version "1.9.163"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.163.tgz#d122019bd09aa0dd84c72e2c4662e028aafc993e"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -4218,8 +4218,8 @@ isemail@2.x.x:
   resolved "https://registry.yarnpkg.com/isemail/-/isemail-2.2.1.tgz#0353d3d9a62951080c262c2aa0a42b8ea8e9e2a6"
 
 isemail@3.x.x:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.0.0.tgz#c89a46bb7a3361e1759f8028f9082488ecce3dff"
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.1.0.tgz#d15156d67529d48241bc0e644df28281e21dd458"
   dependencies:
     punycode "2.x.x"
 
@@ -7910,8 +7910,8 @@ trim-right@^1.0.1:
     glob "^6.0.4"
 
 tslib@^1.7.0:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.8.1.tgz#6946af2d1d651a7b1863b531d6e5afa41aa44eac"
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/tslib/-/tslib-1.9.0.tgz#e37a86fda8cbbaf23a057f473c9f4dc64e5fc2e8"
 
 tty-browserify@0.0.0:
   version "0.0.0"
