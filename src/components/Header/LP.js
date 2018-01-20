@@ -1,24 +1,13 @@
 'use strict';
 
 import React from 'react';
-import Link from 'gatsby-link';
-import {
-    Navbar,
-    NavbarBrand,
-    NavbarBurger,
-    NavbarEnd,
-    NavbarItem,
-    NavbarMenu,
-    NavbarStart,
-} from 'bloomer';
+import { NavbarItem } from 'bloomer';
+import classNames from 'classnames';
 
-import Icon from '~/src/components/Icon';
-
-import LogoInv from '~/src/assets/logo/logoInv.svg';
+import Header from './';
 
 /**
  * @typedef {object} Header.state
- * @property {boolean} active
  * @property {boolean} expand
  */
 
@@ -28,7 +17,7 @@ export default class extends React.Component {
      * Current state.
      * @type {Header.state}
      */
-    state = { active: false, expand: true };
+    state = { expand: true };
 
     /** Invoked just after mounting this component. */
     componentDidMount =
@@ -41,49 +30,22 @@ export default class extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        (({ active }) =>
-            <Navbar className={this._className()}
-                    role="header"
-                    isTransparent>
-                <NavbarBrand>
-                    <NavbarItem>
-                        <Link to="/#">
-                            <img alt="danmaq"
-                                src={LogoInv}
-                                width="282"
-                                height="100" />
-                        </Link>
-                    </NavbarItem>
-                    <NavbarBurger isActive={active}
-                                  onClick={() => this.setState(p => ({...p, active: !active }))} />
-                </NavbarBrand>
-                <NavbarMenu isActive={active} role="navigation">
-                    <NavbarStart>
-                        <NavbarItem href="#works">Works</NavbarItem>
-                        <NavbarItem href="#about">About</NavbarItem>
-                        <NavbarItem href="#contact">Contact</NavbarItem>
-                        <NavbarItem href="#blog">Blog</NavbarItem>
-                    </NavbarStart>
-                    <NavbarEnd>
-                        <NavbarItem href="https://github.com/danmaq"
-                                    target="_blank">
-                            <Icon i="github" size={2} />
-                        </NavbarItem>
-                        <NavbarItem href="https://twitter.com/danmaq"
-                                    target="_blank">
-                            <Icon i="twitter" size={2} />
-                        </NavbarItem>
-                    </NavbarEnd>
-                </NavbarMenu>
-            </Navbar>
-        )(this.state);
+        <Header className={this._className()}>
+            <NavbarItem href="#works">Works</NavbarItem>
+            <NavbarItem href="#about">About</NavbarItem>
+            <NavbarItem href="#contact">Contact</NavbarItem>
+            <NavbarItem href="#blog">Blog</NavbarItem>
+        </Header>;
 
     /** Create CSS class name of header. */
     _className =
         () =>
         (({ expand }) =>
-            `is-fixed-top ${expand ? 'dmq-navbar-expand is-black' : 'is-light'}`)(
-            this.state);
+            classNames(
+                'is-fixed-top',
+                ({ 'dmq-navbar-expand is-black': expand }),
+                ({ 'is-light': !expand })
+            ))(this.state);
 
     /** Invoked when scrolling the screen. */
     _onScroll =
