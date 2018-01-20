@@ -42,6 +42,7 @@ $addColors: ("dmqlight": ($dmqlight, $dmqlight-inv), "dmqdark": ($dmqdark, $dmqd
 $colors: map-merge($colors, $addColors);
 @import "~bulma";
 // Customize ==============================================
+@import "columns";
 @import "iframe";
 body {
     background-color: $white-bis;
@@ -60,13 +61,15 @@ body {
     font-size: 1.5rem;
 }
 
+.footer {
+    box-shadow: 0 -1px 3px $dmqdark, 0 0 0 1px $dmqdark;
+}
+
+.title {
+    font-weight: 100;
+}
+
 #dmq {
-    .footer {
-        box-shadow: 0 -1px 3px $dmqdark, 0 0 0 1px $dmqdark;
-    }
-    .title {
-        font-weight: 100;
-    }
     .card.dmq-dept {
         background-color: $white-bis;
         box-shadow: none;

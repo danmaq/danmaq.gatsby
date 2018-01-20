@@ -1,0 +1,23 @@
+.columns {
+    @include tablet {
+        &:not(.is-widescreen) {
+            display: flex;
+        }
+        &.is-widescreen {
+            display: block;
+        }
+    }
+    @include desktop {
+        &:not(.is-widescreen) {
+            display: flex;
+        }
+        &.is-widescreen {
+            display: block;
+        }
+    }
+    @include widescreen {
+        &.is-widescreen {
+            display: flex;
+        }
+    }
+}
