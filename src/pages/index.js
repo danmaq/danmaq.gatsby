@@ -10,11 +10,13 @@ import Hero from '~/src/components/LP/Hero';
 import Works from '~/src/components/LP/Works';
 
 export default () =>
-<div id="lp" role="main">
+<div id="lp">
     <Header />
     <Hero />
-    <Works />
-    <About />
-    <Contact />
-    <Blog />
+    <div role="main">
+        <Works />
+        <About />
+        <Contact />
+        <Blog />
+    </div>    
 </div>;

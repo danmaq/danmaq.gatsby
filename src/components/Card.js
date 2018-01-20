@@ -45,7 +45,7 @@ export default class extends React.Component {
                                 &nbsp;
                                 <time dateTime="2017-01-23T19:00">
                                     2017/1/23 19:00
-                                </time>    
+                                </time>
                             </p>
                         </Content>
                     </CardContent>

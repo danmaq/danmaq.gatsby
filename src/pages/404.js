@@ -30,7 +30,7 @@ export default () =>
             </Container>
         </HeroBody>
     </Hero>
-    <Container>
+    <Container role="main">
         <Columns>
             <Column isSize={7}>
                 <Image  isRatio="1:1" src={NotFound} />
