@@ -23,16 +23,3 @@ export default class extends React.Component {
         image: PropTypes.string.isRequired,
     };
 };
-
-/*
-            <Col xs={4}>
-                <Image className="dmq-achievement"
-                       alt={caption}
-                       src={image}
-                       title={caption}
-                       width={SIZE}
-                       height={SIZE}
-                       rounded />
-            </Col>
-
-*/

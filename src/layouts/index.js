@@ -6,7 +6,6 @@ import Helmet from 'react-helmet';
 import 'font-awesome/scss/font-awesome.scss';
 
 import Footer from '~/src/components/Footer';
-import Header from '~/src/components/Header';
 import './index.scss';
 
 export default class extends React.Component {
@@ -27,7 +26,6 @@ export default class extends React.Component {
                     <meta name="keywords"
                           content="Touhou CtC, Concealed the Conclusion, 夢終劇" />
                 </Helmet>
-                <Header />
                 {children()}
                 <Footer />
             </div>
