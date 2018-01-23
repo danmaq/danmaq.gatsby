@@ -9,7 +9,7 @@ import Contact from '~/src/components/LP/Contact';
 import Hero from '~/src/components/LP/Hero';
 import Works from '~/src/components/LP/Works';
 
-export default () =>
+export default ({ data: { allMarkdownRemark: { edges } } }) =>
 <div id="lp">
     <Header />
     <Hero />
@@ -17,6 +17,29 @@ export default () =>
         <Works />
         <About />
         <Contact />
-        <Blog />
-    </div>    
+        <Blog items={edges} />
+    </div>
 </div>;
+
+export const query =
+    graphql `
+query recent {
+    allMarkdownRemark(
+        sort: {fields: [frontmatter___date], order: DESC},
+        limit: 3,
+        filter: {frontmatter: {draft: {eq: false}}}
+    ) {
+        totalCount
+        edges {
+            node {
+                id
+                frontmatter {
+                    title
+                    date: date
+                    strdate: date(formatString: "YYYY/M/D")
+                }
+                excerpt
+            }
+        }
+    }
+}`

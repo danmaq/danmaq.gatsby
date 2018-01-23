@@ -4,7 +4,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import {
-    Button,
     Card,
     CardContent,
     CardHeader,
@@ -18,12 +17,12 @@ import {
 import Mark from '~/src/assets/logo/mark.svg';
 
 /** Common card component for LP. */
-export default class extends React.Component {
+export default class Article extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        (({ caption, detail, href, image }) =>
-            <Column>
+        (({ caption, date, detail, href, image, strDate }) =>
+            <Column className="is-3 is-3-fullhd is-4-widescreen is-6-desktop is-6-tablet is-12-mobile">
                 <Card>
                     <CardImage>
                         <Image isRatio="16:9" src={image} />
@@ -43,9 +42,7 @@ export default class extends React.Component {
                                     もっと見る
                                 </Link>
                                 &nbsp;
-                                <time dateTime="2017-01-23T19:00">
-                                    2017/1/23 19:00
-                                </time>
+                                <time dateTime={date}>{strDate}</time>
                             </p>
                         </Content>
                     </CardContent>
@@ -56,11 +53,23 @@ export default class extends React.Component {
     /** Property types. */
     static propTypes = {
         caption: PropTypes.node.isRequired,
+        date: PropTypes.string,
         detail: PropTypes.string.isRequired,
         href: PropTypes.string,
         image: PropTypes.string.isRequired,
+        strDate: PropTypes.string,
     };
 
     /** Default Properties. */
     static defaultProps = { image: Mark };
+
+    /** Create an article element. */
+    static create =
+        ({ node: { frontmatter: { title, date, strdate }, excerpt } }, key) =>
+        <Article key={key}
+                 href="blog"
+                 date={date}
+                 strDate={strdate}
+                 caption={title}
+                 detail={excerpt} />
 };

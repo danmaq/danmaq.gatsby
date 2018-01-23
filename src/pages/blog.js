@@ -14,7 +14,7 @@ import {
 } from 'bloomer';
 import Link from 'gatsby-link';
 
-import Card from '~/src/components/Card';
+import Article from '~/src/components/Article';
 import Header from '~/src/components/Header';
 
 import Comiket from '~/src/assets/LP/photo/comiket.jpg';
@@ -22,26 +22,66 @@ import Enna from '~/src/assets/LP/photo/enna.jpg';
 import ReactNative from '~/src/assets/LP/icon/react.svg';
 import Workshop from '~/src/assets/LP/photo/workshop.jpg';
 
-export default () =>
+const cards =
+    ({ node: { frontmatter: { title, date, strdate }, excerpt } }) =>
+    <Article href="blog"
+             date={date}
+             strDate={strdate}
+             caption={title}
+             detail={excerpt} />
+
+export default ({ data: { allMarkdownRemark: { totalCount, edges } } }) =>
 <div>
     <Helmet>
-        <title>Genesis 1</title>
+        <title>Blog</title>
     </Helmet>
     <Header />
     <Hero>
         <HeroBody>
             <Container>
-                <Title isSize={2} tag="h1">Genesis 1</Title>
+                <Title isSize={2} tag="h1">Blog</Title>
             </Container>
         </HeroBody>
     </Hero>
+    <section className="container">
+        <p>{totalCount} 件の記事</p>
+        <Columns isMultiline>
+            {edges.map(Article.create)}
+        </Columns>
+    </section>
+</div>;
+
+export const query =
+    graphql `
+query AboutQuery {
+    allMarkdownRemark(
+        sort: {fields: [frontmatter___date], order: DESC},
+        limit: 24,
+        filter: {frontmatter: {draft: {eq: false}}}
+    ) {
+        totalCount
+        edges {
+            node {
+                id
+                frontmatter {
+                    title
+                    date: date
+                    strdate: date(formatString: "YYYY/M/D")
+                }
+                excerpt
+            }
+        }
+    }
+}`
+
+/*
     <aside className="container">
         投稿日時: <time dateTime="2017-01-23T19:00">2017/1/23 19:00</time>
         &nbsp;<wbr />
         更新日時: <time dateTime="2017-01-23T19:00">2017/1/23 19:00</time>
     </aside>
-    <section className="container">
-        <Columns isCentered>
+
+    <Columns isCentered>
             <Column isHidden="touch" isSize={1} />
             <Column isSize={10}>
                 <Content isSize="medium">
@@ -58,8 +98,8 @@ export default () =>
             </Column>
             <Column isHidden="touch" isSize={1} />
         </Columns>
-    </section>
-    <Hero>
+
+            <Hero>
         <HeroBody>
             <Container hasTextAlign='centered'>
                 <Title isSize={3} tag="h2">関連記事</Title>
@@ -93,4 +133,5 @@ export default () =>
             </Column>
         </Columns>
     </Container>
-</div>;
+
+*/
