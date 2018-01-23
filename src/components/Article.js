@@ -53,11 +53,11 @@ export default class Article extends React.Component {
     /** Property types. */
     static propTypes = {
         caption: PropTypes.node.isRequired,
-        date: PropTypes.string,
+        date: PropTypes.string.isRequired,
         detail: PropTypes.string.isRequired,
         href: PropTypes.string,
         image: PropTypes.string.isRequired,
-        strDate: PropTypes.string,
+        strDate: PropTypes.string.isRequired,
     };
 
     /** Default Properties. */
@@ -65,9 +65,19 @@ export default class Article extends React.Component {
 
     /** Create an article element. */
     static create =
-        ({ node: { frontmatter: { title, date, strdate }, excerpt } }, key) =>
+        ({
+            node: {
+                frontmatter: {
+                    title,
+                    date,
+                    strdate
+                },
+                fields: { slug },
+                excerpt
+            }
+        }, key) =>
         <Article key={key}
-                 href="blog"
+                 href={slug}
                  date={date}
                  strDate={strdate}
                  caption={title}

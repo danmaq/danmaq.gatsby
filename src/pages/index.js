@@ -38,6 +38,7 @@ query recent {
                     date: date
                     strdate: date(formatString: "YYYY/M/D")
                 }
+                fields { slug }
                 excerpt
             }
         }
