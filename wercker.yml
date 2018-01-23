@@ -5,3 +5,6 @@ build:
   - script:
       name: Installing Dependencies.
       code: yarn install
+  - script:
+      name: Deploy.
+      code: yarn run deploy

@@ -1,13 +1,3 @@
-# gatsby-starter-default
-The default Gatsby starter
+[![wercker status](https://app.wercker.com/status/26864a7cf5763cb74033660b80d8f3d1/s/master "wercker status")](https://app.wercker.com/project/byKey/26864a7cf5763cb74033660b80d8f3d1)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
+# Gatsby theme for danmaq.com
