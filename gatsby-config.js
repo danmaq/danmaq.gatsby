@@ -8,12 +8,17 @@ module.exports = {
         'gatsby-plugin-sass',
         'gatsby-transformer-remark',
         {
-            resolve: 'gatsby-source-filesystem',
             options: {
                 excerpt_separator: `<!-- end -->`,
                 name: 'posts',
-                path: '${__dirname}/danmaq.article/posts',
+                path: `${__dirname}/danmaq.article/posts`,
             },
+            plugins: [{
+                ignoreFileExtensions: [],
+                options: { destinationDir: '.' },
+                resolve: 'gatsby-remark-copy-linked-files',
+            }],
+            resolve: 'gatsby-source-filesystem',
         }
     ],
     siteMetadata: { title: 'danmaq' },
