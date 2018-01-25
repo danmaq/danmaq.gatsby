@@ -13,19 +13,25 @@ import {
     Image,
     Title,
 } from 'bloomer';
+import _ from 'lodash';
 
 import Mark from '~/src/assets/logo/mark.svg';
+
+const more = 'もっと見る';
 
 /** Common card component for LP. */
 export default class Article extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        (({ caption, date, detail, href, image, strDate }) =>
+        (({ caption, date, detail, href, strDate }) =>
             <Column className="is-3 is-3-fullhd is-4-widescreen is-6-desktop is-6-tablet is-12-mobile">
                 <Card>
                     <CardImage>
-                        <Image isRatio="16:9" src={image} />
+                        <Link to={href}
+                              role="link">
+                            {this._image()}    
+                        </Link>
                     </CardImage>
                     <CardHeader>
                         <Title className="card-header-title" tag="h3">
@@ -39,7 +45,7 @@ export default class Article extends React.Component {
                                 <Link className='button is-link'
                                       to={href}
                                       role="link">
-                                    もっと見る
+                                    {more}
                                 </Link>
                                 &nbsp;
                                 <time dateTime={date}>{strDate}</time>
@@ -50,18 +56,32 @@ export default class Article extends React.Component {
             </Column>
         )(this.props);
 
+    _image =
+        () =>
+        (({ caption, imageSrc, imageSrcSet, imageSrcSizes }) =>
+            <figure className="image is-16by9">
+                <img alt={more}
+                     sizes={imageSrcSizes}
+                     src={imageSrc}
+                     srcSet={imageSrcSet}
+                     title={caption} />
+            </figure>
+        )(this.props);
+
     /** Property types. */
     static propTypes = {
         caption: PropTypes.node.isRequired,
         date: PropTypes.string.isRequired,
         detail: PropTypes.string.isRequired,
         href: PropTypes.string,
-        image: PropTypes.string.isRequired,
+        imageSrc: PropTypes.string,
+        imageSrcSet: PropTypes.string,
+        imageSrcSizes: PropTypes.string,
         strDate: PropTypes.string.isRequired,
     };
 
     /** Default Properties. */
-    static defaultProps = { image: Mark };
+    static defaultProps = { imageSrc: Mark };
 
     /** Create an article element. */
     static create =
@@ -80,7 +100,9 @@ export default class Article extends React.Component {
         <Article key={key}
                  href={slug}
                  date={date}
-                 image={cover ? cover.childImageSharp.responsiveSizes.src : Mark}
+                 imageSrc={_.get(cover, 'childImageSharp.responsiveSizes.src')}
+                 imageSrcSet={_.get(cover, 'childImageSharp.responsiveSizes.srcSet')}
+                 imageSrcSizes={_.get(cover, 'childImageSharp.responsiveSizes.sizes')}
                  strDate={strDate}
                  caption={title}
                  detail={excerpt} />

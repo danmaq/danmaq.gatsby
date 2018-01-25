@@ -37,13 +37,9 @@ query recent {
                     cover {
                         childImageSharp {
                             responsiveSizes {
-                                base64
-                                aspectRatio
                                 src
                                 srcSet
                                 sizes
-                                originalImg
-                                originalName
                             }
                         }
                     }

@@ -96,9 +96,18 @@ query post($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
         html
         frontmatter {
-            title
+            cover {
+                childImageSharp {
+                    responsiveSizes {
+                        src
+                        srcSet
+                        sizes
+                    }
+                }
+            }
             date: date
             strDate: date(formatString: "YYYY/M/D")
+            title
         }
     }
 }`;

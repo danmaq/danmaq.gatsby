@@ -45,13 +45,9 @@ query all {
                     cover {
                         childImageSharp {
                             responsiveSizes {
-                                base64
-                                aspectRatio
                                 src
                                 srcSet
                                 sizes
-                                originalImg
-                                originalName
                             }
                         }
                     }
