@@ -33,18 +33,31 @@ export const query =
     graphql `
 query all {
     allMarkdownRemark(
-        sort: {fields: [frontmatter___date], order: DESC},
+        sort: { fields: [frontmatter___date], order: DESC },
         limit: 24,
-        filter: {frontmatter: {draft: {eq: false}}}
+        filter: { frontmatter: { draft: { eq: false } } }
     ) {
         totalCount
         edges {
             node {
                 id
                 frontmatter {
-                    title
+                    cover {
+                        childImageSharp {
+                            responsiveSizes {
+                                base64
+                                aspectRatio
+                                src
+                                srcSet
+                                sizes
+                                originalImg
+                                originalName
+                            }
+                        }
+                    }
                     date: date
-                    strdate: date(formatString: "YYYY/M/D")
+                    strDate: date(formatString: "YYYY/M/D")
+                    title
                 }
                 fields { slug }
                 excerpt

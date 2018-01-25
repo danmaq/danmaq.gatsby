@@ -16,7 +16,7 @@ export default class extends React.Component {
         (({ items }) =>
             <Section id="blog">
                 <Heading caption="Blog"
-                         detail="直近 3 件の新着ブログ記事を掲載します。" />
+                        detail={`直近 ${items.length} 件の新着ブログ記事を掲載します。`} />
                 <Columns isCentered isMultiline>
                     {items.map(Article.create)}
                 </Columns>

@@ -68,18 +68,20 @@ export default class Article extends React.Component {
         ({
             node: {
                 frontmatter: {
-                    title,
+                    cover,
                     date,
-                    strdate
+                    strDate,
+                    title,
                 },
                 fields: { slug },
-                excerpt
+                excerpt,
             }
         }, key) =>
         <Article key={key}
                  href={slug}
                  date={date}
-                 strDate={strdate}
+                 image={cover ? cover.childImageSharp.responsiveSizes.src : Mark}
+                 strDate={strDate}
                  caption={title}
                  detail={excerpt} />
 };
