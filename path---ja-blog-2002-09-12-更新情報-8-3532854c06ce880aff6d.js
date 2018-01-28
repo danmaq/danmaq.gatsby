@@ -1,0 +1,2 @@
+webpackJsonp([0xfcb85b14f521],{3570:function(a,t){a.exports={data:{markdownRemark:{html:'<p><a href="/kira-kira">KIRA☆KIRA</a>の解説文を追加。</p>',frontmatter:{cover:null,date:"2002-09-12T00:00:00+09:00",strDate:"2002/9/11",title:"更新情報"}}},pathContext:{path:"/ja/blog/2002/09/12-更新情報-8/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2002-09-12-更新情報-8-3532854c06ce880aff6d.js.map

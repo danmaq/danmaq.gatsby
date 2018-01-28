@@ -1,0 +1,2 @@
+webpackJsonp([0x7eb9f995c858],{3936:function(t,a){t.exports={data:{markdownRemark:{html:"<p>プログラムが思い通りに動いたり動かなかったりを見てるとまるで自分のプログラムがデジタルペットのように見えてくる。そして画面に「おーいい子だ」とか「なんでそう動くかなぁ」とか「ごめん俺が悪かった。ここ書き忘れてたんだな」とか自然と語りかけてしまう俺もうダメかも 'Ａ｀</p>",frontmatter:{cover:null,date:"2006-03-16T23:38:00+09:00",strDate:"2006/3/16",title:"プログラミングと独り言"}}},pathContext:{path:"/ja/blog/2006/03/16-プログラミングと独り言/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-03-16-プログラミングと独り言-1e922bc26a5d6426da7a.js.map

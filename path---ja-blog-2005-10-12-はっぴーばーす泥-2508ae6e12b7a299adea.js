@@ -1,0 +1,2 @@
+webpackJsonp([71218137990451],{3845:function(t,a){t.exports={data:{markdownRemark:{html:'<p>今日は自分の誕生日だったりするので、オメとか揉めとか怨めとか書きたい方は<a href="https://twitter.com/danmaq">こちらにﾄﾞｿﾞｰ</a> <a href="/emeditor-danmakufu">EmEditor用東方弾幕風構文ファイル</a>を更新、弾幕風v0.12fの新関数に対応しました。</p>',frontmatter:{cover:null,date:"2005-10-12T08:15:00+09:00",strDate:"2005/10/11",title:"はっぴーばーす泥"}}},pathContext:{path:"/ja/blog/2005/10/12-はっぴーばーす泥/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-10-12-はっぴーばーす泥-2508ae6e12b7a299adea.js.map

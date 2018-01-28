@@ -1,0 +1,2 @@
+webpackJsonp([0xca04b0ebf0f5],{3523:function(t,a){t.exports={data:{markdownRemark:{html:"<p>またも懲りずにリニューアル。そのついでにリンク整理。</p>",frontmatter:{cover:null,date:"2001-07-15T00:00:00+09:00",strDate:"2001/7/14",title:"リニューアル"}}},pathContext:{path:"/ja/blog/2001/07/15-リニューアル/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2001-07-15-リニューアル-3f429b076d6cc3e08607.js.map

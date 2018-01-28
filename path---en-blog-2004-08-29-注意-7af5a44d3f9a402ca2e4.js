@@ -1,0 +1,2 @@
+webpackJsonp([0xae2fce2d8d10],{2714:function(t,e){t.exports={data:{markdownRemark:{html:"<ul>\n<li>Modification is self-responsibility. Even though I worked well, your YB - 1 may not work as well.</li>\n</ul>",frontmatter:{cover:null,date:"2004-08-29T00:00:59+09:00",strDate:"2004/8/28",title:"Caution"}}},pathContext:{path:"/en/blog/2004/08/29-注意/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2004-08-29-注意-7af5a44d3f9a402ca2e4.js.map

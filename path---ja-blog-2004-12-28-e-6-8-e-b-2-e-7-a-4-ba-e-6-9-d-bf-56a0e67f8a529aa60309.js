@@ -1,0 +1,2 @@
+webpackJsonp([0x9af7c4da5a79],{3734:function(a,t){a.exports={data:{markdownRemark:{html:'<p>凍結中です。コンタクトを取りたい方は<a href="http://twitter.com/danmaq">Twitter(@danmaq)</a>へどうぞ。</p>',frontmatter:{cover:null,date:"2004-12-28T00:00:01+09:00",strDate:"2004/12/27",title:"掲示板"}}},pathContext:{path:"/ja/blog/2004/12/28-%e6%8e%b2%e7%a4%ba%e6%9d%bf/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-12-28-e-6-8-e-b-2-e-7-a-4-ba-e-6-9-d-bf-56a0e67f8a529aa60309.js.map

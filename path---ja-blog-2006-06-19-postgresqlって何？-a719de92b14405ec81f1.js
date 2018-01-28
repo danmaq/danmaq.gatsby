@@ -1,0 +1,2 @@
+webpackJsonp([1893880738296],{3987:function(t,e){t.exports={data:{markdownRemark:{html:"<p>今日仕事で「PostgreSQLって何？」って先輩に聞かれた。まぁいわゆるデータベースシステムの仲間なんだけど、課題が修羅場ってて説明するのがやたらめどかったんで、 <em>「プログレの仲間ですよ？」</em> って返事したら満足そうな顔で納得して去っていった。 しまった間違った知識植えてしまったと気付いた時は時既に遅し。まぁ、ほら語呂だって似てるし ＾―＾</p>",frontmatter:{cover:null,date:"2006-06-19T20:17:00+09:00",strDate:"2006/6/19",title:"PostgreSQLって何？"}}},pathContext:{path:"/ja/blog/2006/06/19-postgresqlって何？/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-06-19-postgresqlって何？-a719de92b14405ec81f1.js.map

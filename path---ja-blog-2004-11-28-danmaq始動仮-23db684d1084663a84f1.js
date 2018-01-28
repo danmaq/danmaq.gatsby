@@ -1,0 +1,2 @@
+webpackJsonp([0xa0770811b024],{3724:function(a,t){a.exports={data:{markdownRemark:{html:"<p>“MAKINA-CITY”は今後東方STGの二次創作をメインにしていく方針でサイト名を“danmaq - ダンマク”と変更しリニューアルしました。サイト復帰遅れてゴメンナサイ。 とりあえず仮アップ完了しました。現在使ってるこのレンタルサーバの期限が今年一杯までなので多分1ヶ月以内に移転すると思います。今は創作物に闘魂注入していますので移転まではイマイチやる気のなさそうなサイト更新になるとは思いますがご了承くださいな。</p>",frontmatter:{cover:null,date:"2004-11-28T00:00:59+09:00",strDate:"2004/11/27",title:"danmaq始動(仮)"}}},pathContext:{path:"/ja/blog/2004/11/28-danmaq始動仮/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-11-28-danmaq始動仮-23db684d1084663a84f1.js.map

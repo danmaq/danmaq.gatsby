@@ -1,0 +1,2 @@
+webpackJsonp([0xca38a95492d2],{3423:function(t,a){t.exports={data:{markdownRemark:{html:"<p>自画像を写真に撮ってもらい現像、それをもとにデッサンしたもの。 人を描く力が非常に弱かったので、その修業がしたかった。 結果として大して上手くはならなかったが、成果は少なくともゼロではなかったと思う。</p>",frontmatter:{cover:null,date:"1999-04-22T11:00:44+09:00",strDate:"1999/4/22",title:"自画像"}}},pathContext:{path:"/ja/blog/1999/04/22-self-portrait/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-1999-04-22-self-portrait-6f4840751bebb81c7a8e.js.map

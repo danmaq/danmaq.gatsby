@@ -1,0 +1,2 @@
+webpackJsonp([0x9a877176071c],{2446:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Art with tree skin glued together.</p>",frontmatter:{cover:null,date:"1996-11-11T11:00:26+09:00",strDate:"1996/11/11",title:"Battle of beetle duel"}}},pathContext:{path:"/en/blog/1996/11/11-rhinoceros-beetle/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-1996-11-11-rhinoceros-beetle-2669427e630dfaa08d97.js.map

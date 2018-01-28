@@ -1,0 +1,2 @@
+webpackJsonp([0x8effda8c4dbb],{3596:function(a,t){a.exports={data:{markdownRemark:{html:'<p>別に公開してもしなくてもよさそうだけど、<a href="/category/products/apps?order=ASC">公開しました</a>。</p>',frontmatter:{cover:null,date:"2003-10-28T00:00:26+09:00",strDate:"2003/10/27",title:"昔の自作ゲームソフト"}}},pathContext:{path:"/ja/blog/2003/10/28-昔の自作ゲームソフト/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2003-10-28-昔の自作ゲームソフト-125d62fc5d0bf6b80f18.js.map

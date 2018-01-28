@@ -1,0 +1,2 @@
+webpackJsonp([22280078004150],{3615:function(t,a){t.exports={data:{markdownRemark:{html:'<p>やはり<a href="http://px.a8.net/svt/ejp?a8mat=2NBUD6+FJNHF6+D8Y+C1DUR">さくらインターネット</a>に移転しよう。有料サーバだが急遽自作チャットに人工無能を組み込んでみたくなったし、そうなるとかなり高負荷になるだろうから isweb にも目をつけられかねない。丁度いいところに現在使ってないドメインがあるし。あと、今朝覗いたら掲示板が死んでたみたいだから(昨日も死んでたのでサービス終了したのかな？)そしたらまた自作掲示板置くか……。</p>',frontmatter:{cover:null,date:"2004-02-08T00:00:00+09:00",strDate:"2004/2/7",title:"無題"}}},pathContext:{path:"/ja/blog/2004/02/08-無題-3/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-02-08-無題-3-f5ef5d324bfbf8caccf4.js.map

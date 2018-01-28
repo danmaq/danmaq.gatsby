@@ -1,0 +1,2 @@
+webpackJsonp([84588518725319],{3683:function(a,t){a.exports={data:{markdownRemark:{html:'<p><a href="/?tag=reimu+contrafactum">ショートストーリー</a>を追加。 <a href="/3169">東方モノイラスト</a>、背景画像を一部追加。 サイト内一部の背景が途切れる不都合を修正。 あとは、<a href="/category/release">更新履歴</a>が長ったらしくなってきたので古いのをカット。</p>',frontmatter:{cover:null,date:"2004-08-31T21:37:59+09:00",strDate:"2004/8/31",title:"東方モノコンテンツ追加"}}},pathContext:{path:"/ja/blog/2004/08/31-東方モノコンテンツ追加/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-08-31-東方モノコンテンツ追加-0a18e9555b155db7268c.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([9110169804803],{3807:function(t,a){t.exports={data:{markdownRemark:{html:'<p>はい、皆様大変お待たせしました。製作工程上、予定より1ヶ月くらい遅れてしまいましたが(遅れすぎやろ＞自分)、ステージ3をメインに小機能など諸々を追加した<a href="/!/thA/">東方時封城 ～ the Alternative Age</a>の体験版Bを公開しました。 なんとか10万アクセスカウントには間に合ったようで何より。では、引き続き完全版の総仕上げに入るので体験版B公開のみの更新で。</p>',frontmatter:{cover:null,date:"2005-07-04T00:00:00+09:00",strDate:"2005/7/3",title:"東方時封城(体験版B) 配布開始"}}},pathContext:{path:"/ja/blog/2005/07/04-東方時封城体験版b-配布開始/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-07-04-東方時封城体験版b-配布開始-b7f6621692006a68cc87.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([4031145687772],{2980:function(t,e){t.exports={data:{markdownRemark:{html:"<p>I've burned in the sky and curry and hot pot, both are bubbles ... what are you doing, what am I doing orz</p>",frontmatter:{cover:null,date:"2006-03-17T19:04:00+09:00",strDate:"2006/3/17",title:"Retort curry"}}},pathContext:{path:"/en/blog/2006/03/17-レトルトカレー/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2006-03-17-レトルトカレー-6bdfd23540eed8517c73.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([0xcd63a20100e4],{4006:function(t,a){t.exports={data:{markdownRemark:{html:"<p>なんか左クリックの効きが悪い……買い換えたいのは山々だが他に買うべきものが多数あるからなぁ 'Ａ｀ ボタンに指が触れる直前に既にクリックされてるマウスとかあったら面白そうだなぁ 'Ａ｀ 他にも電源ボタンを押す3秒前に勝手に立ち上がるPCとか、 ゲームを立ち上げる3秒前に3D表示し始めるせっかちな3Dカードとか、インストール時に既に自分の名前が入力されてるWindowsとか、アドレス入力中に送信しはじめちゃうメールソフトとかないかなぁ～</p>",frontmatter:{cover:null,date:"2006-07-31T00:48:00+09:00",strDate:"2006/7/30",title:"（´・ω・｀）マウス"}}},pathContext:{path:"/ja/blog/2006/07/31-（・ω・｀）マウス/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-07-31-（・ω・｀）マウス-51a904d7da9646fc7f16.js.map

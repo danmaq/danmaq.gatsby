@@ -1,0 +1,2 @@
+webpackJsonp([0xb5305e525ea9],{3848:function(t,a){t.exports={data:{markdownRemark:{html:"<p>「兄貴いい加減部屋片付けろよ」 「誰の所為でこんな散らかったと思っているんだ」 「俺がいくら散らかしても片付けない兄貴が悪い」 ('A｀)</p>",frontmatter:{cover:null,date:"2005-10-20T18:19:00+09:00",strDate:"2005/10/20",title:"弟との会話"}}},pathContext:{path:"/ja/blog/2005/10/20-弟との会話/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-10-20-弟との会話-2ad4511855d3dc37ba27.js.map

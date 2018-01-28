@@ -1,0 +1,2 @@
+webpackJsonp([38899738648767],{4242:function(t,a){t.exports={data:{markdownRemark:{html:'<p>過去に作ったイラストや3DCGを掲載しています。</p>\n<p>最近<a href="http://www.pixiv.net/member.php?id=165645">Pixiv(ID:165645)</a>に投稿してて、ここはちょっと古いままになっています。そのうちなんとかしなきゃ</p>',frontmatter:{cover:null,date:"2012-09-14T10:12:37+09:00",strDate:"2012/9/14",title:"このページについて"}}},pathContext:{path:"/ja/blog/2012/09/14-このページについて/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2012-09-14-このページについて-5a437b1d73f067139d72.js.map

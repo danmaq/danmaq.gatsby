@@ -1,0 +1,2 @@
+webpackJsonp([0xe6ce7e322850],{3677:function(a,t){a.exports={data:{markdownRemark:{html:'<p>“紅魔郷Extra : <a href="/tag/touhou-eosd-phantasm">紅魔郷Phantasm</a>”に対して、“妖々夢Phantasm : 妖々夢外伝 幻寇戦乱録(これ)”に該当する難易度です。本家のLunaticがそれなりにクリアできる方なら結構普通にクリアできる程度です。本家のPhantasmが安定してクリアできる方ならうまく決めボムを多用してチキンプレイすればかろうじてクリアできる程度です。</p>',frontmatter:{cover:null,date:"2004-08-30T00:17:58+09:00",strDate:"2004/8/29",title:"難易度"}}},pathContext:{path:"/ja/blog/2004/08/30-難易度/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-08-30-難易度-5871d330363aef203b20.js.map

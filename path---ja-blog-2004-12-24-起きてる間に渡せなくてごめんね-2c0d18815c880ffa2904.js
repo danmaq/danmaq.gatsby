@@ -1,0 +1,2 @@
+webpackJsonp([0xaf967dc2fce1],{3728:function(t,a){t.exports={data:{markdownRemark:{html:"<p>(幽々子様は今日一日姿すら見せなかったですね…) (プレゼントのことなんて、考えてもいないんでしょうね…) (仕方ない、お嬢様はキリシタンじゃないし) (でも、やっぱ寂しい…みょん) (…ぇぐ…クスン…) …Zzzzz…</p>",frontmatter:{cover:null,date:"2004-12-24T23:19:00+09:00",strDate:"2004/12/24",title:"起きてる間に渡せなくてごめんね"}}},pathContext:{path:"/ja/blog/2004/12/24-起きてる間に渡せなくてごめんね/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-12-24-起きてる間に渡せなくてごめんね-2c0d18815c880ffa2904.js.map

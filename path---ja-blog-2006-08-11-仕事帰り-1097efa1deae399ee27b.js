@@ -1,0 +1,2 @@
+webpackJsonp([0xa9d5d2c5f3e],{4009:function(t,a){t.exports={data:{markdownRemark:{html:"<p>市ヶ谷の新職場から帰ろうと有楽町線乗ったらなんかアレな本を読んでる人がちらほら。……あれ？今日って何か即売イベントあったっけ？ ……そうだ、 夏 コ ミ 1 日 目 じゃん'Ａ｀ ラスト日ばっかしか参加してないんですっかり忘れてたよ。そして家ついたら今度はR焼き修羅場が……</p>",frontmatter:{cover:null,date:"2006-08-11T19:09:00+09:00",strDate:"2006/8/11",title:"仕事帰り"}}},pathContext:{path:"/ja/blog/2006/08/11-仕事帰り/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-08-11-仕事帰り-1097efa1deae399ee27b.js.map

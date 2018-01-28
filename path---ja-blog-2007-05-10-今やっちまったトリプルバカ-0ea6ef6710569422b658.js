@@ -1,0 +1,2 @@
+webpackJsonp([0xd9007c7a2850],{4087:function(l,n){l.exports={data:{markdownRemark:{html:"<ul>\n<li>\n<p>カレー食おうとして割り箸を割ってしまった</p>\n<ul>\n<li>飯食うためにPCの上に退避させてたキーボードが崩落、<em>ベチャ</em></li>\n<li>凹んでたら買ったハーゲンダッツを忘れてて気付いたら液状化</li>\n</ul>\n</li>\n</ul>",frontmatter:{cover:null,date:"2007-05-10T19:43:00+09:00",strDate:"2007/5/10",title:"今やっちまったトリプルバカ"}}},pathContext:{path:"/ja/blog/2007/05/10-今やっちまったトリプルバカ/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2007-05-10-今やっちまったトリプルバカ-0ea6ef6710569422b658.js.map

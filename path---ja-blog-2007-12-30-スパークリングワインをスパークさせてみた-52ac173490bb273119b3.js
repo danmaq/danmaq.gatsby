@@ -1,0 +1,2 @@
+webpackJsonp([0xafb70ce40569],{4150:function(t,a){t.exports={data:{markdownRemark:{html:'<p><img src="https://danmaq.com/image/illustrations/mono/2008/spark_s.jpg" alt="スパーク！"></p>\n<p>スパークリングワインをスパークさせてみた瞬間を描いたもの。亜種としてかめはめ波でもおｋ。</p>\n<p>即興で描いた内輪ネタ。</p>',frontmatter:{cover:null,date:"2007-12-30T00:00:00+09:00",strDate:"2007/12/29",title:"スパークリングワインをスパークさせてみた"}}},pathContext:{path:"/ja/blog/2007/12/30-スパークリングワインをスパークさせてみた/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2007-12-30-スパークリングワインをスパークさせてみた-52ac173490bb273119b3.js.map

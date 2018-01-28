@@ -1,0 +1,2 @@
+webpackJsonp([96205936595961],{3102:function(t,e){t.exports={data:{markdownRemark:{html:"<p>I do not eat rice Ketchochin. Did you make the wrong amount of water? _? Today 's lunch was baked curry like this. ...... LEE × 20.ヽ (× ω ×) ノ</p>",frontmatter:{cover:null,date:"2007-01-05T15:42:00+09:00",strDate:"2007/1/5",title:"Cooking mistake"}}},pathContext:{path:"/en/blog/2007/01/05-炊飯ミス/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2007-01-05-炊飯ミス-bd4017ce831a472eee2a.js.map

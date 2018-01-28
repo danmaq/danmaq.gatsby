@@ -1,0 +1,2 @@
+webpackJsonp([0xdcd8d3c75dbe],{2968:function(t,a){t.exports={data:{markdownRemark:{html:'<p>"Are you forgetting Ananchan again, Valentine\'s chocolate, Interest is Toy?" If Ichia said such a thing, I will pay 100 yen of chocolate to the White Day and will jump ten days later ^ - ^</p>',frontmatter:{cover:null,date:"2006-02-27T22:52:00+09:00",strDate:"2006/2/27",title:"Words that I heard on my way back from work"}}},pathContext:{path:"/en/blog/2006/02/27-仕事帰りに耳にした言葉/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2006-02-27-仕事帰りに耳にした言葉-0448b0d0502d3fac33d4.js.map

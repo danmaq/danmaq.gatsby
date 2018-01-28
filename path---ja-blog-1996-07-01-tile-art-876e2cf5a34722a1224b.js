@@ -1,0 +1,2 @@
+webpackJsonp([0xe8664ffce242],{3401:function(t,a){t.exports={data:{markdownRemark:{html:"<p>夕暮れのカワセミを題材にしたタイルアート……を勘違いしまくった何か。</p>\n<p>何層も重ねることで立体感を出そうと企んだが、それはタイルアートとは呼ばない。</p>",frontmatter:{cover:null,date:"1996-07-01T11:00:19+09:00",strDate:"1996/7/1",title:"タイルアート"}}},pathContext:{path:"/ja/blog/1996/07/01-tile-art/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-1996-07-01-tile-art-876e2cf5a34722a1224b.js.map

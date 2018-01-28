@@ -1,0 +1,2 @@
+webpackJsonp([0xa57e3babcaeb],{3106:function(e,a){e.exports={data:{markdownRemark:{html:'<p>My boss "Yesterday, have you looked at the blogging shop while at work?" Subordinates "Or, I have not seen Giza!" Giza blown wwwww</p>',frontmatter:{cover:null,date:"2007-01-19T10:32:00+09:00",strDate:"2007/1/19",title:"A story heard while at work"}}},pathContext:{path:"/en/blog/2007/01/19-仕事中に聞こえた話/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2007-01-19-仕事中に聞こえた話-a4c3b6571a08dbe71d82.js.map

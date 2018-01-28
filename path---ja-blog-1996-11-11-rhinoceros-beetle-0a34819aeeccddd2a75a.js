@@ -1,0 +1,2 @@
+webpackJsonp([0xb7351f85c6d8],{3403:function(t,e){t.exports={data:{markdownRemark:{html:"<p>木の皮を貼り合わせたアート。</p>",frontmatter:{cover:null,date:"1996-11-11T11:00:26+09:00",strDate:"1996/11/11",title:"カブトムシの決闘"}}},pathContext:{path:"/ja/blog/1996/11/11-rhinoceros-beetle/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-1996-11-11-rhinoceros-beetle-0a34819aeeccddd2a75a.js.map

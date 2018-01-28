@@ -1,0 +1,2 @@
+webpackJsonp([31650575208815],{3989:function(t,a){t.exports={data:{markdownRemark:{html:"<p>東方弾幕風の作者の掲示板のアク禁に巻き込まれてしもた…… まぁプロバイダの仕様で誤爆だってのはおおよそ理解できるけど(うちのプロバイダ、IP被りが酷くて2chでも何度誤爆バーボン喰らったものか)ウチの作ってるゲームは弾幕風に強く依存してるからなぁ……  とりあえずメール送ってみたけどいつ頃になったら見られるんだろうか。いやぁ困ったぜ（´・ω・｀）</p>",frontmatter:{cover:null,date:"2006-06-28T22:12:00+09:00",strDate:"2006/6/28",title:"（´・ω・｀）ｼｮﾝﾎﾞﾘｰﾇ"}}},pathContext:{path:"/ja/blog/2006/06/28-（・ω・｀）ションボリーヌ/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-06-28-（・ω・｀）ションボリーヌ-e8de3b338f8edece6e86.js.map

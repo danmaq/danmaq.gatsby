@@ -1,0 +1,2 @@
+webpackJsonp([43745463635263],{3839:function(t,a){t.exports={data:{markdownRemark:{html:"<p>結局負けるは普通の人間。 この絵のせいで一時期、「まく＝魔理沙の尻の人」と言う二つ名が定着されたことが。むしろ本望なんですが(ﾟ∀ﾟ*)  この辺を最後に、以降は絵を描くのに綺麗な白紙を使うようになった。(それまでは絵と言えばほぼ全てチラシの裏か、そうでなければ大学ノートの片隅に描いていた)</p>",frontmatter:{cover:null,date:"2005-09-22T00:43:00+09:00",strDate:"2005/9/21",title:"飲み比べ"}}},pathContext:{path:"/ja/blog/2005/09/22-東方-飲み比べ/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-09-22-東方-飲み比べ-a85412ba07eeadeeb8b8.js.map

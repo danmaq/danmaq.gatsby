@@ -1,0 +1,2 @@
+webpackJsonp([0x89e395d8d417],{3343:function(t,a){t.exports={data:{markdownRemark:{html:'<p><strong>🌡26℃ ☁</strong></p>\n<p>今日は半ドンの日。学校から帰ったら U 君と遊びました。\nそして<a href="./11-diary.md">以前行った山、もとい造成地の盛土</a>へと遊びに行きました。</p>\n<p>そこで盛土を崩して、山っぽい外観に仕立て上げたりして遊びました。\n途中、U 君が「宝物を埋めよう」と提案しましたが、僕はこの山の今後をなんとなく察していたので却下しました。</p>',frontmatter:{cover:null,date:"1990-06-30T21:00:00+09:00",strDate:"1990/6/30",title:"日記"}}},pathContext:{path:"/ja/blog/1990/06/30-diary/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-1990-06-30-diary-625c16d832df6290572d.js.map

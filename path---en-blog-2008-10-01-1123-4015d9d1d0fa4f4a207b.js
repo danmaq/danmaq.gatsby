@@ -1,0 +1,2 @@
+webpackJsonp([0x9baee736c73e],{3237:function(t,e){t.exports={data:{markdownRemark:{html:'<h2><a href="/tag/1123">Read SS "11/23" (about 2,800 letters)</a> <strong>Master × Miku posted to the erotic board "VOCALOID Integrated Eros Paro". A bit serious.</strong> It is not erotic, but beware of those who are not good at Master x Miku.</h2>',frontmatter:{cover:null,date:"2008-10-01T00:00:59+09:00",strDate:"2008/9/30",title:"11/23"}}},pathContext:{path:"/en/blog/2008/10/01-1123/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2008-10-01-1123-4015d9d1d0fa4f4a207b.js.map

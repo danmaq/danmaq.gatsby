@@ -1,0 +1,2 @@
+webpackJsonp([0x9f1e08b1ea20],{3626:function(a,t){a.exports={data:{markdownRemark:{html:"<p>“妖々夢Extra : 妖々夢Phantasm”に対して、“紅魔郷Extra : 紅魔郷Phantasm(これ)”に該当する難易度です。本家のLunaticがそれなりにクリアできる方なら結構普通にクリアできる程度です。本家のExtraが安定してクリアできる方ならうまく決めボムを多用してチキンプレイすればかろうじてクリアできる程度です。</p>",frontmatter:{cover:null,date:"2004-07-09T03:46:58+09:00",strDate:"2004/7/8",title:"難易度"}}},pathContext:{path:"/ja/blog/2004/07/09-難易度-2/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-07-09-難易度-2-5b3681fef2ff1f99edd7.js.map

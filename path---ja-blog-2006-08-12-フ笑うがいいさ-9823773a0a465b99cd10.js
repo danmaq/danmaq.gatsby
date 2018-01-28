@@ -1,0 +1,2 @@
+webpackJsonp([0xa9c1adac6b06],{4010:function(a,t){a.exports={data:{markdownRemark:{html:"<p>CD-Rの真ん中に指がハマって抜けなくなった 結局泣く泣く割って脱出できたが、なんとか抜こうと頑張った15分が数時間に感じたよorz</p>",frontmatter:{cover:null,date:"2006-08-12T18:09:00+09:00",strDate:"2006/8/12",title:"フ……笑うがいいさ"}}},pathContext:{path:"/ja/blog/2006/08/12-フ笑うがいいさ/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-08-12-フ笑うがいいさ-9823773a0a465b99cd10.js.map

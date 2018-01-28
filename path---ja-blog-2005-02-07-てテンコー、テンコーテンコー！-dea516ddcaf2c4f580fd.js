@@ -1,0 +1,2 @@
+webpackJsonp([0xef8fcbd0e950],{3765:function(t,a){t.exports={data:{markdownRemark:{html:"<p>何と言おうとstoic。 元ネタはbeatmaniaIIDX 7thstyleに収録されている曲“stoic”のムービーより。</p>",frontmatter:{cover:null,date:"2005-02-07T00:26:00+09:00",strDate:"2005/2/6",title:"て…テンコー、テンコー…テンコー！"}}},pathContext:{path:"/ja/blog/2005/02/07-てテンコー、テンコーテンコー！/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-02-07-てテンコー、テンコーテンコー！-dea516ddcaf2c4f580fd.js.map

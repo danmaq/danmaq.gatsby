@@ -1,0 +1,2 @@
+webpackJsonp([0xc343dd6ecbce],{3876:function(t,a){t.exports={data:{markdownRemark:{html:"<p>DoGAだとXファイル形式にエクスポートできない＝ゲームに使えない……と分かっていつつも最後までDoGAで作り上げてしまった博麗神社。相当時間の無駄をしたような気がするがただの現実逃避さあははのは～ いっそのこと霊夢と誰かを絡めて▓▓▓▓▓▓するムービーでも作ったろか(* 'Ａ｀)</p>",frontmatter:{cover:null,date:"2005-12-22T07:20:00+09:00",strDate:"2005/12/21",title:"やってしまった……"}}},pathContext:{path:"/ja/blog/2005/12/22-やってしまった-2/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-12-22-やってしまった-2-b817492dc548c4855378.js.map

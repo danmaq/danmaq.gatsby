@@ -1,0 +1,2 @@
+webpackJsonp([0xd6272e128770],{3866:function(t,a){t.exports={data:{markdownRemark:{html:"<p>1ヶ月触ってないだけでC++忘れかけてる……特にDirectX周りとか完全に忘れてるorz やっべ自分の書いたソースが理解できないとか最悪じゃん。 ……やる気ってたべものですか？＿？</p>",frontmatter:{cover:null,date:"2005-12-05T00:06:00+09:00",strDate:"2005/12/4",title:"脱力"}}},pathContext:{path:"/ja/blog/2005/12/05-脱力-2/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-12-05-脱力-2-ff8482870614b161f2ae.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([0xefde3ce6b100],{3905:function(t,a){t.exports={data:{markdownRemark:{html:'<p><strong><a href="/tag/touhou-end-of-winter">SS ”東方ショートショート(節分編)” を見る (約600文字)</a></strong> ショートショート集です。丁度節分の季節ってことで、仕事の休憩中暇なので考えてみました。</p>',frontmatter:{cover:null,date:"2006-02-03T10:39:59+09:00",strDate:"2006/2/3",title:"東方ショートショート ～ 節分編"}}},pathContext:{path:"/ja/blog/2006/02/03-東方ショートショート-～-節分編/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-02-03-東方ショートショート-～-節分編-29485f06393794caf0f3.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([96697360403693],{3256:function(t,e){t.exports={data:{markdownRemark:{html:'<p><strong><a href="/tag/frozen-mansion">View "SS in the time" (about 1,800 characters)</a></strong> Miku × Len that posted to the erotic board "VOCALOID synthetic Eros Paro". serious. I have a slight horror. There is no erotic element.</p>',frontmatter:{cover:null,date:"2010-02-13T00:00:59+09:00",strDate:"2010/2/12",title:"Time's pavilion"}}},pathContext:{path:"/en/blog/2010/02/13-時の館/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2010-02-13-時の館-79ba64396b6fb5f5f74a.js.map

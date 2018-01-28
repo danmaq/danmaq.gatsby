@@ -1,0 +1,2 @@
+webpackJsonp([0xf33bc19a7dbc],{4112:function(a,t){a.exports={data:{markdownRemark:{html:'<p>夢終劇制作中に思いついた一発ネタ。本当は<a href="/3546">これの一時保存</a>の絵だったんだが、なんかかわいいって意見もあったので永久保存に。 こんなのポイって捨てられるくらいに絵描けるようになりたいなぁ。たまに練習と称して絵を描くことはあるものの、あくまでリハビリ止まりであり、鍛練と言うレベルには達していないのが現実。</p>',frontmatter:{cover:null,date:"2007-07-16T00:00:00+09:00",strDate:"2007/7/15",title:"こぁ2Duo"}}},pathContext:{path:"/ja/blog/2007/07/16-こぁ2duo/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2007-07-16-こぁ-2-duo-711eaf46b939ffa5196f.js.map

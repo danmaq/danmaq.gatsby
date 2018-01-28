@@ -1,0 +1,2 @@
+webpackJsonp([89265696479137],{3707:function(t,a){t.exports={data:{markdownRemark:{html:"<p>“妖々夢Extra : 妖々夢Phantasm”に対して、“永夜抄Extra : 永夜抄Phantasm(これ)”に該当する難易度です。\n原作にあわせて前作よりパターン度を上げて、その代わり気合度を下げています。</p>",frontmatter:{cover:null,date:"2004-10-05T00:01:58+09:00",strDate:"2004/10/4",title:"難易度"}}},pathContext:{path:"/ja/blog/2004/10/05-難易度-4/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-10-05-難易度-4-377162336385042cdadc.js.map

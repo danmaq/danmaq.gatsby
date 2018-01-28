@@ -1,0 +1,2 @@
+webpackJsonp([0x8d65a50975a2],{2643:function(e,a){e.exports={data:{markdownRemark:{html:'<p>Finally succeeded in arranging small bosses! Please look forward to the next version of <a href="/revenger">REVENGER</a> ! However, the more you make it, the more programs and data files get fat. I wonder if I will go on a diet soon</p>',frontmatter:{cover:null,date:"2003-12-03T12:04:00+09:00",strDate:"2003/12/3",title:"Wow"}}},pathContext:{path:"/en/blog/2003/12/03-おぉぉ/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2003-12-03-おぉぉ-5c24e6cd4ef854a19676.js.map

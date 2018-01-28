@@ -1,0 +1,2 @@
+webpackJsonp([0xe60bf480ecb],{3753:function(a,t){a.exports={data:{markdownRemark:{html:'<p>ここ消滅します、多分。移転先は決まってるので、消滅を確認したらリンク・ブックマークを<a href="/">danmaq.com</a>に変更して数日ほどお待ち願います。 <a href="/3239">東方イラスト</a>1枚追加。新年初絵がこれかいorz</p>',frontmatter:{cover:null,date:"2005-01-05T17:49:59+09:00",strDate:"2005/1/5",title:"今日の昼"}}},pathContext:{path:"/ja/blog/2005/01/05-今日の昼/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-01-05-今日の昼-445a7d685ca0bc89834e.js.map

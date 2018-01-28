@@ -1,0 +1,2 @@
+webpackJsonp([0xb044da72d1ac],{2799:function(a,t){a.exports={data:{markdownRemark:{html:"<p>Pick it with dried fish! Shanghai! Horai! Shanghai! Horai!</p>",frontmatter:{cover:null,date:"2005-01-10T21:05:00+09:00",strDate:"2005/1/10",title:"I love snappy"}}},pathContext:{path:"/en/blog/2005/01/10-ニンギョウ好き/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2005-01-10-ニンギョウ好き-8a3e7359e432b123bdcb.js.map

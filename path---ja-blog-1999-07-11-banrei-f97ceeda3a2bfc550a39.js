@@ -1,0 +1,2 @@
+webpackJsonp([91957855514141],{3436:function(a,t){a.exports={data:{markdownRemark:{html:'<p><a href="/banrei">このイラストの詳細はこちらへ。</a> 私に力をください。独立運動を展開するための。 ところでNGってその辺ずっと詰まってるってこと？それとも、お出かけ自体？ ……はっ! まさか! そーやって独立運動を封じるために……!? おれは永久に支配下の中なのか！</p>',frontmatter:{cover:null,date:"1999-07-11T18:35:00+09:00",strDate:"1999/7/11",title:"村長を退ける力すらない人間。"}}},pathContext:{path:"/ja/blog/1999/07/11-banrei/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-1999-07-11-banrei-f97ceeda3a2bfc550a39.js.map

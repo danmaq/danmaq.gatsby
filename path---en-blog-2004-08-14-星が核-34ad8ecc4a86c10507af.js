@@ -1,0 +1,2 @@
+webpackJsonp([0x92c109401df9],{2697:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Kurenaikan is easy to get lost</p>",frontmatter:{cover:null,date:"2004-08-14T00:31:00+09:00",strDate:"2004/8/13",title:"Star is nucleus"}}},pathContext:{path:"/en/blog/2004/08/14-星が核/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2004-08-14-星が核-34ad8ecc4a86c10507af.js.map

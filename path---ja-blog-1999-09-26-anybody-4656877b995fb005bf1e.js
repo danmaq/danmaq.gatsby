@@ -1,0 +1,2 @@
+webpackJsonp([0xfd843396b519],{3454:function(t,a){t.exports={data:{markdownRemark:{html:"<p>誰のクロッキーだったかは失念。</p>",frontmatter:{cover:null,date:"1999-09-26T11:30:33+09:00",strDate:"1999/9/26",title:"クロッキー"}}},pathContext:{path:"/ja/blog/1999/09/26-anybody/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-1999-09-26-anybody-4656877b995fb005bf1e.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([0xfde02631da75],{3783:function(t,a){t.exports={data:{markdownRemark:{html:'<p>東方弾幕風ステージスクリプト最新作、<a href="/!/thA/">東方時封城</a>の告知ページ＆バナー公開。体験版も近々公開します(詳細は告知ページにて) 対戦STGなんてえぇからワシゃ紅魔郷～永夜抄みたいな正統な(？)STGがやりたいんじゃああ！！って方やそうじゃない方も是非。(ちなみに自分は夢時空風みたいな対戦STGには関心大アリですがｗ)</p>',frontmatter:{cover:null,date:"2005-04-10T22:44:43+09:00",strDate:"2005/4/10",title:"深謝参萬来場"}}},pathContext:{path:"/ja/blog/2005/04/10-深謝参萬来場/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-04-10-深謝参萬来場-0217fe8f495816c51745.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([73814738172484],{2540:function(t,e){t.exports={data:{markdownRemark:{html:"<p>It does not matter, but is it heavy? This server. Rather than a bulletin board and so on, a code strictly protecting HTML standards is spit out and it may be quite useless ......</p>",frontmatter:{cover:null,date:"2000-10-15T13:49:07+09:00",strDate:"2000/10/15",title:"that"}}},pathContext:{path:"/en/blog/2000/10/15-slow/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2000-10-15-slow-76e43edb1872db0ef567.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([82193624031295],{2862:function(e,t){e.exports={data:{markdownRemark:{html:'<p>3rd / West 2nd - 06a / "danmaq"</p>\n<h2>New publication</h2>\n<ul>\n<li><a href="/!/thA/">Oriental time seal seal ~ the Alternative Age</a> (game / 500yen)</li>\n</ul>',frontmatter:{cover:null,date:"2005-08-14T00:00:00+09:00",strDate:"2005/8/13",title:"Comic Market 68 (Tokyo)"}}},pathContext:{path:"/en/blog/2005/08/14-コミックマーケット68東京/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2005-08-14-コミックマーケット-68-東京-6d0b3b213767909a92aa.js.map

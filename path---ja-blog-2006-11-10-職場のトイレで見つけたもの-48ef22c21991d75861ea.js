@@ -1,0 +1,2 @@
+webpackJsonp([0xd983d0ac6be1],{4040:function(t,a){t.exports={data:{markdownRemark:{html:"<p>どう見てもあの落ち物パズルの祖を連想してしまうんだが 'Ａ｀ まさかここのトイレではあれ(ROでは頭防具だったりする“あれ”)を上手く一列に並べて落とすとその分流れていくとか……(はいはい下品ネタｺﾞﾒﾝﾅｻｲ)</p>",frontmatter:{cover:null,date:"2006-11-10T00:59:00+09:00",strDate:"2006/11/9",title:"職場のトイレで見つけたもの"}}},pathContext:{path:"/ja/blog/2006/11/10-職場のトイレで見つけたもの/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2006-11-10-職場のトイレで見つけたもの-48ef22c21991d75861ea.js.map

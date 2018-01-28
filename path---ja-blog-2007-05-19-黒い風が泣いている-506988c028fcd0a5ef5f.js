@@ -1,0 +1,2 @@
+webpackJsonp([0xe7e9d44f21e8],{4094:function(n,l){n.exports={data:{markdownRemark:{html:"<ul>\n<li>\n<p>恋のから騒ぎにウチの知り合いと同姓同名の人が出てた！</p>\n<ul>\n<li>ひぐらしアニメ見てたら突然ブレーカー飛んだ！</li>\n<li>風呂入ろうとしたら振込忘れててガス止められてた！\n[蔵の湯]　λ... 明日はホンキで何かが起きそうだぜ……東武西武トラップに引っかかったりとか、池袋かと思ったら浅草とか新宿だったりとか。'Ａ｀ あ、魔理沙ハット新調するの忘れてた（←</li>\n</ul>\n</li>\n</ul>",frontmatter:{cover:null,date:"2007-05-19T23:23:00+09:00",strDate:"2007/5/19",title:"黒い風が泣いている……"}}},pathContext:{path:"/ja/blog/2007/05/19-黒い風が泣いている/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2007-05-19-黒い風が泣いている-506988c028fcd0a5ef5f.js.map

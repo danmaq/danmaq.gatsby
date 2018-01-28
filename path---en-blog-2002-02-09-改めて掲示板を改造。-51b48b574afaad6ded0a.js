@@ -1,0 +1,2 @@
+webpackJsonp([0xc03590d41d98],{2585:function(t,e){t.exports={data:{markdownRemark:{html:"<p>The display log this time is limited to 32 Kbit. You got lighter? (Especially mobile phone users)</p>",frontmatter:{cover:null,date:"2002-02-09T14:59:12+09:00",strDate:"2002/2/9",title:"Rebuild the bulletin board again."}}},pathContext:{path:"/en/blog/2002/02/09-改めて掲示板を改造。/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2002-02-09-改めて掲示板を改造。-51b48b574afaad6ded0a.js.map

@@ -1,0 +1,2 @@
+webpackJsonp([0xa851c9a2ae67],{3539:function(a,t){a.exports={data:{markdownRemark:{html:'<p>どうやら着メロデータを全部抹消されてしまったようです。と言うことで皆さんには申し訳ございませんが少しの間着メロ公開を見合わせるつもりです。 その代わり暫くの間<a href="/tag/evil-kingdom">EVIL KINGOM</a>の製作に尽力致しますのでそちらの方もご期待ください。</p>\n<h2>更新情報</h2>\n<p>掲示板バージョンアップ。</p>',frontmatter:{cover:null,date:"2002-01-31T13:08:40+09:00",strDate:"2002/1/31",title:"うーん"}}},pathContext:{path:"/ja/blog/2002/01/31-うーん/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2002-01-31-うーん-036d51062cd45c655adc.js.map

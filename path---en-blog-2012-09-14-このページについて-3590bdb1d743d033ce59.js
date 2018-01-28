@@ -1,0 +1,2 @@
+webpackJsonp([60630509471122],{3285:function(t,e){t.exports={data:{markdownRemark:{html:'<p>Illustrations made in the past and 3DCG are posted.</p>\n<p>I recently posted it to <a href="http://www.pixiv.net/member.php?id=165645">Pixiv (ID: 165645),</a> which is a bit old. One day I must do something</p>',frontmatter:{cover:null,date:"2012-09-14T10:12:37+09:00",strDate:"2012/9/14",title:"About this page"}}},pathContext:{path:"/en/blog/2012/09/14-このページについて/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2012-09-14-このページについて-3590bdb1d743d033ce59.js.map

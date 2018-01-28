@@ -1,0 +1,2 @@
+webpackJsonp([0x76ad6bf6a484],{2815:function(t,a){t.exports={data:{markdownRemark:{html:'<p>Do you see that "saints have been crucified on the cross"?</p>',frontmatter:{cover:null,date:"2005-03-07T01:01:01+09:00",strDate:"2005/3/6",title:"All of us are bastards in this East"}}},pathContext:{path:"/en/blog/2005/03/07-こんな東方は全員野郎だ/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2005-03-07-こんな東方は全員野郎だ-33f4907bd3608b8c2ee2.js.map

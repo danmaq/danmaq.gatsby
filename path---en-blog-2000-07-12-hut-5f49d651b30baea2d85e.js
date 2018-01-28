@@ -1,0 +1,2 @@
+webpackJsonp([34326434594378],{2534:function(t,e){t.exports={data:{markdownRemark:{html:'<p>A part of the landscape painting of the virtual world when planning to make an <a href="/tag/FCoV">image chat site close to the feeling of MMORPG for a while at the moment</a> .</p>',frontmatter:{cover:null,date:"2000-07-12T15:37:31+09:00",strDate:"2000/7/12",title:"Landscape · House in the mountains"}}},pathContext:{path:"/en/blog/2000/07/12-hut/",langKey:"en"}}}});
+//# sourceMappingURL=path---en-blog-2000-07-12-hut-5f49d651b30baea2d85e.js.map

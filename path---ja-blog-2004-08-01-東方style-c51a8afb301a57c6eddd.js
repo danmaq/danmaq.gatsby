@@ -1,0 +1,2 @@
+webpackJsonp([0xb32922acfbc6],{3648:function(t,a){t.exports={data:{markdownRemark:{html:'<p>分かる方は分かるとは思いますが、beatmaniaIIDXのキャラデザイン、GOLI氏の画風を思いっきり真似て描いてみたフランドールです。 東方styleが存在したらきっとこんな絵になるだろうと想定して画像サイズまで本家と同じく16:9にしてたりします。  でも、結構時間かけてがんばった割には余り似てません。顔のパーツとかちょいミスったかなorz <a href="/3045">実は2年前にも一度チャレンジしたことがあるのですが</a>、その時に比べると幾分かマシかも。</p>',frontmatter:{cover:null,date:"2004-08-01T08:27:00+09:00",strDate:"2004/7/31",title:"東方style"}}},pathContext:{path:"/ja/blog/2004/08/01-東方style/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-08-01-東方style-c51a8afb301a57c6eddd.js.map

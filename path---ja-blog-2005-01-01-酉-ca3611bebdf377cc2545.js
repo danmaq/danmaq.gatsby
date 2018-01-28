@@ -1,0 +1,2 @@
+webpackJsonp([0xab17f9dd9ea4],{3751:function(a,t){a.exports={data:{markdownRemark:{html:'<p>うし と ごましお と ざいもく で ころす あめま よけて しね (アナグラムになってます。文字をうまく並び替えれば新年の挨拶になったりとかならなかったりとか)  ふぅ、やっと<a href="/category/products">PRODUCTS</a>を半分くらい埋められた……。まだ潰れてない様子を見ると、年末休業が終わる1/5位までは生き続けてるのかな？</p>',frontmatter:{cover:null,date:"2005-01-01T00:00:00+09:00",strDate:"2004/12/31",title:"酉"}}},pathContext:{path:"/ja/blog/2005/01/01-酉/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2005-01-01-酉-ca3611bebdf377cc2545.js.map

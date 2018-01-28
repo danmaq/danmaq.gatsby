@@ -1,0 +1,2 @@
+webpackJsonp([49532942246424],{4134:function(t,a){t.exports={data:{markdownRemark:{html:"<p>ウチがガキの頃は、電車の音と言ってまず脳裏に浮かぶのがレールの継ぎ目を踏む音(所謂ガタンゴトン音)だったもんだが、今の子供たちに聞くとみんなVVVFの起動音が返ってくるんだ。 いよいよウチも年かなと実感した瞬間</p>",frontmatter:{cover:null,date:"2007-10-10T21:58:00+09:00",strDate:"2007/10/10",title:"でんしゃのおと"}}},pathContext:{path:"/ja/blog/2007/10/10-でんしゃのおと/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2007-10-10-でんしゃのおと-012ec500da5bed1b7778.js.map

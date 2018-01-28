@@ -1,0 +1,2 @@
+webpackJsonp([0x8097786f00c5],{3681:function(t,a){t.exports={data:{markdownRemark:{html:"<p>特に幻想郷のお子様は自信過剰ですので、下手な真似してうっかり弾に触れてしまわぬようしっかり見守ってあげてください。</p>",frontmatter:{cover:null,date:"2004-08-31T21:37:01+09:00",strDate:"2004/8/31",title:"幻想郷の看板工学"}}},pathContext:{path:"/ja/blog/2004/08/31-幻想郷の看板工学/",langKey:"ja"}}}});
+//# sourceMappingURL=path---ja-blog-2004-08-31-幻想郷の看板工学-bff4074d902126ac3322.js.map
