@@ -92,8 +92,8 @@ export default ({
 
 export const query =
     graphql `
-query post($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+query BlogPostByPath($path: String!) {
+    markdownRemark(fields: { slug: { eq: $path } }) {
         html
         frontmatter {
             cover {

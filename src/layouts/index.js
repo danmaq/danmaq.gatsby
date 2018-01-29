@@ -6,6 +6,7 @@ import Helmet from 'react-helmet';
 import 'font-awesome/scss/font-awesome.scss';
 
 import Footer from '~/src/components/Footer';
+import '~/src/components/i18n';
 import './index.scss';
 
 export default class extends React.Component {
@@ -14,7 +15,6 @@ export default class extends React.Component {
         (({ children }) =>
             <div id="dmq">
                 <Helmet defaultTitle="danmaq" titleTemplate="%s | danmaq">
-                    <html lang="ja" />
                     <link rel="author"
                           href="https://twitter.com/danmaq"
                           hrefLang="ja" />
@@ -22,7 +22,7 @@ export default class extends React.Component {
                           href="https://twitter.com/danmaq"
                           hrefLang="ja" />
                     <meta name="description"
-                          content="danmaq は、東方・ボカロおよびオリジナルを中心に、ゲームなど様々なコンテンツを提供する同人ブランドです。" />
+                          content="danmaq は、東方・ボカロおよびオリジナルを中心に、ゲームなど様々なコンテンツを提供する同人ブランドです。 | danmaq is a coterie brand offering various contents such as games, mainly Touhou, Vocaloid and original genre." />
                     <meta name="keywords"
                           content="Touhou CtC, Concealed the Conclusion, 夢終劇" />
                 </Helmet>

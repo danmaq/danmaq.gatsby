@@ -2,6 +2,7 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import Link from 'gatsby-link';
 import { Columns, Content, Section } from 'bloomer';
 
@@ -10,21 +11,21 @@ import Icon from '~/src/components/Icon';
 
 import Heading from './Heading';
 
-export default class extends React.Component {
+class Blog extends React.Component {
     render =
         () =>
-        (({ items }) =>
+        (({ items, langKey, t }) =>
             <Section id="blog">
-                <Heading caption="Blog"
-                        detail={`直近 ${items.length} 件の新着ブログ記事を掲載します。`} />
+                <Heading caption={t('blogHeading')}
+                         detail={t('blogDesc')} />
                 <Columns isCentered isMultiline>
                     {items.map(Article.create)}
                 </Columns>
                 <Content>
                     <Link className='button is-fullwidth is-large is-outlined is-link'
-                          to="/blog">
+                          to="blog">
                         <Icon i="angle-down" size={2} />
-                        &nbsp;さらに過去のブログ記事も見る
+                        &nbsp;{t('blogMore')}
                     </Link>
                 </Content>
             </Section>
@@ -33,5 +34,9 @@ export default class extends React.Component {
     /** Property types. */
     static propTypes = {
         items: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+        langKey: PropTypes.string.isRequired,
+        t: PropTypes.func.isRequired,
     };
 };
+
+export default translate('LP')(Blog);
