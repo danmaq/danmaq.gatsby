@@ -1,11 +1,12 @@
 'use strict';
 
+const langKeyDefault = 'ja';
+
 module.exports = {
     pathPrefix: '/danmaq.gatsby',
     plugins: [{
             resolve: 'gatsby-source-filesystem',
             options: {
-                excerpt_separator: '<!-- more -->',
                 name: 'posts',
                 path: `${__dirname}/danmaq.article/posts/`,
             },
@@ -26,9 +27,25 @@ module.exports = {
                 ],
             },
         },
+        {
+            resolve: 'gatsby-plugin-i18n',
+            options: {
+                langKeyDefault,
+                useLangKeyLayout: false,
+                pagesPaths: ['/src/pages', '/danmaq.article/posts/'],
+                markdownRemark: {
+                    postPage: 'src/templates/blog-post.js',
+                    query: '{ allMarkdownRemark { edges { node { fields { slug, langKey } } } } }'
+                }
+            },
+        },
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-react-next',
         'gatsby-plugin-sass',
     ],
-    siteMetadata: { title: 'danmaq' },
+    siteMetadata: {
+        title: 'danmaq',
+        langs: ['ja', 'en'],
+        langKeyDefault,
+    },
 };
