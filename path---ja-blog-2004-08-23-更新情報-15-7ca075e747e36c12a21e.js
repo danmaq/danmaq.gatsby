@@ -1,2 +1,2 @@
-webpackJsonp([0x91c8559eb37d],{3667:function(t,a){t.exports={data:{markdownRemark:{html:"<p>掲示板だけ色が全然違うのでちょこっと改良。</p>",frontmatter:{cover:null,date:"2004-08-23T00:00:00+09:00",strDate:"2004/8/22",title:"更新情報"}}},pathContext:{path:"/ja/blog/2004/08/23-更新情報-15/",langKey:"ja"}}}});
+webpackJsonp([0x91c8559eb37d],{3711:function(t,a){t.exports={data:{markdownRemark:{html:"<p>掲示板だけ色が全然違うのでちょこっと改良。</p>",frontmatter:{cover:null,date:"2004-08-23T00:00:00+09:00",strDate:"2004/8/22",title:"更新情報"}}},pathContext:{path:"/ja/blog/2004/08/23-更新情報-15/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-08-23-更新情報-15-7ca075e747e36c12a21e.js.map

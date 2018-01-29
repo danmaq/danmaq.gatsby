@@ -1,2 +1,2 @@
-webpackJsonp([0xa56b528206ee],{3418:function(t,a){t.exports={data:{markdownRemark:{html:"<p>某雑誌に投稿して没ネタ復活枠で掲載された、編集者を舐め腐った一枚。  参考までに言っておくと、私には何も見えない。よって</p>",frontmatter:{cover:null,date:"1998-11-08T00:00:29+09:00",strDate:"1998/11/7",title:"(注)このネタは……！"}}},pathContext:{path:"/ja/blog/1998/11/08-white/",langKey:"ja"}}}});
+webpackJsonp([0xa56b528206ee],{3462:function(t,a){t.exports={data:{markdownRemark:{html:"<p>某雑誌に投稿して没ネタ復活枠で掲載された、編集者を舐め腐った一枚。  参考までに言っておくと、私には何も見えない。よって</p>",frontmatter:{cover:null,date:"1998-11-08T00:00:29+09:00",strDate:"1998/11/7",title:"(注)このネタは……！"}}},pathContext:{path:"/ja/blog/1998/11/08-white/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-1998-11-08-white-39c88d990a5cdc2d781c.js.map

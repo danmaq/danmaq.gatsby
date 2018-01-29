@@ -1,2 +1,2 @@
-webpackJsonp([0x94a0ae6595f0],{3671:function(t,a){t.exports={data:{markdownRemark:{html:"<ul>\n<li>改造は自己責任で。私がうまくいったからとは言え、あなたのYB-1でもうまく行くとは限りません。</li>\n</ul>",frontmatter:{cover:null,date:"2004-08-29T00:00:59+09:00",strDate:"2004/8/28",title:"注意"}}},pathContext:{path:"/ja/blog/2004/08/29-注意/",langKey:"ja"}}}});
+webpackJsonp([0x94a0ae6595f0],{3715:function(t,a){t.exports={data:{markdownRemark:{html:"<ul>\n<li>改造は自己責任で。私がうまくいったからとは言え、あなたのYB-1でもうまく行くとは限りません。</li>\n</ul>",frontmatter:{cover:null,date:"2004-08-29T00:00:59+09:00",strDate:"2004/8/28",title:"注意"}}},pathContext:{path:"/ja/blog/2004/08/29-注意/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-08-29-注意-d481862c8df30f89551b.js.map

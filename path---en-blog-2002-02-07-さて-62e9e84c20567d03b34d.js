@@ -1,2 +1,2 @@
-webpackJsonp([0xd6a718e57dc9],{2584:function(t,a){t.exports={data:{markdownRemark:{html:"<p>Do you want to update it? Lol</p>",frontmatter:{cover:null,date:"2002-02-07T21:28:43+09:00",strDate:"2002/2/7",title:"Now"}}},pathContext:{path:"/en/blog/2002/02/07-さて/",langKey:"en"}}}});
+webpackJsonp([0xd6a718e57dc9],{2628:function(t,a){t.exports={data:{markdownRemark:{html:"<p>Do you want to update it? Lol</p>",frontmatter:{cover:null,date:"2002-02-07T21:28:43+09:00",strDate:"2002/2/7",title:"Now"}}},pathContext:{path:"/en/blog/2002/02/07-さて/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2002-02-07-さて-62e9e84c20567d03b34d.js.map

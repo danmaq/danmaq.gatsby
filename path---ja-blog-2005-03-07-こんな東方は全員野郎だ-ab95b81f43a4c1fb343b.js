@@ -1,2 +1,2 @@
-webpackJsonp([60179824855868],{3772:function(t,a){t.exports={data:{markdownRemark:{html:"<p>「聖者は十字架に磔られました」っていってるように見える？</p>",frontmatter:{cover:null,date:"2005-03-07T01:01:01+09:00",strDate:"2005/3/6",title:"こんな東方は全員野郎だ"}}},pathContext:{path:"/ja/blog/2005/03/07-こんな東方は全員野郎だ/",langKey:"ja"}}}});
+webpackJsonp([60179824855868],{3816:function(t,a){t.exports={data:{markdownRemark:{html:"<p>「聖者は十字架に磔られました」っていってるように見える？</p>",frontmatter:{cover:null,date:"2005-03-07T01:01:01+09:00",strDate:"2005/3/6",title:"こんな東方は全員野郎だ"}}},pathContext:{path:"/ja/blog/2005/03/07-こんな東方は全員野郎だ/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2005-03-07-こんな東方は全員野郎だ-ab95b81f43a4c1fb343b.js.map

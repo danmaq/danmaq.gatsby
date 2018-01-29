@@ -1,2 +1,2 @@
-webpackJsonp([0xb4232589ec64],{3411:function(t,a){t.exports={data:{markdownRemark:{html:"<p>使徒を……喰ってる……！？</p>\n<p>それはきっとこんなシーンなのでしょう。</p>\n<p>昔某雑誌に投稿して、掲載されたネタ。残念ながら、今は休刊と言う名の廃刊。</p>",frontmatter:{cover:null,date:"1998-02-08T00:00:00+09:00",strDate:"1998/2/7",title:"焼肉"}}},pathContext:{path:"/ja/blog/1998/02/08-yakiniku/",langKey:"ja"}}}});
+webpackJsonp([0xb4232589ec64],{3455:function(t,a){t.exports={data:{markdownRemark:{html:"<p>使徒を……喰ってる……！？</p>\n<p>それはきっとこんなシーンなのでしょう。</p>\n<p>昔某雑誌に投稿して、掲載されたネタ。残念ながら、今は休刊と言う名の廃刊。</p>",frontmatter:{cover:null,date:"1998-02-08T00:00:00+09:00",strDate:"1998/2/7",title:"焼肉"}}},pathContext:{path:"/ja/blog/1998/02/08-yakiniku/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-1998-02-08-yakiniku-9fa89c8a06c86b16996a.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([69404141546829],{3541:function(t,a){t.exports={data:{markdownRemark:{html:"<p>更新するか。 笑</p>",frontmatter:{cover:null,date:"2002-02-07T21:28:43+09:00",strDate:"2002/2/7",title:"さて"}}},pathContext:{path:"/ja/blog/2002/02/07-さて/",langKey:"ja"}}}});
+webpackJsonp([69404141546829],{3585:function(t,a){t.exports={data:{markdownRemark:{html:"<p>更新するか。 笑</p>",frontmatter:{cover:null,date:"2002-02-07T21:28:43+09:00",strDate:"2002/2/7",title:"さて"}}},pathContext:{path:"/ja/blog/2002/02/07-さて/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2002-02-07-さて-8a183bb4a7d591e7d281.js.map

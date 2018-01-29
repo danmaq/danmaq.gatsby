@@ -1,2 +1,2 @@
-webpackJsonp([0xfcb5569d4bf4],{3512:function(t,a){t.exports={data:{markdownRemark:{html:'<p>ソフトウェア「<a href="/qqquiz">QQQuiz</a>」をバージョンアップ。</p>',frontmatter:{cover:null,date:"2001-03-28T00:00:00+09:00",strDate:"2001/3/27",title:"ゲーム バージョンアップ"}}},pathContext:{path:"/ja/blog/2001/03/28-ゲーム-バージョンアップ/",langKey:"ja"}}}});
+webpackJsonp([0xfcb5569d4bf4],{3556:function(t,a){t.exports={data:{markdownRemark:{html:'<p>ソフトウェア「<a href="/qqquiz">QQQuiz</a>」をバージョンアップ。</p>',frontmatter:{cover:null,date:"2001-03-28T00:00:00+09:00",strDate:"2001/3/27",title:"ゲーム バージョンアップ"}}},pathContext:{path:"/ja/blog/2001/03/28-ゲーム-バージョンアップ/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2001-03-28-ゲーム-バージョンアップ-5fade88a40a4a2d1c814.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([78929162821719],{2613:function(t,a){t.exports={data:{markdownRemark:{html:'<p>Added commentary on <a href="/kira-kira">KIRA ☆ KIRA</a> .</p>',frontmatter:{cover:null,date:"2002-09-12T00:00:00+09:00",strDate:"2002/9/11",title:"update information"}}},pathContext:{path:"/en/blog/2002/09/12-更新情報-8/",langKey:"en"}}}});
+webpackJsonp([78929162821719],{2657:function(t,a){t.exports={data:{markdownRemark:{html:'<p>Added commentary on <a href="/kira-kira">KIRA ☆ KIRA</a> .</p>',frontmatter:{cover:null,date:"2002-09-12T00:00:00+09:00",strDate:"2002/9/11",title:"update information"}}},pathContext:{path:"/en/blog/2002/09/12-更新情報-8/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2002-09-12-更新情報-8-845c699dc65ca6580f00.js.map

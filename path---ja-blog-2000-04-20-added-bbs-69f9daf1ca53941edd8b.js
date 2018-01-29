@@ -1,2 +1,2 @@
-webpackJsonp([26825088944608],{3478:function(t,a){t.exports={data:{markdownRemark:{html:"<p>何か他に付けて欲しい機能があれば何なりと……この掲示板、寂しすぎるよう…</p>",frontmatter:{cover:null,date:"2000-04-20T20:49:55+09:00",strDate:"2000/4/20",title:"とりあえず掲示板完成。"}}},pathContext:{path:"/ja/blog/2000/04/20-added-bbs/",langKey:"ja"}}}});
+webpackJsonp([26825088944608],{3522:function(t,a){t.exports={data:{markdownRemark:{html:"<p>何か他に付けて欲しい機能があれば何なりと……この掲示板、寂しすぎるよう…</p>",frontmatter:{cover:null,date:"2000-04-20T20:49:55+09:00",strDate:"2000/4/20",title:"とりあえず掲示板完成。"}}},pathContext:{path:"/ja/blog/2000/04/20-added-bbs/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2000-04-20-added-bbs-69f9daf1ca53941edd8b.js.map

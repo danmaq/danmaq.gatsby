@@ -1,2 +1,2 @@
-webpackJsonp([2748740615326],{3497:function(t,a){t.exports={data:{markdownRemark:{html:"<p>関係ないですけど、重いですか？このサーバ。 というより掲示板とかからHTML規格を厳格に守ったコードが吐き出されるんで結構無駄が多いだけかも……</p>",frontmatter:{cover:null,date:"2000-10-15T13:49:07+09:00",strDate:"2000/10/15",title:"あれ"}}},pathContext:{path:"/ja/blog/2000/10/15-slow/",langKey:"ja"}}}});
+webpackJsonp([2748740615326],{3541:function(t,a){t.exports={data:{markdownRemark:{html:"<p>関係ないですけど、重いですか？このサーバ。 というより掲示板とかからHTML規格を厳格に守ったコードが吐き出されるんで結構無駄が多いだけかも……</p>",frontmatter:{cover:null,date:"2000-10-15T13:49:07+09:00",strDate:"2000/10/15",title:"あれ"}}},pathContext:{path:"/ja/blog/2000/10/15-slow/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2000-10-15-slow-e8b5371167b78ebb3e3a.js.map
