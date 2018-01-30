@@ -44,7 +44,6 @@ module.exports = {
         'gatsby-plugin-sass',
     ],
     siteMetadata: {
-        title: 'danmaq',
         langs: ['ja', 'en'],
         langKeyDefault,
     },

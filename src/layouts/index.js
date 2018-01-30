@@ -7,9 +7,11 @@ import 'font-awesome/scss/font-awesome.scss';
 
 import Footer from '~/src/components/Footer';
 import '~/src/components/i18n';
+
 import './index.scss';
 
 export default class extends React.Component {
+    /** Create rendered view elements. */
     render =
         () =>
         (({ children }) =>
@@ -31,5 +33,6 @@ export default class extends React.Component {
             </div>
         )(this.props);
 
+    /** Property types. */
     static propTypes = { children: PropTypes.func };
 };
