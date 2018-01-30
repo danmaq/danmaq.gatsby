@@ -1,15 +1,15 @@
 # Project dependencies
 # https://www.npmjs.org/doc/misc/npm-faq.html#should-i-check-my-node_modules-folder-into-git
 node_modules
-.cache/
+/.cache/
 
 # Build directory
-public/
+/public
 yarn-error.log
-.wercker
+/.wercker
 
 # OS
 .DS_Store
 Thumbs.db
 
-danmaq.article
+/danmaq.article

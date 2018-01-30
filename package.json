@@ -29,7 +29,6 @@
         "bulma": "^0.6.2",
         "caniuse-db": "^1.0.30000797",
         "classnames": "^2.2.5",
-        "dotenv": "^4.0.0",
         "font-awesome": "^4.7.0",
         "gatsby": "^1.9.172",
         "gatsby-cli": "^1.1.32",
@@ -60,17 +59,26 @@
         "babel-plugin-module-resolver": "^3.0.0",
         "gh-pages": "^1.1.0",
         "prettier": "^1.10.2",
-        "replace": "^0.3.0",
+        "rimraf": "^2.6.2",
         "yarn-or-npm": "^2.0.4"
     },
     "scripts": {
         "build": "node --max_old_space_size=2048 --stack_size=1536 node_modules/.bin/gatsby build",
-        "clean": ".tools/clean",
+        "clean": "rimraf .cache public",
+        "clean:all": "yon run clean && .tools/clean",
         "develop": "gatsby develop",
-        "deploy": "yon run build --prefix-paths && gh-pages -d public",
         "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
         "start": "yon run develop",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "staging": "yon run clean && yon run staging:build && yon run staging:commit",
+        "staging:build": "yon run build --prefix-paths",
+        "staging:commit": "gh-pages -d public",
+        "production": "yon run clean && yon run production:clean && yon run production:clone && yon run production:truncate && yon run production:link && yon run build --verbose && yon run production:commit",
+        "production:clean": "rimraf ${TMPDIR}/danmaq.github.io",
+        "production:clone": "git clone git@github.com:danmaq/danmaq.github.io.git ${TMPDIR}/danmaq.github.io",
+        "production:commit": "cd ${TMPDIR}/danmaq.github.io && git add -A && git commit -m 'Updated by danmaq.gatsby.' && git push",
+        "production:link": "ln -s ${TMPDIR}/danmaq.github.io public",
+        "production:truncate": "cd ${TMPDIR}/danmaq.github.io && git ls-files --full-name -i | xargs git rm --cached"
     },
     "browserslist": [
         "> 2%",

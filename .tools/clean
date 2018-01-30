@@ -1,5 +1,5 @@
 #!/bin/sh
 
 cd $(cd $(dirname $0); pwd)/..
-rm -rf .cache node_modules public
+rm -rf .wercker node_modules
 which yarn > /dev/null 2>&1 && yarn cache clean
