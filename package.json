@@ -64,7 +64,7 @@
         "yarn-or-npm": "^2.0.4"
     },
     "scripts": {
-        "build": "node --max_old_space_size=2048 --stack_size=1536 node_modules/.bin/gatsby build",
+        "build": "gatsby build",
         "clean": "rimraf .cache public",
         "clean:all": "yon run clean && .tools/clean",
         "develop": "gatsby develop",
