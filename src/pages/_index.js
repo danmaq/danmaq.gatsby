@@ -12,7 +12,7 @@ import Works from '~/src/components/LP/Works';
 
 export default ({
     data: { allMarkdownRemark: { edges } },
-    pathContext
+    pathContext,
 }) => {
     i18n.changeLanguage(pathContext.langKey);
     const result =

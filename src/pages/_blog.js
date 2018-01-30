@@ -11,7 +11,7 @@ import Header from '~/src/components/Header';
 
 export default ({
     data: { allMarkdownRemark: { totalCount, edges } },
-    pathContext
+    pathContext,
 }) => {
     i18n.changeLanguage(pathContext.langKey);
     const result =

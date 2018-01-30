@@ -6,17 +6,8 @@ build:
       name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
       code: yarn install
   - script:
-      name: 'PUSH とかに要るからね、 SSH のキーを置いとくよ ＞ ヾ(╹◡╹川'
-      code: |
-        mkdir ~/.ssh
-        echo "${SSH_PRIVATE_KEY}" >> ~/.ssh/id_rsa
-        chmod 600 ~/.ssh/id_rsa
-        chmod 700 ~/.ssh
-  - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 記事のリポジトリをもってきて準備できたよ！'
-      code: |
-        git clone -v https://github.com/danmaq/danmaq.article.git /tmp/danmaq.article
-        ln -s /tmp/danmaq.article ${WERCKER_SOURCE_DIR}/danmaq.article
+      name: '記事のリポジトリをもってきて準備できたよ！ ＞ ヾ(╹◡╹川'
+      code: git clone -v https://github.com/danmaq/danmaq.article.git
 staging:
   steps:
   - script:
@@ -48,4 +39,8 @@ production:
       code: yarn run build --verbose
   - script:
       name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
-      code: yarn run production:commit
+      code: |
+        git config --global user.email 'info@danmaq.com'
+        git config --global user.name 'Shuhei Nomura'
+        yarn run production:commit
+        ./production.exp ${GITHUB_PASS}
