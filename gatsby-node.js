@@ -7,7 +7,8 @@ exports.modifyBabelrc =
     ({ babelrc }) => ({
         ...babelrc,
         plugins: [
-            ...babelrc.plugins, [
+            ...babelrc.plugins,
+            'transform-regenerator', [
                 'module-resolver', { root: ['.'], alias: { '~': '.' } }
             ]
         ]
