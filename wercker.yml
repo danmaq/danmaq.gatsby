@@ -4,7 +4,9 @@ build:
   steps:
   - script:
       name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
-      code: yarn install
+      code: |
+        yarn install
+        yarn global add gatsby-cli
   - script:
       name: '記事のリポジトリをもってきて準備できたよ！ ＞ ヾ(╹◡╹川'
       code: git clone -v https://github.com/danmaq/danmaq.article.git
@@ -26,19 +28,17 @@ production:
       code: |
         yarn run clean
         yarn run production:clean
-#   - script:
-#       name: '成果物格納先のリポジトリを持ってくるよ ＞ ヾ(╹◡╹川'
-#       code: |
-#         yarn run production:clone
-#         yarn run production:link
-#   - script:
-#       name: 'ヾ(๑╹⌓╹)ﾉ" ＜ えー、古いファイル要らないー！消しちゃえ'
-#       code: yarn run production:truncate
+  - script:
+      name: '成果物格納先のリポジトリを持ってくるよ ＞ ヾ(╹◡╹川'
+      code: |
+        yarn run production:clone
+        yarn run production:link
+  - script:
+      name: 'ヾ(๑╹⌓╹)ﾉ" ＜ えー、古いファイル要らないー！消しちゃえ'
+      code: yarn run production:truncate
   - script:
       name: 'じゃ、Production 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
-      code: |
-        yarn global add gatsby-cli
-        gatsby build --verbose
+      code: gatsby build --verbose
 #   - script:
 #       name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
 #       code: |
