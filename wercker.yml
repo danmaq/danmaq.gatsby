@@ -9,7 +9,7 @@ build:
       name: 'PUSH とかに要るからね、 SSH のキーを置いとくよ ＞ ヾ(╹◡╹川'
       code: |
         mkdir ~/.ssh
-        echo ${SSH_PRIVATE_KEY} >> ~/.ssh/id_rsa
+        echo "${SSH_PRIVATE_KEY}" >> ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
         chmod 700 ~/.ssh
   - script:
