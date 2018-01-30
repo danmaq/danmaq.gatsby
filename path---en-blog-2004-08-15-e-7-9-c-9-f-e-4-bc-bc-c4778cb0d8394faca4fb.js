@@ -1,2 +1,2 @@
-webpackJsonp([0xbd726e77133b],{2743:function(t,e){t.exports={data:{markdownRemark:{html:'<p>Sakuya "It\'s out of the ordinary!"</p>',frontmatter:{cover:null,date:"2004-08-15T22:14:00+09:00",strDate:"2004/8/15",title:"Mimicry"}}},pathContext:{path:"/en/blog/2004/08/15-%e7%9c%9f%e4%bc%bc/",langKey:"en"}}}});
+webpackJsonp([0xbd726e77133b],{2764:function(t,e){t.exports={data:{markdownRemark:{html:'<p>Sakuya "It\'s out of the ordinary!"</p>',frontmatter:{cover:null,date:"2004-08-15T22:14:00+09:00",strDate:"2004/8/15",title:"Mimicry"}}},pathContext:{path:"/en/blog/2004/08/15-%e7%9c%9f%e4%bc%bc/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2004-08-15-e-7-9-c-9-f-e-4-bc-bc-c4778cb0d8394faca4fb.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([0x5d8fddebc21e],{3724:function(t,a){t.exports={data:{markdownRemark:{html:"<p>再生しながら脳内変換すると雰囲気出るかも！？</p>",frontmatter:{cover:null,date:"2004-08-31T00:05:33+09:00",strDate:"2004/8/30",title:"ちなみに替え歌の元はこれ"}}},pathContext:{path:"/ja/blog/2004/08/31-ちなみに替え歌の元はこれ/",langKey:"ja"}}}});
+webpackJsonp([0x5d8fddebc21e],{3745:function(t,a){t.exports={data:{markdownRemark:{html:"<p>再生しながら脳内変換すると雰囲気出るかも！？</p>",frontmatter:{cover:null,date:"2004-08-31T00:05:33+09:00",strDate:"2004/8/30",title:"ちなみに替え歌の元はこれ"}}},pathContext:{path:"/ja/blog/2004/08/31-ちなみに替え歌の元はこれ/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-08-31-ちなみに替え歌の元はこれ-4e5c7df7873ba8e6bc1f.js.map

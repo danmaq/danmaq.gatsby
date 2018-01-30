@@ -1,2 +1,2 @@
-webpackJsonp([8827757134768],{2996:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Just take good care of all the little you have!</p>",frontmatter:{cover:null,date:"2006-02-06T22:22:00+09:00",strDate:"2006/2/6",title:"That's why I am getting busy"}}},pathContext:{path:"/en/blog/2006/02/06-そんなわけで忙しくなってきました/",langKey:"en"}}}});
+webpackJsonp([8827757134768],{3017:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Just take good care of all the little you have!</p>",frontmatter:{cover:null,date:"2006-02-06T22:22:00+09:00",strDate:"2006/2/6",title:"That's why I am getting busy"}}},pathContext:{path:"/en/blog/2006/02/06-そんなわけで忙しくなってきました/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2006-02-06-そんなわけで忙しくなってきました-22cc1892f42af0968f81.js.map

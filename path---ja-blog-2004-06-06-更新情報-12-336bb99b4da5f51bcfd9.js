@@ -1,2 +1,2 @@
-webpackJsonp([43098897147725],{3667:function(t,a){t.exports={data:{markdownRemark:{html:"<p>掲示板をセカセカ作ってます。今日もバージョン上げました。公開はちょっと待ってね……後悔したくないから。</p>",frontmatter:{cover:null,date:"2004-06-06T00:00:00+09:00",strDate:"2004/6/5",title:"更新情報"}}},pathContext:{path:"/ja/blog/2004/06/06-更新情報-12/",langKey:"ja"}}}});
+webpackJsonp([43098897147725],{3688:function(t,a){t.exports={data:{markdownRemark:{html:"<p>掲示板をセカセカ作ってます。今日もバージョン上げました。公開はちょっと待ってね……後悔したくないから。</p>",frontmatter:{cover:null,date:"2004-06-06T00:00:00+09:00",strDate:"2004/6/5",title:"更新情報"}}},pathContext:{path:"/ja/blog/2004/06/06-更新情報-12/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-06-06-更新情報-12-336bb99b4da5f51bcfd9.js.map

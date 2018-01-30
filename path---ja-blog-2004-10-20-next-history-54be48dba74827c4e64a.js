@@ -1,2 +1,2 @@
-webpackJsonp([60075916379900],{3758:function(t,a){t.exports={data:{markdownRemark:{html:"<p>人妖の境界 # 霊夢描いてたら何かに取り憑かれそうになったorz</p>",frontmatter:{cover:null,date:"2004-10-20T07:32:00+09:00",strDate:"2004/10/19",title:"Next History"}}},pathContext:{path:"/ja/blog/2004/10/20-next-history/",langKey:"ja"}}}});
+webpackJsonp([60075916379900],{3779:function(t,a){t.exports={data:{markdownRemark:{html:"<p>人妖の境界 # 霊夢描いてたら何かに取り憑かれそうになったorz</p>",frontmatter:{cover:null,date:"2004-10-20T07:32:00+09:00",strDate:"2004/10/19",title:"Next History"}}},pathContext:{path:"/ja/blog/2004/10/20-next-history/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-10-20-next-history-54be48dba74827c4e64a.js.map

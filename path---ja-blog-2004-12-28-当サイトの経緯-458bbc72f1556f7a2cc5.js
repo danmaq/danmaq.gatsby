@@ -1,2 +1,2 @@
-webpackJsonp([0x9bd819fb92ee],{3788:function(a,t){a.exports={data:{markdownRemark:{html:'<p>長くなるので以下のページにてどうぞ。</p>\n<p><a href="/category/archives">当サイトの経緯</a></p>',frontmatter:{cover:null,date:"2004-12-28T00:00:00+09:00",strDate:"2004/12/27",title:"当サイトの経緯"}}},pathContext:{path:"/ja/blog/2004/12/28-当サイトの経緯/",langKey:"ja"}}}});
+webpackJsonp([0x9bd819fb92ee],{3809:function(a,t){a.exports={data:{markdownRemark:{html:'<p>長くなるので以下のページにてどうぞ。</p>\n<p><a href="/category/archives">当サイトの経緯</a></p>',frontmatter:{cover:null,date:"2004-12-28T00:00:00+09:00",strDate:"2004/12/27",title:"当サイトの経緯"}}},pathContext:{path:"/ja/blog/2004/12/28-当サイトの経緯/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-12-28-当サイトの経緯-458bbc72f1556f7a2cc5.js.map

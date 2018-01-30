@@ -1,2 +1,2 @@
-webpackJsonp([0x8cab0a2b4a30],{2677:function(a,e){a.exports={data:{markdownRemark:{html:"<p><code>void main(){while(1);}</code></p>",frontmatter:{cover:null,date:"2003-08-19T00:00:00+09:00",strDate:"2003/8/18",title:"Software revival"}}},pathContext:{path:"/en/blog/2003/08/19-ソフトウェア一部復活/",langKey:"en"}}}});
+webpackJsonp([0x8cab0a2b4a30],{2698:function(a,e){a.exports={data:{markdownRemark:{html:"<p><code>void main(){while(1);}</code></p>",frontmatter:{cover:null,date:"2003-08-19T00:00:00+09:00",strDate:"2003/8/18",title:"Software revival"}}},pathContext:{path:"/en/blog/2003/08/19-ソフトウェア一部復活/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2003-08-19-ソフトウェア一部復活-497e19b7cf3b1d376de7.js.map

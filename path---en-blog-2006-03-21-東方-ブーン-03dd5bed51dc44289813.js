@@ -1,2 +1,2 @@
-webpackJsonp([0x8a48e05ad10a],{3028:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Sentence 二 二 (^ ω ^) 二 二 二 ⊃</p>",frontmatter:{cover:null,date:"2006-03-21T03:09:00+09:00",strDate:"2006/3/20",title:"Boone"}}},pathContext:{path:"/en/blog/2006/03/21-東方-ブーン/",langKey:"en"}}}});
+webpackJsonp([0x8a48e05ad10a],{3049:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Sentence 二 二 (^ ω ^) 二 二 二 ⊃</p>",frontmatter:{cover:null,date:"2006-03-21T03:09:00+09:00",strDate:"2006/3/20",title:"Boone"}}},pathContext:{path:"/en/blog/2006/03/21-東方-ブーン/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2006-03-21-東方-ブーン-03dd5bed51dc44289813.js.map

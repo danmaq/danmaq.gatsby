@@ -1,2 +1,2 @@
-webpackJsonp([0xe6567fd2d8b4],{2733:function(t,e){t.exports={data:{markdownRemark:{html:'<p>We merged "Force.Y" and "Studio MAKINA" and started "MAKINA-CITY".</p>',frontmatter:{cover:null,date:"2004-08-01T00:00:00+09:00",strDate:"2004/7/31",title:"MAKINA-CITY"}}},pathContext:{path:"/en/blog/2004/08/01-makina-city-2/",langKey:"en"}}}});
+webpackJsonp([0xe6567fd2d8b4],{2754:function(t,e){t.exports={data:{markdownRemark:{html:'<p>We merged "Force.Y" and "Studio MAKINA" and started "MAKINA-CITY".</p>',frontmatter:{cover:null,date:"2004-08-01T00:00:00+09:00",strDate:"2004/7/31",title:"MAKINA-CITY"}}},pathContext:{path:"/en/blog/2004/08/01-makina-city-2/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2004-08-01-makina-city-2-b2e37893862d3c4f4a4f.js.map

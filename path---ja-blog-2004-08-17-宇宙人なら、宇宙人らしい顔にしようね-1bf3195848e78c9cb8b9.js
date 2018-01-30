@@ -1,2 +1,2 @@
-webpackJsonp([0x67d24f147833],{3703:function(t,a){t.exports={data:{markdownRemark:{html:"<p>あなたねぇ、月はもうちょっと、紅くなきゃだめ！</p>",frontmatter:{cover:null,date:"2004-08-17T22:53:00+09:00",strDate:"2004/8/17",title:"宇宙人なら、宇宙人らしい顔にしようね"}}},pathContext:{path:"/ja/blog/2004/08/17-宇宙人なら、宇宙人らしい顔にしようね/",langKey:"ja"}}}});
+webpackJsonp([0x67d24f147833],{3724:function(t,a){t.exports={data:{markdownRemark:{html:"<p>あなたねぇ、月はもうちょっと、紅くなきゃだめ！</p>",frontmatter:{cover:null,date:"2004-08-17T22:53:00+09:00",strDate:"2004/8/17",title:"宇宙人なら、宇宙人らしい顔にしようね"}}},pathContext:{path:"/ja/blog/2004/08/17-宇宙人なら、宇宙人らしい顔にしようね/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-08-17-宇宙人なら、宇宙人らしい顔にしようね-1bf3195848e78c9cb8b9.js.map

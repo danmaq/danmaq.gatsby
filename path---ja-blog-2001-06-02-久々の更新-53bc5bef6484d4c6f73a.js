@@ -1,2 +1,2 @@
-webpackJsonp([0x6bd7391ad51d],{3563:function(a,t){a.exports={data:{markdownRemark:{html:'<p><a href="/tag/bms">BMS修正&#x26;新曲</a>追加。</p>',frontmatter:{cover:null,date:"2001-06-02T00:00:00+09:00",strDate:"2001/6/1",title:"久々の更新!"}}},pathContext:{path:"/ja/blog/2001/06/02-久々の更新/",langKey:"ja"}}}});
+webpackJsonp([0x6bd7391ad51d],{3584:function(a,t){a.exports={data:{markdownRemark:{html:'<p><a href="/tag/bms">BMS修正&#x26;新曲</a>追加。</p>',frontmatter:{cover:null,date:"2001-06-02T00:00:00+09:00",strDate:"2001/6/1",title:"久々の更新!"}}},pathContext:{path:"/ja/blog/2001/06/02-久々の更新/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2001-06-02-久々の更新-53bc5bef6484d4c6f73a.js.map

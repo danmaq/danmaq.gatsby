@@ -1,2 +1,2 @@
-webpackJsonp([99970025014588],{3655:function(t,a){t.exports={data:{markdownRemark:{html:'<p><a href="/revenger">REVENGER</a> のソース見直してみると結構汚いので、1 個くらい小さな Windows プログラムのサンプルでも作るかな。</p>',frontmatter:{cover:null,date:"2004-01-04T15:50:00+09:00",strDate:"2004/1/4",title:"あぁ、そうだ"}}},pathContext:{path:"/ja/blog/2004/01/04-あぁ、そうだ/",langKey:"ja"}}}});
+webpackJsonp([99970025014588],{3676:function(t,a){t.exports={data:{markdownRemark:{html:'<p><a href="/revenger">REVENGER</a> のソース見直してみると結構汚いので、1 個くらい小さな Windows プログラムのサンプルでも作るかな。</p>',frontmatter:{cover:null,date:"2004-01-04T15:50:00+09:00",strDate:"2004/1/4",title:"あぁ、そうだ"}}},pathContext:{path:"/ja/blog/2004/01/04-あぁ、そうだ/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-01-04-あぁ、そうだ-ffd2b6600b0ae5142f6a.js.map

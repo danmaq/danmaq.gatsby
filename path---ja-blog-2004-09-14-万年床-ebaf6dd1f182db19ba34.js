@@ -1,2 +1,2 @@
-webpackJsonp([0xfdc5c240d171],{3740:function(t,a){t.exports={data:{markdownRemark:{html:"<p>ゆかりんって何キロくらいなんだろう。答えは敷布団兼体重計の橙と神主のみが知る。 # ペンタブレットに初挑戦です。 # 修行の余地ありまくりな気がします。</p>",frontmatter:{cover:null,date:"2004-09-14T00:14:00+09:00",strDate:"2004/9/13",title:"万年床"}}},pathContext:{path:"/ja/blog/2004/09/14-万年床/",langKey:"ja"}}}});
+webpackJsonp([0xfdc5c240d171],{3761:function(t,a){t.exports={data:{markdownRemark:{html:"<p>ゆかりんって何キロくらいなんだろう。答えは敷布団兼体重計の橙と神主のみが知る。 # ペンタブレットに初挑戦です。 # 修行の余地ありまくりな気がします。</p>",frontmatter:{cover:null,date:"2004-09-14T00:14:00+09:00",strDate:"2004/9/13",title:"万年床"}}},pathContext:{path:"/ja/blog/2004/09/14-万年床/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2004-09-14-万年床-ebaf6dd1f182db19ba34.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([0xd9838e9ccc00],{3557:function(t,a){t.exports={data:{markdownRemark:{html:"<p>重大なバグが発覚したので修正。原因は……わかるよね？ あんまりhitomi好きじゃないです……昔は良かったんだけどね^-^;)</p>",frontmatter:{cover:null,date:"2001-03-28T19:29:39+09:00",strDate:"2001/3/28",title:"[掲示板]酷い……"}}},pathContext:{path:"/ja/blog/2001/03/28-掲示板酷い/",langKey:"ja"}}}});
+webpackJsonp([0xd9838e9ccc00],{3578:function(t,a){t.exports={data:{markdownRemark:{html:"<p>重大なバグが発覚したので修正。原因は……わかるよね？ あんまりhitomi好きじゃないです……昔は良かったんだけどね^-^;)</p>",frontmatter:{cover:null,date:"2001-03-28T19:29:39+09:00",strDate:"2001/3/28",title:"[掲示板]酷い……"}}},pathContext:{path:"/ja/blog/2001/03/28-掲示板酷い/",langKey:"ja"}}}});
 //# sourceMappingURL=path---ja-blog-2001-03-28-掲示板酷い-2b4b75b211e8bf7e5c99.js.map

@@ -1,2 +1,2 @@
-webpackJsonp([0x6498ae3688f6],{2709:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Implement logo image and banner.</p>",frontmatter:{cover:null,date:"2004-06-05T00:00:00+09:00",strDate:"2004/6/4",title:"update information"}}},pathContext:{path:"/en/blog/2004/06/05-更新情報-11/",langKey:"en"}}}});
+webpackJsonp([0x6498ae3688f6],{2730:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Implement logo image and banner.</p>",frontmatter:{cover:null,date:"2004-06-05T00:00:00+09:00",strDate:"2004/6/4",title:"update information"}}},pathContext:{path:"/en/blog/2004/06/05-更新情報-11/",langKey:"en"}}}});
 //# sourceMappingURL=path---en-blog-2004-06-05-更新情報-11-c7d28e02dee034efc48b.js.map
