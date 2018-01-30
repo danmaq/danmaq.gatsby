@@ -4,7 +4,7 @@ build:
   steps:
   - script:
       name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
-      code: yarn global add gatsby-cli
+      code: yarn install
   - script:
       name: '記事のリポジトリをもってきて準備できたよ！ ＞ ヾ(╹◡╹川'
       code: git clone -v https://github.com/danmaq/danmaq.article.git
