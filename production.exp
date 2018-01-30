@@ -1,0 +1,22 @@
+#!/usr/bin/expect
+
+set GITHUB_PASS [lindex $argv 0]
+set PROMPT "\[#%>\]"
+
+spawn git push
+expect {
+    "Username for 'https://github.com':" {
+        send "danmaq\n"
+        exp_continue
+    }
+    "Password for 'https://danmaq@github.com':" {
+        send "${GITHUB_PASS}\n"
+    }
+}
+
+expect {
+    -glob "${PROMPT}" {
+        interact
+        exit 0
+    }
+}
