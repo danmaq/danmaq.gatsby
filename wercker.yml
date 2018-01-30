@@ -36,7 +36,9 @@ production:
 #       code: yarn run production:truncate
   - script:
       name: 'じゃ、Production 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
-      code: yarn run build --verbose
+      code: |
+        yarn global add gatsby-cli
+        gatsby build --verbose
 #   - script:
 #       name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
 #       code: |
