@@ -23,7 +23,7 @@ class Blog extends React.Component {
                 </Columns>
                 <Content>
                     <Link className='button is-fullwidth is-large is-outlined is-link'
-                          to="blog">
+                          to={`/${langKey}/blog`}>
                         <Icon i="angle-down" size={2} />
                         &nbsp;{t('blogMore')}
                     </Link>
