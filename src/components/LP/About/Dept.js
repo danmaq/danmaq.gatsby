@@ -42,7 +42,7 @@ export default class extends React.Component {
         () =>
         (({ caption, sub, subCaption }) =>
             <Title className="card-header-title" tag={sub ? 'h4' : 'h3'}>
-                {caption}<small>{subCaption}</small>
+                {caption}<small>&nbsp;{subCaption}</small>
             </Title>
         )(this.props);
 

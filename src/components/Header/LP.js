@@ -1,6 +1,8 @@
 'use strict';
 
 import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 import { NavbarItem } from 'bloomer';
 import classNames from 'classnames';
 
@@ -30,12 +32,14 @@ export default class extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        <Header className={this._className()}>
-            <NavbarItem href="#works">Works</NavbarItem>
-            <NavbarItem href="#about">About</NavbarItem>
-            <NavbarItem href="#contact">Contact</NavbarItem>
-            <NavbarItem href="#blog">Blog</NavbarItem>
-        </Header>;
+        (({ pathContext }) =>
+            <Header className={this._className()} pathContext={pathContext}>
+                <NavbarItem href="#works">Works</NavbarItem>
+                <NavbarItem href="#about">About</NavbarItem>
+                <NavbarItem href="#contact">Contact</NavbarItem>
+                <NavbarItem href="#blog">Blog</NavbarItem>
+            </Header>
+        )(this.props);
 
     /** Create CSS class name of header. */
     _className =
@@ -55,4 +59,9 @@ export default class extends React.Component {
                 this.setState(p => ({ ...p, expand }));
             }
         };
+
+    /** Property types. */
+    static propTypes = {
+        pathContext: PropTypes.object.isRequired,
+    };
 };

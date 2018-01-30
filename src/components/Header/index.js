@@ -2,7 +2,8 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
+import Link, { withPrefix } from 'gatsby-link';
 import {
     Navbar,
     NavbarBrand,
@@ -33,11 +34,12 @@ export default class extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        (({ children, className }, { active }) =>
+        (({ children, className, pathContext: { slug } }, { active }) =>
             <Navbar className={className} role="header" isTransparent>
+                {this._alternative()}
                 <NavbarBrand>
                     <NavbarItem>
-                        <Link to="/#">
+                        <Link to={slug ? slug.replace(/\/(en|ja)\/.+/, '/$1/') : '/'}>
                             <img alt="danmaq"
                                  src={LogoInv}
                                  width="282"
@@ -50,11 +52,13 @@ export default class extends React.Component {
                 <NavbarMenu isActive={active} role="navigation">
                     <NavbarStart>{children}</NavbarStart>
                     <NavbarEnd>
+                        {this._toggleLanguage()}
                         <NavbarItem href="https://github.com/danmaq"
                                     target="_blank">
                             <Icon i="github" size={2} />
                         </NavbarItem>
                         <NavbarItem href="https://twitter.com/danmaq"
+                                    herflang="ja"
                                     target="_blank">
                             <Icon i="twitter" size={2} />
                         </NavbarItem>
@@ -62,6 +66,42 @@ export default class extends React.Component {
                 </NavbarMenu>
             </Navbar>
         )(this.props, this.state);
+
+    _alternative =
+        () => {
+            const { pathContext: { langKey } } = this.props;
+            if (!langKey) { return undefined; }
+            const lang = /^en/.test(langKey) ? 'en' : 'ja';
+            const alt = /^en/.test(langKey) ? 'ja' : 'en';
+            const result =
+                <Helmet>
+                    <html lang={lang} />
+                    <link href={withPrefix(this._replaceSlugLang(alt))}
+                          rel="alternate"
+                          hrefLang={alt} />
+                </Helmet>
+            return result;
+        }
+
+    _toggleLanguage =
+        () => {
+            const { pathContext: { langKey } } = this.props;
+            if (!langKey) { return undefined; }
+            const lang = /^en/.test(langKey) ? 'ja' : 'en';
+            const result =
+                <NavbarItem href={withPrefix(this._replaceSlugLang(`/${lang}/`))}
+                            rel="alternate"
+                            hrefLang={lang}>
+                    <Icon i="language" size={2} />
+                    {/^en/.test(langKey) ? '🇬🇧▶︎🇯🇵' : '🇯🇵▶︎🇬🇧'}
+                </NavbarItem>;
+            return result;
+        };
+
+    _replaceSlugLang =
+        lang =>
+        (({ pathContext: { slug } }) =>
+            !slug ? lang : slug.replace(/^\/(ja|en)\//, lang))(this.props);
 
     /** Invoked on burger menu button has clicked. */
     _onClickedBurger =
@@ -73,8 +113,12 @@ export default class extends React.Component {
     static propTypes = {
         children: PropTypes.node,
         className: PropTypes.string,
+        pathContext: PropTypes.object,
     };
 
     /** Default properties. */
-    static defaultProps = { className: 'is-light' };
+    static defaultProps = {
+        className: 'is-light',
+        pathContext: {}
+    };
 };

@@ -3,5 +3,49 @@ box: node
 build:
   steps:
   - script:
-      name: Installing Dependencies.
+      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
       code: yarn install
+  - script:
+      name: 'PUSH とかに要るからね、 SSH のキーを置いとくよ ＞ ヾ(╹◡╹川'
+      code: |
+        mkdir ~/.ssh
+        echo ${SSH_PRIVATE_KEY} >> ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        chmod 700 ~/.ssh
+  - script:
+      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 記事のリポジトリをもってきて準備できたよ！'
+      code: |
+        git clone -v https://github.com/danmaq/danmaq.article.git /tmp/danmaq.article
+        ln -s /tmp/danmaq.article ${WERCKER_SOURCE_DIR}/danmaq.article
+staging:
+  steps:
+  - script:
+      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 作業用ディレクトリとかキャッシュとかを綺麗にするよ'
+      code: yarn run clean
+  - script:
+      name: 'じゃ、Staging 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
+      code: yarn run staging:build --verbose
+  - script:
+      name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/danmaq.gatsby/'
+      code: yarn run staging:commit
+production:
+  steps:
+  - script:
+      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 作業用ディレクトリとかキャッシュとかを綺麗にするよ'
+      code: |
+        yarn run clean
+        yarn run production:clean
+  - script:
+      name: '成果物格納先のリポジトリを持ってくるよ ＞ ヾ(╹◡╹川'
+      code: |
+        yarn run production:clone
+        yarn run production:link
+  - script:
+      name: 'ヾ(๑╹⌓╹)ﾉ" ＜ えー、古いファイル要らないー！消しちゃえ'
+      code: yarn run production:truncate
+  - script:
+      name: 'じゃ、Production 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
+      code: yarn run build --verbose
+  - script:
+      name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
+      code: yarn run production:commit

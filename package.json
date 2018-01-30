@@ -5,7 +5,7 @@
     "author": {
         "name": "Shuhei Nomura (danmaq)",
         "email": "info@danmaq.com",
-        "url": "https://danmaq.com"
+        "url": "https://danmaq.com/"
     },
     "license": "MIT",
     "keywords": [
@@ -20,43 +20,71 @@
         "url": "https://github.com/danmaq/danmaq.gatsby/issues"
     },
     "homepage": "https://github.com/danmaq/danmaq.gatsby",
+    "engines": {
+        "node": ">=9.4.0"
+    },
     "dependencies": {
-        "@types/react": "^16.0.34",
+        "@types/react": "^16.0.35",
         "bloomer": "^0.6.3",
         "bulma": "^0.6.2",
-        "caniuse-db": "^1.0.30000791",
+        "caniuse-db": "^1.0.30000797",
         "classnames": "^2.2.5",
         "font-awesome": "^4.7.0",
-        "gatsby": "^1.9.163",
-        "gatsby-link": "^1.6.34",
-        "gatsby-plugin-react-helmet": "^2.0.3",
-        "gatsby-plugin-react-next": "^1.0.7",
-        "gatsby-plugin-sass": "^1.0.15",
+        "gatsby": "^1.9.172",
+        "gatsby-cli": "^1.1.32",
+        "gatsby-link": "^1.6.35",
+        "gatsby-plugin-i18n": "^0.4.1",
+        "gatsby-plugin-i18n-tags": "^0.0.3",
+        "gatsby-plugin-react-helmet": "^2.0.4",
+        "gatsby-plugin-react-next": "^1.0.8",
+        "gatsby-plugin-sass": "^1.0.16",
+        "gatsby-plugin-sharp": "^1.6.27",
+        "gatsby-remark-copy-linked-files": "^1.5.25",
+        "gatsby-remark-images": "^1.5.41",
+        "gatsby-source-filesystem": "^1.5.15",
+        "gatsby-transformer-remark": "^1.7.30",
+        "gatsby-transformer-sharp": "^1.6.17",
+        "i18next": "^10.3.0",
+        "i18next-browser-languagedetector": "^2.1.0",
+        "i18next-xhr-backend": "^1.5.1",
+        "lodash": "^4.17.4",
         "prop-types": "^15.6.0",
+        "ptz-i18n": "^0.4.0",
         "react": "^16.2.0",
         "react-dom": "^16.2.0",
-        "react-helmet": "^5.2.0"
+        "react-helmet": "^5.2.0",
+        "react-i18next": "^7.3.4"
     },
     "devDependencies": {
         "babel-plugin-module-resolver": "^3.0.0",
-        "gatsby-cli": "^1.1.28",
         "gh-pages": "^1.1.0",
         "prettier": "^1.10.2",
-        "replace": "^0.3.0",
+        "rimraf": "^2.6.2",
         "yarn-or-npm": "^2.0.4"
     },
     "scripts": {
-        "build": "gatsby build",
-        "clean": ".tools/clean",
+        "build": "node --max_old_space_size=2048 --stack_size=1536 node_modules/.bin/gatsby build",
+        "clean": "rimraf .cache public",
+        "clean:all": "yon run clean && .tools/clean",
         "develop": "gatsby develop",
-        "deploy": "yon run build --prefix-paths && gh-pages -d public",
         "format": "prettier --trailing-comma es5 --no-semi --single-quote --write \"src/**/*.js\"",
         "start": "yon run develop",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "staging": "yon run clean && yon run staging:build && yon run staging:commit",
+        "staging:build": "yon run build --prefix-paths",
+        "staging:commit": "gh-pages -d public",
+        "production": "yon run clean && yon run production:clean && yon run production:clone && yon run production:truncate && yon run production:link && yon run build --verbose && yon run production:commit",
+        "production:clean": "rimraf ${TMPDIR}/danmaq.github.io",
+        "production:clone": "git clone git@github.com:danmaq/danmaq.github.io.git ${TMPDIR}/danmaq.github.io",
+        "production:commit": "cd ${TMPDIR}/danmaq.github.io && git add -A && git commit -m 'Updated by danmaq.gatsby.' && git push",
+        "production:link": "ln -s ${TMPDIR}/danmaq.github.io public",
+        "production:truncate": "cd ${TMPDIR}/danmaq.github.io && git ls-files --full-name -i | xargs git rm --cached"
     },
     "browserslist": [
         "> 2%",
         "Android >= 4.4.3",
-        "ie >= 11"
+        "firefox >= 52",
+        "ie >= 11",
+        "opera >= 36"
     ]
 }
