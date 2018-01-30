@@ -1,2 +1,0 @@
-webpackJsonp([73818637806382],{2637:function(t,a){t.exports={data:{markdownRemark:{html:"<p>Renewal restoration (laugh)</p>",frontmatter:{cover:null,date:"2001-12-11T00:00:00+09:00",strDate:"2001/12/10",title:"update information"}}},pathContext:{path:"/en/blog/2001/12/11-更新情報-3/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2001-12-11-更新情報-3-c57469877f27619022c8.js.map

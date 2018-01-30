@@ -1,2 +1,0 @@
-webpackJsonp([0x6f282ddb44c7],{2591:function(t,e){t.exports={data:{markdownRemark:{html:'<p>Oh, before that, <a href="/km-iik">KeyboardMania</a> ......</p>',frontmatter:{cover:null,date:"2000-05-01T23:46:41+09:00",strDate:"2000/5/1",title:"Soon pop'n have to complete"}}},pathContext:{path:"/en/blog/2000/05/01-km-2k/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2000-05-01-km-2-k-9e5a5150dbbfd387ab01.js.map

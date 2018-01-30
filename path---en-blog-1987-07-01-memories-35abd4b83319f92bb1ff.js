@@ -1,2 +1,0 @@
-webpackJsonp([0xec1f7c00f01a],{2440:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Based on the memory when I took him to Seibuen Yuenchi, I remembered what I drew after coming home.</p>\n<p>I remember only the date I drew as honest 1987.</p>",frontmatter:{cover:null,date:"1987-07-01T11:00:57+09:00",strDate:"1987/7/1",title:"Due"}}},pathContext:{path:"/en/blog/1987/07/01-memories/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-1987-07-01-memories-35abd4b83319f92bb1ff.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0x704ac0087849],{3398:function(a,t){a.exports={data:{markdownRemark:{html:'<p>ようやく人間の顔らしい顔が描けるようになってきた頃のイラスト。</p>\n<p>描いた記憶自体はおぼろげながらもあるものの、いつ描いたのかは全く記憶にないし、誰の顔かも定かではない。\n<a href="../../1986/06/13-dad.md">おとうさん</a>の画力を推察しても、恐らく 1987 年だろう、とまでしか予想が難しい。</p>',frontmatter:{cover:null,date:"1987-10-20T10:00:16+09:00",strDate:"1987/10/20",title:"おともだち"}}},pathContext:{path:"/ja/blog/1987/10/20-friends/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1987-10-20-friends-1397f225ab9335eef5f0.js.map

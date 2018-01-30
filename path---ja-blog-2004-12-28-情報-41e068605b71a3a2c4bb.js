@@ -1,2 +1,0 @@
-webpackJsonp([0x5fb04a262fea],{3810:function(t,a){t.exports={data:{markdownRemark:{html:"<ul>\n<li>\n<p>ここでは、過去に愛用していた乗り物たちを紹介しています。</p>\n<ul>\n<li>最後に乗っていたYAMAHA YB-1が老朽化による逝去により、2008年現在ごく普通のシティサイクル(Tハンドル/3段変速)に乗っています。</li>\n</ul>\n</li>\n</ul>",frontmatter:{cover:null,date:"2004-12-28T00:00:59+09:00",strDate:"2004/12/27",title:"情報"}}},pathContext:{path:"/ja/blog/2004/12/28-情報/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-12-28-情報-41e068605b71a3a2c4bb.js.map

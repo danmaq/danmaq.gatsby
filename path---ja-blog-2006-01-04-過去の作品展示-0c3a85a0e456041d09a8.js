@@ -1,2 +1,0 @@
-webpackJsonp([0x7ae3acc5c5ef],{3951:function(a,t){a.exports={data:{markdownRemark:{html:'<p>ひょんなことで94～96年頃に作ったゲーム(の画像とか自己紹介とかだけです)が出てきたので<a href="/tag/basic">展示</a>してみるテスト。</p>\n<p>あと<a href="/emeditor-danmakufu">EmEditor用東方弾幕風構文ファイル</a>を更新、弾幕風v0.12h2の新関数に対応しました。</p>',frontmatter:{cover:null,date:"2006-01-04T00:00:00+09:00",strDate:"2006/1/3",title:"過去の作品展示"}}},pathContext:{path:"/ja/blog/2006/01/04-過去の作品展示/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-01-04-過去の作品展示-0c3a85a0e456041d09a8.js.map

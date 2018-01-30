@@ -1,2 +1,0 @@
-webpackJsonp([0xd53a2ec00e68],{3463:function(a,t){a.exports={data:{markdownRemark:{html:"<p>黒塗りのアクリルボードを彫刻ナイフで彫って、その上から塗料を流し込んでできたイラスト。\n(この画法ってなんて呼ぶんだっけ)</p>\n<p>元ネタは “マイコン BASIC マガジン” に載っていた “レイブレーサー for Windows” のスクリーンショットを参考に、気持ちアレンジを加えてみた。</p>",frontmatter:{cover:null,date:"1996-02-10T11:00:25+09:00",strDate:"1996/2/10",title:"レイブレーサー"}}},pathContext:{path:"/ja/blog/1996/02/10-rave-racer/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1996-02-10-rave-racer-c7b3ddcc8332363f1cba.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([73557895232997],{3884:function(t,a){t.exports={data:{markdownRemark:{html:'<p>3日目/西2ち-06a/“danmaq”</p>\n<h2>新刊</h2>\n<ul>\n<li><a href="/!/thA/">東方時封城 ～ the Alternative Age</a>(ゲーム/500yen)</li>\n</ul>',frontmatter:{cover:null,date:"2005-08-14T00:00:00+09:00",strDate:"2005/8/13",title:"コミックマーケット68(東京)"}}},pathContext:{path:"/ja/blog/2005/08/14-コミックマーケット68東京/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-08-14-コミックマーケット-68-東京-549ea0db08ddfe1373d8.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0xb021e9d7734f],{4022:function(t,a){t.exports={data:{markdownRemark:{html:"<p>カルピスウォーターを飲もうと1.5Lペットボトルを掴み口をつけた瞬間、ボトルの握ってた部分が突然ベコっとへこみ <em>ﾄﾞﾌﾞﾊﾞｰ！</em> 着替えたばかりの服も、テーブルクロスも、封を開けていた鞄は中身までもカルピスまみれ。無論顔もカルピスまみれ。鬱。</p>",frontmatter:{cover:null,date:"2006-04-19T22:53:00+09:00",strDate:"2006/4/19",title:"ペットボトルに顔射された男"}}},pathContext:{path:"/ja/blog/2006/04/19-ペットボトルに顔射された男/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-04-19-ペットボトルに顔射された男-d949cc19c35320c96b60.js.map

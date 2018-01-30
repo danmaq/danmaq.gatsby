@@ -1,2 +1,0 @@
-webpackJsonp([27905089606850],{3564:function(t,a){t.exports={data:{markdownRemark:{html:'<p>ホントに<a href="/tag/declined">DECLINEd</a>してんのかなぁ……もうちょっと猶予期間は設けるつもりだけど。</p>',frontmatter:{cover:null,date:"2000-12-31T00:00:00+09:00",strDate:"2000/12/30",title:"誰もこないなぁ……"}}},pathContext:{path:"/ja/blog/2000/12/31-declined/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2000-12-31-declined-ba5375dac883907190e5.js.map

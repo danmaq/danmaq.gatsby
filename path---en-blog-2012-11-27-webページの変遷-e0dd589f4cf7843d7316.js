@@ -1,2 +1,0 @@
-webpackJsonp([0xe321e16cf5e9],{3357:function(e,t){e.exports={data:{markdownRemark:{html:'<p>Since it will be quite long, it <a href="/?cat=21">was divided into different categories</a> . Please have a look there.</p>',frontmatter:{cover:null,date:"2012-11-27T21:50:04+09:00",strDate:"2012/11/27",title:"Web page transition"}}},pathContext:{path:"/en/blog/2012/11/27-webページの変遷/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2012-11-27-webページの変遷-e0dd589f4cf7843d7316.js.map

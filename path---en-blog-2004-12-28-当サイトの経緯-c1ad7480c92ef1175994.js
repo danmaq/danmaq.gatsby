@@ -1,2 +1,0 @@
-webpackJsonp([7189517371134],{2852:function(t,e){t.exports={data:{markdownRemark:{html:'<p>Please take a look at the following page as it becomes longer.</p>\n<p><a href="/category/archives">History of this site</a></p>',frontmatter:{cover:null,date:"2004-12-28T00:00:00+09:00",strDate:"2004/12/27",title:"History of this site"}}},pathContext:{path:"/en/blog/2004/12/28-当サイトの経緯/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2004-12-28-当サイトの経緯-c1ad7480c92ef1175994.js.map

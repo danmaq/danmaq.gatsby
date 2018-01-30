@@ -1,2 +1,0 @@
-webpackJsonp([49098281031185],{3845:function(a,t){a.exports={data:{markdownRemark:{html:'<p>やっとクソ忙しい時期もひと段落着いて、ここからまた暇になってきます…そう、食えないほどに。仕方ないので新しいシゴト探さなきゃ。 <a href="/3265">東方イラスト</a>1枚追加。いろんな意味で怖いです。心臓の弱い方はモニタから少し目を離して見るほうがいいかもしれません。 それと、<a href="/emeditor-danmakufu">EmEditor用東方弾幕風構文ファイル</a>にバグがあったので修正。</p>',frontmatter:{cover:null,date:"2005-03-30T22:38:59+09:00",strDate:"2005/3/30",title:"仕事も一息"}}},pathContext:{path:"/ja/blog/2005/03/30-仕事も一息/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-03-30-仕事も一息-53676f59d0700053013a.js.map

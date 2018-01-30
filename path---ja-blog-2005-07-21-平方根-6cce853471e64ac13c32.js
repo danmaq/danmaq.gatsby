@@ -1,2 +1,0 @@
-webpackJsonp([0x74ce623ac175],{3879:function(t,a){t.exports={data:{markdownRemark:{html:'<p><strong><a href="/tag/square">SS “平方根” を見る (約500文字)</a></strong> 東方板の「投稿するまでもないSSスレ」に投稿したギャグものショートショートです。相変わらず香霖の変態ストーリーばっかですがｗ パッと見全然エロくもなんともないですが、深読みすればするほど危険な会話になってきます。 そういえばこんな平方根の早覚えってありましたね。</p>',frontmatter:{cover:null,date:"2005-07-21T02:05:59+09:00",strDate:"2005/7/20",title:"平方根"}}},pathContext:{path:"/ja/blog/2005/07/21-平方根/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-07-21-平方根-6cce853471e64ac13c32.js.map

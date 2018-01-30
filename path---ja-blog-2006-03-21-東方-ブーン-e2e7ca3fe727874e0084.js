@@ -1,2 +1,0 @@
-webpackJsonp([38436452897172],{4006:function(t,a){t.exports={data:{markdownRemark:{html:"<p>文ｰﾝ ⊂二（＾ω＾ ）二二二⊃</p>",frontmatter:{cover:null,date:"2006-03-21T03:09:00+09:00",strDate:"2006/3/20",title:"ﾌﾞｰﾝ"}}},pathContext:{path:"/ja/blog/2006/03/21-東方-ブーン/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-03-21-東方-ブーン-e2e7ca3fe727874e0084.js.map

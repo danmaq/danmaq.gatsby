@@ -1,2 +1,0 @@
-webpackJsonp([20000802773049],{2719:function(e,a){e.exports={data:{markdownRemark:{html:'<p>Reviewing the source of <a href="/revenger">REVENGER</a> is quite dirty, so maybe even making a sample of a Windows program as small as one.</p>',frontmatter:{cover:null,date:"2004-01-04T15:50:00+09:00",strDate:"2004/1/4",title:"Oh, that's right"}}},pathContext:{path:"/en/blog/2004/01/04-あぁ、そうだ/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2004-01-04-あぁ、そうだ-d9cec875e9bbef057fad.js.map

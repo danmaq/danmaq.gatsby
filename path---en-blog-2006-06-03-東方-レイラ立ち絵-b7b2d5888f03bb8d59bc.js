@@ -1,2 +1,0 @@
-webpackJsonp([0x8b5d64f836d6],{3086:function(t,e){t.exports={data:{markdownRemark:{html:"<p>I tried to redraw the cut-in for Tokijo castle v2. It is like atmosphere that I multiplied Lunasa and Yuyuko in about 8: 2.</p>",frontmatter:{cover:null,date:"2006-06-03T16:00:00+09:00",strDate:"2006/6/3",title:"Leila Standing Picture"}}},pathContext:{path:"/en/blog/2006/06/03-東方-レイラ立ち絵/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2006-06-03-東方-レイラ立ち絵-b7b2d5888f03bb8d59bc.js.map

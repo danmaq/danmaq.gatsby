@@ -1,2 +1,0 @@
-webpackJsonp([56407701906301],{4213:function(a,t){a.exports={data:{markdownRemark:{html:'<p>東方アレンジやオリジナル曲など、過去の自作曲を30曲集めたアウトテイク曲集です。</p>\n<ul>\n<li>TOUHOU | 75:04</li>\n<li><a href="/!/dst/">特設ページを見る</a></li>\n</ul>',frontmatter:{cover:null,date:"2007-12-30T00:00:00+09:00",strDate:"2007/12/29",title:"[音楽CD] danmaq soundtrack"}}},pathContext:{path:"/ja/blog/2007/12/30-danmaq_soundtrack/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2007-12-30-danmaq-soundtrack-3334e0f7c9c3a2ba95da.js.map

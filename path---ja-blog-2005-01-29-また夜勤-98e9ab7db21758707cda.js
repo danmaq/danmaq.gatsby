@@ -1,2 +1,0 @@
-webpackJsonp([88252689421792],{3829:function(t,a){t.exports={data:{markdownRemark:{html:"<p>そして案の定、風邪引いた。進めたいモノがたくさんあるが無茶すると余計響きそうなので殆ど寝て過ごしてた。風邪さえ引いてなきゃ睡眠なんて5時間もとれば十分なんだがorz と言うわけで些細な更新しかしていません。<del>200x40ドット(16色PNG)のバナーを作ってみた</del>。国際的な規格(？)で定められている234x60ドットよりも、なんだかこっちの方が需要ありそうな気がする。 要は縮小して上下を削っただけなんですがねｗ</p>",frontmatter:{cover:null,date:"2005-01-29T00:00:00+09:00",strDate:"2005/1/28",title:"また夜勤"}}},pathContext:{path:"/ja/blog/2005/01/29-また夜勤/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-01-29-また夜勤-98e9ab7db21758707cda.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([89773700450544],{2608:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Nobody will come ...... I will come here because I got a link to the top?</p>",frontmatter:{cover:null,date:"2001-01-06T00:00:00+09:00",strDate:"2001/1/5",title:"Test"}}},pathContext:{path:"/en/blog/2001/01/06-てすと/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2001-01-06-てすと-2d764743f418f3fbe99e.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0xb17d21c79c84],{3397:function(t,a){t.exports={data:{markdownRemark:{html:"<p>西武園ゆうえんちに連れていってもらった時の記憶を元に、帰宅後描いたものと記憶している。</p>\n<p>描いた日付も正直 1987 年、としか覚えていない。</p>",frontmatter:{cover:null,date:"1987-07-01T11:00:57+09:00",strDate:"1987/7/1",title:"おもいで"}}},pathContext:{path:"/ja/blog/1987/07/01-memories/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1987-07-01-memories-423728e1ea4aa31cf2ac.js.map

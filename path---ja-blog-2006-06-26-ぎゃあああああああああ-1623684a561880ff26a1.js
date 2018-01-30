@@ -1,2 +1,0 @@
-webpackJsonp([0xb2844bddd9cc],{4053:function(t,a){t.exports={data:{markdownRemark:{html:"<p>カップ焼きそばに熱湯注いだ直後めまいしてずっこけた。焼きそばが全部床に投げ出されて食えんようになった。麺もろとも熱湯もろ手の甲にかぶってやけどしてもうた orz すぐ冷やしたけどあんまり痛みがひどいんで濡れハンカチを手に縛り付けてみるが、PC操作しづらすorz</p>",frontmatter:{cover:null,date:"2006-06-26T23:37:00+09:00",strDate:"2006/6/26",title:"ぎゃあああああああああ"}}},pathContext:{path:"/ja/blog/2006/06/26-ぎゃあああああああああ/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-06-26-ぎゃあああああああああ-1623684a561880ff26a1.js.map

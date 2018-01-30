@@ -1,2 +1,0 @@
-webpackJsonp([0x5bf6a7fc5343],{3741:function(t,a){t.exports={data:{markdownRemark:{html:"<p>そして紫にズタボロにされた魔理沙は、橙へと八つ当たりを試みる…… 弾幕風スクリプト作ってる間お絵かき封印していたのでしばらくぶりの投稿。</p>",frontmatter:{cover:null,date:"2004-08-30T21:25:00+09:00",strDate:"2004/8/30",title:"無限ループの恐ろしさ"}}},pathContext:{path:"/ja/blog/2004/08/30-無限ループの恐ろしさ/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-08-30-無限ループの恐ろしさ-ca93cfe8a34ce36ca1f8.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0x931985671a77],{3036:function(t,a){t.exports={data:{markdownRemark:{html:"<p>Marisa Marisa got lost in the eastward strap that you got at the Toho comic festival, when you attached it to the cell phone ... Is it a estrus period? _? orz</p>",frontmatter:{cover:null,date:"2006-03-02T21:15:00+09:00",strDate:"2006/3/2",title:"Marisa Disappearance"}}},pathContext:{path:"/en/blog/2006/03/02-魔理沙失踪/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2006-03-02-魔理沙失踪-79af41dee5002616bffa.js.map

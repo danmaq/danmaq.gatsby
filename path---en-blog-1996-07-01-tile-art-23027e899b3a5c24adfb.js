@@ -1,2 +1,0 @@
-webpackJsonp([0xd2b6a4306265],{2509:function(t,e){t.exports={data:{markdownRemark:{html:"<p>Something that got misunderstood about tile art ...... which was made of kingfishers of dusk.</p>\n<p>I tried placing many layers to create a three-dimensional feeling, but that is not called tile art.</p>",frontmatter:{cover:null,date:"1996-07-01T11:00:19+09:00",strDate:"1996/7/1",title:"Tile art"}}},pathContext:{path:"/en/blog/1996/07/01-tile-art/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-1996-07-01-tile-art-23027e899b3a5c24adfb.js.map

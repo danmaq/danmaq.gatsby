@@ -1,2 +1,0 @@
-webpackJsonp([0xf488d92c51e],{3404:function(a,t){a.exports={data:{markdownRemark:{html:'<p>自作の絵で現存するモノとしては<del>最古のもの</del>→<a href="../../1986/06/13-dad.md">現在より最古のもの、しかもカラー絵を見つけた</a>。</p>\n<p>ノート一ページ真黒に塗りたくって、その真ん中にタマが一匹、しかも頭だけ。当時からどんな性格だったかがうかがえる。</p>',frontmatter:{cover:null,date:"1990-06-03T21:55:00+09:00",strDate:"1990/6/3",title:"タマ"}}},pathContext:{path:"/ja/blog/1990/06/03-tama-and-friends/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1990-06-03-tama-and-friends-c4d8795376047b5875a5.js.map

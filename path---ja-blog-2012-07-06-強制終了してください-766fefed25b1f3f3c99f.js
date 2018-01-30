@@ -1,2 +1,0 @@
-webpackJsonp([0x97cf335b3348],{4304:function(a,t){a.exports={data:{markdownRemark:{html:"<p>巷で有名になってるみたいなのでちょっと作ってみた。 <del>強制終了してください Javascript版・WSH版・.NET版</del> danmaq.comのwordpress化工事における誤操作で削除してしまったため、公開終了しました。</p>\n<h2>注意！</h2>\n<p>開く前に作業中のデータは保存しておいてください。万一データ破損など起きても、danmaqは責任を負いかねます。</p>",frontmatter:{cover:null,date:"2012-07-06T00:45:51+09:00",strDate:"2012/7/5",title:"強制終了してください"}}},pathContext:{path:"/ja/blog/2012/07/06-強制終了してください/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2012-07-06-強制終了してください-766fefed25b1f3f3c99f.js.map

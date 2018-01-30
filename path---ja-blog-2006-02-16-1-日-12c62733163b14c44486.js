@@ -1,2 +1,0 @@
-webpackJsonp([0xc1b6e4b2aba7],{3980:function(l,n){l.exports={data:{markdownRemark:{html:"<ul>\n<li>\n<p>ニートしたい</p>\n<ul>\n<li>だが生活費ない</li>\n<li>だが稼ぐと創作時間ない</li>\n<li>ニートして時間を目一杯創作に充てたい</li>\n<li>だが生活費ない</li>\n<li>だが稼ぐと創作時間ない</li>\n<li>ニートして時間を目一杯創作に充てたい</li>\n<li>だが（永久に続く</li>\n</ul>\n</li>\n</ul>",frontmatter:{cover:null,date:"2006-02-16T20:02:20+09:00",strDate:"2006/2/16",title:"1日"}}},pathContext:{path:"/ja/blog/2006/02/16-1日/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-02-16-1-日-12c62733163b14c44486.js.map

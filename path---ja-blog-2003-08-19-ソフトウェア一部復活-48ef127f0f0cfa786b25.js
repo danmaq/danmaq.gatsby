@@ -1,2 +1,0 @@
-webpackJsonp([0x752b8e924da6],{3655:function(t,a){t.exports={data:{markdownRemark:{html:"<p><code>void main(){while(1);}</code></p>",frontmatter:{cover:null,date:"2003-08-19T00:00:00+09:00",strDate:"2003/8/18",title:"ソフトウェア一部復活"}}},pathContext:{path:"/ja/blog/2003/08/19-ソフトウェア一部復活/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2003-08-19-ソフトウェア一部復活-48ef127f0f0cfa786b25.js.map

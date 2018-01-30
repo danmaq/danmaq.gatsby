@@ -1,2 +1,0 @@
-webpackJsonp([0xc02759000848],{3868:function(a,t){a.exports={data:{markdownRemark:{html:'<p>ここ数日風邪こじらせて死亡中。<a href="/!/thA/">東方時封城</a>製作も滞って体験版Bも数日ほど遅れそうです。申し訳ない。 そして少々報告が遅れましたが、夏コミ当選しました。<em>8/14(日)3日目、場所は西ち-06a</em>です。出展物は<a href="/!/thA/">東方時封城</a>になります。  引き続き製作に徹するので本日は告知のみの更新となります。まだしんどいけど、体験版遅らすだけならともかく落としたりなんかしたら最悪だし(\'A`)</p>',frontmatter:{cover:null,date:"2005-05-24T00:00:00+09:00",strDate:"2005/5/23",title:"夏コミ当選"}}},pathContext:{path:"/ja/blog/2005/05/24-夏コミ当選/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-05-24-夏コミ当選-d55e75b0e8eec570a825.js.map

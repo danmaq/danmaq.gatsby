@@ -1,2 +1,0 @@
-webpackJsonp([66083952099690],{3349:function(t,e){t.exports={data:{markdownRemark:{html:'<p>Cooperation with DANGOYA. It is a vertical shooting game of 6 + α stage. <a href="http://kagaminer.in/">Please refer to the special site for details</a> .</p>',frontmatter:{cover:null,date:"2012-08-12T00:00:23+09:00",strDate:"2012/8/11",title:"Boundary fantasy record mirror"}}},pathContext:{path:"/en/blog/2012/08/12-結界幻想録-鏡/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2012-08-12-結界幻想録-鏡-ea259f17b904d5cea320.js.map

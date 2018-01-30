@@ -1,2 +1,0 @@
-webpackJsonp([0xf09063c55c4e],{4004:function(t,a){t.exports={data:{markdownRemark:{html:"<p>今冬は2度もでかい風邪やらかしたので、もう免疫ついて当分大丈夫だろうとなめてかかってたら現在38.5度orz</p>",frontmatter:{cover:null,date:"2006-03-18T14:22:00+09:00",strDate:"2006/3/18",title:"風邪"}}},pathContext:{path:"/ja/blog/2006/03/18-風邪/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-03-18-風邪-4685b233fe15b22d3f11.js.map

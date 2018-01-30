@@ -1,2 +1,0 @@
-webpackJsonp([0xf69ce96197ba],{3473:function(t,a){t.exports={data:{markdownRemark:{html:"<p>人が木に寄りかかり、空を舞う鳥と巨大な入道雲から覗かせる太陽を見つめている。\n約束された場所で人を待っているのか、それとも何か思いにふけっているのか。</p>\n<p>一時期、消しゴムで “描く” のにハマっていて、これもその一枚。\n鉛筆で描くよりも光っぽさが綺麗に出てくれるので自分でいろんな模様を試してみては一人ｽｹﾞｪ！ｽｹﾞｪ！って感動していた。\nみんなも同じことやったよねっ？ねっ！？</p>",frontmatter:{cover:null,date:"1997-11-01T00:00:00+09:00",strDate:"1997/10/31",title:"空と雲"}}},pathContext:{path:"/ja/blog/1997/11/01-sky/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1997-11-01-sky-e3ef870d615de349991c.js.map

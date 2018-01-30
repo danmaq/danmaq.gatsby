@@ -1,2 +1,0 @@
-webpackJsonp([0xdb3bb42931d5],{3401:function(t,n){t.exports={data:{markdownRemark:{html:"<p><strong>🌡22℃ ☀</strong></p>\n<p>僕は起きてから二時間ほどで外出し、皆で廃品回収ボランティアに参加しました。</p>\n<p>新聞や広告紙、漫画雑誌、果てはビールや酒の空瓶などが積まれており、それらを運び出す作業の手伝いをしました。\n軍手を使ってはいたものの、相当手が痛くなりました。</p>\n<p>報酬として、縄跳びとおにぎりを戴きました。\nおにぎりを口にしつつ、午後は S 君と遊び、夜はレストランで会食をしました。</p>",frontmatter:{cover:null,date:"1990-05-20T21:00:00+09:00",strDate:"1990/5/20",title:"日記"}}},pathContext:{path:"/ja/blog/1990/05/20-diary/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1990-05-20-diary-6b05142aa6243297a41a.js.map

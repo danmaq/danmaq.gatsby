@@ -1,2 +1,0 @@
-webpackJsonp([4141090729406],{3768:function(t,a){t.exports={data:{markdownRemark:{html:'<p>トップに表示される最新の掲示板ログを廃止しました。弾幕風スクリプトの感想とかおおよその人がメールで送ってくるので、やっぱりトップに晒されるのが苦手なのかなぁ、と思ってみる。 そろそろ<a href="/tag/touhou-in-phantasm">永夜抄ステージ</a>も完成させなきゃ。現在ラスボスの攻撃パターン19個中14個完成。……あ、でもカットイン画像作ってないや。</p>',frontmatter:{cover:null,date:"2004-10-03T00:00:00+09:00",strDate:"2004/10/2",title:"更新情報"}}},pathContext:{path:"/ja/blog/2004/10/03-更新情報-18/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-10-03-更新情報-18-ab6a443575b6fc6cb50a.js.map

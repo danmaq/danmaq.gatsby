@@ -1,2 +1,0 @@
-webpackJsonp([0x8ee08b203ccc],{2965:function(t,e){t.exports={data:{markdownRemark:{html:'<p>My own <a href="/tag/yb-1">car</a> is over. All around Sprocket · Mission passed ... I will go to work tomorrow how to go orz</p>',frontmatter:{cover:null,date:"2005-11-16T20:23:00+09:00",strDate:"2005/11/16",title:"And the nightmare became reality"}}},pathContext:{path:"/en/blog/2005/11/16-そして悪夢は現実になった/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2005-11-16-そして悪夢は現実になった-6f1d6870f570aa8759b8.js.map

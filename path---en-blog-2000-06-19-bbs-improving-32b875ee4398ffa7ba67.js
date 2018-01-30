@@ -1,2 +1,0 @@
-webpackJsonp([89556085368959],{2593:function(t,e){t.exports={data:{markdownRemark:{html:"<p>I am improving the admission CGI now. It is a guy who makes it correspond to cookie and enters from the beginning, but ... does not go well ...</p>",frontmatter:{cover:null,date:"2000-06-19T02:02:22+09:00",strDate:"2000/6/18",title:'It seems to be told that "I will not let you finish it indefinitely"'}}},pathContext:{path:"/en/blog/2000/06/19-bbs-improving/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2000-06-19-bbs-improving-32b875ee4398ffa7ba67.js.map

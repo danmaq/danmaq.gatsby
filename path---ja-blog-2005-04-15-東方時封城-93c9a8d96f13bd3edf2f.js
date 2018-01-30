@@ -1,2 +1,0 @@
-webpackJsonp([0xaa2e64cc4fd7],{3853:function(a,t){a.exports={data:{markdownRemark:{html:'<p>東方弾幕風ステージスクリプト最新作、<a href="/!/thA/">東方時封城</a>の体験版をこっそり公開。 まだ色々難ありなシロモノなので当分の間ちまちまバージョンアップしていく予定。</p>',frontmatter:{cover:null,date:"2005-04-15T02:01:59+09:00",strDate:"2005/4/14",title:"東方時封城"}}},pathContext:{path:"/ja/blog/2005/04/15-東方時封城/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-04-15-東方時封城-93c9a8d96f13bd3edf2f.js.map

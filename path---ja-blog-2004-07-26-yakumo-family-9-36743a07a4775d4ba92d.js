@@ -1,2 +1,0 @@
-webpackJsonp([97115083840723],{3707:function(a,t){a.exports={data:{markdownRemark:{html:'<p>狐は化かすものだが、化かされることもある。</p>\n<ul>\n<li><a href="/tag/yakumo-family?order=ASC">Webコミック “八雲家の日常” を全部見る</a></li>\n<li>&#x3C;<a href="/3129">前へ</a> | <a href="/3132">次へ></a></li>\n</ul>',frontmatter:{cover:null,date:"2004-07-26T02:02:00+09:00",strDate:"2004/7/25",title:"所詮は式神、神主の設定には抗えない"}}},pathContext:{path:"/ja/blog/2004/07/26-yakumo-family-9/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-07-26-yakumo-family-9-36743a07a4775d4ba92d.js.map

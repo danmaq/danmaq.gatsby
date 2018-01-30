@@ -1,2 +1,0 @@
-webpackJsonp([67982908441800],{3445:function(t,a){t.exports={data:{markdownRemark:{html:"<p>タンポポの成長観察日誌を描いていた当時の一ページ。</p>\n<p>花や茎の部分の彩色はクーピーペンシル、土の部分はリアルに土を擦り込んでいた。</p>\n<p>なお成長観察日誌は一日で飽きた模様。</p>",frontmatter:{cover:null,date:"1994-04-27T11:00:23+09:00",strDate:"1994/4/27",title:"タンポポでーす！！"}}},pathContext:{path:"/ja/blog/1994/04/27-taraxacum/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1994-04-27-taraxacum-b76e0b5a866fb0f7173d.js.map

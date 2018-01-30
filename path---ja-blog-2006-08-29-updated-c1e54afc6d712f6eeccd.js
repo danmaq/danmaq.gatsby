@@ -1,2 +1,0 @@
-webpackJsonp([0xc9db09046398],{4087:function(t,a){t.exports={data:{markdownRemark:{html:'<p>東方弾幕風フレームワークライブラリ『<a href="/tag/flan">Framework of LunAtic Notation</a>』のバージョン0.1hをリリースしました。</p>\n<p>今回は前バージョンで会話イベントスクリプトから使用不可となった算術関数の一部が再度使用可能となりました。</p>',frontmatter:{cover:null,date:"2006-08-29T20:23:00+09:00",strDate:"2006/8/29",title:"本日多忙につき更新情報のみで勘弁してくださいな"}}},pathContext:{path:"/ja/blog/2006/08/29-updated/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-08-29-updated-c1e54afc6d712f6eeccd.js.map

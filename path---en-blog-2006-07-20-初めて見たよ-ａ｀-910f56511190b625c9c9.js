@@ -1,2 +1,0 @@
-webpackJsonp([0x6fafd12ec6c2],{3104:function(t,e){t.exports={data:{markdownRemark:{html:"<p>A guy sleeping on the train floor in a large letter. Besides, Ibuki is better than a train drive sound.</p>",frontmatter:{cover:null,date:"2006-07-20T08:11:00+09:00",strDate:"2006/7/19",title:"I saw it for the first time 'A `"}}},pathContext:{path:"/en/blog/2006/07/20-初めて見たよ-ａ｀/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2006-07-20-初めて見たよ-ａ｀-910f56511190b625c9c9.js.map

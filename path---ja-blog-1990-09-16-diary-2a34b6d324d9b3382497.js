@@ -1,2 +1,0 @@
-webpackJsonp([45446806023586],{3411:function(t,n){t.exports={data:{markdownRemark:{html:"<p><strong>🌡24℃ 🌧</strong></p>\n<p>朝、テレビを一時間半ほど見て、それから暫くして長瀬幼稚園に行きました。\n僕は小学校入学前日に転入したので特に縁はありませんが、弟の母校？です。\nここで催し物をやっていました。</p>\n<p>ここでカレーやフランクフルトを食べ、わたあめとパインジュースを片手にヨーヨー釣りなどのミニゲームを遊びました。\nその後、かき氷を食べてゆっくり園内を回っていたら、東京へ宅配便を出しに行っていた親が迎えに来ました。</p>",frontmatter:{cover:null,date:"1990-09-16T21:00:00+09:00",strDate:"1990/9/16",title:"日記"}}},pathContext:{path:"/ja/blog/1990/09/16-diary/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1990-09-16-diary-2a34b6d324d9b3382497.js.map

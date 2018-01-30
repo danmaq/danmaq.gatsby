@@ -1,2 +1,0 @@
-webpackJsonp([0xd76b0d5d3e9],{3852:function(t,a){t.exports={data:{markdownRemark:{html:'<p><strong><a href="/tag/hentai-korin">SS “香霖堂に春が来た” を見る (約700文字)</a></strong> 東方板の「投稿するまでもないSSスレ」に投稿したショートショートです。香霖はもう変態の方向で（おおおな あ、ネチョでも成人向けでもないのでご安心を。ただし変態です。</p>',frontmatter:{cover:null,date:"2005-04-12T02:58:30+09:00",strDate:"2005/4/11",title:"香霖堂に春が来た"}}},pathContext:{path:"/ja/blog/2005/04/12-香霖堂に春が来た/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-04-12-香霖堂に春が来た-ff1ab02dc548fecc8e08.js.map

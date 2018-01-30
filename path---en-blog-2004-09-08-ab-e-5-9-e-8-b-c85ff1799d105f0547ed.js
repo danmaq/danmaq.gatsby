@@ -1,2 +1,0 @@
-webpackJsonp([0xc3a4db6c47eb],{2798:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Ironic sellers and buyers</p>",frontmatter:{cover:null,date:"2004-09-08T15:09:00+09:00",strDate:"2004/9/8",title:"AB type"}}},pathContext:{path:"/en/blog/2004/09/08-ab%e5%9e%8b/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2004-09-08-ab-e-5-9-e-8-b-c85ff1799d105f0547ed.js.map

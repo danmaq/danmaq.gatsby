@@ -1,2 +1,0 @@
-webpackJsonp([0xf5382d26f8e9],{3087:function(t,e){t.exports={data:{markdownRemark:{html:"<p>I tried to redraw the cut-in for Tokijo castle v2.</p>",frontmatter:{cover:null,date:"2006-06-03T12:00:00+09:00",strDate:"2006/6/3",title:"Renko Standing Picture"}}},pathContext:{path:"/en/blog/2006/06/03-蓮子立ち絵/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2006-06-03-蓮子立ち絵-ea6b4fb3c59bb588e593.js.map

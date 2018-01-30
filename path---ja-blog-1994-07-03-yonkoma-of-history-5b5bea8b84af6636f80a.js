@@ -1,2 +1,0 @@
-webpackJsonp([0xe53149ddd20],{3447:function(t,a){t.exports={data:{markdownRemark:{html:"<p>歴史の授業中、ノートの一角に描いていた 4 コマ漫画という名の、実質 1 コマ漫画。</p>\n<p>なお、この画像は前篇で、後篇もあったが消失してしまい、未だ見つかっていない。</p>",frontmatter:{cover:null,date:"1994-07-03T21:00:20+09:00",strDate:"1994/7/3",title:"4コマ漫画アッそー"}}},pathContext:{path:"/ja/blog/1994/07/03-yonkoma-of-history/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1994-07-03-yonkoma-of-history-5b5bea8b84af6636f80a.js.map

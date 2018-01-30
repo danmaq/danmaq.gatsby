@@ -1,2 +1,0 @@
-webpackJsonp([59369233894605],{3428:function(t,n){t.exports={data:{markdownRemark:{html:"<p><strong>🌡10℃ ☀</strong></p>\n<p>今日は母親の仕事の手伝いと、次の車のプラモデル作りをしていました。\n今回はスカイラインです。</p>\n<p>夕食後、今度はホバークラフトのラジコンを組み立てました。\n完成した頃にはすでに 21 時を回っていました。</p>\n<p>「そんなことしないで、早く寝なさい」</p>\n<p>母親の声が聞こえて、断念しました。</p>",frontmatter:{cover:null,date:"1991-02-23T21:00:00+09:00",strDate:"1991/2/23",title:"日記"}}},pathContext:{path:"/ja/blog/1991/02/23-diary/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1991-02-23-diary-eebf49852b30d2e950d4.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0x77c02c8fe034],{2789:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Especially children of Gensokyo are overconfident so please do not mistake me and carefully watch over the bullets carelessly.</p>",frontmatter:{cover:null,date:"2004-08-31T21:37:01+09:00",strDate:"2004/8/31",title:"Gensokyo's signboard engineering"}}},pathContext:{path:"/en/blog/2004/08/31-幻想郷の看板工学/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2004-08-31-幻想郷の看板工学-84ebb3f0d4e5c5589d96.js.map

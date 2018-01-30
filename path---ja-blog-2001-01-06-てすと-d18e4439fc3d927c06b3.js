@@ -1,2 +1,0 @@
-webpackJsonp([0x9dcf3c2fad8e],{3565:function(t,a){t.exports={data:{markdownRemark:{html:"<p>だれも来ないなぁ……今度はトップにリンクはったからくるかな?</p>",frontmatter:{cover:null,date:"2001-01-06T00:00:00+09:00",strDate:"2001/1/5",title:"てすと"}}},pathContext:{path:"/ja/blog/2001/01/06-てすと/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2001-01-06-てすと-d18e4439fc3d927c06b3.js.map

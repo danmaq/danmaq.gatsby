@@ -1,2 +1,0 @@
-webpackJsonp([0x7a67478544bc],{3477:function(t,a){t.exports={data:{markdownRemark:{html:'<p><a href="../../1994/09/01-outtakes.md">自作 RPG 制作に挫折したので、今度は 3D 格闘ゲームを作ろうと凄い無謀なことを言っていた</a>時の頃のイラスト。</p>\n<p>そもそも当時は N88BASIC と QuickBASIC しかまともに使いこなせるプログラム言語はなく、DirectX 云々以前の問題だった。\n(Delphi もちょこっとだけできたかな)</p>',frontmatter:{cover:null,date:"1998-04-01T00:00:00+09:00",strDate:"1998/3/31",title:"戦闘フィールド - 発電所"}}},pathContext:{path:"/ja/blog/1998/04/01-field-in-plant/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1998-04-01-field-in-plant-0a50261865494a4bbe40.js.map

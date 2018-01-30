@@ -1,2 +1,0 @@
-webpackJsonp([0xf0963b254b99],{2804:function(e,t){e.exports={data:{markdownRemark:{html:"<p>How many kilometers does Yukari know? Only the orange and the shrine master of the mattress and weight scale know the answer. It is the first time for a pen tablet. # I feel that there is room for training.</p>",frontmatter:{cover:null,date:"2004-09-14T00:14:00+09:00",strDate:"2004/9/13",title:"Yearly floor"}}},pathContext:{path:"/en/blog/2004/09/14-万年床/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2004-09-14-万年床-f9ad856bd611df0da284.js.map

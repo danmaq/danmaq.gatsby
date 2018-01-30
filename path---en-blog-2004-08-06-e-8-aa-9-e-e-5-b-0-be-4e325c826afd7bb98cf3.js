@@ -1,2 +1,0 @@
-webpackJsonp([0x9b04310c5e47],{2760:function(e,t){e.exports={data:{markdownRemark:{html:'<p>Yuko "Yuyuko, do not you think I\'m gonna shoot" Yu "Summer sunshine, Youmu breaks down in hot weather"</p>',frontmatter:{cover:null,date:"2004-08-06T21:47:00+09:00",strDate:"2004/8/6",title:"Ending"}}},pathContext:{path:"/en/blog/2004/08/06-%e8%aa%9e%e5%b0%be/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2004-08-06-e-8-aa-9-e-e-5-b-0-be-4e325c826afd7bb98cf3.js.map

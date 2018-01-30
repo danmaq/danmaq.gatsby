@@ -1,2 +1,0 @@
-webpackJsonp([61161519280247],{3462:function(t,a){t.exports={data:{markdownRemark:{html:"<p>当時マッチョキャラにやたらハマっていた。\nきっと超兄貴のせいに違いない。</p>\n<p>なぜか当時描いていたマッチョキャラは、総じてオーク族のヘルムをかぶって丸メガネをかけていた。\nそして眉は太くつながっていて、口元は “)Ｏ(” で、兜の中の髪は鳥の巣パーマと言う設定だった。\nしかもポーズのバリエーションはこの一種類だけ。走るときも上半身はこのポーズのまま。</p>",frontmatter:{cover:null,date:"1996-02-01T00:00:00+09:00",strDate:"1996/1/31",title:"マッチョ"}}},pathContext:{path:"/ja/blog/1996/02/01-macho/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1996-02-01-macho-8310b655d209e8ad87fa.js.map

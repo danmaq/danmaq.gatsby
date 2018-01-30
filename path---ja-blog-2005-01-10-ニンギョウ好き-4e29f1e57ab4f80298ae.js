@@ -1,2 +1,0 @@
-webpackJsonp([0x9df50158f725],{3821:function(t,a){t.exports={data:{markdownRemark:{html:"<p>干物で懲らしめろ！ シャンハイ！ホウライ！シャンハイ！ホウライ！</p>",frontmatter:{cover:null,date:"2005-01-10T21:05:00+09:00",strDate:"2005/1/10",title:"ニンギョウ好き"}}},pathContext:{path:"/ja/blog/2005/01/10-ニンギョウ好き/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-01-10-ニンギョウ好き-4e29f1e57ab4f80298ae.js.map

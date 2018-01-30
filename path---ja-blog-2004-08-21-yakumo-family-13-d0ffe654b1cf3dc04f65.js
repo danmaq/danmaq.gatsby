@@ -1,2 +1,0 @@
-webpackJsonp([0x772cdfd4c38d],{3730:function(a,t){a.exports={data:{markdownRemark:{html:'<p>でもとりあえず首吊りモノトーン人形に八つ当たり。</p>\n<p>魔八雲フラン的な何か。\nWebコミック “<a href="/tag/yakumo-family?order=ASC">八雲家の日常</a>” の番外編的なやつです。</p>\n<ul>\n<li>&#x3C;<a href="/3141">前へ</a> | <a href="/3298">次へ></a></li>\n</ul>',frontmatter:{cover:null,date:"2004-08-21T21:57:00+09:00",strDate:"2004/8/21",title:"説教中に退室なんて言語道断"}}},pathContext:{path:"/ja/blog/2004/08/21-yakumo-family-13/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-08-21-yakumo-family-13-d0ffe654b1cf3dc04f65.js.map

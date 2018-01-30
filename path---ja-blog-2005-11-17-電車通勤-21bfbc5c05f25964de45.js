@@ -1,2 +1,0 @@
-webpackJsonp([0x854f9089a09e],{3923:function(a,t){a.exports={data:{markdownRemark:{html:'<p><a href="/3344">昨日の故障で足がない</a>ので泣く泣く電車通勤。<a href="/tag/yb-1">バイク</a>が常に足となってたのでもう何か月ぶりだろうか。なんか色々懐かしさを覚えつつ…… 交通費ﾃﾗﾀｶｽ ガソリン代の4倍弱かかったよ</p>',frontmatter:{cover:null,date:"2005-11-17T19:39:00+09:00",strDate:"2005/11/17",title:"電車通勤"}}},pathContext:{path:"/ja/blog/2005/11/17-電車通勤/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-11-17-電車通勤-21bfbc5c05f25964de45.js.map

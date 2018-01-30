@@ -1,2 +1,0 @@
-webpackJsonp([0xbdb33937bb0c],{4249:function(l,n){l.exports={data:{markdownRemark:{html:"<ul>\n<li>\n<p><em>英語で命名し、ローマ字などは原則使わない</em>。但し固有名詞や日本固有の語で変に英訳すると逆に意味が取りづらくなる場合(例えば“妖怪”とか)はローマ字記述でも可。</p>\n<ul>\n<li>原則<em>英単語の頭文字のみ大文字にし単語を繋げる</em>。</li>\n<li>変に略したりしない。ただし変数は24文字/関数は30文字を越えた辺りから少々考えた方が良い。</li>\n</ul>\n</li>\n</ul>",frontmatter:{cover:null,date:"2008-04-26T00:00:09+09:00",strDate:"2008/4/25",title:"関数・変数共通事項"}}},pathContext:{path:"/ja/blog/2008/04/26-関数・変数共通事項/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2008-04-26-関数・変数共通事項-045cbc7be81fad58cf87.js.map

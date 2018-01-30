@@ -1,2 +1,0 @@
-webpackJsonp([0xf2995e93ed33],{2620:function(e,t){e.exports={data:{markdownRemark:{html:'<p>Version upgrade software " <a href="/qqquiz">QQQuiz</a> ".</p>',frontmatter:{cover:null,date:"2001-03-28T00:00:00+09:00",strDate:"2001/3/27",title:"Game version up"}}},pathContext:{path:"/en/blog/2001/03/28-ゲーム-バージョンアップ/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2001-03-28-ゲーム-バージョンアップ-11a10369d31384e38da3.js.map

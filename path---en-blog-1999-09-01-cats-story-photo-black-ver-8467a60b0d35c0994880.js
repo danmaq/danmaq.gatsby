@@ -1,2 +1,0 @@
-webpackJsonp([0xfc8304a61f6a],{2556:function(t,a){t.exports={data:{markdownRemark:{html:'<p>Everyone, Kurokuya This illustration has <a href="/cats_photo_white">another version</a> .</p>',frontmatter:{cover:null,date:"1999-09-01T00:00:00+09:00",strDate:"1999/8/31",title:"Black people, burning memory"}}},pathContext:{path:"/en/blog/1999/09/01-cats-story-photo-black-ver/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-1999-09-01-cats-story-photo-black-ver-8467a60b0d35c0994880.js.map

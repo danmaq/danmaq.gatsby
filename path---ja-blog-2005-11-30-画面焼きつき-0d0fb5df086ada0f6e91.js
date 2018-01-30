@@ -1,2 +1,0 @@
-webpackJsonp([0xabeb86870deb],{3929:function(t,a){t.exports={data:{markdownRemark:{html:"<p>昨今のCRTや液晶の技術進歩でもはや都市伝説と化しているはずの画面焼け……それが今自宅のモニタにて突如発生した！画面にはエクスプローラの枠がくっきりと写りこんでいる。 他にも常時点灯が10こほどあって、PCを繋がずに電源入れるとその光景はまさに星空状態。流石は韓産ノーブランド液晶モニタだ('Ａ｀)</p>",frontmatter:{cover:null,date:"2005-11-30T18:48:00+09:00",strDate:"2005/11/30",title:"画面焼きつき"}}},pathContext:{path:"/ja/blog/2005/11/30-画面焼きつき/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-11-30-画面焼きつき-0d0fb5df086ada0f6e91.js.map

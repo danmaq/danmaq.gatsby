@@ -1,2 +1,0 @@
-webpackJsonp([0xf097850e9df7],{3089:function(e,t){e.exports={data:{markdownRemark:{html:"<p>Illustration of redrawing ED 2 for Tokijo castle v 2. I decided to stop from the front view and make it a top view.</p>",frontmatter:{cover:null,date:"2006-06-06T00:09:00+09:00",strDate:"2006/6/5",title:"[Toho] Toki seal v 2 ED Pencil drawing ver."}}},pathContext:{path:"/en/blog/2006/06/06-東方-時封城v2ed鉛筆描きver/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2006-06-06-東方-時封城v-2-ed鉛筆描きver-3e471ee49d3cd7825a34.js.map

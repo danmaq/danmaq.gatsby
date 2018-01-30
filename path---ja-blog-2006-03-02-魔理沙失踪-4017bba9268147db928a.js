@@ -1,2 +1,0 @@
-webpackJsonp([61393316373497],{3993:function(t,a){t.exports={data:{markdownRemark:{html:"<p>東方まんがまつりで入手した東方ストラップ、ケータイに付けてたら魔理沙がいつの間にいなくなってた…発情期だろうか？＿？ orz</p>",frontmatter:{cover:null,date:"2006-03-02T21:15:00+09:00",strDate:"2006/3/2",title:"魔理沙失踪"}}},pathContext:{path:"/ja/blog/2006/03/02-魔理沙失踪/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-03-02-魔理沙失踪-4017bba9268147db928a.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0x5eb5709c35f3],{3898:function(t,a){t.exports={data:{markdownRemark:{html:"<p>妹紅を300km/h出る怪物バイク、“スズキGSX1300R隼”に乗せてみたの図。暫く音ばっかり弄くってたのでリハビリリハビリ……っと。余力があればペン入れ→塗りまでやってみたいかも。 きっと「てるよー！！」とか叫んで戦場に突っ込むところでしょう。そうなるとてるよも何かに乗せてみようかな……自転車とか。</p>",frontmatter:{cover:null,date:"2005-09-13T03:05:23+09:00",strDate:"2005/9/12",title:"GSX1300Rもこたん"}}},pathContext:{path:"/ja/blog/2005/09/13-gsx1300rもこたん/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-09-13-gsx-1300-rもこたん-f7316c8e49ccbcfbf40f.js.map

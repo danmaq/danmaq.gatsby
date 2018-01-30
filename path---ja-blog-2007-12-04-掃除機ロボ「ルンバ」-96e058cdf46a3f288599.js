@@ -1,2 +1,0 @@
-webpackJsonp([0x677195dcb6d6],{4207:function(t,a){t.exports={data:{markdownRemark:{html:"<p>ボーナスが出たんでルンバ買って、早速働いて貰おうかと掃除開始ボタンを押し、ウチはそのまま食料買いにスーパーへ。 帰って部屋を見たら玄関マットとかゴミ箱とか電気アンカとかの位置がカオスになってた。なんで玄関マットが寝室のソファーの下にあるんだよ 'Ａ｀</p>",frontmatter:{cover:null,date:"2007-12-04T19:50:00+09:00",strDate:"2007/12/4",title:"掃除機ロボ「ルンバ」"}}},pathContext:{path:"/ja/blog/2007/12/04-掃除機ロボ「ルンバ」/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2007-12-04-掃除機ロボ「ルンバ」-96e058cdf46a3f288599.js.map

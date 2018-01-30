@@ -1,2 +1,0 @@
-webpackJsonp([0xe7f73549c29e],{3574:function(t,a){t.exports={data:{markdownRemark:{html:'<p><a href="/tag/MIDI">公開曲(BMS)のMIDI版</a>を公開。</p>',frontmatter:{cover:null,date:"2001-03-16T00:00:00+09:00",strDate:"2001/3/15",title:"更新情報"}}},pathContext:{path:"/ja/blog/2001/03/16-更新情報/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2001-03-16-更新情報-ab41962dd609913559e8.js.map

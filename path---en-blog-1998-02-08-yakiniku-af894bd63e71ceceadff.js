@@ -1,2 +1,0 @@
-webpackJsonp([0xb6e595c678a2],{2519:function(e,a){e.exports={data:{markdownRemark:{html:"<p>The apostle ... ... eating ... ...! What?</p>\n<p>It surely is such a scene.</p>\n<p>Posted to a certain magazine before, it was posted. Unfortunately, we now abandon the name of abandoning.</p>",frontmatter:{cover:null,date:"1998-02-08T00:00:00+09:00",strDate:"1998/2/7",title:"Grilled meat"}}},pathContext:{path:"/en/blog/1998/02/08-yakiniku/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-1998-02-08-yakiniku-af894bd63e71ceceadff.js.map

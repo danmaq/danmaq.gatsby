@@ -1,2 +1,0 @@
-webpackJsonp([0x8b7f8240da7f],{3820:function(t,a){t.exports={data:{markdownRemark:{html:"<p>偽りの月に触れ、リーインカーネイション 霊夢は突如目の前に降って来た月に触れ、靈夢に転生して玄爺に乗り魅魔をやっつける。だが、そのうちソロで空を飛べるようになった彼女は亀を解雇してポイ。そして記憶が現世によみがえった霊夢は何かにとりつかれたかのように湖の中に足を踏み入れる。 ・・・そこには、かつて天空を駆ける、かつて亀だった物体があった。</p>",frontmatter:{cover:null,date:"2005-01-07T22:33:44+09:00",strDate:"2005/1/7",title:"霊夢←→靈夢"}}},pathContext:{path:"/ja/blog/2005/01/07-霊夢←→靈夢/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-01-07-霊夢←→靈夢-4b801b29c733e3d70878.js.map

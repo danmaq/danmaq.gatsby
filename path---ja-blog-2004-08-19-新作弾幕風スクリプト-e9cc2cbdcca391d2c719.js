@@ -1,2 +1,0 @@
-webpackJsonp([0x66092c5abdd2],{3727:function(a,t){a.exports={data:{markdownRemark:{html:'<p><a href="/tag/danmakufu">東方弾幕風スクリプト</a>を追加。背景画像とか細かいところをちょろちょろ追加。 <a href="/legal">著作権情報</a>におかしなところがあったので修正。その他誤字とかちょろちょろ細かいところを修正。</p>',frontmatter:{cover:null,date:"2004-08-19T00:00:00+09:00",strDate:"2004/8/18",title:"新作弾幕風スクリプト"}}},pathContext:{path:"/ja/blog/2004/08/19-新作弾幕風スクリプト/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-08-19-新作弾幕風スクリプト-e9cc2cbdcca391d2c719.js.map

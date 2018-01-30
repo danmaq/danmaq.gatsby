@@ -1,2 +1,0 @@
-webpackJsonp([0x8c3ffaf6bb19],{3743:function(t,a){t.exports={data:{markdownRemark:{html:"<p>BGMは同梱しておりません。本家妖々夢PhantasmステージのBGMでも吸い出して指定フォルダに放り込んでもらえればよりいっそう楽しめるかと思います。</p>\n<ul>\n<li><strong>このスクリプトの頒布は終了しました。</strong></li>\n</ul>",frontmatter:{cover:null,date:"2004-08-30T00:17:00+09:00",strDate:"2004/8/29",title:"頒布情報"}}},pathContext:{path:"/ja/blog/2004/08/30-頒布情報/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-08-30-頒布情報-7ae1b9534709f3fe7671.js.map

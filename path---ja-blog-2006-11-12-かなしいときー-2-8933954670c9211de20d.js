@@ -1,2 +1,0 @@
-webpackJsonp([0xd4834e781888],{4106:function(t,a){t.exports={data:{markdownRemark:{html:"<p>かなしいときー、ACアダプタ買ったもののウチの古～いウォークマンに電圧合ってても径が合わなくて挿さらなかったときー かなしいときー、それで凹んで一緒に買ったハーゲンダッツの存在を忘れてて開けたら液体になってたときー(また同じことやらかしたらしい)</p>",frontmatter:{cover:null,date:"2006-11-12T18:22:00+09:00",strDate:"2006/11/12",title:"かなしいときー"}}},pathContext:{path:"/ja/blog/2006/11/12-かなしいときー-2/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-11-12-かなしいときー-2-8933954670c9211de20d.js.map

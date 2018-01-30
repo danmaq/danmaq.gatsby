@@ -1,2 +1,0 @@
-webpackJsonp([0xa8edd6020a9e],{4147:function(t,a){t.exports={data:{markdownRemark:{html:"<p>聞いてみると少なくとも首都圏では片道3～4時間当たり前なんだなぁ。流石に少ないながらも5時間超える強者までいるそうな。片道2時間40分如きでひぃひぃ言ってらんねーや俺。</p>",frontmatter:{cover:null,date:"2007-04-26T12:41:00+09:00",strDate:"2007/4/26",title:"通勤時間"}}},pathContext:{path:"/ja/blog/2007/04/26-通勤時間/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2007-04-26-通勤時間-d47c92869b7dca6fc556.js.map

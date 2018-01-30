@@ -1,2 +1,0 @@
-webpackJsonp([0xda4c8148bdc3],{3819:function(t,a){t.exports={data:{markdownRemark:{html:"<p>魔「相変わらず少ないな……あいつ本職サボりすぎだぜ。ま、これで服でも新調できるし、ヨシとしよ……」 ＊「ついでに私の冬服も欲しいところね」 魔「しまった！！」 しかし、2005年の書初めならぬ“描初め”絵がこれとは orz なお、青ざめるほど重(赤黒い染みで汚れてて読めない</p>",frontmatter:{cover:null,date:"2005-01-05T17:49:00+09:00",strDate:"2005/1/5",title:"魔法少女の蒐集癖"}}},pathContext:{path:"/ja/blog/2005/01/05-魔法少女の蒐集癖/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-01-05-魔法少女の蒐集癖-956a7dbbfe0fd3c6c689.js.map

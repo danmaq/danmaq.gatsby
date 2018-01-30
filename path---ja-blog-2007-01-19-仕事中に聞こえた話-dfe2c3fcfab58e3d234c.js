@@ -1,2 +1,0 @@
-webpackJsonp([0x75f9ce9d95d4],{4128:function(t,a){t.exports={data:{markdownRemark:{html:"<p>上司「昨日、仕事中にしょこたんブログ見てたろ？」 部下「や、ギザ見てないス！」 ギザ吹いたｗｗｗｗｗ</p>",frontmatter:{cover:null,date:"2007-01-19T10:32:00+09:00",strDate:"2007/1/19",title:"仕事中に聞こえた話"}}},pathContext:{path:"/ja/blog/2007/01/19-仕事中に聞こえた話/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2007-01-19-仕事中に聞こえた話-dfe2c3fcfab58e3d234c.js.map

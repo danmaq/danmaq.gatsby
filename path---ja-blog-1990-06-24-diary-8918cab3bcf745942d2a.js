@@ -1,2 +1,0 @@
-webpackJsonp([0xa6b2d175b6c7],{3407:function(t,a){t.exports={data:{markdownRemark:{html:"<p><strong>🌡30℃ ☁</strong></p>\n<p>昨日、家族で東京に行き、葛飾区亀有にある父方の祖父祖母の家で宿泊しました。</p>\n<p>今朝起きて朝食を取ったら江東区塩浜の母方祖父の家へ。\n挨拶もそこそこに一緒にお寺参りへ行き、一緒に昼食をとりました。</p>\n<p>その後、弟と公園で少し遊んで帰りました。\n弟は再来年から小学生だというのに、とても手を焼きます。</p>",frontmatter:{cover:null,date:"1990-06-24T22:00:00+09:00",strDate:"1990/6/24",title:"日記"}}},pathContext:{path:"/ja/blog/1990/06/24-diary/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1990-06-24-diary-8918cab3bcf745942d2a.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0xc05fee960bab],{4291:function(t,a){t.exports={data:{markdownRemark:{html:"<p>2011年賀状イラスト。卯年なので、うさみみれんこを描いてみました。 なんかやっと、画風が落ち着いてきたような気がする。……気がするだけかも。</p>",frontmatter:{cover:null,date:"2011-07-03T22:34:32+09:00",strDate:"2011/7/3",title:"Ghostly Field Club"}}},pathContext:{path:"/ja/blog/2011/07/03-ghostly-field-club/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2011-07-03-ghostly-field-club-91a056f77035fcd5e0a5.js.map

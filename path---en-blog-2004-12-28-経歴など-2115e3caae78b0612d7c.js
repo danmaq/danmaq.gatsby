@@ -1,2 +1,0 @@
-webpackJsonp([0xafcaff5e2fbc],{2855:function(t,e){t.exports={data:{markdownRemark:{html:'<p>Because it is a bit too large to be posted on this page I split it.</p>\n<ul>\n<li><a href="/legacy/index.php?/Works">Go to the biography introduction page</a></li>\n</ul>',frontmatter:{cover:null,date:"2004-12-28T00:00:00+09:00",strDate:"2004/12/27",title:"Career"}}},pathContext:{path:"/en/blog/2004/12/28-経歴など/",langKey:"en"}}}});
-//# sourceMappingURL=path---en-blog-2004-12-28-経歴など-2115e3caae78b0612d7c.js.map

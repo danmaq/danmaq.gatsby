@@ -1,2 +1,0 @@
-webpackJsonp([0xbedd55246303],{3953:function(t,a){t.exports={data:{markdownRemark:{html:"<p>どう見ても既に今日14日です、本当にあ（ｒｙ</p>\n<h2>そんなわけで鏡餅を捌く……が</h2>\n<p>鏡餅を焼いて砂糖醤油に漬けて食おうと、ナイフで消しゴムサイズに細かく切ってオーブンに放り込んでスイッチオン チンと音がなりオーブンから出したら 切った餅が全部フュージョンしてた</p>\n<p>'Ａ｀</p>",frontmatter:{cover:null,date:"2006-01-14T23:28:00+09:00",strDate:"2006/1/14",title:"そして次は餅に手を出すぜ！"}}},pathContext:{path:"/ja/blog/2006/01/14-そして次は餅に手を出すぜ！/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2006-01-14-そして次は餅に手を出すぜ！-f28496b97d99d9142cfd.js.map

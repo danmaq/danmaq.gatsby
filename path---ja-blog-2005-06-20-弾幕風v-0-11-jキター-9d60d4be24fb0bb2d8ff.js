@@ -1,2 +1,0 @@
-webpackJsonp([0x6590ef872721],{3870:function(t,a){t.exports={data:{markdownRemark:{html:'<p><a href="/emeditor-danmakufu">EmEditor用東方弾幕風構文ファイル</a>を更新、弾幕風v0.11jの新関数に対応しました。(昨日の更新だったんですが、死んでてTOP更新するの忘れてましたorz) 昨日・一昨日と某イベントの飲み会＆二次会＆サンクリ行ってきました。サンクリでは特にこれといった戦利品は無し。  MOTIFいいなぁ…</p>',frontmatter:{cover:null,date:"2005-06-20T00:00:00+09:00",strDate:"2005/6/19",title:"弾幕風v0.11jｷﾀｰ"}}},pathContext:{path:"/ja/blog/2005/06/20-弾幕風v0-11jキター/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2005-06-20-弾幕風v-0-11-jキター-9d60d4be24fb0bb2d8ff.js.map

@@ -1,2 +1,0 @@
-webpackJsonp([0xbfd4bfca4955],{3692:function(t,a){t.exports={data:{markdownRemark:{html:"<p>BGM は同梱しておりません。本家紅魔郷の BGM でも吸い出して、指定フォルダに放り込んでもらえればよりいっそう楽しめるかと思います。</p>\n<ul>\n<li><strong>このスクリプトの頒布は終了しました。</strong></li>\n</ul>",frontmatter:{cover:null,date:"2004-07-09T03:46:00+09:00",strDate:"2004/7/8",title:"頒布情報"}}},pathContext:{path:"/ja/blog/2004/07/09-頒布情報-2/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2004-07-09-頒布情報-2-819afab654436b0b12d9.js.map

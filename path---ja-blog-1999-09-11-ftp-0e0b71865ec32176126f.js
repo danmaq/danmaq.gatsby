@@ -1,2 +1,0 @@
-webpackJsonp([0xeab7850f6d12],{3516:function(t,a){t.exports={data:{markdownRemark:{html:"<p>なんと!インターネット喫茶からでもFTPが使えるコトが発覚!!ただしクソ遅いけどね。 でもHDはお空のお星様だから基本的にマイナーチェンジしかできません。すんません。</p>",frontmatter:{cover:null,date:"1999-09-11T17:30:00+09:00",strDate:"1999/9/11",title:"マイナーチェンジ"}}},pathContext:{path:"/ja/blog/1999/09/11-ftp/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-1999-09-11-ftp-0e0b71865ec32176126f.js.map

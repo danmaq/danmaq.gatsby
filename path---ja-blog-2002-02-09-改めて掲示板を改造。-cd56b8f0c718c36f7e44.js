@@ -1,2 +1,0 @@
-webpackJsonp([44514730089290],{3607:function(t,a){t.exports={data:{markdownRemark:{html:"<p>今回表示ログを32Kbitまでに制限。 軽くなったでしょ？(特にケータイユーザー)</p>",frontmatter:{cover:null,date:"2002-02-09T14:59:12+09:00",strDate:"2002/2/9",title:"改めて掲示板を改造。"}}},pathContext:{path:"/ja/blog/2002/02/09-改めて掲示板を改造。/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2002-02-09-改めて掲示板を改造。-cd56b8f0c718c36f7e44.js.map

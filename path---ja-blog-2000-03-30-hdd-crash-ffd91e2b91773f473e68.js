@@ -1,2 +1,0 @@
-webpackJsonp([0xb6b83d629890],{3540:function(t,a){t.exports={data:{markdownRemark:{html:"<p><em>HD全てぶっ飛びました</em>。バックアップする金も無かったし……(くそ、9000円さえあれば……) つーことで、復旧が一段落つくまでソフト開発およびページ更新は一切中止します。レスもちょっと控えめになりそう。</p>\n<h2>ステステ</h2>\n<p>すてすて、DLしたけどとーぶんできそーもない……バックアップCDなるものが無いからいまWIN2000 RC2いれてます。</p>",frontmatter:{cover:null,date:"2000-03-30T18:35:00+09:00",strDate:"2000/3/30",title:"待っているのは地獄だった"}}},pathContext:{path:"/ja/blog/2000/03/30-hdd-crash/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2000-03-30-hdd-crash-ffd91e2b91773f473e68.js.map

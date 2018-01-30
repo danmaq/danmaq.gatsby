@@ -1,2 +1,0 @@
-webpackJsonp([5633309584823],{4220:function(t,a){t.exports={data:{markdownRemark:{html:'<p><img src="https://danmaq.com/image/mixi/2008/684140752_68_s.jpg" alt="クリックすると拡大します。"></p>\n<p>押入れ整理していたら古い電球とか蛍光灯とかをいくつか見つけたので、ためしにコンセントにつなげてみたテスト。</p>\n<p>やばいここが自宅って実感湧かねぇ</p>',frontmatter:{cover:null,date:"2008-01-14T22:30:00+09:00",strDate:"2008/1/14",title:"余り物の電球で部屋をライトアップ"}}},pathContext:{path:"/ja/blog/2008/01/14-余り物の電球で部屋をライトアップ/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2008-01-14-余り物の電球で部屋をライトアップ-98086c8c391fd6ccbb0d.js.map

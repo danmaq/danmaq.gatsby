@@ -1,2 +1,0 @@
-webpackJsonp([87663447619812],{3620:function(t,a){t.exports={data:{markdownRemark:{html:"<p>復帰は管理人多忙のため<em>2002/8/4以降</em>となります。 今まで“Vanished YASiM-CITY”のご来場誠にありがとうございました。これからも続けていきますのでご指導などよろしくお願いします。</p>",frontmatter:{cover:null,date:"2002-08-02T00:00:00+09:00",strDate:"2002/8/1",title:"当サイトは移転改装の為一時閉鎖致します"}}},pathContext:{path:"/ja/blog/2002/08/02-当サイトは移転改装の為一時閉鎖致します/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2002-08-02-当サイトは移転改装の為一時閉鎖致します-a54e4328b4c1d0fdf366.js.map

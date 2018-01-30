@@ -1,2 +1,0 @@
-webpackJsonp([0xb0f001f7b20],{4171:function(t,a){t.exports={data:{markdownRemark:{html:"<p>とりあえず俺にはアカギの真似なんて到底無理だと言うことを、身をもって思い知ったぜ。</p>\n<h2>孔明の罠</h2>\n<p>板橋は嵐山と違ってスーパーの閉店時間が無茶苦茶遅いから、惣菜値引きがまだ始まってねぇぇぇえ orz くっそしまったそこんところは想定外だったぜ…</p>",frontmatter:{cover:null,date:"2007-06-26T00:59:00+09:00",strDate:"2007/6/25",title:"健康診断、そして血液検査"}}},pathContext:{path:"/ja/blog/2007/06/26-健康診断、そして血液検査/",langKey:"ja"}}}});
-//# sourceMappingURL=path---ja-blog-2007-06-26-健康診断、そして血液検査-36e358b051b3ec9da7af.js.map
