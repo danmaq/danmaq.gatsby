@@ -26,21 +26,21 @@ production:
       code: |
         yarn run clean
         yarn run production:clean
-  - script:
-      name: '成果物格納先のリポジトリを持ってくるよ ＞ ヾ(╹◡╹川'
-      code: |
-        yarn run production:clone
-        yarn run production:link
-  - script:
-      name: 'ヾ(๑╹⌓╹)ﾉ" ＜ えー、古いファイル要らないー！消しちゃえ'
-      code: yarn run production:truncate
+#   - script:
+#       name: '成果物格納先のリポジトリを持ってくるよ ＞ ヾ(╹◡╹川'
+#       code: |
+#         yarn run production:clone
+#         yarn run production:link
+#   - script:
+#       name: 'ヾ(๑╹⌓╹)ﾉ" ＜ えー、古いファイル要らないー！消しちゃえ'
+#       code: yarn run production:truncate
   - script:
       name: 'じゃ、Production 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
       code: yarn run build --verbose
-  - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
-      code: |
-        git config --global user.email 'info@danmaq.com'
-        git config --global user.name 'Shuhei Nomura'
-        yarn run production:commit
-        ./production.exp ${GITHUB_PASS}
+#   - script:
+#       name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
+#       code: |
+#         git config --global user.email 'info@danmaq.com'
+#         git config --global user.name 'Shuhei Nomura'
+#         yarn run production:commit
+#         ./production.exp ${GITHUB_PASS}
