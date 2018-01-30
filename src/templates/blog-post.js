@@ -26,13 +26,14 @@ export default ({
             html,
             frontmatter: { title, date, strDate }
         }
-    }
+    },
+    pathContext,
 }) =>
 <div>
     <Helmet>
         <title>{title}</title>
     </Helmet>
-    <Header />
+    <Header pathContext={pathContext} />
     <Hero>
         <HeroBody>
             <Container>
@@ -108,6 +109,10 @@ query BlogPostByPath($path: String!) {
             date: date
             strDate: date(formatString: "YYYY/M/D")
             title
+        }
+        fields {
+            langKey,
+            slug
         }
     }
 }`;

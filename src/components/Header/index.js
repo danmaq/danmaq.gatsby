@@ -76,7 +76,7 @@ export default class extends React.Component {
             const result =
                 <Helmet>
                     <html lang={lang} />
-                    <link href={withPrefix(this._replaceSlugLang(alt))}
+                    <link href={withPrefix(this._replaceSlugLang(`/${alt}/`))}
                           rel="alternate"
                           hrefLang={alt} />
                 </Helmet>
@@ -99,9 +99,11 @@ export default class extends React.Component {
         };
 
     _replaceSlugLang =
-        lang =>
-        (({ pathContext: { slug } }) =>
-            !slug ? lang : slug.replace(/^\/(ja|en)\//, lang))(this.props);
+        lang => {
+            const { pathContext: { slug, path } } = this.props;
+            const sp = path || slug;
+            return !sp ? lang : sp.replace(/^\/(ja|en)\//, lang)
+        };
 
     /** Invoked on burger menu button has clicked. */
     _onClickedBurger =
