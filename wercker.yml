@@ -3,6 +3,9 @@ box: node
 build:
   steps:
   - script:
+      name: meminfo
+      code: cat /proc/meminfo
+  - script:
       name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
       code: yarn install
   - script:
