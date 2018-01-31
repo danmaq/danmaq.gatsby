@@ -3,48 +3,42 @@ box: node
 build:
   steps:
   - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
+      name: Install dependencies.
       code: yarn install
   - script:
-      name: '記事のリポジトリをもってきて準備できたよ！ ＞ ヾ(╹◡╹川'
+      name: Deploy source articles.
       code: git clone https://github.com/danmaq/danmaq.article.git
 staging:
   steps:
   - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
+      name: Install gatsby-cli.
       code: yarn global add gatsby-cli
   - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 作業用ディレクトリとかキャッシュとかを綺麗にするよ'
-      code: yarn run clean
-  - script:
-      name: 'じゃ、Staging 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
+      name: Build for staging.
       code: yarn run staging:build --verbose
   - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/danmaq.gatsby/'
+      name: Deploy to staging.
       code: yarn run staging:commit
 production:
   steps:
   - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 依存してるライブラリをインストールしちゃうよ'
+      name: Install gatsby-cli.
       code: yarn global add gatsby-cli
   - script:
-      name: 'ヾ(๑╹◡╹)ﾉ" ＜ 作業用ディレクトリとかキャッシュとかを綺麗にするよ'
-      code: |
-        yarn run clean
-        yarn run production:clean
+      name: Cleaning.
+      code: yarn run production:clean
   - script:
-      name: '成果物格納先のリポジトリを持ってくるよ ＞ ヾ(╹◡╹川'
+      name: Cloning dest repository.
       code: |
         yarn run production:clone
-        yarn run production:link
   - script:
-      name: 'ヾ(๑╹⌓╹)ﾉ" ＜ えー、古いファイル要らないー！消しちゃえ'
+      name: Cleaning dest repository.
       code: yarn run production:truncate
   - script:
-      name: 'じゃ、Production 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
+      name: Build for production.
       code: node --max_old_space_size=1792 --stack_size=1280 /usr/local/bin/gatsby build --verbose
 #   - script:
-#       name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
+#       name: Deploy to production.
 #       code: |
 #         git config --global user.email 'info@danmaq.com'
 #         git config --global user.name 'Shuhei Nomura'
