@@ -28,6 +28,9 @@ const sizeTable = [
  * from Bulma's specification, use this alternative class.
  */
 export default class extends React.Component {
+    /** Whether should require redraw. */
+    shouldComponentUpdate = () => false;
+
     /** Create rendered view elements. */
     render =
         () =>

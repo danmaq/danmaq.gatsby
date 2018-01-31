@@ -21,6 +21,9 @@ const more = 'もっと見る';
 
 /** Common card component for LP. */
 export default class Article extends React.Component {
+    /** Whether should require redraw. */
+    shouldComponentUpdate = () => false;
+
     /** Create rendered view elements. */
     render =
         () =>

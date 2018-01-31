@@ -15,6 +15,9 @@ import {
 
 /** Common about component for LP. */
 export default class extends React.Component {
+    /** Whether should require redraw. */
+    shouldComponentUpdate = () => false;
+
     /** Create rendered view elements. */
     render =
         () =>

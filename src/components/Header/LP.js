@@ -3,6 +3,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { withPrefix } from 'gatsby-link';
 import { NavbarItem } from 'bloomer';
 import classNames from 'classnames';
 
@@ -15,6 +16,11 @@ import Header from './';
 
 /** Header component. */
 export default class extends React.Component {
+    /** Whether should require redraw. */
+    shouldComponentUpdate =
+        (nextProps, nextState) =>
+        this.state.expand !== nextState.expand;
+
     /**
      * Current state.
      * @type {Header.state}
@@ -37,7 +43,7 @@ export default class extends React.Component {
                 <NavbarItem href="#works">Works</NavbarItem>
                 <NavbarItem href="#about">About</NavbarItem>
                 <NavbarItem href="#contact">Contact</NavbarItem>
-                <NavbarItem href="#blog">Blog</NavbarItem>
+                <NavbarItem href={withPrefix(`/${pathContext.langKey}/blog`)}>Blog</NavbarItem>
             </Header>
         )(this.props);
 
