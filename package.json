@@ -80,7 +80,7 @@
         "production:commit": "cd ${TMPDIR}/danmaq.github.io && git add -A && git commit -m 'Updated by danmaq.gatsby.' && git push",
         "production:push": "cd ${TMPDIR}/danmaq.github.io && git push",
         "production:link": "ln -s ${TMPDIR}/danmaq.github.io public",
-        "production:truncate": "cd ${TMPDIR}/danmaq.github.io && git config --local core.quotepath false && git ls-files --full-name | xargs --no-run-if-empty git rm"
+        "production:truncate": "cd ${TMPDIR}/danmaq.github.io && git config --local core.quotepath false && git ls-files --full-name | xargs git rm"
     },
     "browserslist": [
         "> 2%",
