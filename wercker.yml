@@ -7,7 +7,7 @@ build:
       code: yarn install
   - script:
       name: '記事のリポジトリをもってきて準備できたよ！ ＞ ヾ(╹◡╹川'
-      code: git clone -v https://github.com/danmaq/danmaq.article.git
+      code: git clone https://github.com/danmaq/danmaq.article.git
 staging:
   steps:
   - script:
@@ -42,7 +42,7 @@ production:
       code: yarn run production:truncate
   - script:
       name: 'じゃ、Production 用のビルドはじめよっか ＞ ヾ(╹◡╹川'
-      code: gatsby build --verbose
+      code: node --max_old_space_size=1792 --stack_size=1280 /usr/local/bin/gatsby build --verbose
 #   - script:
 #       name: 'ヾ(๑╹◡╹)ﾉ" ＜ できたっぽい？じゃあコミットするよ。URL は https://danmaq.github.io/'
 #       code: |
