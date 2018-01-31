@@ -1,6 +1,14 @@
 'use strict';
 
 const langKeyDefault = 'ja';
+const query =
+    `
+{
+    allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
+        edges { node { fields { slug, langKey } } }
+    }
+}
+`;
 
 module.exports = {
     pathPrefix: '/danmaq.gatsby',
@@ -35,7 +43,7 @@ module.exports = {
                 pagesPaths: ['/src/pages', '/danmaq.article/posts/'],
                 markdownRemark: {
                     postPage: 'src/templates/blog-post.js',
-                    query: '{ allMarkdownRemark { edges { node { fields { slug, langKey } } } } }'
+                    query,
                 }
             },
         },
