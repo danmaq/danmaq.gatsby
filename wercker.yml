@@ -36,7 +36,7 @@ production:
       code: yarn run production:truncate
   - script:
       name: Build for production.
-      code: node --max_old_space_size=1792 --stack_size=1280 /usr/local/bin/gatsby build --verbose
+      code: node --max_old_space_size=1792 --stack_size=1280 ./node_modules/.bin/gatsby build --verbose
 #   - script:
 #       name: Deploy to production.
 #       code: |
