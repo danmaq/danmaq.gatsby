@@ -49,6 +49,10 @@ body {
     scroll-behavior: smooth;
 }
 
+img[src$=".svg"] {
+    width: 100%;
+}
+
 .button.is-large {
     font-size: 1.25rem;
 }
