@@ -6,6 +6,9 @@ import { Container, Hero, HeroBody, Title } from 'bloomer';
 
 /** Common heading component for LP. */
 export default class extends React.Component {
+    /** Whether should require redraw. */
+    shouldComponentUpdate = () => false;
+
     /** Create rendered view elements. */
     render =
         () =>

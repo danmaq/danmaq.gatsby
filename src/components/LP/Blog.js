@@ -11,7 +11,12 @@ import Icon from '~/src/components/Icon';
 
 import Heading from './Heading';
 
+/** Blog component. */
 class Blog extends React.Component {
+    /** Whether should require redraw. */
+    shouldComponentUpdate = () => false;
+
+    /** Create rendered view elements. */
     render =
         () =>
         (({ items, langKey, t }) =>

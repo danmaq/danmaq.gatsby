@@ -22,6 +22,9 @@ const youtubeUrl = id => `https://www.youtube.com/embed/${id}?showinfo=0`;
 
 /** Common work component for LP. */
 export default class extends React.Component {
+    /** Whether should require redraw. */
+    shouldComponentUpdate = () => false;
+
     /** Create rendered view elements. */
     render =
         () =>

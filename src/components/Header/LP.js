@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { withPrefix } from 'gatsby-link';
