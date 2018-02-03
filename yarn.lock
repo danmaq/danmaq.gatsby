@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-"@types/history@*":
+"@types/history@*", "@types/history@^4.6.2":
   version "4.6.2"
   resolved "https://registry.yarnpkg.com/@types/history/-/history-4.6.2.tgz#12cfaba693ba20f114ed5765467ff25fdf67ddb0"
 
@@ -26,8 +26,8 @@
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^16.0.35":
-  version "16.0.35"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.35.tgz#7ce8a83cad9690fd965551fc513217a74fc9e079"
+  version "16.0.36"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.36.tgz#ceb5639013bdb92a94147883052e69bb2c22c69b"
 
 "@zeit/check-updates@1.0.5":
   version "1.0.5"
@@ -1694,8 +1694,8 @@ caniuse-api@^1.5.2, caniuse-api@^1.5.3:
     lodash.uniq "^4.5.0"
 
 caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639, caniuse-db@^1.0.30000797:
-  version "1.0.30000800"
-  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000800.tgz#a86e6bc23bd9a707d5df42f33e64d0495cfda218"
+  version "1.0.30000801"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000801.tgz#a1d49def94c4e5aca5ccf1d58812e4668fac19d4"
 
 caniuse-lite@^1.0.30000792:
   version "1.0.30000792"
@@ -2805,8 +2805,8 @@ ee-first@1.1.1:
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.30:
-  version "1.3.31"
-  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.31.tgz#00d832cba9fe2358652b0c48a8816c8e3a037e9f"
+  version "1.3.32"
+  resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.32.tgz#11d0684c0840e003c4be8928f8ac5f35dbc2b4e6"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -3602,9 +3602,9 @@ gatsby-1-config-css-modules@^1.0.8:
   dependencies:
     babel-runtime "^6.26.0"
 
-gatsby-cli@^1.1.32, gatsby-cli@^1.1.33:
-  version "1.1.33"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.33.tgz#a79337d73f88ef1157aceefd245242ec0d463680"
+gatsby-cli@^1.1.32, gatsby-cli@^1.1.34:
+  version "1.1.34"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.34.tgz#85c17bf67bc717be0274c8e4a56c7df819ede1f5"
   dependencies:
     babel-code-frame "^6.26.0"
     babel-runtime "^6.26.0"
@@ -3624,10 +3624,11 @@ gatsby-cli@^1.1.32, gatsby-cli@^1.1.33:
     yargs "^8.0.2"
     yurnalist "^0.2.1"
 
-gatsby-link@^1.6.35:
-  version "1.6.35"
-  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.35.tgz#28ade7aa44460d0a3102d45e4f7413ff7a633e47"
+gatsby-link@^1.6.35, gatsby-link@^1.6.36:
+  version "1.6.36"
+  resolved "https://registry.yarnpkg.com/gatsby-link/-/gatsby-link-1.6.36.tgz#3f969d38e9396e2650d3804543c76881eab98feb"
   dependencies:
+    "@types/history" "^4.6.2"
     "@types/react-router-dom" "^4.2.2"
     babel-runtime "^6.26.0"
     prop-types "^15.5.8"
@@ -3775,8 +3776,8 @@ gatsby-transformer-sharp@^1.6.17:
     image-size "^0.6.0"
 
 gatsby@^1.9.172:
-  version "1.9.175"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.175.tgz#a0e1f9a66202f5821abfc1fdbcf3673c3dfa5b4c"
+  version "1.9.178"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.178.tgz#56601badc81d527fef7a6d25d87e9d7ff44e52e9"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -3816,8 +3817,8 @@ gatsby@^1.9.172:
     front-matter "^2.1.0"
     fs-extra "^4.0.1"
     gatsby-1-config-css-modules "^1.0.8"
-    gatsby-cli "^1.1.33"
-    gatsby-link "^1.6.35"
+    gatsby-cli "^1.1.34"
+    gatsby-link "^1.6.36"
     gatsby-module-loader "^1.0.9"
     gatsby-react-router-scroll "^1.0.9"
     glob "^7.1.1"
@@ -5210,8 +5211,8 @@ isemail@2.x.x:
   resolved "https://registry.yarnpkg.com/isemail/-/isemail-2.2.1.tgz#0353d3d9a62951080c262c2aa0a42b8ea8e9e2a6"
 
 isemail@3.x.x:
-  version "3.1.0"
-  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.1.0.tgz#d15156d67529d48241bc0e644df28281e21dd458"
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/isemail/-/isemail-3.1.1.tgz#e8450fe78ff1b48347db599122adcd0668bd92b5"
   dependencies:
     punycode "2.x.x"
 
@@ -6144,8 +6145,8 @@ mime@^1.3.4, mime@^1.3.6, mime@^1.5.0:
   resolved "https://registry.yarnpkg.com/mime/-/mime-1.6.0.tgz#32cd9e5c64553bd58d19a568af452acff04981b1"
 
 mimic-fn@^1.0.0:
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.1.0.tgz#e667783d92e89dbd342818b5230b9d62a672ad18"
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/mimic-fn/-/mimic-fn-1.2.0.tgz#820c86a39334640e99516928bd03fca88057d022"
 
 mimic-response@^1.0.0:
   version "1.0.0"
@@ -7552,8 +7553,8 @@ postcss@^5.0.0, postcss@^5.0.10, postcss@^5.0.11, postcss@^5.0.12, postcss@^5.0.
     supports-color "^3.2.3"
 
 postcss@^6.0.1, postcss@^6.0.14:
-  version "6.0.16"
-  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.16.tgz#112e2fe2a6d2109be0957687243170ea5589e146"
+  version "6.0.17"
+  resolved "https://registry.yarnpkg.com/postcss/-/postcss-6.0.17.tgz#e259a051ca513f81e9afd0c21f7f82eda50c65c5"
   dependencies:
     chalk "^2.3.0"
     source-map "^0.6.1"
@@ -9491,8 +9492,8 @@ tar@^2.0.0, tar@^2.2.1:
     inherits "2"
 
 tar@^4.2.0:
-  version "4.3.0"
-  resolved "https://registry.yarnpkg.com/tar/-/tar-4.3.0.tgz#11351be1c7944c59dd197850119c2081d8bc7fe5"
+  version "4.3.2"
+  resolved "https://registry.yarnpkg.com/tar/-/tar-4.3.2.tgz#ef4e813c7cfd2eb261da107753fb8ba15ab8954b"
   dependencies:
     chownr "^1.0.1"
     fs-minipass "^1.2.3"
