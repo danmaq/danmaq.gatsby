@@ -8,7 +8,7 @@ import { withPrefix } from 'gatsby-link';
 import { NavbarItem } from 'bloomer';
 import classNames from 'classnames';
 
-import Header from './';
+import Core from './Core';
 
 /**
  * @typedef {object} Header.state
@@ -40,12 +40,12 @@ export default class extends React.Component {
     render =
         () =>
         (({ pathContext }) =>
-            <Header className={this._className()} pathContext={pathContext}>
+            <Core className={this._className()} pathContext={pathContext}>
                 <NavbarItem href="#works">Works</NavbarItem>
                 <NavbarItem href="#about">About</NavbarItem>
                 <NavbarItem href="#contact">Contact</NavbarItem>
                 <NavbarItem href={withPrefix(`/${pathContext.langKey}/blog`)}>Blog</NavbarItem>
-            </Header>
+            </Core>
         )(this.props);
 
     /** Create CSS class name of header. */
@@ -53,7 +53,6 @@ export default class extends React.Component {
         () =>
         (({ expand }) =>
             classNames(
-                'is-fixed-top',
                 ({ 'dmq-navbar-expand is-black': expand }),
                 ({ 'is-light': !expand })
             ))(this.state);
@@ -62,7 +61,7 @@ export default class extends React.Component {
     _onScroll =
         () => {
             const expand = global.window.scrollY <= 200;
-            if (this.state.expand != expand) {
+            if (this.state.expand !== expand) {
                 this.setState(p => ({ ...p, expand }));
             }
         };
