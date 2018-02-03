@@ -20,7 +20,7 @@ export default ({
                 <title>Blog</title>
             </Helmet>
             <Header pathContext={pathContext} />
-            <Hero>
+            <Hero isSize="medium">
                 <HeroBody>
                     <Container>
                         <Title isSize={2} tag="h1">Blog</Title>

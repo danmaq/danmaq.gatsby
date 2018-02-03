@@ -23,7 +23,7 @@ export default () =>
         <title>NOT FOUND</title>
     </Helmet>
     <Header />
-    <Hero>
+    <Hero isSize="medium">
         <HeroBody>
             <Container hasTextAlign='centered'>
                 <Title isSize={1}>NOT FOUND</Title>
