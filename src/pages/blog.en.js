@@ -33,7 +33,8 @@ query allEN {
                     }
                     date: date
                     strDate: date(formatString: "YYYY/M/D")
-                    title
+                    title,
+                    youtube
                 }
                 fields {
                     langKey,

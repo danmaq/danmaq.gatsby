@@ -20,7 +20,7 @@ export default ({
             <LPHeader pathContext={pathContext} />
             <Hero />
             <div role="main">
-                <Works />
+                <Works langKey={pathContext.langKey} />
                 <About />
                 <Contact />
                 <Blog items={edges} langKey={pathContext.langKey} />

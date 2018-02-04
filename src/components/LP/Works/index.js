@@ -19,25 +19,25 @@ class Works extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        (({ t }) =>
+        (({ langKey, t }) =>
             <Section id="works">
                 <Heading caption={t('worksHeading')} detail={t('worksDesc')} />
                 <Columns isDesktop>
                     <Work id="ctc"
-                          href="/"
+                          href={`/${langKey}/blog/2006/12/30-concealed-the-conclusion/`}
                           title={t('worksCtCTitle')}
                           subtitle={t('worksCtCSubTitle')}
-                          youtube="TLV-l93_h2Y"
+                          youtube="DEIW9994qYE"
                           detail={t('worksCtCDesc')} />
                     <Work id="atc"
-                          href="/"
+                          href={`/${langKey}/blog/2016/12/28-answer-the-conclusion/`}
                           title={t('worksAtCTitle')}
                           youtube="NmR9EevRMJc"
                           detail={t('worksAtCDesc')} />
                 </Columns>
                 <Columns isDesktop>
                     <Work id="evil"
-                          href="/"
+                          href={`/${langKey}/blog/2013/12/29-evil-magic/`}
                           title={t('worksEMTitle')}
                           subtitle={t('worksEMSubTitle')}
                           thumbnail={EvilMagic}
@@ -53,7 +53,10 @@ class Works extends React.Component {
         )(this.props);
 
     /** Property types. */
-    static propTypes = { t: PropTypes.func.isRequired };
+    static propTypes = {
+        langKey: PropTypes.string.isRequired,
+        t: PropTypes.func.isRequired,
+    };
 }
 
 export default translate('LP')(Works);

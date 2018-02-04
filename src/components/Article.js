@@ -19,6 +19,12 @@ import Mark from '~/src/assets/logo/mark.svg';
 
 const more = 'もっと見る';
 
+/**
+ * Create YouTube URL for embed.
+ * @param {string} id YouTube video ID.
+ */
+const youtubeUrl = id => `https://www.youtube.com/embed/${id}?showinfo=0`;
+
 /** Common card component for LP. */
 export default class Article extends React.Component {
     /** Whether should require redraw. */
@@ -59,15 +65,23 @@ export default class Article extends React.Component {
             </Column>
         )(this.props);
 
+    /** Create thumbnail elements. */
     _image =
         () =>
-        (({ caption, imageSrc, imageSrcSet, imageSrcSizes }) =>
+        (({ caption, imageSrc, imageSrcSet, imageSrcSizes, youtube }) =>
+            !(youtube || imageSrc) ? undefined :
             <figure className="image is-16by9">
-                <img alt={more}
-                     sizes={imageSrcSizes}
-                     src={imageSrc}
-                     srcSet={imageSrcSet}
-                     title={caption} />
+                {
+                    youtube ?
+                        <iframe src={youtubeUrl(youtube)}
+                                allow="encrypted-media"
+                                allowFullScreen="allowFullScreen" /> :
+                        <img alt={more}
+                             sizes={imageSrcSizes}
+                             src={imageSrc}
+                             srcSet={imageSrcSet}
+                             title={caption} />
+                }
             </figure>
         )(this.props);
 
@@ -81,6 +95,7 @@ export default class Article extends React.Component {
         imageSrcSet: PropTypes.string,
         imageSrcSizes: PropTypes.string,
         strDate: PropTypes.string.isRequired,
+        youtube: PropTypes.string,
     };
 
     /** Default Properties. */
@@ -95,10 +110,11 @@ export default class Article extends React.Component {
                     date,
                     strDate,
                     title,
+                    youtube,
                 },
                 fields: { slug },
                 excerpt,
-            }
+            },
         }, key) =>
         <Article key={key}
                  href={slug}
@@ -108,5 +124,6 @@ export default class Article extends React.Component {
                  imageSrcSizes={_.get(cover, 'childImageSharp.responsiveSizes.sizes')}
                  strDate={strDate}
                  caption={title}
+                 youtube={youtube}
                  detail={excerpt} />
 };
