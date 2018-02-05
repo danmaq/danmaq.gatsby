@@ -86,9 +86,9 @@ export default class extends React.Component {
             const result =
                 <Helmet>
                     <html lang={lang} />
-                    <link href={withPrefix(this._replaceSlugLang(`/${alt}/`))}
+                    {/* <link href={withPrefix(this._replaceSlugLang(`/${alt}/`))}
                         rel="alternate"
-                        hrefLang={alt} />
+                        hrefLang={alt} /> */}
                 </Helmet>
             return result;
         }
