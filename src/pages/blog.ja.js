@@ -13,7 +13,10 @@ query allJA {
         sort: { fields: [frontmatter___date], order: DESC },
         limit: 24,
         filter: {
-            frontmatter: { draft: { eq: false } },
+            frontmatter: {
+                draft: { eq: false },
+                redirect: { eq: null },
+            },
             fields: { langKey: { regex: "/(ja|any)/" } }
         }
     ) {
