@@ -19,38 +19,38 @@ class Works extends React.Component {
     /** Create rendered view elements. */
     render =
         () =>
-        (({ langKey, t }) =>
-            <Section id="works">
-                <Heading caption={t('worksHeading')} detail={t('worksDesc')} />
-                <Columns isDesktop>
-                    <Work id="ctc"
-                          href={`/${langKey}/blog/2006/12/30-concealed-the-conclusion/`}
-                          title={t('worksCtCTitle')}
-                          subtitle={t('worksCtCSubTitle')}
-                          youtube="DEIW9994qYE"
-                          detail={t('worksCtCDesc')} />
-                    <Work id="atc"
-                          href={`/${langKey}/blog/2016/12/28-answer-the-conclusion/`}
-                          title={t('worksAtCTitle')}
-                          youtube="NmR9EevRMJc"
-                          detail={t('worksAtCDesc')} />
-                </Columns>
-                <Columns isDesktop>
-                    <Work id="evil"
-                          href={`/${langKey}/blog/2013/12/29-evil-magic/`}
-                          title={t('worksEMTitle')}
-                          subtitle={t('worksEMSubTitle')}
-                          thumbnail={EvilMagic}
-                          detail={t('worksEMDesc')} />
-                    <Work id="evil"
-                          href="https://pixiv.me/danmaq"
-                          hrefCaption="Go to Pixiv"
-                          thumbnail={Reimu}
-                          title={t('worksPixivTitle')}
-                          detail={t('worksPixivDesc')} />
-                </Columns>
-            </Section>
-        )(this.props);
+            (({ langKey, t }) =>
+                <Section id="works">
+                    <Heading caption={t('worksHeading')} detail={t('worksDesc')} />
+                    <Columns isDesktop>
+                        <Work id="ctc"
+                            href={`/${langKey}/p/c/concealed-the-conclusion/`}
+                            title={t('worksCtCTitle')}
+                            subtitle={t('worksCtCSubTitle')}
+                            youtube="DEIW9994qYE"
+                            detail={t('worksCtCDesc')} />
+                        <Work id="atc"
+                            href={`/${langKey}/p/a/answer-the-conclusion/`}
+                            title={t('worksAtCTitle')}
+                            youtube="NmR9EevRMJc"
+                            detail={t('worksAtCDesc')} />
+                    </Columns>
+                    <Columns isDesktop>
+                        <Work id="evil"
+                            href={`/${langKey}/p/e/evil-magic/`}
+                            title={t('worksEMTitle')}
+                            subtitle={t('worksEMSubTitle')}
+                            thumbnail={EvilMagic}
+                            detail={t('worksEMDesc')} />
+                        <Work id="evil"
+                            href="https://pixiv.me/danmaq"
+                            hrefCaption="Go to Pixiv"
+                            thumbnail={Reimu}
+                            title={t('worksPixivTitle')}
+                            detail={t('worksPixivDesc')} />
+                    </Columns>
+                </Section>
+            )(this.props);
 
     /** Property types. */
     static propTypes = {
