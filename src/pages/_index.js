@@ -19,12 +19,12 @@ export default ({
         <div id="lp">
             <LPHeader pathContext={pathContext} />
             <Hero />
-            <div role="main">
+            <main role="main">
                 <Works langKey={pathContext.langKey} />
                 <About />
                 <Contact />
                 <Blog items={edges} langKey={pathContext.langKey} />
-            </div>
+            </main>
         </div>;
     return result;
 };

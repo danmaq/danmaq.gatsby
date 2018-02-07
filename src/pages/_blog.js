@@ -27,12 +27,14 @@ export default ({
                     </Container>
                 </HeroBody>
             </Hero>
-            <section className="container">
-                <p>{totalCount} 件の記事</p>
-                <Columns isMultiline>
-                    {edges.map(Article.create)}
-                </Columns>
-            </section>
+            <main>
+                <section className="container">
+                    <p>{totalCount} 件の記事</p>
+                    <Columns isMultiline>
+                        {edges.map(Article.create)}
+                    </Columns>
+                </section>
+            </main>
         </div>
     return result;
 };
