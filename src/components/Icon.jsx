@@ -1,5 +1,3 @@
-'use strict';
-
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -14,41 +12,39 @@ import PropTypes from 'prop-types';
  * @type {DMQ.Icon.SizePair[]}
  */
 const sizeTable = [
-    { wrap: 'is-small', icon: '' },
-    { wrap: '', icon: 'fa-lg' },
-    { wrap: 'is-medium', icon: 'fa-2x' },
-    { wrap: 'is-large', icon: 'fa-3x' },
-    { wrap: 'is-large', icon: 'fa-4x' },
+  { wrap: 'is-small', icon: '' },
+  { wrap: '', icon: 'fa-lg' },
+  { wrap: 'is-medium', icon: 'fa-2x' },
+  { wrap: 'is-large', icon: 'fa-3x' },
+  { wrap: 'is-large', icon: 'fa-4x' },
 ];
 
 /**
  * Common icon component.
- * 
+ *
  * Since `bloomer.Icon` outputs HTML structure different
  * from Bulma's specification, use this alternative class.
  */
 export default class extends React.Component {
-    /** Whether should require redraw. */
-    shouldComponentUpdate = () => false;
+  /** Property types. */
+  static propTypes = {
+    i: PropTypes.string.isRequired,
+    size: PropTypes.oneOf([0, 1, 2, 3, 4]),
+  };
 
-    /** Create rendered view elements. */
-    render =
-        () =>
-        (({ i, size }, { wrap, icon }) =>
-            <span className={`icon ${wrap}`}>
-                <i className={`fa fa-${i} ${icon}`}></i>
-            </span>
-        )(this.props, this._sizeDef());
+  /** Default properties. */
+  static defaultProps = { size: 0 };
 
-    /** Get size definition. */
-    _sizeDef = () => (({ size }) => sizeTable[size])(this.props);
+  /** Whether should require redraw. */
+  shouldComponentUpdate = () => false;
 
-    /** Property types. */
-    static propTypes = {
-        i: PropTypes.string.isRequired,
-        size: PropTypes.oneOf([0, 1, 2, 3, 4]),
-    };
-
-    /** Default properties. */
-    static defaultProps = { size: 0 };
-};
+  /** Create rendered view elements. */
+  render = () => {
+    const { i, size } = this.props;
+    const { wrap, icon } = sizeTable[size];
+    return (
+      <span className={`icon ${wrap}`}>
+        <i className={`fa fa-${i} ${icon}`} />
+      </span>);
+  };
+}

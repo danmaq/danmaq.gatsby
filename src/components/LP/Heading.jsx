@@ -1,39 +1,33 @@
-'use strict';
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Hero, HeroBody, Title } from 'bloomer';
 
 /** Common heading component for LP. */
 export default class extends React.Component {
-    /** Whether should require redraw. */
-    shouldComponentUpdate = () => false;
+  /** Default properties. */
+  static defaultProps = { sub: false };
 
-    /** Create rendered view elements. */
-    render =
-        () =>
-        (({ detail }) =>
-            <Hero isSize="medium">
-                <HeroBody>
-                    <Container hasTextAlign='centered'>
-                        {this._caption()}
-                        <p className="text-center">{detail}</p>
-                    </Container>
-                </HeroBody>
-            </Hero>
-        )(this.props);
+  /** Property types. */
+  static propTypes = {
+    caption: PropTypes.string.isRequired,
+    detail: PropTypes.node.isRequired,
+    sub: PropTypes.bool,
+  };
 
-    /** Create caption elements. */
-    _caption =
-        () =>
-        (({ caption, sub }) =>
+  /** Whether should require redraw. */
+  shouldComponentUpdate = () => false;
+
+  /** Create rendered view elements. */
+  render = () => {
+    const { caption, detail, sub } = this.props;
+    return (
+      <Hero isSize="medium">
+        <HeroBody>
+          <Container hasTextAlign="centered">
             <Title isSize={2} tag={sub ? 'h3' : 'h2'}>{caption}</Title>
-        )(this.props);
-
-    /** Property types. */
-    static propTypes = {
-        caption: PropTypes.string.isRequired,
-        detail: PropTypes.node.isRequired,
-        sub: PropTypes.bool,
-    };
-};
+            <p className="text-center">{detail}</p>
+          </Container>
+        </HeroBody>
+      </Hero>);
+  };
+}

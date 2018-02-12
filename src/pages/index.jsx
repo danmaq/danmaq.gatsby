@@ -1,31 +1,27 @@
-'use strict';
-
 import React from 'react';
 import { withPrefix } from 'gatsby-link';
 import { getUserLangKey } from 'ptz-i18n';
 
 export default class extends React.Component {
-    constructor(args) {
-        super(args);
-        if (typeof window !== 'undefined') { // Skip build, Browsers only
-            const { langs, langKeyDefault } = args.data.site.siteMetadata;
-            const langKey = getUserLangKey(langs, langKeyDefault);
-            window.___history.replace(withPrefix(`/${langKey}/`));
-        }
+  constructor(args) {
+    super(args);
+    if (typeof window !== 'undefined') { // Skip build, Browsers only
+      const { langs, langKeyDefault } = args.data.site.siteMetadata;
+      const langKey = getUserLangKey(langs, langKeyDefault);
+      window.___history.replace(withPrefix(`/${langKey}/`));
     }
+  }
 
-    /** Create rendered view elements. */
-    render = () => <div />;
+  /** Create rendered view elements. */
+  render = () => <div />;
 }
 
-export const pageQuery =
-    graphql `
+export const pageQuery = graphql`
 query IndexQuery {
-    site{
-        siteMetadata{
-            langKeyDefault
-            langs
-        }
+  site{
+    siteMetadata{
+      langKeyDefault
+      langs
     }
-}
-`;
+  }
+}`;

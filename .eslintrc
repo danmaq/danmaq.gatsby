@@ -4,6 +4,10 @@
         "es6": true
     },
     "extends": "airbnb",
+    "globals": {
+        "graphql": true,
+        "window": true
+    },
     "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
@@ -15,5 +19,15 @@
     },
     "plugins": [
         "react"
-    ]
+    ],
+    "rules": {
+        "no-underscore-dangle": 1,
+        "jsx-a11y/anchor-is-valid": 0,
+        "react/forbid-prop-types": 1
+    },
+    "settings": {
+        "import/resolver": {
+            "babel-module": {}
+        }
+    }
 }
