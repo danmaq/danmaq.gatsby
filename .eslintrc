@@ -1,21 +1,19 @@
 {
     "env": {
-        "browser": true,
-        "es6": true,
-        "node": true
+        "shared-node-browser": true,
+        "es6": true
     },
+    "extends": "airbnb",
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
+            "experimentalObjectRestSpread": true,
             "jsx": true
         },
         "ecmaVersion": 7,
         "sourceType": "module"
     },
-    "parser": "babel-eslint",
     "plugins": [
         "react"
-    ],
-    "rules": {
-        "react/jsx-uses-vars": 1
-    }
+    ]
 }
