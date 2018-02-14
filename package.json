@@ -84,6 +84,7 @@
         "staging": "yon run clean && yon run staging:build && yon run staging:commit",
         "staging:build": "yon run build --prefix-paths",
         "staging:commit": "gh-pages -d public",
+        "preinstall": ".tools/preinstall",
         "production": "yon run clean && yon run production:clean && yon run production:clone && yon run production:truncate && yon run production:link && yon run build --verbose && yon run production:commit && yon run production:push",
         "production:clean": "rimraf ${TMPDIR}/danmaq.github.io",
         "production:clone": "git clone https://github.com/danmaq/danmaq.github.io.git ${TMPDIR}/danmaq.github.io",
