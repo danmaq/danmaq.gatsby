@@ -2,4 +2,23 @@
 
 # Gatsby theme for danmaq.com
 
-See also: [Articles](https://github.com/danmaq/danmaq.article)
+## Install
+
+### Mac, Linux, or BSD
+
+```SH
+$ yarn install
+```
+
+### Windows
+
+1. Run on Administrator.
+
+```PowerShell
+PS:Admin> yarn global add windows-build-tools
+PS:Users> yarn install
+```
+
+## See also
+
+[Articles](https://github.com/danmaq/danmaq.article)
