@@ -6,8 +6,8 @@ import { Columns, Container } from 'bloomer';
 import Dept from './Dept';
 import Heading from '../Heading';
 
-import Comiket from '~/src/assets/LP/photo/comiket.jpg';
-import Workshop from '~/src/assets/LP/photo/workshop.jpg';
+import Comiket from '../../../assets/LP/photo/comiket.jpg';
+import Workshop from '../../../assets/LP/photo/workshop.jpg';
 
 /** Depts component. */
 class Depts extends React.Component {

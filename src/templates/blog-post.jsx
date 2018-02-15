@@ -15,8 +15,8 @@ import {
 } from 'bloomer';
 import _ from 'lodash';
 
-import Header from '~/src/components/Header';
-import CoverImage from '~/src/components/CoverImage';
+import Header from '../components/Header';
+import CoverImage from '../components/CoverImage';
 
 export default class extends React.Component {
   /** Property types. */
@@ -38,7 +38,7 @@ export default class extends React.Component {
     }
   }
 
-  _alternative =
+  alternateNavigation =
     () =>
       (({
         data: {
@@ -56,7 +56,7 @@ export default class extends React.Component {
             />)))
       )(this.props);
 
-  _cover = () => {
+  renderCover = () => {
     const { data: { markdownRemark: { frontmatter: { cover, youtube } } } } = this.props;
     return (<CoverImage
       alt=""
@@ -77,7 +77,7 @@ export default class extends React.Component {
       <div>
         <Helmet>
           <title>{title}</title>
-          {this._alternative()}
+          {this.alternateNavigation()}
         </Helmet>
         <Header pathContext={pathContext} />
         <main>
@@ -96,7 +96,7 @@ export default class extends React.Component {
             </HeroFooter>
           </Hero>
           <section className="container">
-            {this._cover()}
+            {this.renderCover()}
             <Columns isCentered>
               <Column isHidden="touch" isSize={1} />
               <Column isSize={10}>

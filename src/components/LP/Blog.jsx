@@ -4,8 +4,8 @@ import { translate } from 'react-i18next';
 import Link from 'gatsby-link';
 import { Columns, Content, Section } from 'bloomer';
 
-import Article from '~/src/components/Article';
-import Icon from '~/src/components/Icon';
+import Article from '../Article';
+import Icon from '../Icon';
 
 import Heading from './Heading';
 

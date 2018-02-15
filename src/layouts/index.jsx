@@ -3,8 +3,8 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import 'font-awesome/scss/font-awesome.scss';
 
-import Footer from '~/src/components/Footer';
-import '~/src/components/i18n';
+import Footer from '../components/Footer';
+import '../components/i18n';
 
 import './index.scss';
 

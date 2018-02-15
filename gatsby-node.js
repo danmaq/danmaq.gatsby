@@ -3,12 +3,7 @@ const fs = require('fs-extra');
 
 exports.modifyBabelrc = ({ babelrc }) => ({
   ...babelrc,
-  plugins: [
-    ...babelrc.plugins,
-    'transform-regenerator', [
-      'module-resolver', { root: ['.'], alias: { '~': '.' } },
-    ],
-  ],
+  plugins: [...babelrc.plugins, 'transform-regenerator'],
 });
 
 const copyLocaleData = () =>

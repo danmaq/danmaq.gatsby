@@ -3,12 +3,12 @@ import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { Button, Column, Columns, Container, Image } from 'bloomer';
 
-import Icon from '~/src/components/Icon';
+import Icon from '../../Icon';
 
 import Heading from '../Heading';
 
-import Niconico from '~/src/assets/LP/icon/2525.svg';
-import Pixiv from '~/src/assets/LP/icon/pixiv.svg';
+import Niconico from '../../../assets/LP/icon/2525.svg';
+import Pixiv from '../../../assets/LP/icon/pixiv.svg';
 
 /** SNS component. */
 class SNS extends React.Component {

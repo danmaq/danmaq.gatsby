@@ -12,8 +12,8 @@ import {
 } from 'bloomer';
 import Link from 'gatsby-link';
 
-import Header from '~/src/components/Header';
-import NotFound from '~/src/assets/404.png';
+import Header from '../components/Header';
+import NotFound from '../assets/404.png';
 
 export default () => (
   <div role="main">

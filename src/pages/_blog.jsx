@@ -3,8 +3,8 @@ import Helmet from 'react-helmet';
 import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
 import i18n from 'i18next';
 
-import Article from '~/src/components/Article';
-import Header from '~/src/components/Header';
+import Article from '../components/Article';
+import Header from '../components/Header';
 
 export default ({
   data: { allMarkdownRemark: { totalCount, edges } },

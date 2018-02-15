@@ -6,8 +6,8 @@ import { Columns, Section } from 'bloomer';
 import Heading from '../Heading';
 import Work from './Work';
 
-import EvilMagic from '~/src/assets/LP/photo/evil_magic.jpg';
-import Reimu from '~/src/assets/LP/photo/reimu.jpg';
+import EvilMagic from '../../../assets/LP/photo/evil_magic.jpg';
+import Reimu from '../../../assets/LP/photo/reimu.jpg';
 
 /** Works component. */
 class Works extends React.Component {

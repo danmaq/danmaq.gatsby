@@ -10,7 +10,7 @@ import {
   Title,
 } from 'bloomer';
 
-import Icon from '~/src/components/Icon';
+import Icon from '../Icon';
 
 /** Theme component. */
 class Theme extends React.Component {

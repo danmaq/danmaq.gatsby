@@ -12,9 +12,9 @@ import {
   NavbarStart,
 } from 'bloomer';
 
-import Icon from '~/src/components/Icon';
+import Icon from '../Icon';
 
-import LogoInv from '~/src/assets/logo/logoInv.svg';
+import LogoInv from '../../assets/logo/logoInv.svg';
 
 /**
  * @typedef {object} Header.state
@@ -45,7 +45,7 @@ export default class extends React.Component {
    */
   state = { active: false };
 
-  _alternative = () => {
+  alternateNavigation = () => {
     const { pathContext: { langKey } } = this.props;
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'en' : 'ja';
@@ -53,20 +53,20 @@ export default class extends React.Component {
     const result = (
       <Helmet>
         <html lang={lang} />
-        {/* <link href={withPrefix(this._replaceSlugLang(`/${alt}/`))}
+        {/* <link href={withPrefix(this.replaceSlugLang(`/${alt}/`))}
                         rel="alternate"
                         hrefLang={alt} /> */}
       </Helmet>);
     return result;
   }
 
-  _toggleLanguage = () => {
+  toggleLanguage = () => {
     const { pathContext: { langKey } } = this.props;
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'ja' : 'en';
     const result = (
       <NavbarItem
-        href={withPrefix(this._replaceSlugLang(`/${lang}/`))}
+        href={withPrefix(this.replaceSlugLang(`/${lang}/`))}
         rel="alternate"
         hrefLang={lang}
       >
@@ -76,14 +76,14 @@ export default class extends React.Component {
     return result;
   };
 
-  _replaceSlugLang = (lang) => {
+  replaceSlugLang = (lang) => {
     const { pathContext: { slug, path } } = this.props;
     const sp = path || slug;
     return !sp ? lang : sp.replace(/^\/(ja|en)\//, lang);
   };
 
   /** Invoked on burger menu button has clicked. */
-  _onClickedBurger = () =>
+  burgerOnClick = () =>
     (({ active }) => this.setState(p => ({ ...p, active: !active })))(this.state);
 
   /** Create rendered view elements. */
@@ -98,7 +98,7 @@ export default class extends React.Component {
         aria-label="main navigation"
         style={style}
       >
-        {this._alternative()}
+        {this.alternateNavigation()}
         <NavbarBrand>
           <NavbarItem>
             <Link to={slug ? slug.replace(/\/(en|ja)\/.+/, '/$1/') : '/'}>
@@ -112,13 +112,13 @@ export default class extends React.Component {
           </NavbarItem>
           <NavbarBurger
             isActive={active}
-            onClick={this._onClickedBurger}
+            onClick={this.burgerOnClick}
           />
         </NavbarBrand>
         <NavbarMenu isActive={active} role="navigation">
           <NavbarStart>{children}</NavbarStart>
           <NavbarEnd>
-            {this._toggleLanguage()}
+            {this.toggleLanguage()}
             <NavbarItem
               href="https://github.com/danmaq"
               target="_blank"

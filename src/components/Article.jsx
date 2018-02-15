@@ -14,7 +14,7 @@ import _ from 'lodash';
 
 import CoverImage from './CoverImage';
 
-import Mark from '~/src/assets/logo/mark.svg';
+import Mark from '../assets/logo/mark.svg';
 
 const more = 'もっと見る';
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { translate } from 'react-i18next';
 import { Button, Content, Control, Field, Input } from 'bloomer';
 
-import Icon from '~/src/components/Icon';
+import Icon from '../../Icon';
 import Heading from '../Heading';
 
 /** EZine component. */

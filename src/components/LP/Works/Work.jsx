@@ -10,8 +10,8 @@ import {
   Content,
 } from 'bloomer';
 
-import CoverImage from '~/src/components/CoverImage';
-import Icon from '~/src/components/Icon';
+import CoverImage from '../../CoverImage';
+import Icon from '../../Icon';
 
 /** Common work component for LP. */
 export default class extends React.Component {
@@ -38,7 +38,7 @@ export default class extends React.Component {
   shouldComponentUpdate = () => false;
 
   /** Create thumbnail elements. */
-  _thumbnail = () => {
+  renderThumb = () => {
     const { thumbnail, title, youtube } = this.props;
     if (!(youtube || thumbnail)) { return null; }
     const props = { src: thumbnail, title, youtube };
@@ -49,7 +49,7 @@ export default class extends React.Component {
   };
 
   /** Create link elements. */
-  _linkButton = () => {
+  renderMore = () => {
     const { href, hrefCaption } = this.props;
     return (/^https?:\/\//.test(href) ?
       <Button
@@ -68,7 +68,7 @@ export default class extends React.Component {
   };
 
   /** Create title elements. */
-  _title = () => {
+  renderCaption = () => {
     const { title, subtitle } = this.props;
     return (
       !subtitle
@@ -82,13 +82,13 @@ export default class extends React.Component {
     return (
       <Column>
         <Card>
-          {this._thumbnail()}
+          {this.renderThumb()}
           <CardContent>
             <article>
               <Content>
-                {this._title()}
+                {this.renderCaption()}
                 <p>{detail}</p>
-                <p>{this._linkButton()}</p>
+                <p>{this.renderMore()}</p>
               </Content>
             </article>
           </CardContent>

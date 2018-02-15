@@ -16,14 +16,14 @@ import Heading from '../Heading';
 import Achieve from './Achieve';
 import Dept from './Dept';
 
-import Cpp from '~/src/assets/LP/icon/cc.svg';
-import Docker from '~/src/assets/LP/icon/docker.svg';
-import FSharp from '~/src/assets/LP/icon/fsharp.svg';
-import Meteor from '~/src/assets/LP/icon/meteor.svg';
-import MariaDB from '~/src/assets/LP/icon/mariadb.svg';
-import ReactNative from '~/src/assets/LP/icon/react.svg';
-import Unity3D from '~/src/assets/LP/icon/unity3d.svg';
-import Enna from '~/src/assets/LP/photo/enna.jpg';
+import Cpp from '../../../assets/LP/icon/cc.svg';
+import Docker from '../../../assets/LP/icon/docker.svg';
+import FSharp from '../../../assets/LP/icon/fsharp.svg';
+import Meteor from '../../../assets/LP/icon/meteor.svg';
+import MariaDB from '../../../assets/LP/icon/mariadb.svg';
+import ReactNative from '../../../assets/LP/icon/react.svg';
+import Unity3D from '../../../assets/LP/icon/unity3d.svg';
+import Enna from '../../../assets/LP/photo/enna.jpg';
 
 /** Hi! My name is (who?) */
 const myname = <ruby>Mc<rp>(</rp><rt>まく</rt><rp>)</rp></ruby>;
