@@ -1,4 +1,5 @@
 [![wercker status](https://app.wercker.com/status/26864a7cf5763cb74033660b80d8f3d1/s/master "wercker status")](https://app.wercker.com/project/byKey/26864a7cf5763cb74033660b80d8f3d1)
+[![CircleCI](https://circleci.com/gh/danmaq/danmaq.gatsby/tree/master.svg?style=svg)](https://circleci.com/gh/danmaq/danmaq.gatsby/tree/master)
 
 # Gatsby theme for danmaq.com
 
