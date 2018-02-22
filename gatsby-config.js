@@ -1,6 +1,6 @@
 const langKeyDefault = 'ja';
 const query =
-    `
+  `
 {
   allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
     edges { node { fields { slug, langKey } } }
@@ -22,14 +22,16 @@ module.exports = {
   {
     resolve: 'gatsby-transformer-remark',
     options: {
-      plugins: [{
-        resolve: 'gatsby-remark-images',
-        options: {
-          maxWidth: 590,
-          linkImagesToOriginal: true,
+      plugins: [
+        'gatsby-remark-relative-linker',
+        {
+          resolve: 'gatsby-remark-images',
+          options: {
+            maxWidth: 590,
+            linkImagesToOriginal: true,
+          },
         },
-      },
-      'gatsby-remark-copy-linked-files',
+        'gatsby-remark-copy-linked-files',
       ],
     },
   },
