@@ -69,6 +69,7 @@
         "gh-pages": "^1.1.0",
         "prettier": "^1.10.2",
         "rimraf": "^2.6.2",
+        "unist-util-visit": "^1.3.0",
         "yarn-or-npm": "^2.0.4"
     },
     "scripts": {
