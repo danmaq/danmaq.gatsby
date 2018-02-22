@@ -1,16 +1,10 @@
 const visit = require('unist-util-visit');
 
 module.exports = ({ markdownAST }) => {
-  visit(markdownAST, 'link', (node) => {
-    if (
-      node.url &&
-      !node.url.startsWith('//') &&
-      !node.url.startsWith('http') &&
-      node.url.startsWith('/')
-    ) {
-      node.url = node.url.replace(/(.*)\.(\w{2}).md(#.*)?$/, (match, base, language, hash) => `/${language}${base}${hash}`);
-    }
-  });
-
+  /** @type {{(node: {url: string}) => void}} */
+  const visitor = (node) => {
+    node.url = node.url.replace(/^\/posts\/(.*)\.(\w{2}).md(#.*)?$/, '/$2/$1$3/');
+  };
+  visit(markdownAST, 'link', visitor);
   return markdownAST;
 };
