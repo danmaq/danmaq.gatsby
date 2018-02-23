@@ -23,7 +23,13 @@ module.exports = {
     resolve: 'gatsby-transformer-remark',
     options: {
       plugins: [
-        'gatsby-remark-relative-linker',
+        {
+          resolve: 'gatsby-remark-link-rewrite',
+          options: {
+            pattern: /^\/posts\/(.*)\.(\w{2}).md(#.*)?$/,
+            replace: '/$2/$1$3/'
+          }
+        },
         {
           resolve: 'gatsby-remark-images',
           options: {
