@@ -1,7 +1,0 @@
-{
-    "name": "gatsby-remark-relative-linker",
-    "version": "0.1.0",
-    "dependencies": {
-        "unist-util-visit": "^1.3.0"
-    }
-}
