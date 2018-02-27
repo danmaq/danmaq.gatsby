@@ -16,6 +16,8 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: git clone https://github.com/danmaq/danmaq.article.git
+      - run: git config --global user.name "Shuhei Nomura"
+      - run: git config --global user.email "info@danmaq.com"
       - run: yarn run staging:build --verbose
       - run: yarn run staging:commit
       - run: yarn run production:clean
