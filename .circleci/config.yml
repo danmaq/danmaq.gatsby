@@ -25,6 +25,7 @@ jobs:
       - run: yarn run production:clean
       - run: yarn run production:clone
       - run: yarn run production:truncate
-      - run: node --max_old_space_size=1792 --stack_size=1280 ./node_modules/.bin/gatsby build --verbose
+      - run: yarn run production:link
+      - run: yarn run build --verbose
       - run: yarn run production:commit
       - run: yarn run production:push
