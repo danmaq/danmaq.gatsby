@@ -9,13 +9,13 @@ jobs:
     steps:
       - checkout
       - restore_cache:
-        keys:
-        - v1-dependencies-{{ checksum "package.json" }}
-        - v1-dependencies-
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          - v1-dependencies-
       - run: yarn install
       - save_cache:
-        paths:
-        - node_modules
+          paths:
+          - node_modules
         key: v1-dependencies-{{ checksum "package.json" }}
       - run: git clone https://github.com/danmaq/danmaq.article.git
       - run: git config --global user.name "Shuhei Nomura"
