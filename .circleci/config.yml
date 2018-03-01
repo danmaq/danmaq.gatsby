@@ -22,10 +22,9 @@ jobs:
       - run: git config --global user.email "info@danmaq.com"
       # - run: yarn run staging:build --verbose
       # - run: yarn run staging:commit
-      - run: yarn run production:clean
-      - run: yarn run production:clone
-      - run: yarn run production:truncate
-      - run: yarn run production:link
+      - run: yarn run clean
+      - run: yarn run production:init
+      - run: yarn run production:origin
       - run: yarn run build --verbose
       - run: yarn run production:commit
       - run: yarn run production:push
