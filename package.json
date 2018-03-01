@@ -84,13 +84,11 @@
         "staging:build": "yon run build --prefix-paths",
         "staging:commit": "gh-pages -d public",
         "preinstall": ".tools/preinstall",
-        "production": "yon run clean && yon run production:clean && yon run production:clone && yon run production:truncate && yon run production:link && yon run build --verbose && yon run production:commit && yon run production:push",
-        "production:clean": "rimraf ${TMPDIR}/danmaq.github.io",
-        "production:clone": "git clone git@github.com:danmaq/danmaq.github.io.git ${TMPDIR}/danmaq.github.io",
-        "production:commit": "cd ${TMPDIR}/danmaq.github.io && git add -A && git commit -m 'Updated by danmaq.gatsby.'",
-        "production:push": "cd ${TMPDIR}/danmaq.github.io && git push",
-        "production:link": "ln -s ${TMPDIR}/danmaq.github.io public",
-        "production:truncate": "cd ${TMPDIR}/danmaq.github.io && git config --local core.quotepath false && git ls-files --full-name | xargs git rm"
+        "production": "yon run clean && yon run production:init && yon run production:origin && yon run build --verbose && yon run production:commit && yon run production:push",
+        "production:commit": "cd public && git add -A && git commit -m 'Updated by danmaq.gatsby.'",
+        "production:init": "mkdir public && cd public && git init",
+        "production:origin": "cd public && git remote add origin git@github.com:danmaq/danmaq.github.io.git",
+        "production:push": "cd publish && git push -uf origin master"
     },
     "browserslist": [
         "> 2%",
