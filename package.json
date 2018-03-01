@@ -88,7 +88,7 @@
         "production:commit": "cd public && git add -A && git commit -m 'Updated by danmaq.gatsby.'",
         "production:init": "mkdir public && cd public && git init",
         "production:origin": "cd public && git remote add origin git@github.com:danmaq/danmaq.github.io.git",
-        "production:push": "cd publish && git push -uf origin master"
+        "production:push": "cd public && git push -uf origin master"
     },
     "browserslist": [
         "> 2%",
