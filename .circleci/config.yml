@@ -60,4 +60,4 @@ workflows:
             - init
       - deploy:
           requires:
-            - buuild
+            - build
