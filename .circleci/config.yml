@@ -44,8 +44,9 @@ jobs:
           keys:
           - v1-dependencies-{{ checksum "package.json" }}
           - v1-dependencies-
+      - restore_cache:
+          keys:
           - v1-pages
-      - run: git clone https://github.com/danmaq/danmaq.article.git
       - run: git config --global user.name "Shuhei Nomura"
       - run: git config --global user.email "info@danmaq.com"
       - run: yarn run production:commit
@@ -61,3 +62,8 @@ workflows:
       - deploy:
           requires:
             - build
+          filters:
+            branches:
+              only:
+                - master
+                - dev
