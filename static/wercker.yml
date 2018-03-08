@@ -1,7 +1,0 @@
-box: alpine
-
-build:
-  steps:
-  - script:
-      name: 'gh-pages: No operations yet.'
-      code: echo Hello, world!
