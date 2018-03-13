@@ -50,21 +50,20 @@ export default class extends React.Component {
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'en' : 'ja';
     const alt = /^en/.test(langKey) ? 'ja' : 'en';
-    const result = (
+    return (
       <Helmet>
         <html lang={lang} />
         {/* <link href={withPrefix(this.replaceSlugLang(`/${alt}/`))}
                         rel="alternate"
                         hrefLang={alt} /> */}
       </Helmet>);
-    return result;
   }
 
   toggleLanguage = () => {
     const { pathContext: { langKey } } = this.props;
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'ja' : 'en';
-    const result = (
+    return (
       <NavbarItem
         href={withPrefix(this.replaceSlugLang(`/${lang}/`))}
         rel="alternate"
@@ -73,7 +72,6 @@ export default class extends React.Component {
         <Icon i="language" size={2} />
         {/^en/.test(langKey) ? '🇬🇧▶︎🇯🇵' : '🇯🇵▶︎🇬🇧'}
       </NavbarItem>);
-    return result;
   };
 
   replaceSlugLang = (lang) => {

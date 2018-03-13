@@ -24,7 +24,7 @@ export default class extends React.Component {
 
   /** Invoked just after mounting this component. */
   componentDidMount = () =>
-    global.window.addEventListener('scroll', this._onScroll);
+    global.window.addEventListener('scroll', this.windowOnScroll);
 
   /** Whether should require redraw. */
   shouldComponentUpdate = (nextProps, nextState) =>
@@ -32,10 +32,10 @@ export default class extends React.Component {
 
   /** Invoked just before unmounting this component. */
   componentWillUnmount = () =>
-    global.window.removeEventListener('scroll', this._onScroll);
+    global.window.removeEventListener('scroll', this.windowOnScroll);
 
   /** Create CSS class name of header. */
-  _className = () => {
+  getClassNames = () => {
     const { expand } = this.state;
     return classNames(
       ({ 'dmq-navbar-expand is-black': expand }),
@@ -44,7 +44,7 @@ export default class extends React.Component {
   };
 
   /** Invoked when scrolling the screen. */
-  _onScroll = () => {
+  windowOnScroll = () => {
     const expand = global.window.scrollY <= 200;
     if (this.state.expand !== expand) {
       this.setState(p => ({ ...p, expand }));
@@ -55,7 +55,7 @@ export default class extends React.Component {
   render = () => {
     const { pathContext } = this.props;
     return (
-      <Core className={this._className()} pathContext={pathContext}>
+      <Core className={this.getClassNames()} pathContext={pathContext}>
         <NavbarItem href="#works">Works</NavbarItem>
         <NavbarItem href="#about">About</NavbarItem>
         <NavbarItem href="#contact">Contact</NavbarItem>

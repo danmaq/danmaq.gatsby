@@ -35,7 +35,7 @@ export default class extends React.Component {
 
   /** Invoked just after mounting this component. */
   componentDidMount = () =>
-    global.window.addEventListener('scroll', this._onScroll);
+    global.window.addEventListener('scroll', this.windowOnScroll);
 
   /** Whether should require redraw. */
   shouldComponentUpdate = (nextProps, nextState) =>
@@ -44,10 +44,10 @@ export default class extends React.Component {
 
   /** Invoked just before unmounting this component. */
   componentWillUnmount = () =>
-    global.window.removeEventListener('scroll', this._onScroll);
+    global.window.removeEventListener('scroll', this.windowOnScroll);
 
   /** Invoked when scrolling the screen. */
-  _onScroll = () => {
+  windowOnScroll = () => {
     const { scrollY } = global.window;
     const { position: ppos, reversed: prev } = this.state;
     const position = scrollY * 0.3333;
@@ -58,7 +58,7 @@ export default class extends React.Component {
   };
 
   /** Create style. */
-  _createStyle = () => {
+  createStyle = () => {
     const { style } = this.props;
     const { position, reversed } = this.state;
     return {
@@ -68,5 +68,5 @@ export default class extends React.Component {
   };
 
   /** Create rendered view elements. */
-  render = () => <Core {...this.props} style={this._createStyle()} />;
+  render = () => <Core {...this.props} style={this.createStyle()} />;
 }
