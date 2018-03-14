@@ -12,7 +12,10 @@ import {
 
 import Icon from '../Icon';
 
-/** Theme component. */
+/**
+ * Theme component.
+ * @extends React.Component
+ */
 class Theme extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };

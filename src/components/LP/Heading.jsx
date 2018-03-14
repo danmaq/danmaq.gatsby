@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Container, Hero, HeroBody, Title } from 'bloomer';
 
-/** Common heading component for LP. */
+/**
+ * Common heading component for LP.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Default properties. */
   static defaultProps = { sub: false };

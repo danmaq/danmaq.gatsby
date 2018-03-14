@@ -18,6 +18,10 @@ import _ from 'lodash';
 import Header from '../components/Header';
 import CoverImage from '../components/CoverImage';
 
+/**
+ * Blog post component.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {
@@ -25,36 +29,38 @@ export default class extends React.Component {
     pathContext: PropTypes.object.isRequired,
   };
 
-  constructor(args) {
-    super(args);
+  /** Initialize instance. */
+  constructor(props) {
+    super(props);
     const {
       markdownRemark: { frontmatter: { redirect } },
       site: { siteMetadata: { langKeyDefault, langs } },
-    } = args.data;
+    } = props.data;
     if (redirect && typeof window !== 'undefined') {
       const langKey = getUserLangKey(langs, langKeyDefault);
       const dest = withPrefix(redirect.replace('${lang}', langKey));
+      /* eslint no-underscore-dangle: 0 */
       window.___history.replace(dest);
     }
   }
 
   alternateNavigation =
-    () =>
-      (({
+    () => {
+      const {
         data: {
           markdownRemark: { frontmatter: { redirect } },
           site: { siteMetadata: { langs } },
         },
-      }) =>
-        (!redirect ? undefined :
-          langs.map((v, i) => (
-            <link
-              key={i}
-              href={redirect.replace('${lang}', v)}
-              hrefLang={v}
-              rel="alternate"
-            />)))
-      )(this.props);
+      } = this.props;
+      return (!redirect ? undefined :
+        langs.map((v, i) => (
+          <link
+            key={i}
+            href={redirect.replace('${lang}', v)}
+            hrefLang={v}
+            rel="alternate"
+          />)));
+    };
 
   renderCover = () => {
     const { data: { markdownRemark: { frontmatter: { cover, youtube } } } } = this.props;

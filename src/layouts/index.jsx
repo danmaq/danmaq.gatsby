@@ -8,6 +8,10 @@ import '../components/i18n';
 
 import './index.scss';
 
+/**
+ * Common layout component for All pages.
+ * @extends React.PureComponent
+ */
 export default class extends React.PureComponent {
   /** Property types. */
   static propTypes = { children: PropTypes.func.isRequired };

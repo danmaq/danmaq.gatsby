@@ -8,6 +8,7 @@ import Contact from '../components/LP/Contact';
 import Hero from '../components/LP/Hero';
 import Works from '../components/LP/Works';
 
+/** Top page component of articles with language independent. */
 export default ({
   data: { allMarkdownRemark: { edges } },
   pathContext,

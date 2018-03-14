@@ -24,6 +24,7 @@ const sizeTable = [
  *
  * Since `bloomer.Icon` outputs HTML structure different
  * from Bulma's specification, use this alternative class.
+ * @extends React.Component
  */
 export default class extends React.Component {
   /** Property types. */

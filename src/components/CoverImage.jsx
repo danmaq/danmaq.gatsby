@@ -7,7 +7,10 @@ import PropTypes from 'prop-types';
  */
 const youtubeUrl = id => `https://www.youtube.com/embed/${id}?showinfo=0`;
 
-/** Common image for hero or thumbnail component for LP. */
+/**
+ * Common image for hero or thumbnail component for LP.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Default Properties. */
   static defaultProps = {

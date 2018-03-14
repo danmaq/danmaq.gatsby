@@ -9,7 +9,10 @@ import Icon from '../Icon';
 
 import Heading from './Heading';
 
-/** Blog component. */
+/**
+ * Blog component.
+ * @extends React.Component
+ */
 class Blog extends React.Component {
   /** Property types. */
   static propTypes = {

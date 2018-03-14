@@ -2,6 +2,7 @@ import React from 'react';
 
 import Blog from './_blog';
 
+/** Articles component for Enblish. */
 export default props => <Blog {...props} />;
 
 export const query = graphql`

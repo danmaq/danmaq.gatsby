@@ -2,6 +2,7 @@ import React from 'react';
 
 import Index from './_index';
 
+/** Top page component for Japanese. */
 export default props => <Index {...props} />;
 
 export const query = graphql`

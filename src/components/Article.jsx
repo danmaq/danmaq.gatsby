@@ -18,7 +18,10 @@ import Mark from '../assets/logo/mark.svg';
 
 const more = 'もっと見る';
 
-/** Common card component for LP. */
+/**
+ * Common card component for LP.
+ * @extends React.Component
+ */
 export default class Article extends React.Component {
   /** Default Properties. */
   static defaultProps = {
