@@ -68,10 +68,7 @@ class SNS extends React.Component {
                     hrefLang="ja"
                     isSize="large"
                   >
-                    <Image
-                      isSize="64x64"
-                      src={Niconico}
-                    />
+                    <Image isSize="64x64" src={Niconico} />
                   </Button>
                 </Column>
                 <Column hasTextAlign="centered">
@@ -83,10 +80,7 @@ class SNS extends React.Component {
                     hrefLang="ja"
                     isSize="large"
                   >
-                    <Image
-                      isSize="64x64"
-                      src={Pixiv}
-                    />
+                    <Image isSize="64x64" src={Pixiv} />
                   </Button>
                 </Column>
               </Columns>

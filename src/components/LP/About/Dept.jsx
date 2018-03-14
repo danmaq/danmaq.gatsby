@@ -30,7 +30,7 @@ export default class extends React.Component {
   shouldComponentUpdate = () => false;
 
   /** Create caption elements. */
-  _caption = () => {
+  renderCaption = () => {
     const { caption, sub, subCaption } = this.props;
     return (
       <Title className="card-header-title" tag={sub ? 'h4' : 'h3'}>
@@ -45,7 +45,7 @@ export default class extends React.Component {
       <Column>
         <Card className="dmq-dept">
           <CardHeader>
-            {this._caption()}
+            {this.renderCaption()}
           </CardHeader>
           <CardImage>
             <Image isRatio="4:3" src={image} />

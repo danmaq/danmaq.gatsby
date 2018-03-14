@@ -37,10 +37,12 @@ export default class extends React.Component {
     const {
       alt, sizes, src, srcSet, title,
     } = this.props;
-    const attrs = {
-      sizes, src, srcSet, title,
-    };
-    return <img alt={alt} {...attrs} />;
+    return (<img
+      alt={alt}
+      {...{
+        sizes, src, srcSet, title,
+      }}
+    />);
   };
 
   /** Create YouTube(iframe) elements. */

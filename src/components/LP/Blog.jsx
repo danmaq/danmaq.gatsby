@@ -26,10 +26,7 @@ class Blog extends React.Component {
     const { items, langKey, t } = this.props;
     return (
       <Section id="blog">
-        <Heading
-          caption={t('blogHeading')}
-          detail={t('blogDesc')}
-        />
+        <Heading caption={t('blogHeading')} detail={t('blogDesc')} />
         <Columns isCentered isMultiline>
           {items.map(Article.create)}
         </Columns>

@@ -41,10 +41,9 @@ export default class extends React.Component {
   renderThumb = () => {
     const { thumbnail, title, youtube } = this.props;
     if (!(youtube || thumbnail)) { return null; }
-    const props = { src: thumbnail, title, youtube };
     return (
       <CardImage>
-        <CoverImage {...props} />
+        <CoverImage {...{ src: thumbnail, title, youtube }} />
       </CardImage>);
   };
 
@@ -77,22 +76,19 @@ export default class extends React.Component {
   };
 
   /** Create rendered view elements. */
-  render = () => {
-    const { detail } = this.props;
-    return (
-      <Column>
-        <Card>
-          {this.renderThumb()}
-          <CardContent>
-            <article>
-              <Content>
-                {this.renderCaption()}
-                <p>{detail}</p>
-                <p>{this.renderMore()}</p>
-              </Content>
-            </article>
-          </CardContent>
-        </Card>
-      </Column>);
-  };
+  render = () => (
+    <Column>
+      <Card>
+        {this.renderThumb()}
+        <CardContent>
+          <article>
+            <Content>
+              {this.renderCaption()}
+              <p>{this.props.detail}</p>
+              <p>{this.renderMore()}</p>
+            </Content>
+          </article>
+        </CardContent>
+      </Card>
+    </Column>);
 }

@@ -18,11 +18,7 @@ export default class extends React.Component {
     const { caption, image } = this.props;
     return (
       <Column isSize="1/3">
-        <Image
-          isRatio="square"
-          src={image}
-          title={caption}
-        />
+        <Image isRatio="square" src={image} title={caption} />
       </Column>);
   };
 }

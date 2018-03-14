@@ -89,13 +89,12 @@ export default class Article extends React.Component {
       youtube,
     } = this.props;
     return (
-      <Column className="is-3 is-3-fullhd is-4-widescreen is-6-desktop is-6-tablet is-12-mobile">
+      <Column
+        className="is-3 is-3-fullhd is-4-widescreen is-6-desktop is-6-tablet is-12-mobile"
+      >
         <Card>
           <CardImage>
-            <Link
-              to={href}
-              role="link"
-            >
+            <Link to={href} role="link">
               <CoverImage
                 alt={more}
                 sizes={imgSizes}
@@ -115,11 +114,7 @@ export default class Article extends React.Component {
             <Content>
               <p>{detail}</p>
               <p>
-                <Link
-                  className="button is-link"
-                  to={href}
-                  role="link"
-                >
+                <Link className="button is-link" to={href} role="link">
                   {more}
                 </Link>
                 &nbsp;

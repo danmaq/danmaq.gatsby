@@ -53,7 +53,11 @@ class EZine extends React.Component {
           <aside>
             <Content hasTextAlign="right">
               Powered by&nbsp;
-              <a href="http://autobiz.jp/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://autobiz.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 AutoBiz&nbsp;
                 <Icon i="external-link" />
               </a>.

@@ -81,8 +81,9 @@ export default class extends React.Component {
   };
 
   /** Invoked on burger menu button has clicked. */
-  burgerOnClick = () =>
-    (({ active }) => this.setState(p => ({ ...p, active: !active })))(this.state);
+  burgerOnClick = () => {
+    this.setState(p => ({ ...p, active: !p.active }));
+  };
 
   /** Create rendered view elements. */
   render = () => {

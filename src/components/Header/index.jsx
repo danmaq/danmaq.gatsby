@@ -48,9 +48,8 @@ export default class extends React.Component {
 
   /** Invoked when scrolling the screen. */
   windowOnScroll = () => {
-    const { scrollY } = global.window;
     const { position: ppos, reversed: prev } = this.state;
-    const position = scrollY * 0.3333;
+    const position = global.window.scrollY * 0.3333;
     if (ppos !== position) {
       const reversed = ppos > position ? position : prev;
       this.setState(p => ({ ...p, position, reversed }));
@@ -59,10 +58,9 @@ export default class extends React.Component {
 
   /** Create style. */
   createStyle = () => {
-    const { style } = this.props;
     const { position, reversed } = this.state;
     return {
-      ...style,
+      ...this.props.style,
       transform: `translateY(${-(position - reversed)}px)`,
     };
   };
