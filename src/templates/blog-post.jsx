@@ -43,10 +43,6 @@ query BlogPostByPath($path: String!) {
       title,
       youtube
     }
-    fields {
-      langKey,
-      slug
-    }
   },
   site{
     siteMetadata{
@@ -57,15 +53,25 @@ query BlogPostByPath($path: String!) {
 }`;
 
 /**
+ * @typedef FrontMatter
+ * @property {{childImageSharp: {responsiveSizes: *}}} cover
+ * @property {Date} date
+ * @property {string} strDate
+ * @property {string} [redirect]
+ * @property {string} title
+ * @property {string} [youtube]
+ */
+
+/**
  * @typedef ResultQL
- * @property {*} markdownRemark
- * @property {{siteMetadata: *}} site
+ * @property {{frontmatter: FrontMatter, html: string}} markdownRemark
+ * @property {{siteMetadata: {langKeyDefault: string, langs: string[]}}} site
  */
 
 /**
  * @typedef Props
  * @property {ResultQL} data
- * @property {*} pathContext
+ * @property {{langKey: *, path: *, slug: *}} pathContext
  */
 
 /**
@@ -79,7 +85,10 @@ export default class extends React.Component {
     pathContext: PropTypes.object.isRequired,
   };
 
-  /** Initialize instance. */
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
   constructor(props) {
     super(props);
     const {
@@ -87,6 +96,7 @@ export default class extends React.Component {
       site: { siteMetadata: { langKeyDefault, langs } },
     } = props.data;
     if (redirect && typeof window !== 'undefined') {
+      /** @type {string} */
       const langKey = getUserLangKey(langs, langKeyDefault);
       const dest = withPrefix(redirect.replace('${lang}', langKey));
       /* eslint no-underscore-dangle: 0 */
