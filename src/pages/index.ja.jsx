@@ -5,6 +5,10 @@ import Index from './_index';
 /** Top page component for Japanese. */
 export default props => <Index {...props} />;
 
+/**
+ * Query for GraphQL.
+ * Since its string is precompiled, you should not include dynamic elements.
+ */
 export const query = graphql`
 query recentJA {
   allMarkdownRemark(

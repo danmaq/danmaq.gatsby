@@ -11,7 +11,10 @@ import Core from './Core';
  * @property {boolean} expand
  */
 
-/** Header component. */
+/**
+ * Header component.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Property types. */
   static propTypes = { pathContext: PropTypes.object.isRequired };

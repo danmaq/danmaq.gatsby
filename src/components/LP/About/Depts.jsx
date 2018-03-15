@@ -9,7 +9,10 @@ import Heading from '../Heading';
 import Comiket from '../../../assets/LP/photo/comiket.jpg';
 import Workshop from '../../../assets/LP/photo/workshop.jpg';
 
-/** Depts component. */
+/**
+ * Depts component.
+ * @extends React.Component
+ */
 class Depts extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };

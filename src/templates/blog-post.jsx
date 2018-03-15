@@ -19,8 +19,58 @@ import Header from '../components/Header';
 import CoverImage from '../components/CoverImage';
 
 /**
+ * Query for GraphQL.
+ * Since its string is precompiled, you should not include dynamic elements.
+ */
+export const query =
+  graphql`
+query BlogPostByPath($path: String!) {
+  markdownRemark(fields: { slug: { eq: $path } }) {
+    html
+    frontmatter {
+      cover {
+        childImageSharp {
+          responsiveSizes {
+            src
+            srcSet
+            sizes
+          }
+        }
+      }
+      date: date
+      strDate: date(formatString: "YYYY/M/D"),
+      redirect,
+      title,
+      youtube
+    }
+    fields {
+      langKey,
+      slug
+    }
+  },
+  site{
+    siteMetadata{
+      langKeyDefault
+      langs
+    }
+  }
+}`;
+
+/**
+ * @typedef ResultQL
+ * @property {*} markdownRemark
+ * @property {{siteMetadata: *}} site
+ */
+
+/**
+ * @typedef Props
+ * @property {ResultQL} data
+ * @property {*} pathContext
+ */
+
+/**
  * Blog post component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 export default class extends React.Component {
   /** Property types. */
@@ -117,37 +167,3 @@ export default class extends React.Component {
       </div>);
   };
 }
-
-export const query =
-  graphql`
-query BlogPostByPath($path: String!) {
-  markdownRemark(fields: { slug: { eq: $path } }) {
-    html
-    frontmatter {
-      cover {
-        childImageSharp {
-          responsiveSizes {
-            src
-            srcSet
-            sizes
-          }
-        }
-      }
-      date: date
-      strDate: date(formatString: "YYYY/M/D"),
-      redirect,
-      title,
-      youtube
-    }
-    fields {
-      langKey,
-      slug
-    }
-  },
-  site{
-    siteMetadata{
-      langKeyDefault
-      langs
-    }
-  }
-}`;

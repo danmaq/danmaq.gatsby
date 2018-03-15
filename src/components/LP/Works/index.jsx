@@ -9,7 +9,10 @@ import Work from './Work';
 import EvilMagic from '../../../assets/LP/photo/evil_magic.jpg';
 import Reimu from '../../../assets/LP/photo/reimu.jpg';
 
-/** Works component. */
+/**
+ * Works component.
+ * @extends React.Component
+ */
 class Works extends React.Component {
   /** Property types. */
   static propTypes = {

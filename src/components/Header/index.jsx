@@ -9,7 +9,10 @@ import Core from './Core';
  * @property {number} reversed
  */
 
-/** Header component. */
+/**
+ * Header component.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Default properties. */
   static defaultProps = {

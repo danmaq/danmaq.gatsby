@@ -5,6 +5,10 @@ import Blog from './_blog';
 /** Articles component for Japanese. */
 export default props => <Blog {...props} />;
 
+/**
+ * Query for GraphQL.
+ * Since its string is precompiled, you should not include dynamic elements.
+ */
 export const query = graphql`
 query allJA {
   allMarkdownRemark(

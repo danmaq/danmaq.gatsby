@@ -6,7 +6,10 @@ import { Button, Content, Control, Field, Input } from 'bloomer';
 import Icon from '../../Icon';
 import Heading from '../Heading';
 
-/** EZine component. */
+/**
+ * EZine component.
+ * @extends React.Component
+ */
 class EZine extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };

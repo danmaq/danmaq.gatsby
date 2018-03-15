@@ -17,11 +17,14 @@ import Icon from '../Icon';
 import LogoInv from '../../assets/logo/logoInv.svg';
 
 /**
- * @typedef {object} Header.state
+ * @typedef {object} State
  * @property {boolean} active
  */
 
-/** Header component. */
+/**
+ * Header component.
+ * @extends React.Component<object,State>
+ */
 export default class extends React.Component {
   /** Default properties. */
   static defaultProps = {
@@ -41,7 +44,7 @@ export default class extends React.Component {
 
   /**
    * Current state.
-   * @type {Header.state}
+   * @type {State}
    */
   state = { active: false };
 

@@ -13,7 +13,10 @@ import {
 import CoverImage from '../../CoverImage';
 import Icon from '../../Icon';
 
-/** Common work component for LP. */
+/**
+ * Common work component for LP.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Default properties. */
   static defaultProps = {

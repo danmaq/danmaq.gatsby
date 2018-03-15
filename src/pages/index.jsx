@@ -2,6 +2,10 @@ import React from 'react';
 import { withPrefix } from 'gatsby-link';
 import { getUserLangKey } from 'ptz-i18n';
 
+/**
+ * Redirector for root URL.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Initialize instance. */
   constructor(props) {
@@ -18,6 +22,10 @@ export default class extends React.Component {
   render = () => <div />;
 }
 
+/**
+ * Query for GraphQL.
+ * Since its string is precompiled, you should not include dynamic elements.
+ */
 export const pageQuery = graphql`
 query IndexQuery {
   site{

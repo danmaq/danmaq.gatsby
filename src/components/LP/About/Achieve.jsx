@@ -2,7 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Column, Image } from 'bloomer';
 
-/** Common achievement icon component for LP. */
+/**
+ * Common achievement icon component for LP.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {

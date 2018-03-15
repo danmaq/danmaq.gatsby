@@ -11,7 +11,10 @@ import {
   Title,
 } from 'bloomer';
 
-/** Common about component for LP. */
+/**
+ * Common about component for LP.
+ * @extends React.Component
+ */
 export default class extends React.Component {
   /** Default Properties. */
   static defaultProps = { children: null, sub: false };

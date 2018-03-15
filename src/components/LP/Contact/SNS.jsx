@@ -10,7 +10,10 @@ import Heading from '../Heading';
 import Niconico from '../../../assets/LP/icon/2525.svg';
 import Pixiv from '../../../assets/LP/icon/pixiv.svg';
 
-/** SNS component. */
+/**
+ * SNS component.
+ * @extends React.Component
+ */
 class SNS extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };

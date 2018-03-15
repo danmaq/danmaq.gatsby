@@ -6,7 +6,10 @@ import { Button, Columns, Column } from 'bloomer';
 import Icon from '../../Icon';
 import Heading from '../Heading';
 
-/** Contact component. */
+/**
+ * Contact component.
+ * @extends React.Component
+ */
 class Contact extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };
