@@ -4,14 +4,14 @@ import PropTypes from 'prop-types';
 import Core from './Core';
 
 /**
- * @typedef {object} Header.state
+ * @typedef {object} State
  * @property {number} position
  * @property {number} reversed
  */
 
 /**
  * Header component.
- * @extends React.Component
+ * @extends React.Component<object,State>
  */
 export default class extends React.Component {
   /** Default properties. */
@@ -32,7 +32,7 @@ export default class extends React.Component {
 
   /**
    * Current state.
-   * @type {Header.state}
+   * @type {State}
    */
   state = { position: 0, reversed: 0 };
 

@@ -17,16 +17,27 @@ import Icon from '../Icon';
 import LogoInv from '../../assets/logo/logoInv.svg';
 
 /**
- * @typedef {object} State
+ * @typedef Props
+ * @property {React.ReactNode} children
+ * @property {string} classNam
+ * @property {*} pathContext
+ * @property {*} style
+ */
+
+/**
+ * @typedef State
  * @property {boolean} active
  */
 
 /**
  * Header component.
- * @extends React.Component<object,State>
+ * @extends React.Component<Props,State>
  */
 export default class extends React.Component {
-  /** Default properties. */
+  /**
+   * Default properties.
+   * @type {Props}
+   */
   static defaultProps = {
     children: null,
     className: 'is-light',

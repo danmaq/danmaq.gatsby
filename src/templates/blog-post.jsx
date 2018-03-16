@@ -53,8 +53,15 @@ query BlogPostByPath($path: String!) {
 }`;
 
 /**
+ * @typedef ResponsiveSizes
+ * @property {string} src
+ * @property {string} srcSet
+ * @property {string} sizes
+ */
+
+/**
  * @typedef FrontMatter
- * @property {{childImageSharp: {responsiveSizes: *}}} cover
+ * @property {{childImageSharp: {responsiveSizes: ResponsiveSizes}}} cover
  * @property {Date} date
  * @property {string} strDate
  * @property {string} [redirect]

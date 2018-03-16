@@ -1,26 +1,7 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby-link';
 import { getUserLangKey } from 'ptz-i18n';
-
-/**
- * Redirector for root URL.
- * @extends React.Component
- */
-export default class extends React.Component {
-  /** Initialize instance. */
-  constructor(props) {
-    super(props);
-    if (typeof window !== 'undefined') { // Skip build, Browsers only
-      const { langs, langKeyDefault } = props.data.site.siteMetadata;
-      const langKey = getUserLangKey(langs, langKeyDefault);
-      /* eslint no-underscore-dangle: 0 */
-      window.___history.replace(withPrefix(`/${langKey}/`));
-    }
-  }
-
-  /** Create rendered view elements. */
-  render = () => <div />;
-}
 
 /**
  * Query for GraphQL.
@@ -35,3 +16,39 @@ query IndexQuery {
     }
   }
 }`;
+
+/**
+ * @typedef ResultQL
+ * @property {{siteMetadata: {langKeyDefault: string, langs: string[]}}} site
+ */
+
+/**
+ * @typedef Props
+ * @property {ResultQL} data
+ */
+
+/**
+ * Redirector for root URL.
+ * @extends React.Component<Props>
+ */
+export default class extends React.Component {
+  /** Property types. */
+  static propTypes = { data: PropTypes.object.isRequired };
+
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
+  constructor(props) {
+    super(props);
+    if (typeof window !== 'undefined') { // Skip build, Browsers only
+      const { langs, langKeyDefault } = props.data.site.siteMetadata;
+      const langKey = getUserLangKey(langs, langKeyDefault);
+      /* eslint no-underscore-dangle: 0 */
+      window.___history.replace(withPrefix(`/${langKey}/`));
+    }
+  }
+
+  /** Create rendered view elements. */
+  render = () => <div />;
+}

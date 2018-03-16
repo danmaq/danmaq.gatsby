@@ -7,13 +7,13 @@ import classNames from 'classnames';
 import Core from './Core';
 
 /**
- * @typedef {object} Header.state
+ * @typedef {object} State
  * @property {boolean} expand
  */
 
 /**
  * Header component.
- * @extends React.Component
+ * @extends React.Component<object,State>
  */
 export default class extends React.Component {
   /** Property types. */
@@ -21,7 +21,7 @@ export default class extends React.Component {
 
   /**
    * Current state.
-   * @type {Header.state}
+   * @type {State}
    */
   state = { expand: true };
 

@@ -6,7 +6,10 @@ import i18n from 'i18next';
 import Article from '../components/Article';
 import Header from '../components/Header';
 
-/** Common component of articles with language independent. */
+/**
+ * Common component of articles with language independent.
+ * @type {{({data: {allMarkdownRemark: *}, pathContext: *}) => JSX.Elements}}
+ */
 export default ({
   data: { allMarkdownRemark: { totalCount, edges } },
   pathContext,

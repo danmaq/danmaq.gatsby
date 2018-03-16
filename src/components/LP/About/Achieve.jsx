@@ -3,8 +3,14 @@ import PropTypes from 'prop-types';
 import { Column, Image } from 'bloomer';
 
 /**
+ * @typedef Props
+ * @property {string} caption
+ * @property {string} image
+ */
+
+/**
  * Common achievement icon component for LP.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 export default class extends React.Component {
   /** Property types. */
