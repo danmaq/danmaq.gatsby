@@ -96,23 +96,23 @@ export default class extends React.Component {
     }
   }
 
-  renderAltLink =
-    () => {
-      const {
-        data: {
-          markdownRemark: { frontmatter: { redirect } },
-          site: { siteMetadata: { langs } },
-        },
-      } = this.props;
-      return (!redirect ? undefined :
-        langs.map((v, i) => (
-          <link
-            key={i}
-            href={redirect.replace('${lang}', v)}
-            hrefLang={v}
-            rel="alternate"
-          />)));
-    };
+  /** Create rendered view elements. */
+  renderAltLink = () => {
+    const {
+      data: {
+        markdownRemark: { frontmatter: { redirect } },
+        site: { siteMetadata: { langs } },
+      },
+    } = this.props;
+    return (!redirect ? undefined :
+      langs.map((v, i) => (
+        <link
+          key={i}
+          href={redirect.replace('${lang}', v)}
+          hrefLang={v}
+          rel="alternate"
+        />)));
+  };
 
   /** Create rendered view elements. */
   renderCover = () => {

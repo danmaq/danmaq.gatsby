@@ -9,8 +9,13 @@ import '../components/i18n';
 import './index.scss';
 
 /**
+ * @typedef Props
+ * @property {{() => JSX.Element}} children
+ */
+
+/**
  * Common layout component for All pages.
- * @extends React.PureComponent
+ * @extends React.PureComponent<Props>
  */
 export default class extends React.PureComponent {
   /** Property types. */

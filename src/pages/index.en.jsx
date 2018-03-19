@@ -2,9 +2,6 @@ import React from 'react';
 
 import Index from './_index';
 
-/** Top page component for English. */
-export default props => <Index {...props} />;
-
 /**
  * Query for GraphQL.
  * Since its string is precompiled, you should not include dynamic elements.
@@ -50,3 +47,6 @@ query recentEN {
     }
   }
 }`;
+
+/** Top page component for English. */
+export default props => <Index {...props} />;

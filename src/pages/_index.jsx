@@ -1,5 +1,5 @@
 import React from 'react';
-import i18n from 'i18next';
+import PropTypes from 'prop-types';
 
 import LPHeader from '../components/Header/LP';
 import About from '../components/LP/About';
@@ -8,22 +8,49 @@ import Contact from '../components/LP/Contact';
 import Hero from '../components/LP/Hero';
 import Works from '../components/LP/Works';
 
-/** Top page component of articles with language independent. */
-export default ({
-  data: { allMarkdownRemark: { edges } },
-  pathContext,
-}) => {
-  i18n.changeLanguage(pathContext.langKey);
-  const result = (
-    <div id="lp">
-      <LPHeader pathContext={pathContext} />
-      <Hero />
-      <main role="main">
-        <Works langKey={pathContext.langKey} />
-        <About />
-        <Contact />
-        <Blog items={edges} langKey={pathContext.langKey} />
-      </main>
-    </div>);
-  return result;
-};
+import '../components/typedef';
+
+/**
+ * @typedef ResultQL
+ * @property {{edges: string}} allMarkdownRemark
+ */
+
+/**
+ * @typedef Props
+ * @property {ResultQL} data
+ * @property {PathContext} pathContext
+ */
+
+/**
+ * Top page component of articles with language independent.
+ * @extends React.Component<Props>
+ */
+export default class extends React.Component {
+  /** Property types. */
+  static propTypes = {
+    data: PropTypes.object.isRequired,
+    pathContext: PropTypes.object.isRequired,
+  };
+
+  /** Whether should require redraw. */
+  shouldComponentUpdate = () => false;
+
+  /** Create rendered view elements. */
+  render = () => {
+    const {
+      data: { allMarkdownRemark: { edges } },
+      pathContext,
+    } = this.props;
+    return (
+      <div id="lp">
+        <LPHeader pathContext={pathContext} />
+        <Hero />
+        <main role="main">
+          <Works langKey={pathContext.langKey} />
+          <About />
+          <Contact />
+          <Blog items={edges} langKey={pathContext.langKey} />
+        </main>
+      </div>);
+  }
+}

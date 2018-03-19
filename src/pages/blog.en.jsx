@@ -2,9 +2,6 @@ import React from 'react';
 
 import Blog from './_blog';
 
-/** Articles component for Enblish. */
-export default props => <Blog {...props} />;
-
 /**
  * Query for GraphQL.
  * Since its string is precompiled, you should not include dynamic elements.
@@ -50,3 +47,6 @@ query allEN {
     }
   }
 }`;
+
+/** Articles component for Enblish. */
+export default props => <Blog {...props} />;

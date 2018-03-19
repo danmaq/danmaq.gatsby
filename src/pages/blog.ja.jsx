@@ -2,9 +2,6 @@ import React from 'react';
 
 import Blog from './_blog';
 
-/** Articles component for Japanese. */
-export default props => <Blog {...props} />;
-
 /**
  * Query for GraphQL.
  * Since its string is precompiled, you should not include dynamic elements.
@@ -50,3 +47,6 @@ query allJA {
     }
   }
 }`;
+
+/** Articles component for Japanese. */
+export default props => <Blog {...props} />;
