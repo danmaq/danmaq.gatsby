@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby-link';
 import { getUserLangKey } from 'ptz-i18n';
 
+import '../components/typedef';
+
 /**
  * Query for GraphQL.
  * Since its string is precompiled, you should not include dynamic elements.
@@ -19,7 +21,7 @@ query IndexQuery {
 
 /**
  * @typedef ResultQL
- * @property {{siteMetadata: {langKeyDefault: string, langs: string[]}}} site
+ * @property {{siteMetadata: SiteMetaData}} site
  */
 
 /**

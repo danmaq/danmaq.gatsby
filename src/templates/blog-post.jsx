@@ -18,6 +18,8 @@ import _ from 'lodash';
 import Header from '../components/Header';
 import CoverImage from '../components/CoverImage';
 
+import '../components/typedef';
+
 /**
  * Query for GraphQL.
  * Since its string is precompiled, you should not include dynamic elements.
@@ -53,32 +55,15 @@ query BlogPostByPath($path: String!) {
 }`;
 
 /**
- * @typedef ResponsiveSizes
- * @property {string} src
- * @property {string} srcSet
- * @property {string} sizes
- */
-
-/**
- * @typedef FrontMatter
- * @property {{childImageSharp: {responsiveSizes: ResponsiveSizes}}} cover
- * @property {Date} date
- * @property {string} strDate
- * @property {string} [redirect]
- * @property {string} title
- * @property {string} [youtube]
- */
-
-/**
  * @typedef ResultQL
  * @property {{frontmatter: FrontMatter, html: string}} markdownRemark
- * @property {{siteMetadata: {langKeyDefault: string, langs: string[]}}} site
+ * @property {{siteMetadata: SiteMetaData}} site
  */
 
 /**
  * @typedef Props
  * @property {ResultQL} data
- * @property {{langKey: *, path: *, slug: *}} pathContext
+ * @property {PathContext} pathContext
  */
 
 /**
@@ -111,7 +96,7 @@ export default class extends React.Component {
     }
   }
 
-  alternateNavigation =
+  renderAltLink =
     () => {
       const {
         data: {
@@ -129,6 +114,7 @@ export default class extends React.Component {
           />)));
     };
 
+  /** Create rendered view elements. */
   renderCover = () => {
     const { data: { markdownRemark: { frontmatter: { cover, youtube } } } } = this.props;
     return (<CoverImage
@@ -150,7 +136,7 @@ export default class extends React.Component {
       <div>
         <Helmet>
           <title>{title}</title>
-          {this.alternateNavigation()}
+          {this.renderAltLink()}
         </Helmet>
         <Header pathContext={pathContext} />
         <main>
