@@ -10,7 +10,7 @@ import './index.scss';
 
 /**
  * @typedef Props
- * @property {{() => JSX.Element}} children
+ * @property {{() => JSX.Element}} children Children component.
  */
 
 /**

@@ -19,14 +19,31 @@ import Mark from '../assets/logo/mark.svg';
 const more = 'もっと見る';
 
 /**
+ * @typedef Props
+ * @property {React.ReactNode} caption
+ * @property {string} date
+ * @property {string} detail
+ * @property {string} [href]
+ * @property {string} [imgSrc]
+ * @property {string} [imgSet]
+ * @property {string} [imgSizes]
+ * @property {string} strDate
+ * @property {string} [youtube]
+ */
+
+/**
  * Common card component for LP.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 export default class Article extends React.Component {
-  /** Default Properties. */
+  /**
+   * Default Properties.
+   * @type {Props}
+   */
   static defaultProps = {
     href: undefined,
     imgSet: undefined,
+    imgSrc: Mark,
     imgSizes: undefined,
     youtube: undefined,
   };
@@ -43,9 +60,6 @@ export default class Article extends React.Component {
     strDate: PropTypes.string.isRequired,
     youtube: PropTypes.string,
   };
-
-  /** Default Properties. */
-  static defaultProps = { imgSrc: Mark };
 
   /** Create an article element. */
   static create =

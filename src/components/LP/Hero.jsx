@@ -13,8 +13,13 @@ import {
 import Icon from '../Icon';
 
 /**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
  * Theme component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class Theme extends React.Component {
   /** Property types. */

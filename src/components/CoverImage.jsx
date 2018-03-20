@@ -8,11 +8,24 @@ import PropTypes from 'prop-types';
 const youtubeUrl = id => `https://www.youtube.com/embed/${id}?showinfo=0`;
 
 /**
+ * @typedef Props
+ * @property {string} [alt]
+ * @property {?string} [sizes]
+ * @property {?string} [srcSet]
+ * @property {?string} [src]
+ * @property {?string} [title]
+ * @property {?string} [youtube] YouTube ID.
+ */
+
+/**
  * Common image for hero or thumbnail component for LP.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 export default class extends React.Component {
-  /** Default Properties. */
+  /**
+   * Default Properties.
+   * @type {Props}
+   */
   static defaultProps = {
     alt: '',
     sizes: undefined,
@@ -36,7 +49,7 @@ export default class extends React.Component {
   shouldComponentUpdate = () => false;
 
   /** Create image elements. */
-  imageElement = () => {
+  renderImage = () => {
     const {
       alt, sizes, src, srcSet, title,
     } = this.props;
@@ -49,7 +62,7 @@ export default class extends React.Component {
   };
 
   /** Create YouTube(iframe) elements. */
-  youtubeElement = () => {
+  renderYouTube = () => {
     const { youtube, title } = this.props;
     return (<iframe
       className="video"
@@ -64,7 +77,7 @@ export default class extends React.Component {
   render = () => {
     const { src, youtube } = this.props;
     if (!(src || youtube)) { return null; }
-    const element = youtube ? this.youtubeElement() : this.imageElement();
+    const element = youtube ? this.renderYouTube() : this.renderImage();
     return <figure className="image is-16by9">{element}</figure>;
   }
 }
