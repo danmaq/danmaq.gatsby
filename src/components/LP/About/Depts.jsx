@@ -10,8 +10,13 @@ import Comiket from '../../../assets/LP/photo/comiket.jpg';
 import Workshop from '../../../assets/LP/photo/workshop.jpg';
 
 /**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
  * Depts component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class Depts extends React.Component {
   /** Property types. */

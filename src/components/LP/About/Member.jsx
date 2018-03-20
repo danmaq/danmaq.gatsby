@@ -29,8 +29,13 @@ import Enna from '../../../assets/LP/photo/enna.jpg';
 const myname = <ruby>Mc<rp>(</rp><rt>まく</rt><rp>)</rp></ruby>;
 
 /**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
  * Member component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class Member extends React.Component {
   /** Property types. */

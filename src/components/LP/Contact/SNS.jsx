@@ -11,8 +11,13 @@ import Niconico from '../../../assets/LP/icon/2525.svg';
 import Pixiv from '../../../assets/LP/icon/pixiv.svg';
 
 /**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
  * SNS component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class SNS extends React.Component {
   /** Property types. */

@@ -7,8 +7,13 @@ import Icon from '../../Icon';
 import Heading from '../Heading';
 
 /**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
  * EZine component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class EZine extends React.Component {
   /** Property types. */
