@@ -1931,9 +1931,13 @@ caniuse-api@^1.5.2, caniuse-api@^1.5.3:
     lodash.memoize "^4.1.2"
     lodash.uniq "^4.5.0"
 
-caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639, caniuse-db@^1.0.30000815:
+caniuse-db@^1.0.30000529, caniuse-db@^1.0.30000634, caniuse-db@^1.0.30000639:
   version "1.0.30000815"
   resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000815.tgz#0e218fa133d0d071c886aa041b435258cc746891"
+
+caniuse-db@^1.0.30000819:
+  version "1.0.30000819"
+  resolved "https://registry.yarnpkg.com/caniuse-db/-/caniuse-db-1.0.30000819.tgz#c3b7dd559e5e6d63d5dcaa62bac6bd04c7619709"
 
 caniuse-lite@^1.0.30000792:
   version "1.0.30000815"
@@ -3574,9 +3578,9 @@ eslint-visitor-keys@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-1.0.0.tgz#3f3180fb2e291017716acb4c9d6d5b5c34a6a81d"
 
-eslint@^4.19.0:
-  version "4.19.0"
-  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.19.0.tgz#9e900efb5506812ac374557034ef6f5c3642fc4c"
+eslint@^4.19.1:
+  version "4.19.1"
+  resolved "https://registry.yarnpkg.com/eslint/-/eslint-4.19.1.tgz#32d1d653e1d90408854bfb296f076ec7e186a300"
   dependencies:
     ajv "^5.3.0"
     babel-code-frame "^6.22.0"
@@ -4393,9 +4397,9 @@ gatsby-1-config-extract-plugin@^1.0.2:
     babel-runtime "^6.26.0"
     extract-text-webpack-plugin "^1.0.1"
 
-gatsby-cli@^1.1.46:
-  version "1.1.46"
-  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.46.tgz#ebbca830805c63f6ef5be0a0c4d308dd597ad10b"
+gatsby-cli@^1.1.47:
+  version "1.1.47"
+  resolved "https://registry.yarnpkg.com/gatsby-cli/-/gatsby-cli-1.1.47.tgz#75474ca674ea7f4e018825f3ad4ec070c915a7cd"
   dependencies:
     babel-code-frame "^6.26.0"
     babel-runtime "^6.26.0"
@@ -4572,9 +4576,9 @@ gatsby-transformer-sharp@^1.6.22:
     fs-extra "^4.0.2"
     probe-image-size "^3.2.0"
 
-gatsby@^1.9.238:
-  version "1.9.238"
-  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.238.tgz#b97354208e60140c2d7f2a369494b20e8138f540"
+gatsby@^1.9.239:
+  version "1.9.239"
+  resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-1.9.239.tgz#ce5f111ac066da7354c01bc132a78f2466ece4ab"
   dependencies:
     async "^2.1.2"
     babel-code-frame "^6.22.0"
@@ -4616,7 +4620,7 @@ gatsby@^1.9.238:
     fs-extra "^4.0.1"
     gatsby-1-config-css-modules "^1.0.10"
     gatsby-1-config-extract-plugin "^1.0.2"
-    gatsby-cli "^1.1.46"
+    gatsby-cli "^1.1.47"
     gatsby-link "^1.6.39"
     gatsby-module-loader "^1.0.11"
     gatsby-react-router-scroll "^1.0.14"
@@ -5492,9 +5496,9 @@ i18next-xhr-backend@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/i18next-xhr-backend/-/i18next-xhr-backend-1.5.1.tgz#50282610780c6a696d880dfa7f4ac1d01e8c3ad5"
 
-i18next@^10.5.1:
-  version "10.5.1"
-  resolved "https://registry.yarnpkg.com/i18next/-/i18next-10.5.1.tgz#f8e1ca4e15c440ebc3a9a5c3d015c3a6d2887890"
+i18next@^10.6.0:
+  version "10.6.0"
+  resolved "https://registry.yarnpkg.com/i18next/-/i18next-10.6.0.tgz#90ffd9f9bc617f34b9a12e037260f524445f7684"
 
 iconv-lite@0.4.19, iconv-lite@^0.4.17, iconv-lite@~0.4.13:
   version "0.4.19"
@@ -8892,9 +8896,9 @@ react-hot-loader@^3.0.0-beta.6:
     redbox-react "^1.3.6"
     source-map "^0.6.1"
 
-react-i18next@^7.5.0:
-  version "7.5.0"
-  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-7.5.0.tgz#96a92ba7492edb746975eae316534b42423362fe"
+react-i18next@^7.5.1:
+  version "7.5.1"
+  resolved "https://registry.yarnpkg.com/react-i18next/-/react-i18next-7.5.1.tgz#5fe4cdfd2ecba22cc967213d880ab4cdd2c2ce61"
   dependencies:
     hoist-non-react-statics "^2.3.1"
     html-parse-stringify2 "2.0.1"
