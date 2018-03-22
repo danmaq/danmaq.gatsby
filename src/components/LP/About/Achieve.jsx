@@ -2,7 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Column, Image } from 'bloomer';
 
-/** Common achievement icon component for LP. */
+/**
+ * @typedef Props
+ * @property {string} caption
+ * @property {string} image
+ */
+
+/**
+ * Common achievement icon component for LP.
+ * @extends React.Component<Props>
+ */
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {
@@ -18,11 +27,7 @@ export default class extends React.Component {
     const { caption, image } = this.props;
     return (
       <Column isSize="1/3">
-        <Image
-          isRatio="square"
-          src={image}
-          title={caption}
-        />
+        <Image isRatio="square" src={image} title={caption} />
       </Column>);
   };
 }

@@ -18,12 +18,32 @@ import Mark from '../assets/logo/mark.svg';
 
 const more = 'もっと見る';
 
-/** Common card component for LP. */
+/**
+ * @typedef Props
+ * @property {React.ReactNode} caption
+ * @property {string} date
+ * @property {string} detail
+ * @property {string} [href]
+ * @property {string} [imgSrc]
+ * @property {string} [imgSet]
+ * @property {string} [imgSizes]
+ * @property {string} strDate
+ * @property {string} [youtube]
+ */
+
+/**
+ * Common card component for LP.
+ * @extends React.Component<Props>
+ */
 export default class Article extends React.Component {
-  /** Default Properties. */
+  /**
+   * Default Properties.
+   * @type {Props}
+   */
   static defaultProps = {
     href: undefined,
     imgSet: undefined,
+    imgSrc: Mark,
     imgSizes: undefined,
     youtube: undefined,
   };
@@ -40,9 +60,6 @@ export default class Article extends React.Component {
     strDate: PropTypes.string.isRequired,
     youtube: PropTypes.string,
   };
-
-  /** Default Properties. */
-  static defaultProps = { imgSrc: Mark };
 
   /** Create an article element. */
   static create =
@@ -89,13 +106,12 @@ export default class Article extends React.Component {
       youtube,
     } = this.props;
     return (
-      <Column className="is-3 is-3-fullhd is-4-widescreen is-6-desktop is-6-tablet is-12-mobile">
+      <Column
+        className="is-3 is-3-fullhd is-4-widescreen is-6-desktop is-6-tablet is-12-mobile"
+      >
         <Card>
           <CardImage>
-            <Link
-              to={href}
-              role="link"
-            >
+            <Link to={href} role="link">
               <CoverImage
                 alt={more}
                 sizes={imgSizes}
@@ -115,11 +131,7 @@ export default class Article extends React.Component {
             <Content>
               <p>{detail}</p>
               <p>
-                <Link
-                  className="button is-link"
-                  to={href}
-                  role="link"
-                >
+                <Link className="button is-link" to={href} role="link">
                   {more}
                 </Link>
                 &nbsp;

@@ -13,9 +13,26 @@ import {
 import CoverImage from '../../CoverImage';
 import Icon from '../../Icon';
 
-/** Common work component for LP. */
+/**
+ * @typedef Props
+ * @property {React.ReactNode} detail
+ * @property {string} href
+ * @property {React.ReactNode} hrefCaption
+ * @property {React.ReactNode} title
+ * @property {React.ReactNode} subtitle
+ * @property {?string} thumbnail
+ * @property {?string} youtube
+ */
+
+/**
+ * Common work component for LP.
+ * @extends React.Component<Props>
+ */
 export default class extends React.Component {
-  /** Default properties. */
+  /**
+   * Default properties.
+   * @type {Props}
+   */
   static defaultProps = {
     hrefCaption: 'もっと見る',
     subtitle: '',
@@ -25,11 +42,11 @@ export default class extends React.Component {
 
   /** Property types. */
   static propTypes = {
-    detail: PropTypes.string.isRequired,
+    detail: PropTypes.node.isRequired,
     href: PropTypes.string.isRequired,
     hrefCaption: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string,
+    title: PropTypes.node.isRequired,
+    subtitle: PropTypes.node,
     thumbnail: PropTypes.string,
     youtube: PropTypes.string,
   };
@@ -41,10 +58,9 @@ export default class extends React.Component {
   renderThumb = () => {
     const { thumbnail, title, youtube } = this.props;
     if (!(youtube || thumbnail)) { return null; }
-    const props = { src: thumbnail, title, youtube };
     return (
       <CardImage>
-        <CoverImage {...props} />
+        <CoverImage {...{ src: thumbnail, title, youtube }} />
       </CardImage>);
   };
 
@@ -77,22 +93,19 @@ export default class extends React.Component {
   };
 
   /** Create rendered view elements. */
-  render = () => {
-    const { detail } = this.props;
-    return (
-      <Column>
-        <Card>
-          {this.renderThumb()}
-          <CardContent>
-            <article>
-              <Content>
-                {this.renderCaption()}
-                <p>{detail}</p>
-                <p>{this.renderMore()}</p>
-              </Content>
-            </article>
-          </CardContent>
-        </Card>
-      </Column>);
-  };
+  render = () => (
+    <Column>
+      <Card>
+        {this.renderThumb()}
+        <CardContent>
+          <article>
+            <Content>
+              {this.renderCaption()}
+              <p>{this.props.detail}</p>
+              <p>{this.renderMore()}</p>
+            </Content>
+          </article>
+        </CardContent>
+      </Card>
+    </Column>);
 }

@@ -2,8 +2,10 @@ import React from 'react';
 
 import Index from './_index';
 
-export default props => <Index {...props} />;
-
+/**
+ * Query for GraphQL.
+ * Since its string is precompiled, you should not include dynamic elements.
+ */
 export const query = graphql`
 query recentJA {
   allMarkdownRemark(
@@ -45,3 +47,6 @@ query recentJA {
     }
   }
 }`;
+
+/** Top page component for Japanese. */
+export default props => <Index {...props} />;

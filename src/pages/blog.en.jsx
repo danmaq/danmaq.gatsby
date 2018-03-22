@@ -2,8 +2,10 @@ import React from 'react';
 
 import Blog from './_blog';
 
-export default props => <Blog {...props} />;
-
+/**
+ * Query for GraphQL.
+ * Since its string is precompiled, you should not include dynamic elements.
+ */
 export const query = graphql`
 query allEN {
   allMarkdownRemark(
@@ -45,3 +47,6 @@ query allEN {
     }
   }
 }`;
+
+/** Articles component for Enblish. */
+export default props => <Blog {...props} />;

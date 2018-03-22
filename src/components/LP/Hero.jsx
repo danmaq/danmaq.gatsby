@@ -12,7 +12,15 @@ import {
 
 import Icon from '../Icon';
 
-/** Theme component. */
+/**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
+ * Theme component.
+ * @extends React.Component<Props>
+ */
 class Theme extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };

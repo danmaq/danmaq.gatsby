@@ -18,6 +18,58 @@ import _ from 'lodash';
 import Header from '../components/Header';
 import CoverImage from '../components/CoverImage';
 
+import '../components/typedef';
+
+/**
+ * Query for GraphQL.
+ * Since its string is precompiled, you should not include dynamic elements.
+ */
+export const query =
+  graphql`
+query BlogPostByPath($path: String!) {
+  markdownRemark(fields: { slug: { eq: $path } }) {
+    html
+    frontmatter {
+      cover {
+        childImageSharp {
+          responsiveSizes {
+            src
+            srcSet
+            sizes
+          }
+        }
+      }
+      date: date
+      strDate: date(formatString: "YYYY/M/D"),
+      redirect,
+      title,
+      youtube
+    }
+  },
+  site{
+    siteMetadata{
+      langKeyDefault
+      langs
+    }
+  }
+}`;
+
+/**
+ * @typedef ResultQL
+ * @property {{frontmatter: FrontMatter, html: string}} markdownRemark
+ * @property {{siteMetadata: SiteMetaData}} site
+ */
+
+/**
+ * @typedef Props
+ * @property {ResultQL} data
+ * @property {PathContext} pathContext
+ */
+
+/**
+ * Blog post component.
+ * @extends React.Component<Props>
+ */
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {
@@ -25,37 +77,44 @@ export default class extends React.Component {
     pathContext: PropTypes.object.isRequired,
   };
 
-  constructor(args) {
-    super(args);
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
+  constructor(props) {
+    super(props);
     const {
       markdownRemark: { frontmatter: { redirect } },
       site: { siteMetadata: { langKeyDefault, langs } },
-    } = args.data;
+    } = props.data;
     if (redirect && typeof window !== 'undefined') {
+      /** @type {string} */
       const langKey = getUserLangKey(langs, langKeyDefault);
       const dest = withPrefix(redirect.replace('${lang}', langKey));
+      /* eslint no-underscore-dangle: 0 */
       window.___history.replace(dest);
     }
   }
 
-  alternateNavigation =
-    () =>
-      (({
-        data: {
-          markdownRemark: { frontmatter: { redirect } },
-          site: { siteMetadata: { langs } },
-        },
-      }) =>
-        (!redirect ? undefined :
-          langs.map((v, i) => (
-            <link
-              key={i}
-              href={redirect.replace('${lang}', v)}
-              hrefLang={v}
-              rel="alternate"
-            />)))
-      )(this.props);
+  /** Create rendered view elements. */
+  renderAltLink = () => {
+    const {
+      data: {
+        markdownRemark: { frontmatter: { redirect } },
+        site: { siteMetadata: { langs } },
+      },
+    } = this.props;
+    return (!redirect ? undefined :
+      langs.map((v, i) => (
+        <link
+          key={i}
+          href={redirect.replace('${lang}', v)}
+          hrefLang={v}
+          rel="alternate"
+        />)));
+  };
 
+  /** Create rendered view elements. */
   renderCover = () => {
     const { data: { markdownRemark: { frontmatter: { cover, youtube } } } } = this.props;
     return (<CoverImage
@@ -77,7 +136,7 @@ export default class extends React.Component {
       <div>
         <Helmet>
           <title>{title}</title>
-          {this.alternateNavigation()}
+          {this.renderAltLink()}
         </Helmet>
         <Header pathContext={pathContext} />
         <main>
@@ -111,37 +170,3 @@ export default class extends React.Component {
       </div>);
   };
 }
-
-export const query =
-  graphql`
-query BlogPostByPath($path: String!) {
-  markdownRemark(fields: { slug: { eq: $path } }) {
-    html
-    frontmatter {
-      cover {
-        childImageSharp {
-          responsiveSizes {
-            src
-            srcSet
-            sizes
-          }
-        }
-      }
-      date: date
-      strDate: date(formatString: "YYYY/M/D"),
-      redirect,
-      title,
-      youtube
-    }
-    fields {
-      langKey,
-      slug
-    }
-  },
-  site{
-    siteMetadata{
-      langKeyDefault
-      langs
-    }
-  }
-}`;

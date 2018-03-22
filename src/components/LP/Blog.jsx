@@ -9,7 +9,17 @@ import Icon from '../Icon';
 
 import Heading from './Heading';
 
-/** Blog component. */
+/**
+ * @typedef Props
+ * @property {*[]} items
+ * @property {string} langKey
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
+ * Blog component.
+ * @extends React.Component<Props>
+ */
 class Blog extends React.Component {
   /** Property types. */
   static propTypes = {
@@ -26,10 +36,7 @@ class Blog extends React.Component {
     const { items, langKey, t } = this.props;
     return (
       <Section id="blog">
-        <Heading
-          caption={t('blogHeading')}
-          detail={t('blogDesc')}
-        />
+        <Heading caption={t('blogHeading')} detail={t('blogDesc')} />
         <Columns isCentered isMultiline>
           {items.map(Article.create)}
         </Columns>

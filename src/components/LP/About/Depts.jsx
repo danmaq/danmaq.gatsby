@@ -9,7 +9,15 @@ import Heading from '../Heading';
 import Comiket from '../../../assets/LP/photo/comiket.jpg';
 import Workshop from '../../../assets/LP/photo/workshop.jpg';
 
-/** Depts component. */
+/**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
+ * Depts component.
+ * @extends React.Component<Props>
+ */
 class Depts extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };

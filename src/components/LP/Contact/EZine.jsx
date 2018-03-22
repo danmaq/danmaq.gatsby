@@ -6,7 +6,15 @@ import { Button, Content, Control, Field, Input } from 'bloomer';
 import Icon from '../../Icon';
 import Heading from '../Heading';
 
-/** EZine component. */
+/**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
+ * EZine component.
+ * @extends React.Component<Props>
+ */
 class EZine extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };
@@ -53,7 +61,11 @@ class EZine extends React.Component {
           <aside>
             <Content hasTextAlign="right">
               Powered by&nbsp;
-              <a href="http://autobiz.jp/" target="_blank" rel="noopener noreferrer">
+              <a
+                href="http://autobiz.jp/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 AutoBiz&nbsp;
                 <Icon i="external-link" />
               </a>.

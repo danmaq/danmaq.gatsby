@@ -11,18 +11,34 @@ import {
   Title,
 } from 'bloomer';
 
-/** Common about component for LP. */
+/**
+ * @typedef Props
+ * @property {React.ReactNode} caption
+ * @property {?React.ReactNode} children
+ * @property {React.ReactNode} detail
+ * @property {string} image
+ * @property {React.ReactNode} subCaption
+ * @property {?boolean} sub
+ */
+
+/**
+ * Common about component for LP.
+ * @extends React.Component<Props>
+ */
 export default class extends React.Component {
-  /** Default Properties. */
+  /**
+   * Default Properties.
+   * @type {Props}
+   */
   static defaultProps = { children: null, sub: false };
 
   /** Property types. */
   static propTypes = {
     caption: PropTypes.node.isRequired,
     children: PropTypes.node,
-    detail: PropTypes.string.isRequired,
+    detail: PropTypes.node.isRequired,
     image: PropTypes.string.isRequired,
-    subCaption: PropTypes.string.isRequired,
+    subCaption: PropTypes.node.isRequired,
     sub: PropTypes.bool,
   };
 
@@ -30,7 +46,7 @@ export default class extends React.Component {
   shouldComponentUpdate = () => false;
 
   /** Create caption elements. */
-  _caption = () => {
+  renderCaption = () => {
     const { caption, sub, subCaption } = this.props;
     return (
       <Title className="card-header-title" tag={sub ? 'h4' : 'h3'}>
@@ -45,7 +61,7 @@ export default class extends React.Component {
       <Column>
         <Card className="dmq-dept">
           <CardHeader>
-            {this._caption()}
+            {this.renderCaption()}
           </CardHeader>
           <CardImage>
             <Image isRatio="4:3" src={image} />

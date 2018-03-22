@@ -16,14 +16,30 @@ import Icon from '../Icon';
 
 import LogoInv from '../../assets/logo/logoInv.svg';
 
+import '../typedef';
+
 /**
- * @typedef {object} Header.state
+ * @typedef Props
+ * @property {React.ReactNode} children
+ * @property {string} classNam
+ * @property {PathContext} pathContext
+ * @property {*} style
+ */
+
+/**
+ * @typedef State
  * @property {boolean} active
  */
 
-/** Header component. */
+/**
+ * Header component.
+ * @extends React.Component<Props,State>
+ */
 export default class extends React.Component {
-  /** Default properties. */
+  /**
+   * Default properties.
+   * @type {Props}
+   */
   static defaultProps = {
     children: null,
     className: 'is-light',
@@ -41,7 +57,7 @@ export default class extends React.Component {
 
   /**
    * Current state.
-   * @type {Header.state}
+   * @type {State}
    */
   state = { active: false };
 
@@ -50,21 +66,20 @@ export default class extends React.Component {
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'en' : 'ja';
     const alt = /^en/.test(langKey) ? 'ja' : 'en';
-    const result = (
+    return (
       <Helmet>
         <html lang={lang} />
         {/* <link href={withPrefix(this.replaceSlugLang(`/${alt}/`))}
                         rel="alternate"
                         hrefLang={alt} /> */}
       </Helmet>);
-    return result;
   }
 
   toggleLanguage = () => {
     const { pathContext: { langKey } } = this.props;
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'ja' : 'en';
-    const result = (
+    return (
       <NavbarItem
         href={withPrefix(this.replaceSlugLang(`/${lang}/`))}
         rel="alternate"
@@ -73,7 +88,6 @@ export default class extends React.Component {
         <Icon i="language" size={2} />
         {/^en/.test(langKey) ? '🇬🇧▶︎🇯🇵' : '🇯🇵▶︎🇬🇧'}
       </NavbarItem>);
-    return result;
   };
 
   replaceSlugLang = (lang) => {
@@ -83,8 +97,9 @@ export default class extends React.Component {
   };
 
   /** Invoked on burger menu button has clicked. */
-  burgerOnClick = () =>
-    (({ active }) => this.setState(p => ({ ...p, active: !active })))(this.state);
+  burgerOnClick = () => {
+    this.setState(p => ({ ...p, active: !p.active }));
+  };
 
   /** Create rendered view elements. */
   render = () => {

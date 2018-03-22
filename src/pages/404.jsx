@@ -15,6 +15,7 @@ import Link from 'gatsby-link';
 import Header from '../components/Header';
 import NotFound from '../assets/404.png';
 
+/** Not found component. */
 export default () => (
   <div role="main">
     <Helmet>

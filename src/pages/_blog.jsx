@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
 import i18n from 'i18next';
@@ -6,32 +7,59 @@ import i18n from 'i18next';
 import Article from '../components/Article';
 import Header from '../components/Header';
 
-export default ({
-  data: { allMarkdownRemark: { totalCount, edges } },
-  pathContext,
-}) => {
-  i18n.changeLanguage(pathContext.langKey);
-  const result = (
-    <div>
-      <Helmet>
-        <title>Blog</title>
-      </Helmet>
-      <Header pathContext={pathContext} />
-      <Hero isSize="medium">
-        <HeroBody>
-          <Container>
-            <Title isSize={2} tag="h1">Blog</Title>
-          </Container>
-        </HeroBody>
-      </Hero>
-      <main>
-        <section className="container">
-          <p>{totalCount} 件の記事</p>
-          <Columns isMultiline>
-            {edges.map(Article.create)}
-          </Columns>
-        </section>
-      </main>
-    </div>);
-  return result;
-};
+/**
+ * @typedef ResultQL
+ * @property {{edges: string, totalCount: number}} allMarkdownRemark
+ */
+
+/**
+ * @typedef Props
+ * @property {ResultQL} data
+ * @property {PathContext} pathContext
+ */
+
+/**
+ * Articles list with language independent.
+ * @extends React.Component<Props>
+ */
+export default class extends React.Component {
+  /** Property types. */
+  static propTypes = {
+    data: PropTypes.object.isRequired,
+    pathContext: PropTypes.object.isRequired,
+  };
+
+  /** Whether should require redraw. */
+  shouldComponentUpdate = () => false;
+
+  /** Create rendered view elements. */
+  render = () => {
+    const {
+      data: { allMarkdownRemark: { totalCount, edges } },
+      pathContext,
+    } = this.props;
+    i18n.changeLanguage(pathContext.langKey);
+    return (
+      <div>
+        <Helmet>
+          <title>Blog</title>
+        </Helmet>
+        <Header pathContext={pathContext} />
+        <Hero isSize="medium">
+          <HeroBody>
+            <Container>
+              <Title isSize={2} tag="h1">Blog</Title>
+            </Container>
+          </HeroBody>
+        </Hero>
+        <main>
+          <section className="container">
+            <p>{totalCount} 件の記事</p>
+            <Columns isMultiline>
+              {edges.map(Article.create)}
+            </Columns>
+          </section>
+        </main>
+      </div>);
+  };
+}

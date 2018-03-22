@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * @typedef {object} DMQ.Icon.SizePair
+ * @typedef {object} SizePair
  * @property {string} wrap
  * @property {string} icon
  */
 
 /**
  * Table of size definition.
- * @type {DMQ.Icon.SizePair[]}
+ * @type {SizePair[]}
  */
 const sizeTable = [
   { wrap: 'is-small', icon: '' },
@@ -20,20 +20,30 @@ const sizeTable = [
 ];
 
 /**
+ * @typedef Props
+ * @property {string} i
+ * @property {0|1|2|3|4} size
+ */
+
+/**
  * Common icon component.
  *
  * Since `bloomer.Icon` outputs HTML structure different
  * from Bulma's specification, use this alternative class.
+ * @extends React.Component<Props>
  */
 export default class extends React.Component {
+  /**
+   * Default properties.
+   * @type {Props}
+   */
+  static defaultProps = { size: 0 };
+
   /** Property types. */
   static propTypes = {
     i: PropTypes.string.isRequired,
     size: PropTypes.oneOf([0, 1, 2, 3, 4]),
   };
-
-  /** Default properties. */
-  static defaultProps = { size: 0 };
 
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;

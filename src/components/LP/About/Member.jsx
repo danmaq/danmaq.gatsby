@@ -28,7 +28,15 @@ import Enna from '../../../assets/LP/photo/enna.jpg';
 /** Hi! My name is (who?) */
 const myname = <ruby>Mc<rp>(</rp><rt>まく</rt><rp>)</rp></ruby>;
 
-/** Member component. */
+/**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
+ * Member component.
+ * @extends React.Component<Props>
+ */
 class Member extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };

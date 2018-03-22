@@ -10,7 +10,15 @@ import Heading from '../Heading';
 import Niconico from '../../../assets/LP/icon/2525.svg';
 import Pixiv from '../../../assets/LP/icon/pixiv.svg';
 
-/** SNS component. */
+/**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
+ * SNS component.
+ * @extends React.Component<Props>
+ */
 class SNS extends React.Component {
   /** Property types. */
   static propTypes = { t: PropTypes.func.isRequired };
@@ -68,10 +76,7 @@ class SNS extends React.Component {
                     hrefLang="ja"
                     isSize="large"
                   >
-                    <Image
-                      isSize="64x64"
-                      src={Niconico}
-                    />
+                    <Image isSize="64x64" src={Niconico} />
                   </Button>
                 </Column>
                 <Column hasTextAlign="centered">
@@ -83,10 +88,7 @@ class SNS extends React.Component {
                     hrefLang="ja"
                     isSize="large"
                   >
-                    <Image
-                      isSize="64x64"
-                      src={Pixiv}
-                    />
+                    <Image isSize="64x64" src={Pixiv} />
                   </Button>
                 </Column>
               </Columns>
