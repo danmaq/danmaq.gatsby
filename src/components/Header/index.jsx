@@ -3,6 +3,16 @@ import PropTypes from 'prop-types';
 
 import Core from './Core';
 
+import '../typedef';
+
+/**
+ * @typedef Props
+ * @property {React.ReactNode} children
+ * @property {string} className
+ * @property {PathContext} pathContext
+ * @property {*} style
+ */
+
 /**
  * @typedef {object} State
  * @property {number} position
@@ -14,7 +24,10 @@ import Core from './Core';
  * @extends React.Component<object,State>
  */
 export default class extends React.Component {
-  /** Default properties. */
+  /**
+   * Default properties.
+   * @type {Props}
+   */
   static defaultProps = {
     children: null,
     className: 'is-light is-fixed-top',

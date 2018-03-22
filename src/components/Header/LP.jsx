@@ -6,6 +6,13 @@ import classNames from 'classnames';
 
 import Core from './Core';
 
+import '../typedef';
+
+/**
+ * @typedef Props
+ * @property {PathContext} pathContext
+ */
+
 /**
  * @typedef {object} State
  * @property {boolean} expand
@@ -13,7 +20,7 @@ import Core from './Core';
 
 /**
  * Header component.
- * @extends React.Component<object,State>
+ * @extends React.Component<Props,State>
  */
 export default class extends React.Component {
   /** Property types. */

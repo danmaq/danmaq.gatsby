@@ -12,20 +12,33 @@ import {
 } from 'bloomer';
 
 /**
+ * @typedef Props
+ * @property {React.ReactNode} caption
+ * @property {?React.ReactNode} children
+ * @property {React.ReactNode} detail
+ * @property {string} image
+ * @property {React.ReactNode} subCaption
+ * @property {?boolean} sub
+ */
+
+/**
  * Common about component for LP.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 export default class extends React.Component {
-  /** Default Properties. */
+  /**
+   * Default Properties.
+   * @type {Props}
+   */
   static defaultProps = { children: null, sub: false };
 
   /** Property types. */
   static propTypes = {
     caption: PropTypes.node.isRequired,
     children: PropTypes.node,
-    detail: PropTypes.string.isRequired,
+    detail: PropTypes.node.isRequired,
     image: PropTypes.string.isRequired,
-    subCaption: PropTypes.string.isRequired,
+    subCaption: PropTypes.node.isRequired,
     sub: PropTypes.bool,
   };
 

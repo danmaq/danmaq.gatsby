@@ -16,11 +16,13 @@ import Icon from '../Icon';
 
 import LogoInv from '../../assets/logo/logoInv.svg';
 
+import '../typedef';
+
 /**
  * @typedef Props
  * @property {React.ReactNode} children
  * @property {string} classNam
- * @property {*} pathContext
+ * @property {PathContext} pathContext
  * @property {*} style
  */
 
