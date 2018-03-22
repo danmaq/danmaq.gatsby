@@ -10,8 +10,14 @@ import EvilMagic from '../../../assets/LP/photo/evil_magic.jpg';
 import Reimu from '../../../assets/LP/photo/reimu.jpg';
 
 /**
+ * @typedef Props
+ * @property {string} langKey
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
  * Works component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class Works extends React.Component {
   /** Property types. */

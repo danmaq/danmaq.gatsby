@@ -14,11 +14,25 @@ import CoverImage from '../../CoverImage';
 import Icon from '../../Icon';
 
 /**
+ * @typedef Props
+ * @property {React.ReactNode} detail
+ * @property {string} href
+ * @property {React.ReactNode} hrefCaption
+ * @property {React.ReactNode} title
+ * @property {React.ReactNode} subtitle
+ * @property {?string} thumbnail
+ * @property {?string} youtube
+ */
+
+/**
  * Common work component for LP.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 export default class extends React.Component {
-  /** Default properties. */
+  /**
+   * Default properties.
+   * @type {Props}
+   */
   static defaultProps = {
     hrefCaption: 'もっと見る',
     subtitle: '',
@@ -28,11 +42,11 @@ export default class extends React.Component {
 
   /** Property types. */
   static propTypes = {
-    detail: PropTypes.string.isRequired,
+    detail: PropTypes.node.isRequired,
     href: PropTypes.string.isRequired,
     hrefCaption: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    subtitle: PropTypes.string,
+    title: PropTypes.node.isRequired,
+    subtitle: PropTypes.node,
     thumbnail: PropTypes.string,
     youtube: PropTypes.string,
   };

@@ -10,8 +10,15 @@ import Icon from '../Icon';
 import Heading from './Heading';
 
 /**
+ * @typedef Props
+ * @property {*[]} items
+ * @property {string} langKey
+ * @property {{(key: string) => string}} t i18n translator.
+ */
+
+/**
  * Blog component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class Blog extends React.Component {
   /** Property types. */

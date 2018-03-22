@@ -3,11 +3,21 @@ import PropTypes from 'prop-types';
 import { Container, Hero, HeroBody, Title } from 'bloomer';
 
 /**
+ * @typedef Props
+ * @property {string} caption
+ * @property {React.ReactNode} detail
+ * @property {boolean} sub
+ */
+
+/**
  * Common heading component for LP.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 export default class extends React.Component {
-  /** Default properties. */
+  /**
+   * Default properties.
+   * @type {Porps}
+   */
   static defaultProps = { sub: false };
 
   /** Property types. */
