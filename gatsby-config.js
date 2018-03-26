@@ -53,6 +53,10 @@ module.exports = {
       },
     },
   },
+  {
+    resolve: 'gatsby-plugin-i18n-tags',
+    options: { langKeyForNull: 'any' },
+  },
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-react-next',
   'gatsby-plugin-sass',
