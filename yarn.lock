@@ -4436,6 +4436,14 @@ gatsby-module-loader@^1.0.11:
     babel-runtime "^6.26.0"
     loader-utils "^0.2.16"
 
+gatsby-plugin-i18n-tags@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-i18n-tags/-/gatsby-plugin-i18n-tags-0.0.3.tgz#1f8f6ba08ec625013de6c38d870b6a5f646601e6"
+  dependencies:
+    bluebird "^3.5.0"
+    graphql "^0.11.1"
+    ptz-i18n "^0.0.6"
+
 gatsby-plugin-i18n@^0.4.1:
   version "0.4.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-i18n/-/gatsby-plugin-i18n-0.4.1.tgz#60289ef262318a7bb1c9fff4e3ec0d07ca519f97"
@@ -5036,7 +5044,7 @@ graphql-type-json@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/graphql-type-json/-/graphql-type-json-0.1.4.tgz#89f13f5d32ce08c9a76c79fdf9c1968384d81a4e"
 
-graphql@^0.11.3, graphql@^0.11.7:
+graphql@^0.11.1, graphql@^0.11.3, graphql@^0.11.7:
   version "0.11.7"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.11.7.tgz#e5abaa9cb7b7cccb84e9f0836bf4370d268750c6"
   dependencies:
@@ -8688,6 +8696,12 @@ prr@~1.0.1:
 pseudomap@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/pseudomap/-/pseudomap-1.0.2.tgz#f052a28da70e618917ef0a8ac34c1ae5a68286b3"
+
+ptz-i18n@^0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ptz-i18n/-/ptz-i18n-0.0.6.tgz#56c96b73d4befb10118d4573f4659d0a7a67100c"
+  dependencies:
+    ramda "^0.24.1"
 
 ptz-i18n@^0.3.0:
   version "0.3.0"
