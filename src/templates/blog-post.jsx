@@ -26,8 +26,8 @@ import '../components/typedef';
  */
 export const query =
   graphql`
-query BlogPostByPath($path: String!) {
-  markdownRemark(fields: { slug: { eq: $path } }) {
+query BlogPostByPath($slug: String!) {
+  markdownRemark(fields: { slug: { eq: $slug } }) {
     html
     frontmatter {
       cover {
