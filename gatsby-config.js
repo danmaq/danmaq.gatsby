@@ -3,7 +3,12 @@ const query =
   `
 {
   allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
-    edges { node { fields { slug, langKey } } }
+    edges {
+      node {
+        fields { slug, langKey }
+        frontmatter { tags }
+      }
+    }
   }
 }
 `;
@@ -55,7 +60,7 @@ module.exports = {
   },
   {
     resolve: 'gatsby-plugin-i18n-tags',
-    options: { langKeyForNull: 'any' },
+    options: { tagsUrl: '/tag/', query },
   },
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-react-next',

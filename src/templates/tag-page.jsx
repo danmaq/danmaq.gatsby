@@ -91,12 +91,5 @@ export default class extends React.PureComponent {
   };
 
   /** Create rendered view elements. */
-  render = () => {
-    const {
-      data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
-      pathContext,
-    } = this.props;
-    return (
-      <div />);
-  };
+  render = () => <div />;
 }
