@@ -51,7 +51,7 @@ module.exports = {
     options: {
       langKeyDefault,
       useLangKeyLayout: false,
-      pagesPaths: ['/src/pages', '/danmaq.article/posts/'],
+      pagesPaths: ['/danmaq.article/posts/'],
       markdownRemark: {
         postPage: 'src/templates/blog-post.jsx',
         query,
