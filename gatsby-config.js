@@ -60,7 +60,12 @@ module.exports = {
   },
   {
     resolve: 'gatsby-plugin-i18n-tags',
-    options: { tagsUrl: '/tag/', query },
+    options: {
+      pagesPaths: ['/danmaq.article/posts/'],
+      tagPage: 'src/templates/tag-page.jsx',
+      tagsUrl: '/tag/',
+      query
+    },
   },
   'gatsby-plugin-react-helmet',
   'gatsby-plugin-react-next',
