@@ -51,7 +51,7 @@ module.exports = {
     options: {
       langKeyDefault,
       useLangKeyLayout: false,
-      pagesPaths: ['/danmaq.article/posts/'],
+      pagesPaths: ['/src/pages', '/danmaq.article/posts/'],
       markdownRemark: {
         postPage: 'src/templates/blog-post.jsx',
         query,
@@ -64,7 +64,7 @@ module.exports = {
       pagesPaths: ['/danmaq.article/posts/'],
       tagPage: 'src/templates/tag-page.jsx',
       tagsUrl: '/tag/',
-      query
+      query,
     },
   },
   'gatsby-plugin-react-helmet',
