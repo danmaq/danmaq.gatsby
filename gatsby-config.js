@@ -3,7 +3,12 @@ const query =
   `
 {
   allMarkdownRemark(filter: { frontmatter: { draft: { eq: false } } }) {
-    edges { node { fields { slug, langKey } } }
+    edges {
+      node {
+        fields { slug, langKey }
+        frontmatter { tags }
+      }
+    }
   }
 }
 `;
@@ -51,6 +56,15 @@ module.exports = {
         postPage: 'src/templates/blog-post.jsx',
         query,
       },
+    },
+  },
+  {
+    resolve: 'gatsby-plugin-i18n-tags',
+    options: {
+      pagesPaths: ['/danmaq.article/posts/'],
+      tagPage: 'src/templates/tag-page.jsx',
+      tagsUrl: '/tag/',
+      query,
     },
   },
   'gatsby-plugin-react-helmet',
