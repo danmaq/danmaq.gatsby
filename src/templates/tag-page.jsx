@@ -1,22 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withPrefix } from 'gatsby-link';
-import { getUserLangKey } from 'ptz-i18n';
 import Helmet from 'react-helmet';
-import {
-  Columns,
-  Column,
-  Container,
-  Content,
-  Hero,
-  HeroBody,
-  HeroFooter,
-  Title,
-} from 'bloomer';
-import _ from 'lodash';
 
+import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
+import i18n from 'i18next';
+
+import Article from '../components/Article';
 import Header from '../components/Header';
-import CoverImage from '../components/CoverImage';
 
 import '../components/typedef';
 
@@ -69,8 +59,7 @@ export const query =
 
 /**
  * @typedef ResultQL
- * @property {{frontmatter: FrontMatter, html: string}} markdownRemark
- * @property {{siteMetadata: SiteMetaData}} site
+ * @property {{edges: string, totalCount: number}} allMarkdownRemark
  */
 
 /**
@@ -91,5 +80,32 @@ export default class extends React.PureComponent {
   };
 
   /** Create rendered view elements. */
-  render = () => <div />;
+  render = () => {
+    const {
+      data: { allMarkdownRemark: { totalCount, edges } },
+      pathContext,
+    } = this.props;
+    return (
+      <div>
+        <Helmet>
+          <title>Tag: HOGE</title>
+        </Helmet>
+        <Header pathContext={pathContext} />
+        <Hero isSize="medium">
+          <HeroBody>
+            <Container>
+              <Title isSize={2} tag="h1">Tag: HOGE</Title>
+            </Container>
+          </HeroBody>
+        </Hero>
+        <main>
+          <section className="container">
+            <p>{totalCount} 件の記事</p>
+            <Columns isMultiline>
+              {edges.map(Article.create)}
+            </Columns>
+          </section>
+        </main>
+      </div>);
+  };
 }

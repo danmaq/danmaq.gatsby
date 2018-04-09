@@ -21,7 +21,7 @@ import '../typedef';
 /**
  * @typedef Props
  * @property {React.ReactNode} children
- * @property {string} classNam
+ * @property {string} className
  * @property {PathContext} pathContext
  * @property {*} style
  */
