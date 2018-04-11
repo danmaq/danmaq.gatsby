@@ -41,9 +41,10 @@ export default class extends React.Component {
       data: { allMarkdownRemark: { edges } },
       pathContext,
     } = this.props;
+    const { langKey, path, slug } = pathContext;
     return (
       <div id="lp">
-        <LPHeader pathContext={pathContext} />
+        <LPHeader {...{ langKey, path, slug }} pathContext={pathContext} />
         <Hero />
         <main role="main">
           <Works langKey={pathContext.langKey} />

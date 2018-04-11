@@ -21,7 +21,7 @@ import '../typedef';
 
 /**
  * Header component.
- * @extends React.Component<object,State>
+ * @extends React.Component<Props,State>
  */
 export default class extends React.Component {
   /**
@@ -82,5 +82,13 @@ export default class extends React.Component {
   };
 
   /** Create rendered view elements. */
-  render = () => <Core {...this.props} {...this.props.pathContext} style={this.createStyle()} />;
+  render = () => {
+    const { children, className, pathContext: { langKey, path, slug } } = this.props;
+    return (<Core
+      {...{
+        children, className, langKey, path, slug,
+      }}
+      style={this.createStyle()}
+    />);
+  }
 }

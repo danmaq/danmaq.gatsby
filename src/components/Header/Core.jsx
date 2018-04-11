@@ -43,6 +43,7 @@ export default class extends React.Component {
   static defaultProps = {
     children: null,
     className: 'is-light',
+    path: '',
     style: {},
   };
 
@@ -51,7 +52,7 @@ export default class extends React.Component {
     children: PropTypes.node,
     className: PropTypes.string,
     langKey: PropTypes.string.isRequired,
-    path: PropTypes.string.isRequired,
+    path: PropTypes.string,
     slug: PropTypes.string.isRequired,
     style: PropTypes.object,
   };
