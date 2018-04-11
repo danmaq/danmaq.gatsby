@@ -82,5 +82,5 @@ export default class extends React.Component {
   };
 
   /** Create rendered view elements. */
-  render = () => <Core {...this.props} style={this.createStyle()} />;
+  render = () => <Core {...this.props} {...this.props.pathContext} style={this.createStyle()} />;
 }

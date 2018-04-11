@@ -16,13 +16,13 @@ import Icon from '../Icon';
 
 import LogoInv from '../../assets/logo/logoInv.svg';
 
-import '../typedef';
-
 /**
  * @typedef Props
  * @property {React.ReactNode} children
  * @property {string} className
- * @property {PathContext} pathContext
+ * @property {string} langKey
+ * @property {string} path
+ * @property {string} slug
  * @property {*} style
  */
 
@@ -50,11 +50,9 @@ export default class extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
-    pathContext: PropTypes.shape({
-      langKey: PropTypes.string.isRequired,
-      path: PropTypes.string.isRequired,
-      slug: PropTypes.string.isRequired,
-    }).isRequired,
+    langKey: PropTypes.string.isRequired,
+    path: PropTypes.string.isRequired,
+    slug: PropTypes.string.isRequired,
     style: PropTypes.object,
   };
 
@@ -65,7 +63,7 @@ export default class extends React.Component {
   state = { active: false };
 
   alternateNavigation = () => {
-    const { pathContext: { langKey } } = this.props;
+    const { langKey } = this.props;
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'en' : 'ja';
     const alt = /^en/.test(langKey) ? 'ja' : 'en';
@@ -79,7 +77,7 @@ export default class extends React.Component {
   }
 
   toggleLanguage = () => {
-    const { pathContext: { langKey } } = this.props;
+    const { langKey } = this.props;
     if (!langKey) { return undefined; }
     const lang = /^en/.test(langKey) ? 'ja' : 'en';
     return (
@@ -94,7 +92,7 @@ export default class extends React.Component {
   };
 
   replaceSlugLang = (lang) => {
-    const { pathContext: { slug, path } } = this.props;
+    const { slug, path } = this.props;
     const sp = path || slug;
     return !sp ? lang : sp.replace(/^\/(ja|en)\//, lang);
   };
@@ -107,7 +105,7 @@ export default class extends React.Component {
   /** Create rendered view elements. */
   render = () => {
     const {
-      children, className, pathContext: { slug }, style,
+      children, className, slug, style,
     } = this.props;
     const { active } = this.state;
     return (

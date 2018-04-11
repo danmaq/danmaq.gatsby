@@ -65,7 +65,7 @@ export default class extends React.Component {
   render = () => {
     const { pathContext } = this.props;
     return (
-      <Core className={this.getClassNames()} pathContext={pathContext}>
+      <Core className={this.getClassNames()} {...pathContext}>
         <NavbarItem href="#works">Works</NavbarItem>
         <NavbarItem href="#about">About</NavbarItem>
         <NavbarItem href="#contact">Contact</NavbarItem>
