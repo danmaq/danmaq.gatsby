@@ -6,11 +6,11 @@ import classNames from 'classnames';
 
 import Core from './Core';
 
-import '../typedef';
-
 /**
  * @typedef Props
- * @property {PathContext} pathContext
+ * @property {string} langKey
+ * @property {string} path
+ * @property {string} slug
  */
 
 /**
@@ -27,10 +27,14 @@ export default class extends React.Component {
     * Default properties.
     * @type {Props}
     */
-  static defaultProps = { pathContext: {} };
+  static defaultProps = { path: '' };
 
   /** Property types. */
-  static propTypes = { pathContext: PropTypes.object };
+  static propTypes = {
+    langKey: PropTypes.string.isRequired,
+    path: PropTypes.string,
+    slug: PropTypes.string.isRequired,
+  };
 
   /**
    * Current state.
@@ -69,7 +73,7 @@ export default class extends React.Component {
 
   /** Create rendered view elements. */
   render = () => {
-    const { pathContext: { langKey, path, slug } } = this.props;
+    const { langKey, path, slug } = this.props;
     return (
       <Core className={this.getClassNames()} {...{ langKey, path, slug }}>
         <NavbarItem href="#works">Works</NavbarItem>

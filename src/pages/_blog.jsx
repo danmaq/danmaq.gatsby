@@ -36,15 +36,15 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { allMarkdownRemark: { totalCount, edges } },
-      pathContext,
+      pathContext: { langKey, path, slug },
     } = this.props;
-    i18n.changeLanguage(pathContext.langKey);
+    i18n.changeLanguage(langKey);
     return (
       <div>
         <Helmet>
           <title>Blog</title>
         </Helmet>
-        <Header pathContext={pathContext} />
+        <Header {...{ langKey, path, slug }} />
         <Hero isSize="medium">
           <HeroBody>
             <Container>

@@ -3,13 +3,13 @@ import PropTypes from 'prop-types';
 
 import Core from './Core';
 
-import '../typedef';
-
 /**
  * @typedef Props
  * @property {React.ReactNode} children
  * @property {string} className
- * @property {PathContext} pathContext
+ * @property {string} langKey
+ * @property {string} path
+ * @property {string} slug
  * @property {*} style
  */
 
@@ -31,7 +31,7 @@ export default class extends React.Component {
   static defaultProps = {
     children: null,
     className: 'is-light is-fixed-top',
-    pathContext: {},
+    path: '',
     style: {},
   };
 
@@ -39,7 +39,9 @@ export default class extends React.Component {
   static propTypes = {
     children: PropTypes.node,
     className: PropTypes.string,
-    pathContext: PropTypes.object,
+    langKey: PropTypes.string.isRequired,
+    path: PropTypes.string,
+    slug: PropTypes.string.isRequired,
     style: PropTypes.object,
   };
 
@@ -83,7 +85,9 @@ export default class extends React.Component {
 
   /** Create rendered view elements. */
   render = () => {
-    const { children, className, pathContext: { langKey, path, slug } } = this.props;
+    const {
+      children, className, langKey, path, slug,
+    } = this.props;
     return (<Core
       {...{
         children, className, langKey, path, slug,

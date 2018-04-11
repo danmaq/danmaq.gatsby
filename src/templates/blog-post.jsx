@@ -130,15 +130,16 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
-      pathContext,
+      pathContext: { langKey, path, slug },
     } = this.props;
+    console.log(this.props.pathContext);
     return (
       <div>
         <Helmet>
           <title>{title}</title>
           {this.renderAltLink()}
         </Helmet>
-        <Header pathContext={pathContext} />
+        <Header {...{ langKey, path, slug }} />
         <main>
           <Hero isSize="medium">
             <HeroBody>
