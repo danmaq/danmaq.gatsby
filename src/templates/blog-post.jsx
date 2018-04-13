@@ -132,7 +132,6 @@ export default class extends React.Component {
       data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
       pathContext: { langKey, path, slug },
     } = this.props;
-    console.log(this.props.pathContext);
     return (
       <div>
         <Helmet>
