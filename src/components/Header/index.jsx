@@ -9,7 +9,6 @@ import Core from './Core';
  * @property {string} className
  * @property {string} langKey
  * @property {string} path
- * @property {string} slug
  * @property {*} style
  */
 
@@ -41,7 +40,6 @@ export default class extends React.Component {
     className: PropTypes.string,
     langKey: PropTypes.string.isRequired,
     path: PropTypes.string,
-    slug: PropTypes.string.isRequired,
     style: PropTypes.object,
   };
 
@@ -86,11 +84,11 @@ export default class extends React.Component {
   /** Create rendered view elements. */
   render = () => {
     const {
-      children, className, langKey, path, slug,
+      children, className, langKey, path,
     } = this.props;
     return (<Core
       {...{
-        children, className, langKey, path, slug,
+        children, className, langKey, path,
       }}
       style={this.createStyle()}
     />);

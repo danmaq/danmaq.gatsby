@@ -130,7 +130,7 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
-      pathContext: { langKey, path, slug },
+      pathContext: { langKey, path },
     } = this.props;
     return (
       <div>
@@ -138,7 +138,7 @@ export default class extends React.Component {
           <title>{title}</title>
           {this.renderAltLink()}
         </Helmet>
-        <Header {...{ langKey, path, slug }} />
+        <Header {...{ langKey, path }} />
         <main>
           <Hero isSize="medium">
             <HeroBody>

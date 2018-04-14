@@ -22,7 +22,6 @@ import LogoInv from '../../assets/logo/logoInv.svg';
  * @property {string} className
  * @property {string} langKey
  * @property {string} path
- * @property {string} slug
  * @property {*} style
  */
 
@@ -53,7 +52,6 @@ export default class extends React.Component {
     className: PropTypes.string,
     langKey: PropTypes.string.isRequired,
     path: PropTypes.string,
-    slug: PropTypes.string.isRequired,
     style: PropTypes.object,
   };
 
@@ -93,9 +91,8 @@ export default class extends React.Component {
   };
 
   replaceSlugLang = (lang) => {
-    const { slug, path } = this.props;
-    const sp = path || slug;
-    return !sp ? lang : sp.replace(/^\/(ja|en)\//, lang);
+    const { path } = this.props;
+    return path ? path.replace(/^\/(ja|en)\//, lang) : lang;
   };
 
   /** Invoked on burger menu button has clicked. */
@@ -106,7 +103,7 @@ export default class extends React.Component {
   /** Create rendered view elements. */
   render = () => {
     const {
-      children, className, slug, style,
+      children, className, langKey, style,
     } = this.props;
     const { active } = this.state;
     return (
@@ -118,7 +115,7 @@ export default class extends React.Component {
         {this.alternateNavigation()}
         <NavbarBrand>
           <NavbarItem>
-            <Link to={slug ? slug.replace(/\/(en|ja)\/.+/, '/$1/') : '/'}>
+            <Link to={langKey && langKey.length >= 2 ? `/${langKey}/` : '/'}>
               <img
                 alt="danmaq"
                 src={LogoInv}

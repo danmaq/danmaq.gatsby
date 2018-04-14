@@ -10,7 +10,6 @@ import Core from './Core';
  * @typedef Props
  * @property {string} langKey
  * @property {string} path
- * @property {string} slug
  */
 
 /**
@@ -33,7 +32,6 @@ export default class extends React.Component {
   static propTypes = {
     langKey: PropTypes.string.isRequired,
     path: PropTypes.string,
-    slug: PropTypes.string.isRequired,
   };
 
   /**
@@ -73,9 +71,9 @@ export default class extends React.Component {
 
   /** Create rendered view elements. */
   render = () => {
-    const { langKey, path, slug } = this.props;
+    const { langKey, path } = this.props;
     return (
-      <Core className={this.getClassNames()} {...{ langKey, path, slug }}>
+      <Core className={this.getClassNames()} {...{ langKey, path }}>
         <NavbarItem href="#works">Works</NavbarItem>
         <NavbarItem href="#about">About</NavbarItem>
         <NavbarItem href="#contact">Contact</NavbarItem>

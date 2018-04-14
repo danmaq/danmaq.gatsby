@@ -39,11 +39,11 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { allMarkdownRemark: { edges } },
-      pathContext: { langKey, path, slug },
+      pathContext: { langKey, path },
     } = this.props;
     return (
       <div id="lp">
-        <LPHeader {...{ langKey, path, slug }} />
+        <LPHeader {...{ langKey, path }} />
         <Hero />
         <main role="main">
           <Works {...{ langKey }} />
