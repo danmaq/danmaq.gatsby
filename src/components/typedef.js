@@ -19,7 +19,8 @@
  * @typedef PathContext
  * @property {string} langKey
  * @property {string} path
- * @property {string} slug
+ * @property {string} [slug]
+ * @property {string} [tag]
  */
 
 /**

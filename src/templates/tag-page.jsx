@@ -79,22 +79,31 @@ export default class extends React.PureComponent {
     pathContext: PropTypes.object.isRequired,
   };
 
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
+  constructor(props) {
+    super(props);
+    i18n.changeLanguage(props.pathContext.langKey);
+  }
+
   /** Create rendered view elements. */
   render = () => {
     const {
       data: { allMarkdownRemark: { totalCount, edges } },
-      pathContext: { langKey, path, slug },
+      pathContext: { langKey, path, tag },
     } = this.props;
     return (
       <div>
         <Helmet>
-          <title>Tag: HOGE</title>
+          <title>Tag: {tag}</title>
         </Helmet>
-        <Header {...{ langKey, path, slug }} />
+        <Header {...{ langKey, path }} />
         <Hero isSize="medium">
           <HeroBody>
             <Container>
-              <Title isSize={2} tag="h1">Tag: HOGE</Title>
+              <Title isSize={2} tag="h1">Tag: {tag}</Title>
             </Container>
           </HeroBody>
         </Hero>
