@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import i18n from 'i18next';
 
 import LPHeader from '../components/Header/LP';
 import About from '../components/LP/About';
@@ -32,6 +33,15 @@ export default class extends React.Component {
     pathContext: PropTypes.object.isRequired,
   };
 
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
+  constructor(props) {
+    super(props);
+    i18n.changeLanguage(props.pathContext.langKey);
+  }
+
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;
 
@@ -39,11 +49,11 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { allMarkdownRemark: { edges } },
-      pathContext: { langKey, path },
+      pathContext: { langKey, slug },
     } = this.props;
     return (
       <div id="lp">
-        <LPHeader {...{ langKey, path }} />
+        <LPHeader {...{ langKey }} path={slug} />
         <Hero />
         <main role="main">
           <Works {...{ langKey }} />

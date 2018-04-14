@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby-link';
+import i18n from 'i18next';
 import { getUserLangKey } from 'ptz-i18n';
 import Helmet from 'react-helmet';
 import {
@@ -87,6 +88,7 @@ export default class extends React.Component {
       markdownRemark: { frontmatter: { redirect } },
       site: { siteMetadata: { langKeyDefault, langs } },
     } = props.data;
+    i18n.changeLanguage(props.pathContext.langKey);
     if (redirect && typeof window !== 'undefined') {
       /** @type {string} */
       const langKey = getUserLangKey(langs, langKeyDefault);

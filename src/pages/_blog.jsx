@@ -29,6 +29,15 @@ export default class extends React.Component {
     pathContext: PropTypes.object.isRequired,
   };
 
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
+  constructor(props) {
+    super(props);
+    i18n.changeLanguage(props.pathContext.langKey);
+  }
+
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;
 
@@ -36,15 +45,14 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { allMarkdownRemark: { totalCount, edges } },
-      pathContext: { langKey, path },
+      pathContext: { langKey, slug },
     } = this.props;
-    i18n.changeLanguage(langKey);
     return (
       <div>
         <Helmet>
           <title>Blog</title>
         </Helmet>
-        <Header {...{ langKey, path }} />
+        <Header {...{ langKey }} path={slug} />
         <Hero isSize="medium">
           <HeroBody>
             <Container>
