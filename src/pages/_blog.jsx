@@ -7,6 +7,9 @@ import i18n from 'i18next';
 import Article from '../components/Article';
 import Header from '../components/Header';
 
+import * as TypePreset from '../components/TypePreset';
+import '../components/typedef';
+
 /**
  * @typedef ResultQL
  * @property {{edges: string, totalCount: number}} allMarkdownRemark
@@ -25,8 +28,13 @@ import Header from '../components/Header';
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {
-    data: PropTypes.object.isRequired,
-    pathContext: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+      allMarkdownRemark: PropTypes.shape({
+        edges: PropTypes.string.isRequired,
+        totalCount: PropTypes.number.isRequired,
+      }).isRequired,
+    }).isRequired,
+    pathContext: TypePreset.pathContext().isRequired,
   };
 
   /**

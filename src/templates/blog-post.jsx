@@ -19,6 +19,7 @@ import _ from 'lodash';
 import Header from '../components/Header';
 import CoverImage from '../components/CoverImage';
 
+import * as TypePreset from '../components/TypePreset';
 import '../components/typedef';
 
 /**
@@ -74,8 +75,16 @@ query BlogPostByPath($path: String!) {
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {
-    data: PropTypes.object.isRequired,
-    pathContext: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+      markdownRemark: PropTypes.shape({
+        frontmatter: TypePreset.frontmatter().isRequired,
+        html: PropTypes.string.isRequired,
+      }).isRequired,
+      site: PropTypes.shape({
+        siteMetadata: TypePreset.siteMetadata().isRequired,
+      }).isRequired,
+    }).isRequired,
+    pathContext: TypePreset.pathContext().isRequired,
   };
 
   /**

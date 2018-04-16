@@ -16,6 +16,8 @@ import CoverImage from './CoverImage';
 
 import Mark from '../assets/logo/mark.svg';
 
+import './typedef';
+
 const more = 'もっと見る';
 
 /**
@@ -61,22 +63,27 @@ export default class Article extends React.Component {
     youtube: PropTypes.string,
   };
 
-  /** Create an article element. */
+  /**
+   * Create an article element.
+   * @param {{node: { frontmatter: FrontMatter, fields: { slug: string }, excerpt: string }}} item
+   * @param {number} key
+   */
   static create =
-    ({
-      node: {
-        frontmatter: {
-          cover,
-          date,
-          strDate,
-          title,
-          youtube,
+    (item, key) => {
+      const {
+        node: {
+          frontmatter: {
+            cover,
+            date,
+            strDate,
+            title,
+            youtube,
+          },
+          fields: { slug },
+          excerpt,
         },
-        fields: { slug },
-        excerpt,
-      },
-    }, key) =>
-      (<Article
+      } = item;
+      return (<Article
         key={key}
         href={slug}
         date={date}
@@ -87,7 +94,8 @@ export default class Article extends React.Component {
         caption={title}
         youtube={youtube}
         detail={excerpt}
-      />)
+      />);
+    }
 
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;

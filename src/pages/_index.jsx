@@ -9,6 +9,7 @@ import Contact from '../components/LP/Contact';
 import Hero from '../components/LP/Hero';
 import Works from '../components/LP/Works';
 
+import * as TypePreset from '../components/TypePreset';
 import '../components/typedef';
 
 /**
@@ -19,7 +20,7 @@ import '../components/typedef';
 /**
  * @typedef Props
  * @property {ResultQL} data
- * @property {PathContext} pathContext
+ * @property {TypeDef.PathContext} pathContext
  */
 
 /**
@@ -29,8 +30,13 @@ import '../components/typedef';
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {
-    data: PropTypes.object.isRequired,
-    pathContext: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+      allMarkdownRemark: PropTypes.shape({
+        edges: PropTypes.string.isRequired,
+        totalCount: PropTypes.number.isRequired,
+      }).isRequired,
+    }).isRequired,
+    pathContext: TypePreset.pathContext().isRequired,
   };
 
   /**

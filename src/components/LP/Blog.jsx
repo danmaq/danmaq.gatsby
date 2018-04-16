@@ -11,7 +11,7 @@ import Heading from './Heading';
 
 /**
  * @typedef Props
- * @property {*[]} items
+ * @property {{node: { frontmatter: FrontMatter, fields: { slug: string }, excerpt: string }}[]} items
  * @property {string} langKey
  * @property {{(key: string) => string}} t i18n translator.
  */
