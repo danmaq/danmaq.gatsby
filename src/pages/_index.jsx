@@ -13,14 +13,9 @@ import * as TypePreset from '../components/TypePreset';
 import '../components/typedef';
 
 /**
- * @typedef ResultQL
- * @property {{edges: string}} allMarkdownRemark
- */
-
-/**
  * @typedef Props
- * @property {ResultQL} data
- * @property {TypeDef.PathContext} pathContext
+ * @property {{allMarkdownRemark: AllMarkdownRemark}} data
+ * @property {PathContext} pathContext
  */
 
 /**
