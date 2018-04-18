@@ -29,10 +29,7 @@ export default class extends React.Component {
   /** Property types. */
   static propTypes = {
     data: PropTypes.shape({
-      allMarkdownRemark: PropTypes.shape({
-        edges: PropTypes.string.isRequired,
-        totalCount: PropTypes.number.isRequired,
-      }).isRequired,
+      allMarkdownRemark: TypePreset.allMarkdownRemark().isRequired,
     }).isRequired,
     pathContext: TypePreset.pathContext().isRequired,
   };

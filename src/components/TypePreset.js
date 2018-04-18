@@ -7,8 +7,8 @@ export const responsiveSizes = () => PropTypes.shape({
 });
 
 export const frontmatter = () => PropTypes.shape({
-  cover: PropTypes.object.isRequired,
-  date: PropTypes.object.isRequired,
+  cover: PropTypes.shape({}).isRequired,
+  date: PropTypes.string.isRequired,
   strDate: PropTypes.string.isRequired,
   redirect: PropTypes.string,
   title: PropTypes.string.isRequired,
@@ -27,3 +27,16 @@ export const siteMetadata = () => PropTypes.shape({
   langs: PropTypes.arrayOf(PropTypes.string.isRequired).isRequired,
 });
 
+export const allMarkdownRemark = () => PropTypes.shape({
+  edges: PropTypes.arrayOf(PropTypes.shape({
+    node: PropTypes.shape({
+      id: PropTypes.string.isRequired,
+      frontmatter: frontmatter().isRequired,
+      date: PropTypes.instanceOf(Date),
+      strDate: PropTypes.string,
+      title: PropTypes.string.isRequired,
+      youtube: PropTypes.string,
+    }).isRequired,
+  }).isRequired).isRequired,
+  totalCount: PropTypes.number.isRequired,
+});
