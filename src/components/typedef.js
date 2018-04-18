@@ -1,16 +1,16 @@
 /**
  * @typedef ResponsiveSizes
+ * @property {string} sizes
  * @property {string} src
  * @property {string} srcSet
- * @property {string} sizes
  */
 
 /**
  * @typedef FrontMatter
  * @property {{childImageSharp: {responsiveSizes: ResponsiveSizes}}} cover
- * @property {Date} date
- * @property {string} strDate
+ * @property {string} date
  * @property {string} [redirect]
+ * @property {string} strDate
  * @property {string} title
  * @property {string} [youtube]
  */
@@ -27,4 +27,19 @@
  * @typedef SiteMetaData
  * @property {string} langKeyDefault
  * @property {string[]} langs
+ */
+
+/**
+ * @typedef QLNode
+ * @property {string} excerpt
+ * @property {FrontMatter} frontmatter
+ * @property {{langKey: string, slug: string}} fields
+ * @property {string} id
+ */
+
+/**
+ * @typedef AllMarkdownRemark
+ * @property {{node: QLNode}[]} edges
+ * @property {{langKey: string, slug: string}} fields
+ * @property {number} totalCount
  */

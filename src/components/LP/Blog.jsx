@@ -9,9 +9,12 @@ import Icon from '../Icon';
 
 import Heading from './Heading';
 
+import * as TypePreset from '../TypePreset';
+import '../typedef';
+
 /**
  * @typedef Props
- * @property {{node: { frontmatter: FrontMatter, fields: { slug: string }, excerpt: string }}[]} items
+ * @property {{node: QLNode}[]} items
  * @property {string} langKey
  * @property {{(key: string) => string}} t i18n translator.
  */
@@ -23,7 +26,7 @@ import Heading from './Heading';
 class Blog extends React.Component {
   /** Property types. */
   static propTypes = {
-    items: PropTypes.arrayOf(PropTypes.object.isRequired).isRequired,
+    items: TypePreset.edges().isRequired,
     langKey: PropTypes.string.isRequired,
     t: PropTypes.func.isRequired,
   };
