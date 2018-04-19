@@ -21,17 +21,17 @@
   },
   "homepage": "https://github.com/danmaq/danmaq.gatsby",
   "engines": {
-    "node": ">=8.8.1"
+    "node": ">=9.5.0"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "bloomer": "^0.6.3",
-    "bulma": "^0.7.1",
+    "bulma": "^0.7.0",
     "caniuse-db": "^1.0.30000830",
     "classnames": "^2.2.5",
     "font-awesome": "^4.7.0",
     "fs-extra": "^5.0.0",
-    "gatsby": "^1.9.252",
+    "gatsby": "^1.9.248",
     "gatsby-cli": "^1.1.50",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-i18n": "^0.4.2",
@@ -43,8 +43,8 @@
     "gatsby-remark-copy-linked-files": "^1.5.31",
     "gatsby-remark-images": "^1.5.61",
     "gatsby-remark-link-rewrite": "^0.2.1",
-    "gatsby-source-filesystem": "^1.5.33",
-    "gatsby-transformer-remark": "^1.7.40",
+    "gatsby-source-filesystem": "^1.5.29",
+    "gatsby-transformer-remark": "^1.7.39",
     "gatsby-transformer-sharp": "^1.6.22",
     "i18next": "^11.2.2",
     "i18next-browser-languagedetector": "^2.2.0",
@@ -52,14 +52,14 @@
     "lodash": "^4.17.5",
     "prop-types": "^15.6.1",
     "ptz-i18n": "^0.4.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
+    "react": "^16.3.1",
+    "react-dom": "^16.3.1",
     "react-helmet": "^5.2.0",
     "react-i18next": "^7.6.0"
   },
   "devDependencies": {
     "@cherihung/eslint-config-gatsby": "^1.0.7",
-    "@types/react": "^16.3.11",
+    "@types/react": "^16.3.10",
     "babel-eslint": "^8.2.3",
     "babel-plugin-transform-regenerator": "^6.26.0",
     "eslint": "^4.19.1",
@@ -69,7 +69,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.7.0",
     "gh-pages": "^1.1.0",
-    "prettier": "^1.12.1",
+    "prettier": "^1.12.0",
     "rimraf": "^2.6.2",
     "yarn-or-npm": "^2.0.4"
   },
