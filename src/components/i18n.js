@@ -12,7 +12,7 @@ i18n
     loadPath: withPrefix('/locales/{{lng}}/{{ns}}.json'),
     load: 'unspecific',
     fallbackLng: 'ja',
-    ns: ['LP'],
+    ns: ['LP', 'blog'],
     defaultNS: 'LP',
     interpolation: { escapeValue: false },
     react: { wait: true },
