@@ -90,14 +90,14 @@ export default class extends React.PureComponent {
   render = () => {
     const {
       data: { allMarkdownRemark: { totalCount, edges } },
-      pathContext: { langKey, path, tag },
+      pathContext: { langKey, tag },
     } = this.props;
     return (
       <div>
         <Helmet>
           <title>Tag: {tag}</title>
         </Helmet>
-        <Header {...{ langKey, path }} />
+        <Header {...{ langKey }} path={`/${langKey}/tag/${tag}`} />
         <Hero isSize="medium">
           <HeroBody>
             <Container>
