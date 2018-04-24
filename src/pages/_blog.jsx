@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { translate } from 'react-i18next';
 import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
 import i18n from 'i18next';
 
@@ -14,19 +15,21 @@ import '../components/typedef';
  * @typedef Props
  * @property {{allMarkdownRemark: AllMarkdownRemark}} data
  * @property {PathContext} pathContext
+ * @property {{(key: string) => string}} t i18n translator.
  */
 
 /**
  * Articles list with language independent.
  * @extends React.Component<Props>
  */
-export default class extends React.Component {
+class Blog extends React.Component {
   /** Property types. */
   static propTypes = {
     data: PropTypes.shape({
       allMarkdownRemark: TypePreset.allMarkdownRemark().isRequired,
     }).isRequired,
     pathContext: TypePreset.pathContext().isRequired,
+    t: PropTypes.func.isRequired,
   };
 
   /**
@@ -46,6 +49,7 @@ export default class extends React.Component {
     const {
       data: { allMarkdownRemark: { totalCount, edges } },
       pathContext: { langKey, slug },
+      t,
     } = this.props;
     return (
       <div>
@@ -62,6 +66,7 @@ export default class extends React.Component {
         </Hero>
         <main>
           <section className="container">
+            <p>{t('posts', totalCount)}</p>
             <p>{totalCount} 件の記事</p>
             <Columns isMultiline>
               {edges.map(Article.create)}
@@ -71,3 +76,5 @@ export default class extends React.Component {
       </div>);
   };
 }
+
+export default translate('blog')(Blog);
