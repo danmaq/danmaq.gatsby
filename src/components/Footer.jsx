@@ -1,11 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import { Container, Content, Footer } from 'bloomer';
+
+/**
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
+ */
 
 /**
  * Footer component.
  * @extends React.Component
  */
-export default class extends React.Component {
+class SiteFooter extends React.Component {
+  /** Property types. */
+  static propTypes = { t: PropTypes.func.isRequired };
+
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;
 
@@ -22,3 +32,5 @@ export default class extends React.Component {
       </Container>
     </Footer>);
 }
+
+export default translate('LP')(SiteFooter);
