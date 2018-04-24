@@ -1,3 +1,5 @@
 {
-  "posts": "%d posts."
+  "blog": "Blog",
+  "posted": "Posted: ",
+  "posts": "{{posts}} posts."
 }

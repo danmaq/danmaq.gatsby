@@ -54,20 +54,19 @@ class Blog extends React.Component {
     return (
       <div>
         <Helmet>
-          <title>Blog</title>
+          <title>{t('blog')}</title>
         </Helmet>
         <Header {...{ langKey }} path={slug} />
         <Hero isSize="medium">
           <HeroBody>
             <Container>
-              <Title isSize={2} tag="h1">Blog</Title>
+              <Title isSize={2} tag="h1">{t('blog')}</Title>
             </Container>
           </HeroBody>
         </Hero>
         <main>
           <section className="container">
-            <p>{t('posts', totalCount)}</p>
-            <p>{totalCount} 件の記事</p>
+            <p>{t('posts', { posts: totalCount })}</p>
             <Columns isMultiline>
               {edges.map(Article.create)}
             </Columns>

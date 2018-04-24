@@ -4,6 +4,7 @@ import { withPrefix } from 'gatsby-link';
 import i18n from 'i18next';
 import { getUserLangKey } from 'ptz-i18n';
 import Helmet from 'react-helmet';
+import { translate } from 'react-i18next';
 import {
   Columns,
   Column,
@@ -66,13 +67,14 @@ query BlogPostByPath($path: String!) {
  * @typedef Props
  * @property {ResultQL} data
  * @property {PathContext} pathContext
+ * @property {{(key: string) => string}} t i18n translator.
  */
 
 /**
  * Blog post component.
  * @extends React.Component<Props>
  */
-export default class extends React.Component {
+class BlogPost extends React.Component {
   /** Property types. */
   static propTypes = {
     data: PropTypes.shape({
@@ -85,6 +87,7 @@ export default class extends React.Component {
       }).isRequired,
     }).isRequired,
     pathContext: TypePreset.pathContext().isRequired,
+    t: PropTypes.func.isRequired,
   };
 
   /**
@@ -142,6 +145,7 @@ export default class extends React.Component {
     const {
       data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
       pathContext: { langKey, path },
+      t,
     } = this.props;
     return (
       <div>
@@ -161,7 +165,8 @@ export default class extends React.Component {
             </HeroBody>
             <HeroFooter>
               <aside className="container">
-                投稿日時: <time dateTime={date}>{strDate}</time>
+                {t('posted')}
+                <time dateTime={date}>{strDate}</time>
               </aside>
             </HeroFooter>
           </Hero>
@@ -181,3 +186,5 @@ export default class extends React.Component {
       </div>);
   };
 }
+
+export default translate('blog')(BlogPost);
