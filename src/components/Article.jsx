@@ -18,8 +18,6 @@ import Mark from '../assets/logo/mark.svg';
 
 import './typedef';
 
-const more = 'もっと見る';
-
 /**
  * @typedef Props
  * @property {React.ReactNode} caption
@@ -30,6 +28,8 @@ const more = 'もっと見る';
  * @property {string} [imgSet]
  * @property {string} [imgSizes]
  * @property {string} strDate
+ * @property {string} seeMore
+ * @property {{(key: string) => string}} t i18n translator.
  * @property {string} [youtube]
  */
 
@@ -59,7 +59,9 @@ export default class Article extends React.Component {
     imgSrc: PropTypes.string,
     imgSet: PropTypes.string,
     imgSizes: PropTypes.string,
+    seeMore: PropTypes.string.isRequired,
     strDate: PropTypes.string.isRequired,
+    t: PropTypes.func.isRequired,
     youtube: PropTypes.string,
   };
 
@@ -92,6 +94,7 @@ export default class Article extends React.Component {
         imgSizes={_.get(cover, 'childImageSharp.responsiveSizes.sizes')}
         strDate={strDate}
         caption={title}
+        seeMore="もっと見る"
         youtube={youtube}
         detail={excerpt}
       />);
@@ -110,6 +113,7 @@ export default class Article extends React.Component {
       imgSrc,
       imgSet,
       imgSizes,
+      seeMore,
       strDate,
       youtube,
     } = this.props;
@@ -121,7 +125,7 @@ export default class Article extends React.Component {
           <CardImage>
             <Link to={href} role="link">
               <CoverImage
-                alt={more}
+                alt={seeMore}
                 sizes={imgSizes}
                 srcSet={imgSet}
                 src={imgSrc}
@@ -140,7 +144,7 @@ export default class Article extends React.Component {
               <p>{detail}</p>
               <p>
                 <Link className="button is-link" to={href} role="link">
-                  {more}
+                  {seeMore}
                 </Link>
                 &nbsp;
                 <time dateTime={date}>{strDate}</time>
