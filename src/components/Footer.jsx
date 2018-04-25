@@ -10,7 +10,7 @@ import { Container, Content, Footer } from 'bloomer';
 
 /**
  * Footer component.
- * @extends React.Component
+ * @extends React.Component<Props>
  */
 class SiteFooter extends React.Component {
   /** Property types. */
@@ -24,7 +24,7 @@ class SiteFooter extends React.Component {
     <Footer role="contentinfo">
       <Container hasTextAlign="centered" isFluid>
         <Content>
-          <p>“danmaq” は DAYS PRODUCTION が運営する、同人ブランドです。</p>
+          <p>{this.props.t('footer')}</p>
         </Content>
         <Content isSize="small">
           <p>©1999-2018 danmaq / DAYS PRODUCTION</p>
@@ -33,4 +33,4 @@ class SiteFooter extends React.Component {
     </Footer>);
 }
 
-export default translate('LP')(SiteFooter);
+export default translate('blog')(SiteFooter);

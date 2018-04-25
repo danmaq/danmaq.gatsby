@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { translate } from 'react-i18next';
 
 import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
 import i18n from 'i18next';
@@ -62,19 +63,21 @@ export const query =
  * @typedef Props
  * @property {{allMarkdownRemark: AllMarkdownRemark}} data
  * @property {PathContext} pathContext
+ * @property {{(key: string) => string}} t i18n translator.
  */
 
 /**
  * Blog post component.
  * @extends React.Component<Props>
  */
-export default class extends React.PureComponent {
+class TagPage extends React.PureComponent {
   /** Property types. */
   static propTypes = {
     data: PropTypes.shape({
       allMarkdownRemark: TypePreset.allMarkdownRemark().isRequired,
     }).isRequired,
     pathContext: TypePreset.pathContext().isRequired,
+    t: PropTypes.func.isRequired,
   };
 
   /**
@@ -91,23 +94,24 @@ export default class extends React.PureComponent {
     const {
       data: { allMarkdownRemark: { totalCount, edges } },
       pathContext: { langKey, tag },
+      t,
     } = this.props;
     return (
       <div>
         <Helmet>
-          <title>Tag: {tag}</title>
+          <title>{t('tag')}{tag}</title>
         </Helmet>
         <Header {...{ langKey }} path={`/${langKey}/tag/${tag}`} />
         <Hero isSize="medium">
           <HeroBody>
             <Container>
-              <Title isSize={2} tag="h1">Tag: {tag}</Title>
+              <Title isSize={2} tag="h1">{t('tag')}{tag}</Title>
             </Container>
           </HeroBody>
         </Hero>
         <main>
           <section className="container">
-            <p>{totalCount} 件の記事</p>
+            <p>{t('posts', { posts: totalCount })}</p>
             <Columns isMultiline>
               {edges.map(Article.create)}
             </Columns>
@@ -116,3 +120,5 @@ export default class extends React.PureComponent {
       </div>);
   };
 }
+
+export default translate('blog')(TagPage);
