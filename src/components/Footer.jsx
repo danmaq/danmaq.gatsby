@@ -1,11 +1,21 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import { Container, Content, Footer } from 'bloomer';
 
 /**
- * Footer component.
- * @extends React.Component
+ * @typedef Props
+ * @property {{(key: string) => string}} t i18n translator.
  */
-export default class extends React.Component {
+
+/**
+ * Footer component.
+ * @extends React.Component<Props>
+ */
+class SiteFooter extends React.Component {
+  /** Property types. */
+  static propTypes = { t: PropTypes.func.isRequired };
+
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;
 
@@ -14,7 +24,7 @@ export default class extends React.Component {
     <Footer role="contentinfo">
       <Container hasTextAlign="centered" isFluid>
         <Content>
-          <p>“danmaq” は DAYS PRODUCTION が運営する、同人ブランドです。</p>
+          <p>{this.props.t('footer')}</p>
         </Content>
         <Content isSize="small">
           <p>©1999-2018 danmaq / DAYS PRODUCTION</p>
@@ -22,3 +32,5 @@ export default class extends React.Component {
       </Container>
     </Footer>);
 }
+
+export default translate('blog')(SiteFooter);

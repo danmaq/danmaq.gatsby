@@ -6,11 +6,10 @@ import classNames from 'classnames';
 
 import Core from './Core';
 
-import '../typedef';
-
 /**
  * @typedef Props
- * @property {PathContext} pathContext
+ * @property {string} langKey
+ * @property {string} path
  */
 
 /**
@@ -23,8 +22,17 @@ import '../typedef';
  * @extends React.Component<Props,State>
  */
 export default class extends React.Component {
+  /**
+    * Default properties.
+    * @type {Props}
+    */
+  static defaultProps = { path: '' };
+
   /** Property types. */
-  static propTypes = { pathContext: PropTypes.object.isRequired };
+  static propTypes = {
+    langKey: PropTypes.string.isRequired,
+    path: PropTypes.string,
+  };
 
   /**
    * Current state.
@@ -63,13 +71,13 @@ export default class extends React.Component {
 
   /** Create rendered view elements. */
   render = () => {
-    const { pathContext } = this.props;
+    const { langKey, path } = this.props;
     return (
-      <Core className={this.getClassNames()} pathContext={pathContext}>
+      <Core className={this.getClassNames()} {...{ langKey, path }}>
         <NavbarItem href="#works">Works</NavbarItem>
         <NavbarItem href="#about">About</NavbarItem>
         <NavbarItem href="#contact">Contact</NavbarItem>
-        <NavbarItem href={withPrefix(`/${pathContext.langKey}/blog`)}>Blog</NavbarItem>
+        <NavbarItem href={withPrefix(`/${langKey}/blog`)}>Blog</NavbarItem>
       </Core>);
   };
 }

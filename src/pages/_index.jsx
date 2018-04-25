@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import i18n from 'i18next';
 
 import LPHeader from '../components/Header/LP';
 import About from '../components/LP/About';
@@ -8,16 +9,12 @@ import Contact from '../components/LP/Contact';
 import Hero from '../components/LP/Hero';
 import Works from '../components/LP/Works';
 
+import * as TypePreset from '../components/TypePreset';
 import '../components/typedef';
 
 /**
- * @typedef ResultQL
- * @property {{edges: string}} allMarkdownRemark
- */
-
-/**
  * @typedef Props
- * @property {ResultQL} data
+ * @property {{allMarkdownRemark: AllMarkdownRemark}} data
  * @property {PathContext} pathContext
  */
 
@@ -28,9 +25,20 @@ import '../components/typedef';
 export default class extends React.Component {
   /** Property types. */
   static propTypes = {
-    data: PropTypes.object.isRequired,
-    pathContext: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+      allMarkdownRemark: TypePreset.allMarkdownRemark().isRequired,
+    }).isRequired,
+    pathContext: TypePreset.pathContext().isRequired,
   };
+
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
+  constructor(props) {
+    super(props);
+    i18n.changeLanguage(props.pathContext.langKey);
+  }
 
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;
@@ -39,17 +47,17 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { allMarkdownRemark: { edges } },
-      pathContext,
+      pathContext: { langKey, slug },
     } = this.props;
     return (
       <div id="lp">
-        <LPHeader pathContext={pathContext} />
+        <LPHeader {...{ langKey }} path={slug} />
         <Hero />
         <main role="main">
-          <Works langKey={pathContext.langKey} />
+          <Works {...{ langKey }} />
           <About />
           <Contact />
-          <Blog items={edges} langKey={pathContext.langKey} />
+          <Blog {...{ langKey }} items={edges} />
         </main>
       </div>);
   }

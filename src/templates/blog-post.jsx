@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby-link';
+import i18n from 'i18next';
 import { getUserLangKey } from 'ptz-i18n';
 import Helmet from 'react-helmet';
+import { translate } from 'react-i18next';
 import {
   Columns,
   Column,
@@ -18,6 +20,7 @@ import _ from 'lodash';
 import Header from '../components/Header';
 import CoverImage from '../components/CoverImage';
 
+import * as TypePreset from '../components/TypePreset';
 import '../components/typedef';
 
 /**
@@ -64,17 +67,27 @@ query BlogPostByPath($path: String!) {
  * @typedef Props
  * @property {ResultQL} data
  * @property {PathContext} pathContext
+ * @property {{(key: string) => string}} t i18n translator.
  */
 
 /**
  * Blog post component.
  * @extends React.Component<Props>
  */
-export default class extends React.Component {
+class BlogPost extends React.Component {
   /** Property types. */
   static propTypes = {
-    data: PropTypes.object.isRequired,
-    pathContext: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+      markdownRemark: PropTypes.shape({
+        frontmatter: TypePreset.frontmatter().isRequired,
+        html: PropTypes.string.isRequired,
+      }).isRequired,
+      site: PropTypes.shape({
+        siteMetadata: TypePreset.siteMetadata().isRequired,
+      }).isRequired,
+    }).isRequired,
+    pathContext: TypePreset.pathContext().isRequired,
+    t: PropTypes.func.isRequired,
   };
 
   /**
@@ -87,6 +100,7 @@ export default class extends React.Component {
       markdownRemark: { frontmatter: { redirect } },
       site: { siteMetadata: { langKeyDefault, langs } },
     } = props.data;
+    i18n.changeLanguage(props.pathContext.langKey);
     if (redirect && typeof window !== 'undefined') {
       /** @type {string} */
       const langKey = getUserLangKey(langs, langKeyDefault);
@@ -130,7 +144,8 @@ export default class extends React.Component {
   render = () => {
     const {
       data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
-      pathContext,
+      pathContext: { langKey, path },
+      t,
     } = this.props;
     return (
       <div>
@@ -138,7 +153,7 @@ export default class extends React.Component {
           <title>{title}</title>
           {this.renderAltLink()}
         </Helmet>
-        <Header pathContext={pathContext} />
+        <Header {...{ langKey, path }} />
         <main>
           <Hero isSize="medium">
             <HeroBody>
@@ -150,7 +165,8 @@ export default class extends React.Component {
             </HeroBody>
             <HeroFooter>
               <aside className="container">
-                投稿日時: <time dateTime={date}>{strDate}</time>
+                {t('posted')}
+                <time dateTime={date}>{strDate}</time>
               </aside>
             </HeroFooter>
           </Hero>
@@ -170,3 +186,5 @@ export default class extends React.Component {
       </div>);
   };
 }
+
+export default translate('blog')(BlogPost);

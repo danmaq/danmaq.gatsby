@@ -1,23 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withPrefix } from 'gatsby-link';
-import { getUserLangKey } from 'ptz-i18n';
 import Helmet from 'react-helmet';
-import {
-  Columns,
-  Column,
-  Container,
-  Content,
-  Hero,
-  HeroBody,
-  HeroFooter,
-  Title,
-} from 'bloomer';
-import _ from 'lodash';
+import { translate } from 'react-i18next';
 
+import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
+import i18n from 'i18next';
+
+import Article from '../components/Article';
 import Header from '../components/Header';
-import CoverImage from '../components/CoverImage';
 
+import * as TypePreset from '../components/TypePreset';
 import '../components/typedef';
 
 /**
@@ -68,28 +60,65 @@ export const query =
 }`;
 
 /**
- * @typedef ResultQL
- * @property {{frontmatter: FrontMatter, html: string}} markdownRemark
- * @property {{siteMetadata: SiteMetaData}} site
- */
-
-/**
  * @typedef Props
- * @property {ResultQL} data
+ * @property {{allMarkdownRemark: AllMarkdownRemark}} data
  * @property {PathContext} pathContext
+ * @property {{(key: string) => string}} t i18n translator.
  */
 
 /**
  * Blog post component.
  * @extends React.Component<Props>
  */
-export default class extends React.PureComponent {
+class TagPage extends React.PureComponent {
   /** Property types. */
   static propTypes = {
-    data: PropTypes.object.isRequired,
-    pathContext: PropTypes.object.isRequired,
+    data: PropTypes.shape({
+      allMarkdownRemark: TypePreset.allMarkdownRemark().isRequired,
+    }).isRequired,
+    pathContext: TypePreset.pathContext().isRequired,
+    t: PropTypes.func.isRequired,
   };
 
+  /**
+   * Initialize instance.
+   * @param {Props} props
+   */
+  constructor(props) {
+    super(props);
+    i18n.changeLanguage(props.pathContext.langKey);
+  }
+
   /** Create rendered view elements. */
-  render = () => <div />;
+  render = () => {
+    const {
+      data: { allMarkdownRemark: { totalCount, edges } },
+      pathContext: { langKey, tag },
+      t,
+    } = this.props;
+    return (
+      <div>
+        <Helmet>
+          <title>{t('tag')}{tag}</title>
+        </Helmet>
+        <Header {...{ langKey }} path={`/${langKey}/tag/${tag}`} />
+        <Hero isSize="medium">
+          <HeroBody>
+            <Container>
+              <Title isSize={2} tag="h1">{t('tag')}{tag}</Title>
+            </Container>
+          </HeroBody>
+        </Hero>
+        <main>
+          <section className="container">
+            <p>{t('posts', { posts: totalCount })}</p>
+            <Columns isMultiline>
+              {edges.map(Article.create)}
+            </Columns>
+          </section>
+        </main>
+      </div>);
+  };
 }
+
+export default translate('blog')(TagPage);

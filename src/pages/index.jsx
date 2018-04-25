@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby-link';
 import { getUserLangKey } from 'ptz-i18n';
 
+import * as TypePreset from '../components/TypePreset';
 import '../components/typedef';
 
 /**
@@ -35,7 +36,13 @@ query IndexQuery {
  */
 export default class extends React.Component {
   /** Property types. */
-  static propTypes = { data: PropTypes.object.isRequired };
+  static propTypes = {
+    data: PropTypes.shape({
+      site: PropTypes.shape({
+        siteMetadata: TypePreset.siteMetadata().isRequired,
+      }).isRequired,
+    }).isRequired,
+  };
 
   /**
    * Initialize instance.
