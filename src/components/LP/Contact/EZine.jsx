@@ -53,7 +53,7 @@ class EZine extends React.Component {
               />
             </Control>
             <Control>
-              <Button isColor="primary" isSize="medium">
+              <Button isColor="primary" isSize="medium" type="submit">
                 <Icon i="gift" />&nbsp;{t('contactEZineSend')}
               </Button>
             </Control>
