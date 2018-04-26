@@ -41,7 +41,7 @@ class Blog extends React.Component {
       <Section id="blog">
         <Heading caption={t('blogHeading')} detail={t('blogDesc')} />
         <Columns isCentered isMultiline>
-          {items.map(Article.create)}
+          {items.map(Article.create(t('more')))}
         </Columns>
         <Content>
           <Link

@@ -29,8 +29,14 @@ import './typedef';
  * @property {string} [imgSizes]
  * @property {string} strDate
  * @property {string} seeMore
- * @property {{(key: string) => string}} t i18n translator.
  * @property {string} [youtube]
+ */
+
+/**
+ * @typedef SourceNode
+ * @property {FrontMatter} frontMatter
+ * @property {{slug: string}} fields
+ * @property {string} excerpt
  */
 
 /**
@@ -61,44 +67,44 @@ export default class Article extends React.Component {
     imgSizes: PropTypes.string,
     seeMore: PropTypes.string.isRequired,
     strDate: PropTypes.string.isRequired,
-    t: PropTypes.func.isRequired,
     youtube: PropTypes.string,
   };
 
   /**
    * Create an article element.
-   * @param {{node: { frontmatter: FrontMatter, fields: { slug: string }, excerpt: string }}} item
-   * @param {number} key
+   * @param {string} seeMore
+   * @returns {{(item: {node: SourceNode}, key: number) => JSX.Element}}
    */
   static create =
-    (item, key) => {
-      const {
-        node: {
-          frontmatter: {
-            cover,
-            date,
-            strDate,
-            title,
-            youtube,
+    seeMore =>
+      (item, key) => {
+        const {
+          node: {
+            frontmatter: {
+              cover,
+              date,
+              strDate,
+              title,
+              youtube,
+            },
+            fields: { slug },
+            excerpt,
           },
-          fields: { slug },
-          excerpt,
-        },
-      } = item;
-      return (<Article
-        key={key}
-        href={slug}
-        date={date}
-        imgSrc={_.get(cover, 'childImageSharp.responsiveSizes.src')}
-        imgSet={_.get(cover, 'childImageSharp.responsiveSizes.srcSet')}
-        imgSizes={_.get(cover, 'childImageSharp.responsiveSizes.sizes')}
-        strDate={strDate}
-        caption={title}
-        seeMore="もっと見る"
-        youtube={youtube}
-        detail={excerpt}
-      />);
-    }
+        } = item;
+        return (<Article
+          key={key}
+          href={slug}
+          date={date}
+          imgSrc={_.get(cover, 'childImageSharp.responsiveSizes.src')}
+          imgSet={_.get(cover, 'childImageSharp.responsiveSizes.srcSet')}
+          imgSizes={_.get(cover, 'childImageSharp.responsiveSizes.sizes')}
+          strDate={strDate}
+          caption={title}
+          seeMore={seeMore}
+          youtube={youtube}
+          detail={excerpt}
+        />);
+      }
 
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;
