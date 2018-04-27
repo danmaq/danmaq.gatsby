@@ -18,8 +18,6 @@ import Mark from '../assets/logo/mark.svg';
 
 import './typedef';
 
-const more = 'もっと見る';
-
 /**
  * @typedef Props
  * @property {React.ReactNode} caption
@@ -30,7 +28,15 @@ const more = 'もっと見る';
  * @property {string} [imgSet]
  * @property {string} [imgSizes]
  * @property {string} strDate
+ * @property {string} seeMore
  * @property {string} [youtube]
+ */
+
+/**
+ * @typedef SourceNode
+ * @property {FrontMatter} frontMatter
+ * @property {{slug: string}} fields
+ * @property {string} excerpt
  */
 
 /**
@@ -59,43 +65,46 @@ export default class Article extends React.Component {
     imgSrc: PropTypes.string,
     imgSet: PropTypes.string,
     imgSizes: PropTypes.string,
+    seeMore: PropTypes.string.isRequired,
     strDate: PropTypes.string.isRequired,
     youtube: PropTypes.string,
   };
 
   /**
    * Create an article element.
-   * @param {{node: { frontmatter: FrontMatter, fields: { slug: string }, excerpt: string }}} item
-   * @param {number} key
+   * @param {string} seeMore
+   * @returns {{(item: {node: SourceNode}, key: number) => JSX.Element}}
    */
   static create =
-    (item, key) => {
-      const {
-        node: {
-          frontmatter: {
-            cover,
-            date,
-            strDate,
-            title,
-            youtube,
+    seeMore =>
+      (item, key) => {
+        const {
+          node: {
+            frontmatter: {
+              cover,
+              date,
+              strDate,
+              title,
+              youtube,
+            },
+            fields: { slug },
+            excerpt,
           },
-          fields: { slug },
-          excerpt,
-        },
-      } = item;
-      return (<Article
-        key={key}
-        href={slug}
-        date={date}
-        imgSrc={_.get(cover, 'childImageSharp.responsiveSizes.src')}
-        imgSet={_.get(cover, 'childImageSharp.responsiveSizes.srcSet')}
-        imgSizes={_.get(cover, 'childImageSharp.responsiveSizes.sizes')}
-        strDate={strDate}
-        caption={title}
-        youtube={youtube}
-        detail={excerpt}
-      />);
-    }
+        } = item;
+        return (<Article
+          key={key}
+          href={slug}
+          date={date}
+          imgSrc={_.get(cover, 'childImageSharp.responsiveSizes.src')}
+          imgSet={_.get(cover, 'childImageSharp.responsiveSizes.srcSet')}
+          imgSizes={_.get(cover, 'childImageSharp.responsiveSizes.sizes')}
+          strDate={strDate}
+          caption={title}
+          seeMore={seeMore}
+          youtube={youtube}
+          detail={excerpt}
+        />);
+      }
 
   /** Whether should require redraw. */
   shouldComponentUpdate = () => false;
@@ -110,6 +119,7 @@ export default class Article extends React.Component {
       imgSrc,
       imgSet,
       imgSizes,
+      seeMore,
       strDate,
       youtube,
     } = this.props;
@@ -121,7 +131,7 @@ export default class Article extends React.Component {
           <CardImage>
             <Link to={href} role="link">
               <CoverImage
-                alt={more}
+                alt={seeMore}
                 sizes={imgSizes}
                 srcSet={imgSet}
                 src={imgSrc}
@@ -140,7 +150,7 @@ export default class Article extends React.Component {
               <p>{detail}</p>
               <p>
                 <Link className="button is-link" to={href} role="link">
-                  {more}
+                  {seeMore}
                 </Link>
                 &nbsp;
                 <time dateTime={date}>{strDate}</time>

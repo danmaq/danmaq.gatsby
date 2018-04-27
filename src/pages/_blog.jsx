@@ -68,7 +68,7 @@ class Blog extends React.Component {
           <section className="container">
             <p>{t('posts', { posts: totalCount })}</p>
             <Columns isMultiline>
-              {edges.map(Article.create)}
+              {edges.map(Article.create(t('more')))}
             </Columns>
           </section>
         </main>

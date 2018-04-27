@@ -14,7 +14,6 @@ i18n
     fallbackLng: 'ja',
     ns: ['LP', 'blog'],
     defaultNS: 'LP',
-    interpolation: { escapeValue: false },
     react: { wait: true },
   });
 

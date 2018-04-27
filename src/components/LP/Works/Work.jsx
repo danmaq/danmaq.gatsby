@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import PropTypes from 'prop-types';
+import { translate } from 'react-i18next';
 import {
   Button,
   Card,
@@ -20,6 +21,7 @@ import Icon from '../../Icon';
  * @property {React.ReactNode} hrefCaption
  * @property {React.ReactNode} title
  * @property {React.ReactNode} subtitle
+ * @property {{(key: string) => string}} t i18n translator.
  * @property {?string} thumbnail
  * @property {?string} youtube
  */
@@ -28,13 +30,13 @@ import Icon from '../../Icon';
  * Common work component for LP.
  * @extends React.Component<Props>
  */
-export default class extends React.Component {
+class Work extends React.Component {
   /**
    * Default properties.
    * @type {Props}
    */
   static defaultProps = {
-    hrefCaption: 'もっと見る',
+    hrefCaption: '',
     subtitle: '',
     thumbnail: null,
     youtube: null,
@@ -47,6 +49,7 @@ export default class extends React.Component {
     hrefCaption: PropTypes.string,
     title: PropTypes.node.isRequired,
     subtitle: PropTypes.node,
+    t: PropTypes.func.isRequired,
     thumbnail: PropTypes.string,
     youtube: PropTypes.string,
   };
@@ -66,7 +69,7 @@ export default class extends React.Component {
 
   /** Create link elements. */
   renderMore = () => {
-    const { href, hrefCaption } = this.props;
+    const { href, hrefCaption, t } = this.props;
     return (/^https?:\/\//.test(href) ?
       <Button
         href={href}
@@ -76,10 +79,10 @@ export default class extends React.Component {
         isLink
         isOutlined
       >
-        {hrefCaption}&nbsp;&nbsp;<Icon i="external-link" />
+        {hrefCaption || t('more')}&nbsp;&nbsp;<Icon i="external-link" />
       </Button> :
       <Link className="button is-link" to={href} role="link">
-        {hrefCaption}
+        {hrefCaption || t('more')}
       </Link>);
   };
 
@@ -109,3 +112,5 @@ export default class extends React.Component {
       </Card>
     </Column>);
 }
+
+export default translate('blog')(Work);
