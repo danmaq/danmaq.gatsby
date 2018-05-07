@@ -43,3 +43,8 @@
  * @property {{langKey: string, slug: string}} fields
  * @property {number} totalCount
  */
+
+/**
+ * @typedef TagsAllMarkdownRemark
+ * @property {{fieldValue: string, totalCount: number}[]} group
+ */

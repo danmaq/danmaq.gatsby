@@ -47,3 +47,9 @@ export const allMarkdownRemark = () => PropTypes.shape({
   edges: edges().isRequired,
   totalCount: PropTypes.number.isRequired,
 });
+
+export const tagsAllMarkdownRemark = () => PropTypes.shape({
+  group: PropTypes.shape({
+    fieldValue: PropTypes.string.isRequired,
+  }),
+});
