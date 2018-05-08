@@ -48,9 +48,11 @@ export const allMarkdownRemark = () => PropTypes.shape({
   totalCount: PropTypes.number.isRequired,
 });
 
+export const tagItem = () => PropTypes.shape({
+  fieldValue: PropTypes.string.isRequired,
+  totalCount: PropTypes.number.isRequired,
+});
+
 export const tagsAllMarkdownRemark = () => PropTypes.shape({
-  group: PropTypes.arrayOf({
-    fieldValue: PropTypes.string.isRequired,
-    totalCount: PropTypes.number.isRequired,
-  }),
+  group: PropTypes.arrayOf(tagItem().isRequired).isRequired,
 });

@@ -45,6 +45,12 @@
  */
 
 /**
+ * @typedef TagItem
+ * @property {string} fieldValue
+ * @property {number} totalCount
+ */
+
+/**
  * @typedef TagsAllMarkdownRemark
- * @property {{fieldValue: string, totalCount: number}[]} group
+ * @property {TagItem[]} group
  */
