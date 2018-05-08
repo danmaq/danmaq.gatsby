@@ -49,7 +49,8 @@ export const allMarkdownRemark = () => PropTypes.shape({
 });
 
 export const tagsAllMarkdownRemark = () => PropTypes.shape({
-  group: PropTypes.shape({
+  group: PropTypes.arrayOf({
     fieldValue: PropTypes.string.isRequired,
+    totalCount: PropTypes.number.isRequired,
   }),
 });
