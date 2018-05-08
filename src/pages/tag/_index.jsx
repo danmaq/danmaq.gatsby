@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
-import { Container, Hero, HeroBody, Title } from 'bloomer';
+import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
 
 import Header from '../../components/Header';
+import Tag from '../../components/Tag';
 
 import * as TypePreset from '../../components/TypePreset';
 import '../../components/typedef';
@@ -31,7 +32,10 @@ export default class Tags extends React.PureComponent {
    * @param {TagItem} item
    * @param {key} key
    */
-  static renderItem = (item, key) => <li {...{ key }}>{item.fieldValue} ({item.totalCount})</li>;
+  static renderItem = (item, key) => {
+    const { fieldValue, totalCount } = item;
+    return <Tag {...{ fieldValue, key, totalCount }} />;
+  };
 
   render = () => {
     const {
@@ -54,9 +58,9 @@ export default class Tags extends React.PureComponent {
         <main>
           <section>
             <p>Length: {group.length}</p>
-            <ul>
+            <Columns isCentered isMultiline>
               {group.map(Tags.renderItem)}
-            </ul>
+            </Columns>
           </section>
         </main>
       </div>);
