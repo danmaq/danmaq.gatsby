@@ -18,7 +18,7 @@ import '../../components/typedef';
  * Top page component of articles with language independent.
  * @extends React.PureComponent<Props>
  */
-export default class extends React.PureComponent {
+export default class Tags extends React.PureComponent {
   /** Property types. */
   static propTypes = {
     data: PropTypes.shape({
@@ -26,6 +26,12 @@ export default class extends React.PureComponent {
     }).isRequired,
     pathContext: TypePreset.pathContext().isRequired,
   };
+
+  /**
+   * @param {TagItem} item
+   * @param {key} key
+   */
+  static renderItem = (item, key) => <li {...{ key }}>{item.fieldValue} ({item.totalCount})</li>;
 
   render = () => {
     const {
@@ -48,6 +54,9 @@ export default class extends React.PureComponent {
         <main>
           <section>
             <p>Length: {group.length}</p>
+            <ul>
+              {group.map(Tags.renderItem)}
+            </ul>
           </section>
         </main>
       </div>);
