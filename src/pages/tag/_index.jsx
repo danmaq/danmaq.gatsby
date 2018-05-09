@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Columns, Container, Hero, HeroBody, Title } from 'bloomer';
+import { translate } from 'react-i18next';
 
 import Header from '../../components/Header';
 import Tag from '../../components/Tag';
@@ -13,56 +14,68 @@ import '../../components/typedef';
  * @typedef Props
  * @property {{allMarkdownRemark: TagsAllMarkdownRemark}} data
  * @property {PathContext} pathContext
+ * @property {{(key: string) => string}} t i18n translator.
  */
 
 /**
  * Top page component of articles with language independent.
- * @extends React.PureComponent<Props>
+ * @extends React.Component<Props>
  */
-export default class Tags extends React.PureComponent {
+class Tags extends React.Component {
   /** Property types. */
   static propTypes = {
     data: PropTypes.shape({
       allMarkdownRemark: TypePreset.tagsAllMarkdownRemark().isRequired,
     }).isRequired,
     pathContext: TypePreset.pathContext().isRequired,
+    t: PropTypes.func.isRequired,
   };
+
+  /** Whether should require redraw. */
+  shouldComponentUpdate = () => false;
 
   /**
    * @param {TagItem} item
    * @param {key} key
    */
-  static renderItem = (item, key) => {
+  renderItem = (item, key) => {
     const { fieldValue, totalCount } = item;
-    return <Tag {...{ fieldValue, key, totalCount }} />;
+    return (<Tag
+      {...{ key, totalCount }}
+      label={this.props.t(fieldValue)}
+      slug={fieldValue}
+    />);
   };
 
   render = () => {
     const {
       data: { allMarkdownRemark: { group } },
       pathContext: { langKey, slug },
+      t,
     } = this.props;
     return (
       <div>
         <Helmet>
-          <title>Tags</title>
+          <title>{t('tags')}</title>
         </Helmet>
         <Header {...{ langKey }} path={slug} />
         <Hero isSize="medium">
           <HeroBody>
             <Container>
-              <Title isSize={2} tag="h1">Tags</Title>
+              <Title isSize={2} tag="h1">{t('tags')}</Title>
             </Container>
           </HeroBody>
         </Hero>
         <main>
-          <section>
-            <p>Length: {group.length}</p>
+          <section className="container">
+            <p>{t('length')}{group.length}</p>
             <Columns isCentered isMultiline>
-              {group.map(Tags.renderItem)}
+              {group.map(this.renderItem)}
             </Columns>
           </section>
         </main>
       </div>);
   };
 }
+
+export default translate('blog')(Tags);

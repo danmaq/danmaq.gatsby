@@ -5,7 +5,8 @@ import Link from 'gatsby-link';
 
 /**
  * @typedef Props
- * @property {string} fieldValue
+ * @property {string} [label]
+ * @property {string} slug
  * @property {number} totalCount
  */
 
@@ -14,9 +15,16 @@ import Link from 'gatsby-link';
  * @extends React.Component<Props>
  */
 export default class extends React.Component {
+  /**
+   * Default Properties.
+   * @type {Props}
+   */
+  static defaultProps = { label: '' };
+
   /** Property types. */
   static propTypes = {
-    fieldValue: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    slug: PropTypes.string.isRequired,
     totalCount: PropTypes.number.isRequired,
   };
 
@@ -25,7 +33,7 @@ export default class extends React.Component {
 
   /** Create rendered view elements. */
   render = () => {
-    const { fieldValue, totalCount } = this.props;
+    const { label, slug, totalCount } = this.props;
     return (
       <Column className="is-6-tablet is-12-mobile">
         <Card>
@@ -33,8 +41,8 @@ export default class extends React.Component {
             <Title className="card-header-title" tag="h2">
               <Tag isColor="dark">{totalCount}</Tag>
               &nbsp;
-              <Link to={fieldValue}>
-                {fieldValue}
+              <Link to={slug}>
+                {label || slug}
               </Link>
             </Title>
           </CardHeader>
