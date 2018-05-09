@@ -1,8 +1,10 @@
 {
   "blog": "Blog",
   "footer": "“danmaq”: We're a doujin brand produced by DAYS PRODUCTION.",
+  "length": "Length: ",
   "more": "See more",
   "posted": "Posted: ",
   "posts": "{{posts}} posts.",
-  "tag": "Category: "
+  "tag": "Category: ",
+  "tags": "Categories"
 }
