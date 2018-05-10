@@ -15,6 +15,7 @@ export const frontmatter = () => PropTypes.shape({
   date: PropTypes.string.isRequired,
   redirect: PropTypes.string,
   strDate: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
   youtube: PropTypes.string,
 });

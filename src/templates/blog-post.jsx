@@ -45,6 +45,7 @@ query BlogPostByPath($path: String!) {
       date: date
       strDate: date(formatString: "YYYY/M/D"),
       redirect,
+      tags,
       title,
       youtube
     }
@@ -141,11 +142,44 @@ class BlogPost extends React.Component {
   };
 
   /** Create rendered view elements. */
+  renderHero = () => {
+    const {
+      data: {
+        markdownRemark: {
+          frontmatter: {
+            date, strDate, tags, title,
+          },
+        },
+      },
+      t,
+    } = this.props;
+    return (
+      <Hero isSize="medium">
+        <HeroBody>
+          <Container>
+            <Title isSize={2} tag="h1">
+              {title}
+            </Title>
+          </Container>
+        </HeroBody>
+        <HeroFooter>
+          <aside className="container">
+            <ul>
+              <li>
+                {t('posted')}
+                <time dateTime={date}>{strDate}</time>
+              </li>
+            </ul>
+          </aside>
+        </HeroFooter>
+      </Hero>);
+  };
+
+  /** Create rendered view elements. */
   render = () => {
     const {
-      data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
+      data: { markdownRemark: { html, frontmatter: { title } } },
       pathContext: { langKey, path },
-      t,
     } = this.props;
     return (
       <div>
@@ -155,21 +189,7 @@ class BlogPost extends React.Component {
         </Helmet>
         <Header {...{ langKey, path }} />
         <main>
-          <Hero isSize="medium">
-            <HeroBody>
-              <Container>
-                <Title isSize={2} tag="h1">
-                  {title}
-                </Title>
-              </Container>
-            </HeroBody>
-            <HeroFooter>
-              <aside className="container">
-                {t('posted')}
-                <time dateTime={date}>{strDate}</time>
-              </aside>
-            </HeroFooter>
-          </Hero>
+          {this.renderHero()}
           <section className="container">
             {this.renderCover()}
             <Columns isCentered>

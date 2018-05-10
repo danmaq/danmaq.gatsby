@@ -11,6 +11,7 @@
  * @property {string} date
  * @property {string} [redirect]
  * @property {string} strDate
+ * @property {string[]} [tags]
  * @property {string} title
  * @property {string} [youtube]
  */
