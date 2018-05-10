@@ -12,7 +12,6 @@ import {
   Content,
   Hero,
   HeroBody,
-  HeroFooter,
   Tag,
   Title,
 } from 'bloomer';
@@ -131,6 +130,26 @@ class BlogPost extends React.Component {
   };
 
   /** Create rendered view elements. */
+  renderAside = () => {
+    const {
+      data: { markdownRemark: { frontmatter: { date, strDate, tags } } },
+      t,
+    } = this.props;
+    return (
+      <aside className="container">
+        <ul>
+          <li>
+            {t('posted')}
+            <time dateTime={date}>{strDate}</time>
+          </li>
+          <li className="tags">
+            {tags.map(this.renderTag())}
+          </li>
+        </ul>
+      </aside>);
+  };
+
+  /** Create rendered view elements. */
   renderCover = () => {
     const { data: { markdownRemark: { frontmatter: { cover, youtube } } } } = this.props;
     return (<CoverImage
@@ -143,28 +162,8 @@ class BlogPost extends React.Component {
   };
 
   /** Create rendered view elements. */
-  renderTag = () => {
-    const { t } = this.props;
-    return (tag, key) => (
-      <li {...{ key }}>
-        <Tag>
-          {t(tag)}
-        </Tag>
-      </li>);
-  }
-
-  /** Create rendered view elements. */
   renderHero = () => {
-    const {
-      data: {
-        markdownRemark: {
-          frontmatter: {
-            date, strDate, tags, title,
-          },
-        },
-      },
-      t,
-    } = this.props;
+    const { data: { markdownRemark: { frontmatter: { title } } } } = this.props;
     return (
       <Hero isSize="medium">
         <HeroBody>
@@ -174,19 +173,18 @@ class BlogPost extends React.Component {
             </Title>
           </Container>
         </HeroBody>
-        <HeroFooter>
-          <aside className="container">
-            <ul>
-              <li>
-                {t('posted')}
-                <time dateTime={date}>{strDate}</time>
-              </li>
-              {tags.map(this.renderTag())}
-            </ul>
-          </aside>
-        </HeroFooter>
       </Hero>);
   };
+
+  /** Create rendered view elements. */
+  renderTag = () => {
+    const { t } = this.props;
+    return (tag, key) => (
+      <Tag {...{ key }}>
+        {t(tag)}
+      </Tag>
+    );
+  }
 
   /** Create rendered view elements. */
   render = () => {
@@ -216,6 +214,7 @@ class BlogPost extends React.Component {
             </Columns>
           </section>
         </main>
+        {this.renderAside()}
       </div>);
   };
 }
