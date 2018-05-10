@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withPrefix } from 'gatsby-link';
+import { Link, withPrefix } from 'gatsby-link';
 import i18n from 'i18next';
 import { getUserLangKey } from 'ptz-i18n';
 import Helmet from 'react-helmet';
@@ -13,6 +13,7 @@ import {
   Hero,
   HeroBody,
   HeroFooter,
+  Tag,
   Title,
 } from 'bloomer';
 import _ from 'lodash';
@@ -142,6 +143,17 @@ class BlogPost extends React.Component {
   };
 
   /** Create rendered view elements. */
+  renderTag = () => {
+    const { t } = this.props;
+    return (tag, key) => (
+      <li {...{ key }}>
+        <Tag>
+          {t(tag)}
+        </Tag>
+      </li>);
+  }
+
+  /** Create rendered view elements. */
   renderHero = () => {
     const {
       data: {
@@ -169,6 +181,7 @@ class BlogPost extends React.Component {
                 {t('posted')}
                 <time dateTime={date}>{strDate}</time>
               </li>
+              {tags.map(this.renderTag())}
             </ul>
           </aside>
         </HeroFooter>
