@@ -8,13 +8,13 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
+          - v2-dependencies-{{ checksum "package.json" }}
+          - v2-dependencies-
       - run: yarn install
       - save_cache:
           paths:
           - node_modules
-          key: v1-dependencies-{{ checksum "package.json" }}
+          key: v2-dependencies-{{ checksum "package.json" }}
   build:
     docker:
       - image: circleci/node:latest
@@ -23,8 +23,8 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
+          - v2-dependencies-{{ checksum "package.json" }}
+          - v2-dependencies-
       - run: git clone https://github.com/danmaq/danmaq.article.git
       - run: yarn run clean
       - run: yarn run production:init
@@ -33,7 +33,7 @@ jobs:
       - save_cache:
           paths:
           - public
-          key: v1-pages
+          key: v2-pages
   deploy:
     docker:
       - image: circleci/node:latest
@@ -42,11 +42,11 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "package.json" }}
-          - v1-dependencies-
+          - v2-dependencies-{{ checksum "package.json" }}
+          - v2-dependencies-
       - restore_cache:
           keys:
-          - v1-pages
+          - v2-pages
       - run: git config --global user.name "Shuhei Nomura"
       - run: git config --global user.email "info@danmaq.com"
       - run: yarn run production:commit
