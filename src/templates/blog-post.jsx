@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withPrefix } from 'gatsby-link';
+import { Link, withPrefix } from 'gatsby-link';
 import i18n from 'i18next';
 import { getUserLangKey } from 'ptz-i18n';
 import Helmet from 'react-helmet';
@@ -12,7 +12,7 @@ import {
   Content,
   Hero,
   HeroBody,
-  HeroFooter,
+  Tag,
   Title,
 } from 'bloomer';
 import _ from 'lodash';
@@ -45,6 +45,7 @@ query BlogPostByPath($path: String!) {
       date: date
       strDate: date(formatString: "YYYY/M/D"),
       redirect,
+      tags,
       title,
       youtube
     }
@@ -129,6 +130,26 @@ class BlogPost extends React.Component {
   };
 
   /** Create rendered view elements. */
+  renderAside = () => {
+    const {
+      data: { markdownRemark: { frontmatter: { date, strDate, tags } } },
+      t,
+    } = this.props;
+    return (
+      <aside className="container">
+        <ul>
+          <li>
+            {t('posted')}
+            <time dateTime={date}>{strDate}</time>
+          </li>
+          <li className="tags">
+            {tags.map(this.renderTag())}
+          </li>
+        </ul>
+      </aside>);
+  };
+
+  /** Create rendered view elements. */
   renderCover = () => {
     const { data: { markdownRemark: { frontmatter: { cover, youtube } } } } = this.props;
     return (<CoverImage
@@ -141,11 +162,35 @@ class BlogPost extends React.Component {
   };
 
   /** Create rendered view elements. */
+  renderHero = () => {
+    const { data: { markdownRemark: { frontmatter: { title } } } } = this.props;
+    return (
+      <Hero isSize="medium">
+        <HeroBody>
+          <Container>
+            <Title isSize={2} tag="h1">
+              {title}
+            </Title>
+          </Container>
+        </HeroBody>
+      </Hero>);
+  };
+
+  /** Create rendered view elements. */
+  renderTag = () => {
+    const { t } = this.props;
+    return (tag, key) => (
+      <Tag {...{ key }}>
+        {t(tag)}
+      </Tag>
+    );
+  }
+
+  /** Create rendered view elements. */
   render = () => {
     const {
-      data: { markdownRemark: { html, frontmatter: { date, strDate, title } } },
+      data: { markdownRemark: { html, frontmatter: { title } } },
       pathContext: { langKey, path },
-      t,
     } = this.props;
     return (
       <div>
@@ -155,21 +200,7 @@ class BlogPost extends React.Component {
         </Helmet>
         <Header {...{ langKey, path }} />
         <main>
-          <Hero isSize="medium">
-            <HeroBody>
-              <Container>
-                <Title isSize={2} tag="h1">
-                  {title}
-                </Title>
-              </Container>
-            </HeroBody>
-            <HeroFooter>
-              <aside className="container">
-                {t('posted')}
-                <time dateTime={date}>{strDate}</time>
-              </aside>
-            </HeroFooter>
-          </Hero>
+          {this.renderHero()}
           <section className="container">
             {this.renderCover()}
             <Columns isCentered>
@@ -183,6 +214,7 @@ class BlogPost extends React.Component {
             </Columns>
           </section>
         </main>
+        {this.renderAside()}
       </div>);
   };
 }

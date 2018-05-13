@@ -11,6 +11,7 @@
  * @property {string} date
  * @property {string} [redirect]
  * @property {string} strDate
+ * @property {string[]} [tags]
  * @property {string} title
  * @property {string} [youtube]
  */
@@ -42,4 +43,15 @@
  * @property {{node: QLNode}[]} edges
  * @property {{langKey: string, slug: string}} fields
  * @property {number} totalCount
+ */
+
+/**
+ * @typedef TagItem
+ * @property {string} fieldValue
+ * @property {number} totalCount
+ */
+
+/**
+ * @typedef TagsAllMarkdownRemark
+ * @property {TagItem[]} group
  */

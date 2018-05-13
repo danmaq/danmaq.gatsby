@@ -15,6 +15,7 @@ export const frontmatter = () => PropTypes.shape({
   date: PropTypes.string.isRequired,
   redirect: PropTypes.string,
   strDate: PropTypes.string.isRequired,
+  tags: PropTypes.arrayOf(PropTypes.string),
   title: PropTypes.string.isRequired,
   youtube: PropTypes.string,
 });
@@ -46,4 +47,13 @@ export const edges = () => PropTypes.arrayOf(PropTypes.shape({
 export const allMarkdownRemark = () => PropTypes.shape({
   edges: edges().isRequired,
   totalCount: PropTypes.number.isRequired,
+});
+
+export const tagItem = () => PropTypes.shape({
+  fieldValue: PropTypes.string.isRequired,
+  totalCount: PropTypes.number.isRequired,
+});
+
+export const tagsAllMarkdownRemark = () => PropTypes.shape({
+  group: PropTypes.arrayOf(tagItem().isRequired).isRequired,
 });
