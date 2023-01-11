@@ -44,7 +44,7 @@
     "gatsby-remark-images": "^1.5.61",
     "gatsby-remark-link-rewrite": "^0.2.1",
     "gatsby-source-filesystem": "^1.5.29",
-    "gatsby-transformer-remark": "^1.7.39",
+    "gatsby-transformer-remark": "^5.25.1",
     "gatsby-transformer-sharp": "^1.6.22",
     "i18next": "^11.2.3",
     "i18next-browser-languagedetector": "^2.2.0",
